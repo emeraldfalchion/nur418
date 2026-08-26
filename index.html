@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     HOME PAGE
+
+     Two sections: Exam Prep on top (currently hidden — see the HTML
+     comment around that section, and SESSION-LOG.md), Weekly Topics below.
+     Adding a page means adding a tile here AND an entry in
+     assets/site.js — the home tiles are hand-written on purpose so
+     you can order and describe them freely.
+
+     Weekly topics use the compact row layout: one .wk-row per week,
+     each holding a square .wk-badge (the week number) and a
+     .wk-strip grid of tiles. Weeks are labelled by number only.
+     ============================================================ -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NUR418 · Psychiatric Nursing Study Guide</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20260826">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <!-- ============================================================
+       EXAM PREP — HIDDEN FROM THE HOME PAGE on 2026-08-26, at Holly's
+       request. NOTHING WAS DELETED. must-know.html still exists in site/
+       with its real Week 1 content and is still deployed, so any existing
+       link to it keeps working — it simply has no tile here, no nav entry,
+       and (since later the same day) no entry in the search index either.
+
+       The entire section lives inside this ONE comment, including the
+       three tiles that used to sit in a comment of their own. HTML
+       comments do not nest, so that inner wrapper had to come out; the
+       two places to put it back are marked below.
+
+       TO RESTORE: delete this comment's opening and closing markers, then
+       re-wrap the three marked tiles in their own HTML comment. The
+       matching group in assets/site.js is commented the same way — undo
+       both, or the nav and the home page disagree. Then put
+       "must-know.html" back in the PAGES array in build-search-index.html
+       and rebuild data/search-index.js.
+
+       Note: .tile-torture turns the Torture Chamber title oxblood — keep
+       that class on that one tile only.
+       ============================================================
+
+  <section class="home-section home-exam">
+    <h2>Exam Prep</h2>
+    <div class="tile-grid">
+      <a class="tile" href="must-know.html">
+        <span class="tnum">1</span>
+        <span class="tbody"><h3>Must Know Quick Reference</h3><p>Everything the lectures explicitly stated or heavily hinted will be tested &mdash; and everything they excused you from.</p></span>
+      </a>
+      [ ON RESTORE, RE-WRAP THE THREE TILES BELOW IN THEIR OWN HTML COMMENT ]
+      Hidden until the Week 1 live lecture:
+      <a class="tile" href="quiz-builder.html">
+        <span class="tnum">2</span>
+        <span class="tbody"><h3>Build Your Own Exam</h3><p>Pick any combination of topics for a custom practice exam.</p></span>
+      </a>
+      <a class="tile tile-torture" href="torture-chamber.html">
+        <span class="tnum">3</span>
+        <span class="tbody"><h3>The Torture Chamber</h3><p>Enter if you dare.</p></span>
+      </a>
+      <a class="tile" href="lecture-review-template.html">
+        <span class="tnum">4</span>
+        <span class="tbody"><h3>Lecture Review Template</h3></span>
+      </a>
+      [ END OF THE THREE TILES TO RE-WRAP ]
+    </div>
+  </section>
+  ============================================================ -->
+
+  <section class="home-section home-weeks" aria-label="Topics by week">
+    <h2>Weekly Topics</h2>
+
+    <div class="wk-row">
+      <span class="wk-badge" aria-label="Week 1">1</span>
+      <div class="wk-strip">
+        <a class="tile" href="week1-intro.html">
+          <span class="tnum">1</span>
+          <span class="tbody"><h3>Introduction to PMH Nursing</h3><p>Definitions, the continuum, history and legislation, settings, admissions, patient rights, and the milieu.</p></span>
+        </a>
+        <a class="tile" href="week1-neurobiology.html">
+          <span class="tnum">2</span>
+          <span class="tbody"><h3>Neurobiology &amp; Pharmacology</h3><p>Brain imaging, the lobes and what damage does, the neurotransmitters, neuroplasticity, and psychopharmacology principles.</p></span>
+        </a>
+        <a class="tile" href="week1-anger-aggression-violence.html">
+          <span class="tnum">3</span>
+          <span class="tbody"><h3>Anger, Aggression &amp; Violence</h3><p>Warning signs, risk assessment tools, de-escalation by level, and seclusion and restraint.</p></span>
+        </a>
+        <a class="tile" href="week1-therapies.html">
+          <span class="tnum">4</span>
+          <span class="tbody"><h3>Assessment, Theories &amp; Therapies</h3><p>Mental status and affect, psychosocial interventions, Freud, the five behavioral therapies, CBT, RET, and DBT.</p></span>
+        </a>
+        <a class="tile" href="week1-group-physiologic-therapies.html">
+          <span class="tnum">5</span>
+          <span class="tbody"><h3>Group &amp; Physiologic Therapies</h3><p>Group types, Yalom&#39;s factors, member roles — plus light therapy, ECT, TMS, VNS, DBS, and integrative treatments.</p></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Copy the .wk-row block above for each new week. A .wk-strip holds
+         up to 3 tiles per row on desktop, 2 below 900px, 1 below 560px. -->
+
+  </section>
+
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="assets/site.js?v=20260826"></script>
+</body>
+</html>
