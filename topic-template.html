@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     TOPIC PAGE TEMPLATE — copy this file to start any new topic page.
+
+     After copying:
+       1. Rename the file (e.g. week1-cell-structure.html).
+       2. Change <title>, the .eyebrow, and the <h1>.
+       3. Add a matching entry to SITE.groups in assets/site.js,
+          using the new filename. (The nav finds the current page by
+          FILENAME — there is nothing to set on <body>.)
+       4. Add a matching tile to index.html.
+       5. Replace the sections below with the real lecture content.
+       6. Keep the flashcard deck at exactly 12 cards.
+
+     Everything else — the nav bar, the "On this page" list, the
+     collapsible sections, the eye buttons on tables, the prev/next
+     footer links — builds itself from the markup. Don't hand-write
+     any of it.
+
+     The demo content below is deliberately about nothing in
+     particular. It exists to show you what each component looks
+     like and what markup produces it. Delete it all.
+     ============================================================ -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Topic Page Template — Study Guide</title>
+<!-- Applies the saved light/dark choice before paint, so there's no flash.
+     Copy this line verbatim onto every page; don't edit it. -->
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20260830">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <header class="page-head">
+    <p class="eyebrow">Week 1 · Topic 1</p>
+    <h1>Topic Page Template</h1>
+  </header>
+
+  <!-- ==========================================================
+       COMPONENT 1 — A GLOSSARY TABLE (the workhorse)
+       Column 1 is a real named thing (a structure, a drug, a sign).
+       Mark it <td class="term"> so it stays bold, brand-coloured,
+       and always visible when the eye button hides the rest.
+       study.js adds ONE eye button per table, in the last <th>.
+       ========================================================== -->
+  <h2 class="block">Glossary Table</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Term</th><th>What It Means</th><th>Why It Matters</th></tr></thead>
+    <tbody>
+      <tr><td class="term">First term</td><td>The definition, straight from the lecture.</td><td>The consequence, complication, or clinical significance.</td></tr>
+      <tr><td class="term">Second term</td><td>Keep the wording close to how the instructor said it.</td><td>If the lecture didn't say it, it doesn't go here.</td></tr>
+      <tr><td class="term">Third term</td><td>Three to six columns works; more than that gets cramped on a phone.</td><td>Tables stack into cards below 640px automatically.</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ==========================================================
+       COMPONENT 2 — A CHECKLIST TABLE
+       Use data-hide-mode="all" when column 1 is NOT a standalone
+       term — a step paired with its rationale, an indication paired
+       with its detail. The eye button then hides the whole row
+       instead of just columns 2+.
+       Use data-nohide on a table that shouldn't be quizzable at all
+       (a scoring rubric you read as a whole, for instance).
+       ========================================================== -->
+  <h2 class="block">Checklist Table</h2>
+  <div class="table-wrap"><table data-hide-mode="all">
+    <thead><tr><th>Step</th><th>Rationale</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Do the first thing</td><td>Because of this reason.</td></tr>
+      <tr><td class="term">Then the second thing</td><td>Because of this other reason.</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ==========================================================
+       COMPONENT 3 — THE THREE CALLOUTS
+       They mean different things. Don't use them interchangeably.
+       ========================================================== -->
+  <h2 class="block">Callouts</h2>
+
+  <div class="mnemonic"><b>MNEMONIC (blue):</b> an acronym, a memory hook, or a rule of thumb. This is the "here's the trick for remembering it" box.</div>
+
+  <div class="callout-danger"><b>DANGER (red):</b> a true emergency, a priority action, or a hard safety rule. Reserve it — if everything is red, nothing is.</div>
+
+  <p class="xref-line"><a class="xref" href="must-know.html#week-1-content"><span><b>Cross-reference (accent):</b> this topic is covered again here — review in <b>Must Know</b> if needed</span></a></p>
+
+  <p class="note">A plain note. Use it for a short framing sentence under a heading, or a caveat that isn't worth a callout.</p>
+
+  <!-- ==========================================================
+       COMPONENT 4 — TWO-COLUMN COMPARISON CARDS
+       Best for A-vs-B material and for two parallel lists.
+       A lone .card OUTSIDE a .two-col renders full-width — that's
+       the right shape for a single bulleted list.
+       ========================================================== -->
+  <h2 class="block">Comparison Cards</h2>
+  <div class="two-col">
+    <div class="card">
+      <h4>Option A</h4>
+      <ul>
+        <li>First distinguishing feature</li>
+        <li>Second distinguishing feature</li>
+        <li>Third distinguishing feature</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Option B</h4>
+      <ul>
+        <li>How it differs on the first point</li>
+        <li>How it differs on the second point</li>
+        <li>How it differs on the third point</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4>Full-Width Single List</h4>
+    <ul>
+      <li>A lone card outside a .two-col fills the width.</li>
+      <li>Use this instead of a one-column table — a table with a single
+          column wastes a lot of horizontal space.</li>
+    </ul>
+  </div>
+
+  <!-- ==========================================================
+       COMPONENT 5 — A LECTURE DIAGRAM BEHIND THE LIGHTBOX
+       Images are never shown inline. A .fig-trigger pill opens a
+       lightbox that reads from the hidden .fig-store below it,
+       matched by data-lightbox-target -> the store's id. Put two
+       <figure>s in one store to show them side by side.
+       This example is commented out because the template ships with
+       no images. Uncomment it once you drop a file into images/.
+       ========================================================== -->
+  <h2 class="block">Lecture Diagram</h2>
+  <p class="note">Images live in <code>images/&lt;topic&gt;/</code> and never appear inline — they open in a lightbox from a pill button. Uncomment the block below once you have a real image.</p>
+  <!--
+  <button type="button" class="fig-trigger" data-lightbox-target="lb-demo">&#128444; View diagram</button>
+  <div class="fig-store" id="lb-demo" hidden>
+    <figure class="figure">
+      <img src="images/example/diagram.jpg" alt="Describe what the diagram actually shows.">
+      <figcaption>A caption in the instructor's own words.</figcaption>
+    </figure>
+  </div>
+  -->
+
+  <!-- ==========================================================
+       COMPONENT 6 — FLASHCARDS. ALWAYS EXACTLY 12.
+       Every must-know item belonging to this topic has to be
+       represented among the 12. To add one, SWAP OUT the easiest
+       existing card — never grow the deck.
+       Each card is a single-step check: the question asks for
+       exactly what the answer gives, no multi-part questions.
+       ========================================================== -->
+  <h2 class="block">Self-Test Flashcards</h2>
+  <p class="note">Click a card to flip it and check your answer.</p>
+  <div class="flash-toolbar">
+    <button class="flash-btn alt" data-action="shuffle" data-target="fc1">Shuffle</button>
+    <span class="flash-count"></span>
+  </div>
+  <div class="flash-grid" id="fc1">
+    <div class="flash-card"><div class="flash-inner">
+      <div class="flash-front">Card 1 — ask for exactly one thing.</div>
+      <div class="flash-back">Give exactly that one thing.</div>
+    </div></div>
+    <div class="flash-card"><div class="flash-inner">
+      <div class="flash-front">Card 2 — a definition check.</div>
+      <div class="flash-back">The definition, as the lecture gave it.</div>
+    </div></div>
+    <div class="flash-card"><div class="flash-inner">
+      <div class="flash-front">Card 3 — a number the instructor said to memorize.</div>
+      <div class="flash-back">The number, with its unit.</div>
+    </div></div>
+    <div class="flash-card"><div class="flash-inner">
+      <div class="flash-front">Card 4 — a "which one" discrimination.</div>
+      <div class="flash-back">The answer plus the one feature that distinguishes it.</div>
+    </div></div>
+    <div class="flash-card"><div class="flash-inner">
+      <div class="flash-front">Card 5 — a mnemonic recall.</div>
+      <div class="flash-back">What each letter stands for.</div>
+    </div></div>
+    <div class="flash-card"><div class="flash-inner">
+      <div class="flash-front">Card 6 — a priority action.</div>
+      <div class="flash-back">The single first action, and why it comes first.</div>
+    </div></div>
+    <div class="flash-card"><div class="flash-inner">
+      <div class="flash-front">Card 7 — a cause.</div>
+      <div class="flash-back">The cause the lecture named.</div>
+    </div></div>
+    <div class="flash-card"><div class="flash-inner">
+      <div class="flash-front">Card 8 — a consequence of not treating it.</div>
+      <div class="flash-back">The complication.</div>
+    </div></div>
+    <div class="flash-card"><div class="flash-inner">
+      <div class="flash-front">Card 9 — a normal-versus-abnormal finding.</div>
+      <div class="flash-back">Which is which, and the threshold between them.</div>
+    </div></div>
+    <div class="flash-card"><div class="flash-inner">
+      <div class="flash-front">Card 10 — a piece of patient teaching.</div>
+      <div class="flash-back">What you would actually say.</div>
+    </div></div>
+    <div class="flash-card"><div class="flash-inner">
+      <div class="flash-front">Card 11 — name three of something.</div>
+      <div class="flash-back">Any three of: the list from the lecture.</div>
+    </div></div>
+    <div class="flash-card"><div class="flash-inner">
+      <div class="flash-front">Card 12 — the thing you keep getting wrong.</div>
+      <div class="flash-back">The correction, stated plainly.</div>
+    </div></div>
+  </div>
+
+  <nav class="page-flip" data-page-flip></nav>
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="assets/site.js?v=20260830"></script>
+<script src="assets/study.js?v=20260830"></script>
+</body>
+</html>

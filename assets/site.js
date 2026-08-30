@@ -55,41 +55,30 @@ const SITE = {
     /* Copy the block above for Week 2, Week 3, ... as the course goes on. */
 
     /* ============================================================
-       EXAM PREP — HIDDEN FROM THE NAV on 2026-08-26, at Holly's request.
-       NOTHING WAS DELETED. must-know.html still exists in site/ with its
-       real Week 1 content and is still deployed, so any existing link to it
-       keeps working — it simply has no nav entry, no home-page tile, and
-       (since later the same day) no entry in the search index either.
-       Because it is no longer in SITE.groups it also has no prev/next, so
-       verify.js now lists it alongside the other pages kept out of the nav.
-       That is expected, not a defect.
+       EXAM PREP — RESTORED on 2026-08-29, at Holly's request, after being
+       hidden since 2026-08-26. Three of the four entries are live: Must
+       Know, Build Your Own Exam, and the Torture Chamber. The matching
+       section in index.html was restored in the same pass — if this group
+       is ever hidden again, hide that section too, or the nav and the home
+       page disagree, and take must-know.html back out of the PAGES array
+       in build-search-index.html.
 
-       The entire group lives inside this ONE block comment, including the
-       three entries that used to sit in a comment of their own. JS block
-       comments do not nest, so that inner wrapper had to come out; the two
-       places to put it back are marked below.
-
-       TO RESTORE: delete this comment's opening and closing markers, then
-       re-wrap the three marked entries in their own block comment. The
-       matching section in index.html is commented the same way — undo
-       both, or the nav and the home page disagree. Then put
-       "must-know.html" back in the PAGES array in build-search-index.html
-       and rebuild data/search-index.js.
-       ============================================================
-
+       lecture-review-template.html stays commented out: the Week 1 live
+       lecture was never posted, so there is no Lecture Review page to
+       link to yet. It has no prev/next as a result, which is why
+       verify.js still lists it. That is expected, not a defect.
+       ============================================================ */
     {
       label: "Exam Prep",
       items: [
-        { id: "must-know",       num: "1", title: "Must Know Quick Reference", file: "must-know.html" },
-        [ ON RESTORE, RE-WRAP THE THREE ENTRIES BELOW IN THEIR OWN BLOCK COMMENT ]
-        Hidden until the Week 1 live lecture:
+        { id: "must-know",       num: "1", title: "Key Terms &amp; Learning Outcomes", file: "must-know.html" },
         { id: "quiz-builder",    num: "2", title: "Build Your Own Exam",       file: "quiz-builder.html" },
         { id: "torture-chamber", num: "3", title: "The Torture Chamber",       file: "torture-chamber.html" },
+        /* Hidden until there is a live lecture to review:
         { id: "lecture-review-template", num: "4", title: "Lecture Review Template", file: "lecture-review-template.html" },
-        [ END OF THE THREE ENTRIES TO RE-WRAP ]
+        */
       ]
     }
-       ============================================================ */
   ]
 };
 

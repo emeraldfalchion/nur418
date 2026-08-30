@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     BUILD YOUR OWN EXAM
+
+     This page is a shell. assets/quiz.js reads data/quiz-bank.js and
+     renders a topic x question-set table into #quiz-select; on Start
+     it assembles the checked cells, shuffles them, sets
+     window.EXAM_DATA, and injects assets/exam.js into #exam-root.
+
+     You will almost never edit this file. You edit data/quiz-bank.js.
+
+     Note the script ORDER: the data file must load before quiz.js.
+     ============================================================ -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build Your Own Exam — Study Guide</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20260830">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <header class="page-head">
+    <p class="eyebrow">Exam Prep</p>
+    <h1>Build Your Own Exam</h1>
+  </header>
+
+  <div id="quiz-select"></div>
+  <div id="exam-root"></div>
+
+  <nav class="page-flip" data-page-flip></nav>
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="data/quiz-bank.js?v=20260830"></script>
+<script src="assets/site.js?v=20260830"></script>
+<script src="assets/quiz.js?v=20260830"></script>
+</body>
+</html>

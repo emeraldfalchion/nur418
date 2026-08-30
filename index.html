@@ -2,7 +2,7 @@
 <!-- ============================================================
      HOME PAGE
 
-     Two sections: Exam Prep on top (currently hidden — see the HTML
+     Two sections: Exam Prep on top (restored 2026-08-29 — see the HTML
      comment around that section, and SESSION-LOG.md), Weekly Topics below.
      Adding a page means adding a tile here AND an entry in
      assets/site.js — the home tiles are hand-written on purpose so
@@ -18,7 +18,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NUR418 · Psychiatric Nursing Study Guide</title>
 <script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
-<link rel="stylesheet" href="assets/styles.css?v=20260826">
+<link rel="stylesheet" href="assets/styles.css?v=20260830">
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
@@ -27,37 +27,33 @@
 <div class="page-inner">
 
   <!-- ============================================================
-       EXAM PREP — HIDDEN FROM THE HOME PAGE on 2026-08-26, at Holly's
-       request. NOTHING WAS DELETED. must-know.html still exists in site/
-       with its real Week 1 content and is still deployed, so any existing
-       link to it keeps working — it simply has no tile here, no nav entry,
-       and (since later the same day) no entry in the search index either.
+       EXAM PREP — RESTORED on 2026-08-29, at Holly's request, after
+       being hidden since 2026-08-26. Three of the four tiles are live:
+       Must Know (rebuilt around Key Terms + Learning Outcomes), Build
+       Your Own Exam, and the Torture Chamber, both of which now carry
+       real Week 1 questions instead of template demo content.
 
-       The entire section lives inside this ONE comment, including the
-       three tiles that used to sit in a comment of their own. HTML
-       comments do not nest, so that inner wrapper had to come out; the
-       two places to put it back are marked below.
+       Lecture Review Template stays commented out below. There is no
+       Week 1 Lecture Review page: the live lecture was never posted, so
+       there are no verbatim in-class questions to archive and no deck to
+       reconstruct distractors from (CLAUDE.md rule 6).
 
-       TO RESTORE: delete this comment's opening and closing markers, then
-       re-wrap the three marked tiles in their own HTML comment. The
-       matching group in assets/site.js is commented the same way — undo
-       both, or the nav and the home page disagree. Then put
-       "must-know.html" back in the PAGES array in build-search-index.html
-       and rebuild data/search-index.js.
+       If Exam Prep is ever hidden again, the matching group in
+       assets/site.js must be hidden with it, or the nav and the home page
+       disagree — and must-know.html must come out of the PAGES array in
+       build-search-index.html, with the index rebuilt.
 
        Note: .tile-torture turns the Torture Chamber title oxblood — keep
        that class on that one tile only.
-       ============================================================
+       ============================================================ -->
 
   <section class="home-section home-exam">
     <h2>Exam Prep</h2>
     <div class="tile-grid">
       <a class="tile" href="must-know.html">
         <span class="tnum">1</span>
-        <span class="tbody"><h3>Must Know Quick Reference</h3><p>Everything the lectures explicitly stated or heavily hinted will be tested &mdash; and everything they excused you from.</p></span>
+        <span class="tbody"><h3>Key Terms &amp; Learning Outcomes</h3><p>Pulled directly from the exam focus slides in the pre-lectures.</p></span>
       </a>
-      [ ON RESTORE, RE-WRAP THE THREE TILES BELOW IN THEIR OWN HTML COMMENT ]
-      Hidden until the Week 1 live lecture:
       <a class="tile" href="quiz-builder.html">
         <span class="tnum">2</span>
         <span class="tbody"><h3>Build Your Own Exam</h3><p>Pick any combination of topics for a custom practice exam.</p></span>
@@ -66,14 +62,14 @@
         <span class="tnum">3</span>
         <span class="tbody"><h3>The Torture Chamber</h3><p>Enter if you dare.</p></span>
       </a>
+      <!-- Hidden until there is a live lecture to review:
       <a class="tile" href="lecture-review-template.html">
         <span class="tnum">4</span>
         <span class="tbody"><h3>Lecture Review Template</h3></span>
       </a>
-      [ END OF THE THREE TILES TO RE-WRAP ]
+      -->
     </div>
   </section>
-  ============================================================ -->
 
   <section class="home-section home-weeks" aria-label="Topics by week">
     <h2>Weekly Topics</h2>
@@ -114,6 +110,6 @@
 </div>
 </main>
 
-<script src="assets/site.js?v=20260826"></script>
+<script src="assets/site.js?v=20260830"></script>
 </body>
 </html>
