@@ -501,33 +501,7 @@ window.QUIZ_BANK = {
             topic: "Neurobiology & Pharmacology",
             source: "quiz-bank"
           },
-          {
-            stem: "A client cannot recognize familiar faces and has difficulty understanding spoken words. Which lobe is affected?",
-            options: [
-              "Frontal",
-              "Parietal",
-              "Temporal",
-              "Occipital"
-            ],
-            answer: 2,
-            rationale: "Prosopagnosia and Wernicke's aphasia are both temporal lobe findings, along with memory loss and persistent talking. Frontal damage produces perseveration, emotional lability, and Broca's aphasia — an inability to express language rather than to understand it, which is the discrimination this question turns on.",
-            topic: "Neurobiology & Pharmacology",
-            source: "quiz-bank"
-          },
-          {
-            stem: "A client cannot tell left from right, has lost the ability to draw, and struggles with simple arithmetic. Which lobe is affected?",
-            options: [
-              "Occipital",
-              "Parietal",
-              "Temporal",
-              "Frontal"
-            ],
-            answer: 1,
-            rationale: "Perception, spelling, arithmetic, and reading are parietal functions, and damage brings difficulty with math, reading, drawing, naming objects, left-right discrimination, and apraxia. Occipital damage produces visual field cuts, visual illusions and hallucinations, and movement agnosia — problems seeing rather than problems interpreting.",
-            topic: "Neurobiology & Pharmacology",
-            source: "quiz-bank"
-          },
-          {
+{
             stem: "A client points at a coat rack across a dim room and says a person is standing there. How does the nurse document this?",
             options: [
               "A hallucination, because the perception does not match reality",
@@ -644,7 +618,21 @@ window.QUIZ_BANK = {
             rationale: "The theory is over-pruning, not under-pruning, and its plausibility rests on timing: pruning speeds up in the preteen years, and the onset of schizophrenia clusters in late adolescence and young adulthood. Pruning is ongoing across the lifespan rather than ending in childhood.",
             topic: "Neurobiology & Pharmacology",
             source: "quiz-bank"
-          }
+          },
+            {
+              stem: "A nurse teaches the parents of a toddler about early learning experiences. Which statement should the nurse include?",
+              options: [
+                "Older brains are more plastic, so learning comes more easily at school age",
+                "Rich sensory experiences and protective factors reduce maladaptive responses",
+                "Experiences matter regardless of whether the child is developmentally ready",
+                "Early responses are psychological and mental patterns, not physiologic ones"
+              ],
+              answer: 1,
+              rationale: "Decreasing risk factors and increasing protective factors promotes resilience, and a rich sensory environment produces fewer maladaptive responses later on. Young brains are more receptive to environmental input than older ones, so intervention succeeds more readily the younger the child — the reverse of the first option. Experiences a child is not developmentally ready for can have unintended consequences, and these responses are physiologic patterns expressed cognitively and then behaviorally, not psychological ones.",
+              topic: "Neurobiology & Pharmacology",
+              source: "quiz-bank"
+            }
+        
         ],
 
         extraPractice: [
@@ -904,7 +892,23 @@ window.QUIZ_BANK = {
             rationale: "The six contraindications are extremely unstable medical and psychiatric conditions, COPD, spinal injury, seizure disorders, pregnancy, and delirium or dementia — where seclusion may be intolerable because of the absence of stimulation. A history of violence raises risk and shapes the plan of care, but it is a risk factor rather than a contraindication.",
             topic: "Anger, Aggression & Violence",
             source: "quiz-bank"
-          }
+          },
+            {
+              stem: "Which findings are recognized predictors of violence rather than warning signs of escalation? Select all that apply.",
+              options: [
+                "History of violence",
+                "Clenched jaws and fists",
+                "Recent acts of violence",
+                "Using profanity",
+                "Changes in speech rate or volume",
+                "Hyperactivity"
+              ],
+              answers: [0, 2, 3, 5],
+              rationale: "The four predictors are history of violence, recent acts of violence, using profanity, and hyperactivity. Clenched jaws and fists and a change in speech rate or volume are warning signs — what escalation looks like while it is happening — rather than predictors identified beforehand. The distinction matters in practice: predictors are assessed on admission from the history, while warning signs are what the nurse watches for continuously on the unit.",
+              topic: "Anger, Aggression & Violence",
+              source: "quiz-bank"
+            }
+        
         ],
 
         extraPractice: [
@@ -1255,20 +1259,7 @@ window.QUIZ_BANK = {
             topic: "Assessment, Theories & Therapies",
             source: "quiz-bank"
           },
-          {
-            stem: "In rational emotive therapy, a client is invited to a party, thinks \"I hate parties and I don't like being around people,\" and feels miserable. Which element does the therapy work on?",
-            options: [
-              "A, the activating event",
-              "B, the beliefs",
-              "C, the emotional consequences",
-              "All three simultaneously"
-            ],
-            answer: 1,
-            rationale: "RET works on B, because changing beliefs changes the emotional consequences that follow from them. The activating event — receiving the invitation — is usually outside the client's control, and the consequence is what the therapy aims to change indirectly. The desired outcome is that the client controls their own behavior and thinking.",
-            topic: "Assessment, Theories & Therapies",
-            source: "quiz-bank"
-          },
-          {
+{
             stem: "Which are the four skill sets taught in dialectical behavior therapy? Select all that apply.",
             options: [
               "Emotional regulation",
@@ -1380,21 +1371,7 @@ window.QUIZ_BANK = {
       week: 1,
       sets: {
         mustKnow: [
-          {
-            stem: "A group member says \"I never realized anyone else hears voices too.\" Another says \"Talking about my sister's death finally let me feel the sadness.\" Which of Yalom's therapeutic factors are these? Select all that apply.",
-            options: [
-              "Universality",
-              "Altruism",
-              "Catharsis",
-              "Imitative behavior",
-              "Group cohesiveness"
-            ],
-            answers: [0, 2],
-            rationale: "Universality is the realization of not being alone, and catharsis is the therapeutic discharge of emotion through experiencing and expressing feelings. Altruism is gaining from giving support to others, imitative behavior is copying healthier habits from leaders or peers, and cohesiveness is the mature group's sense of connection.",
-            topic: "Group & Physiologic Therapies",
-            source: "quiz-bank"
-          },
-          {
+{
             stem: "Which are among the seven physiological treatments covered in this course? Select all that apply.",
             options: [
               "Phototherapy",
@@ -1687,7 +1664,62 @@ window.QUIZ_BANK = {
       label: "Therapeutic Communication & Relationships",
       week: 1,
       sets: {
-        mustKnow: [],
+        mustKnow: [
+            {
+              stem: "A nurse plans an interaction with a newly admitted patient. Which planned approaches are therapeutic communication techniques? Select all that apply.",
+              options: [
+                "Maintaining silence so the patient can continue at their pace",
+                "Telling the patient what you would do in their situation",
+                "Presenting reality when the patient misperceives an event",
+                "Telling the patient that they were right to leave the relationship",
+                "Encouraging the patient to formulate a plan of action",
+                "Asking the patient why they stopped taking the medication"
+              ],
+              answers: [0, 2, 4],
+              rationale: "Maintaining silence, presenting reality, and encouraging formulation of a plan of action all appear on the list of therapeutic techniques. The other three are barriers: saying what you would do is giving advice, endorsing the patient's decision is giving approval, and a \"why\" question is routinely heard as accusatory. Advice and approval both move the conversation off the patient's own reasoning and onto the nurse's.",
+              topic: "Therapeutic Communication & Relationships",
+              source: "quiz-bank"
+            },
+            {
+              stem: "A patient says, “I stopped my medication because it made me feel like a zombie.” Which response by the nurse is a barrier to communication?",
+              options: [
+                "“Tell me more about how the medication made you feel.”",
+                "“It sounds like those side effects were hard to live with.”",
+                "“You should never stop a medication without calling first.”",
+                "“What was different about the days when you did take it?”"
+              ],
+              answer: 2,
+              rationale: "Giving advice is a barrier: it virtually terminates the conversation and fosters dependency by implying the patient cannot make the decision himself. The other three are therapeutic — inviting more detail, reflecting the feeling back, and seeking clarification about what was different. None of them closes the exchange down or passes judgment on the decision the patient already made.",
+              topic: "Therapeutic Communication & Relationships",
+              source: "quiz-bank"
+            },
+            {
+              stem: "A patient tells the nurse she was fired the day after disclosing her diagnosis to her manager. Which response by the nurse is most therapeutic?",
+              options: [
+                "“I can put you in touch with someone in human resources about that.”",
+                "“How did it feel to have that happen right after you told her?”",
+                "“That sounds like discrimination, and you should file a complaint.”",
+                "“At least you know now what your manager really thinks of you.”"
+              ],
+              answer: 1,
+              rationale: "The most therapeutic response focuses on the patient's feelings and encourages the widest range of replies, which makes the patient an active participant in the conversation. Referring her to human resources passes the responsibility to someone else, telling her to file a complaint is giving advice, and the last option is judgmental — and any judgmental approach is non-therapeutic.",
+              topic: "Therapeutic Communication & Relationships",
+              source: "quiz-bank"
+            },
+            {
+              stem: "A patient who has been isolated for months says he would like to start getting out again. Which principle should guide the order of the nurse's questions?",
+              options: [
+                "Logistics first, since transportation and cost decide what is actually possible",
+                "Companionship first, since another person is what sustains the change",
+                "All areas at once, so that nothing important is missed at the outset",
+                "Past interests first, since what he enjoyed is where re-socialization begins"
+              ],
+              answer: 3,
+              rationale: "Knowing what the patient enjoyed in the past is the best place to begin helping him re-socialize. Who he would go with, how he would get there, and what he can afford are all relevant questions, but they are asked after the activity itself is identified. Starting with logistics puts the obstacles in front of the motivation, which is the opposite of what the patient just offered.",
+              topic: "Therapeutic Communication & Relationships",
+              source: "quiz-bank"
+            }
+          ],
         extraPractice: [],
         eaq: [
           {
@@ -2013,6 +2045,699 @@ window.QUIZ_BANK = {
           }
         ]
       }
+    },
+    /* ==========================================================
+       TOPIC 8 — DEPRESSIVE DISORDERS  (Week 2)
+       9 mustKnow, one per Learning Outcomes bullet on
+       must-know.html#depressive. 5 extraPractice from the Key Terms
+       table and other high-yield material.
+       ========================================================== */
+    {
+      id: "week2-depressive",
+      label: "Depressive Disorders",
+      week: 2,
+      sets: {
+        mustKnow: [
+          {
+            stem: "A 71-year-old is admitted with a first episode of major depression six months after their spouse died. Which contributing factor is most specific to this patient's stage of life?",
+            options: [
+              "Bereavement, declining health, and social isolation",
+              "A first-degree relative with a mood disorder",
+              "Chronic exposure to occupational stress",
+              "Learned helplessness formed in early childhood"
+            ],
+            answer: 0,
+            rationale: "Contributing factors shift across the lifespan, and in older adults loss, physical decline, and isolation predominate. Genetic vulnerability, chronic stress, and learned helplessness are all real etiological contributors, but none of them is particular to late life — a family history matters at any age, and learned helplessness is a childhood-origin cognitive factor, not a late-life one.",
+            topic: "Depressive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A 9-year-old has had severe temper outbursts several times a week at home and at school for the past 14 months, with an angry, irritable mood between the outbursts. Which depressive disorder best fits?",
+            options: [
+              "Persistent depressive disorder",
+              "Premenstrual dysphoric disorder",
+              "Disruptive mood dysregulation disorder",
+              "Major depressive disorder, recurrent"
+            ],
+            answer: 2,
+            rationale: "DMDD is diagnosed only in children 6 to 18 and requires outbursts at least three times weekly for at least a year in at least two settings, with persistent irritability between them — which is exactly this picture. Persistent depressive disorder is a chronically low mood rather than an outburst pattern, premenstrual dysphoric disorder is tied to the luteal phase, and major depressive disorder requires the five-symptom, two-week criteria set rather than chronic irritability.",
+            topic: "Depressive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A student is grouping the antidepressants by classification in order to study their side effects. Which grouping reflects how the classes are organized?",
+            options: [
+              "Fluoxetine and phenelzine share a class because both raise serotonin",
+              "Amitriptyline and venlafaxine can be studied together because both are reuptake inhibitors",
+              "Bupropion and mirtazapine belong to the SSRI class alongside sertraline",
+              "Sertraline and duloxetine can be studied together as serotonin reuptake inhibitors"
+            ],
+            answer: 3,
+            rationale: "SSRIs and SNRIs are grouped together as serotonin reuptake inhibitors because they share most of their side effects, so studying them as one block works. Fluoxetine is an SSRI and phenelzine an MAOI — very different precautions. Amitriptyline is a tricyclic, not an SNRI. Bupropion is an NDRI and mirtazapine a NaSSA; neither is an SSRI.",
+            topic: "Depressive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient on sertraline was started on a second serotonergic agent 4 hours ago and now has diaphoresis, muscle twitching, hyperreflexia, agitation, and a temperature of 38.9°C. Which actions does the nurse anticipate? Select all that apply.",
+            options: [
+              "Discontinue the serotonergic agents",
+              "Administer a benzodiazepine such as diazepam",
+              "Administer haloperidol for the agitation",
+              "Provide IV fluids and oxygen",
+              "Add a second serotonergic agent to stabilize receptor activity"
+            ],
+            answers: [0, 1, 3],
+            rationale: "Serotonin syndrome comes from overactivation of central serotonin receptors, so stopping the causative agents is the first action, benzodiazepines control the myoclonus and agitation, and fluids and oxygen are supportive care. Haloperidol is avoided — antipsychotics can worsen hyperthermia and provoke a neuroleptic malignant syndrome-like reaction. Adding another serotonergic agent would deepen the overactivation and could be fatal. Onset is fast: 60% of cases begin within 6 hours.",
+            topic: "Depressive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient taking phenelzine reports a sudden severe occipital headache, palpitations, and neck stiffness two hours after dinner. Which meal is the most likely cause?",
+            options: [
+              "Grilled chicken breast with white rice",
+              "Salami and aged cheddar on a roll",
+              "Scrambled eggs with fresh spinach",
+              "Baked cod with steamed carrots"
+            ],
+            answer: 1,
+            rationale: "Hypertensive crisis follows tyramine ingestion on an MAOI, and cured meats and aged cheeses are the classic pairing; the crisis begins 15 to 90 minutes after the contraindicated food. Fresh poultry, eggs, fresh fish, and fresh vegetables are all low in tyramine and safe. Prevention is the tyramine-restricted diet, and blood pressure is monitored routinely, especially through the first 6 weeks.",
+            topic: "Depressive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "An older adult started on amitriptyline reports dry mouth, blurred vision, and constipation, and has not voided in 10 hours. Which explanation should the nurse give?",
+            options: [
+              "These are anticholinergic effects, and the urinary retention needs to be reported now",
+              "These indicate the drug is reaching a toxic serum level and it must be held",
+              "These are early signs of serotonin syndrome and require a benzodiazepine",
+              "These are withdrawal effects and will resolve once the dose is increased"
+            ],
+            answer: 0,
+            rationale: "Dry mouth, blurred vision, constipation, and urinary retention are the anticholinergic cluster tricyclics produce, and retention is the one that needs prompt reporting rather than watchful waiting. Serotonin syndrome presents with hyperthermia, myoclonus, and hyperreflexia, not this cluster. Nothing here indicates a toxic level, and these are side effects of taking the drug rather than of stopping it, so raising the dose would worsen them.",
+            topic: "Depressive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient started on an antidepressant 10 days ago says, \"It isn't working, so I'm going to stop taking it.\" Which response by the nurse is most accurate?",
+            options: [
+              "\"You are right that 10 days is long enough to judge whether it works.\"",
+              "\"Stopping now is safe because antidepressants are not addictive.\"",
+              "\"It can take 4 to 6 weeks to feel better, and stopping abruptly causes withdrawal.\"",
+              "\"Physical symptoms are the last thing to improve, so give it more time.\""
+            ],
+            answer: 2,
+            rationale: "Symptom improvement may not appear for 4 to 6 weeks, and although antidepressants are not addictive, stopping abruptly produces nausea, anxiety, insomnia, and flu-like symptoms. Ten days is too early to judge the drug. The claim about safety confuses \"not addictive\" with \"safe to stop suddenly,\" which are different things. And the physical symptoms improve first, not last — that ordering is what creates the early window of raised suicide risk.",
+            topic: "Depressive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient describes feeling that \"everything seems gray,\" says they have nothing to offer anyone, and mentions being ashamed of themselves. Which documentation best records these findings?",
+            options: [
+              "Patient says everything seems gray; appears to have a poor attitude",
+              "Patient is uncooperative and resistant to encouragement",
+              "Patient denies suicidal ideation and is oriented to person, place, and time",
+              "Patient reports that \"everything seems gray\"; voices worthlessness and shame"
+            ],
+            answer: 3,
+            rationale: "Hopelessness, worthlessness, and shame are core signs of depression and belong in the record in the patient's own words, which is what makes the entry usable by the next clinician. Pairing the quotation with \"a poor attitude\" buries it under an interpretation, and \"uncooperative and resistant\" is judgmental rather than descriptive. The orientation entry is accurate charting but records none of the findings actually presented.",
+            topic: "Depressive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A newly admitted patient with major depression sits motionless and takes long pauses before answering. Applying the clinical judgment model, which cue should the nurse recognize as the priority to analyze first?",
+            options: [
+              "The patient has not attended the unit's morning group",
+              "The patient has eaten only part of one meal today",
+              "The patient has not been asked about thoughts of self-harm",
+              "The patient's family has not yet been contacted"
+            ],
+            answer: 2,
+            rationale: "Recognizing and analyzing cues puts safety ahead of everything else, and an unasked question about self-harm is the gap that matters on a newly admitted depressed patient. Poor intake and group non-attendance are both real cues worth acting on, but neither is the immediate safety risk, and family contact is a planning step rather than a cue to analyze.",
+            topic: "Depressive Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        extraPractice: [
+          {
+            stem: "A patient's mood shifts from tearful to laughing and back several times within an hour. Which term describes this?",
+            options: [
+              "Anhedonia",
+              "Lability",
+              "Psychomotor agitation",
+              "Rapid cycling"
+            ],
+            answer: 1,
+            rationale: "Lability is rapid, exaggerated shifting of emotional expression, typically over one or two hours. Anhedonia is loss of pleasure, not a shift in expression. Psychomotor agitation is increased motor activity from mental tension, which is movement rather than mood. Rapid cycling is measured in mood episodes across a year, not shifts within an hour.",
+            topic: "Depressive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient who was an avid gardener and choir member now says none of it interests them and nothing feels enjoyable. Which term best captures this finding?",
+            options: [
+              "Indolence",
+              "Inappetence",
+              "Anhedonia",
+              "Impedance"
+            ],
+            answer: 2,
+            rationale: "Anhedonia is the loss of interest or pleasure in almost all activities, and it is one of the two symptoms at least one of which must be present to diagnose major depressive disorder. Indolence is laziness, inappetence is loss of appetite, and impedance is a hindrance — none of them names a loss of pleasure.",
+            topic: "Depressive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which findings indicate psychomotor agitation rather than psychomotor retardation? Select all that apply.",
+            options: [
+              "Pacing the hallway continuously",
+              "Taking a long time to cross the room",
+              "Tapping the fingers and feet",
+              "Long pauses before speaking",
+              "Slow chewing with long waits between bites"
+            ],
+            answers: [0, 2],
+            rationale: "Psychomotor agitation is an increase in activity driven by mental tension — pacing and tapping here — and it is associated with agitated depression. Slow movement across a room, long pauses before speech, and slow chewing with long waits between bites are all psychomotor retardation, a visible slowing associated with severe depression. The two are opposite directions of the same dimension, which is why they are easy to confuse.",
+            topic: "Depressive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient reports a low, joyless mood on most days for the past three years, never severe enough to stop working. Which disorder fits this presentation?",
+            options: [
+              "Persistent depressive disorder",
+              "Disruptive mood dysregulation disorder",
+              "Premenstrual dysphoric disorder",
+              "Major depressive disorder, single episode"
+            ],
+            answer: 0,
+            rationale: "Persistent depressive disorder is a chronically low mood over a long span at a severity below that of a major depressive episode, which is what continued employment reflects here. DMDD is diagnosed only in children and centers on temper outbursts, and premenstrual dysphoric disorder is confined to the luteal phase. Major depressive disorder would require a discrete episode meeting the full symptom criteria rather than years of steady low mood.",
+            topic: "Depressive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Why does a tricyclic antidepressant carry particular risk for a patient with active suicidal ideation living at home?",
+            options: [
+              "It reaches a therapeutic serum level considerably faster than an SSRI",
+              "It is lethal in overdose through cardiac effects and CNS depression",
+              "It causes serotonin syndrome more often than an SSRI",
+              "It cannot be tapered and must be stopped abruptly"
+            ],
+            answer: 1,
+            rationale: "Tricyclics are deadly in overdose — dysrhythmias, tachycardia, MI, and heart block, plus fatal CNS depression, and equally so combined with alcohol — which is why quantity dispensed matters for a patient at risk. They are in fact slower to work than an SSRI, taking 10 to 14 days for results. Serotonin syndrome is more associated with serotonergic combinations, and no antidepressant should be stopped abruptly.",
+            topic: "Depressive Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        eaq: []
+      }
+    },
+
+    /* ==========================================================
+       TOPIC 9 — BIPOLAR & RELATED DISORDERS  (Week 2)
+       7 mustKnow, one per Learning Outcomes bullet on
+       must-know.html#bipolar. 5 extraPractice.
+       ========================================================== */
+    {
+      id: "week2-bipolar",
+      label: "Bipolar & Related Disorders",
+      week: 2,
+      sets: {
+        mustKnow: [
+          {
+            stem: "A patient has had two major depressive episodes and one period of four days of elevated mood and increased energy that coworkers noticed but that never required hospitalization or produced psychosis. Which diagnosis fits?",
+            options: [
+              "Bipolar I disorder",
+              "Bipolar II disorder",
+              "Major depressive disorder with anxious distress",
+              "Substance-induced mood disorder"
+            ],
+            answer: 1,
+            rationale: "Bipolar II requires at least one hypomanic episode plus at least one major depressive episode and never a manic one, which is exactly this history. Bipolar I requires at least one full manic episode and is the more severe form, carrying the highest mortality. The depressive episodes plus a hypomanic one rule out plain major depressive disorder, and nothing here points to a substance.",
+            topic: "Bipolar & Related Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which findings distinguish a manic episode from a hypomanic episode? Select all that apply.",
+            options: [
+              "Duration of at least 1 week",
+              "Elevated, expansive, or irritable mood",
+              "Marked impairment in functioning or need for hospitalization",
+              "Increased activity or energy",
+              "Psychotic features may be present"
+            ],
+            answers: [0, 2, 4],
+            rationale: "The three that separate the two are duration, severity, and psychosis: mania runs at least 1 week to hypomania's minimum of 4 consecutive days, mania causes marked impairment or requires hospitalization while hypomania does neither, and psychotic features can occur in mania — a hypomanic episode with psychosis is by definition manic. Elevated or irritable mood and increased activity appear in both, which is why neither one discriminates.",
+            topic: "Bipolar & Related Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A prescriber wants to add an anticonvulsant mood stabilizer for a patient with bipolar disorder. Which medication fits that description?",
+            options: [
+              "Aripiprazole",
+              "Clonazepam",
+              "Carbamazepine",
+              "Lithium carbonate"
+            ],
+            answer: 2,
+            rationale: "Carbamazepine is an anticonvulsant used as a mood stabilizer, alongside valproate, divalproex, lamotrigine, and gabapentin. Aripiprazole is a second-generation antipsychotic and clonazepam a benzodiazepine used short-term for severe agitation. Lithium is the classic mood stabilizer but is an antimanic agent, not an anticonvulsant — the distinction the question turns on.",
+            topic: "Bipolar & Related Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient on lithium has a level of 2.2 mEq/L with ataxia, blurred vision, and clonic movements. What does the nurse anticipate?",
+            options: [
+              "Symptoms will subside as treatment continues; keep the dose low",
+              "Withhold the next dose, redraw a level, and re-evaluate the dosage",
+              "Hospitalization, with the drug stopped and excretion hastened",
+              "Hemodialysis, as this level is uniformly fatal without it"
+            ],
+            answer: 2,
+            rationale: "At 2.0 to 2.5 mEq/L the toxicity is advanced — ataxia, serious EEG changes, blurred vision, clonic movements, seizures, stupor — and hospitalization is indicated with the drug stopped and excretion hastened. Expectant management belongs under 1.5 mEq/L, and withholding with a redraw belongs to early toxicity at 1.5 to 2.0. Hemodialysis is reserved for severe cases over 2.5 mEq/L, so it overstates what this level calls for.",
+            topic: "Bipolar & Related Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient started on lamotrigine three weeks ago calls to report a rash spreading across the chest. What should the nurse instruct?",
+            options: [
+              "Stop the medication now and contact the provider",
+              "Take an antihistamine and continue the medication",
+              "Reduce to half the dose and monitor for two more days",
+              "Continue the drug, as rash after two weeks is not the dangerous one"
+            ],
+            answer: 0,
+            rationale: "Any rash on lamotrigine means stopping the drug immediately and calling the provider, because it can advance to Stevens-Johnson syndrome and then to toxic epidermal necrolysis, which can be fatal. Stopping almost always resolves it. Treating through it with an antihistamine, halving the dose, or waiting all leave the patient on the drug. The timing offers no reassurance either — the rash usually appears in the first few months but can occur at any time, including after years and with dose changes.",
+            topic: "Bipolar & Related Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient maintained on lithium for two years is admitted in an acute manic episode. What change to the regimen should the nurse anticipate?",
+            options: [
+              "The lithium will be stopped and an antidepressant started in its place instead",
+              "The lithium dose will be halved until the mania resolves",
+              "The lithium will be replaced by a long-acting benzodiazepine indefinitely",
+              "An antipsychotic will be added, then stopped once the mania is controlled"
+            ],
+            answer: 3,
+            rationale: "Treating an acute manic episode is not the same as maintenance treatment: something heavier is added on top — typically an antipsychotic such as risperidone or olanzapine — and it comes back off once the mania is controlled while the lithium continues. Stopping the mood stabilizer or cutting its dose removes the maintenance protection at the worst moment. An antidepressant alone can drive a patient further into mania, and benzodiazepines are for short-term agitation, not long-term replacement.",
+            topic: "Bipolar & Related Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient in acute mania has been pacing for hours and refuses to sit for meals. Which intervention best fits the plan of care?",
+            options: [
+              "Offer high-protein finger foods and keep fluids within reach",
+              "Schedule a competitive volleyball game to expend energy",
+              "Serve meals in the dining room and require the patient to remain seated",
+              "Provide a jigsaw puzzle to occupy attention between meals"
+            ],
+            answer: 0,
+            rationale: "A patient in mania will not slow down to sit and eat, so nutrition is delivered in a form that travels — high-protein finger foods offered frequently, with fluids always on hand. Volleyball is too strenuous and overstimulating for a patient already exhausted, requiring them to stay seated sets up a confrontation they cannot meet, and a puzzle demands a level of sustained concentration mania takes away.",
+            topic: "Bipolar & Related Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        extraPractice: [
+          {
+            stem: "A patient has had five distinct mood episodes in the past 12 months, each lasting more than two weeks, with partial remission between them. Which term applies?",
+            options: [
+              "Mood lability",
+              "Rapid cycling",
+              "Hypomania",
+              "Cyclothymia"
+            ],
+            answer: 1,
+            rationale: "Rapid cycling means four or more episodes for at least 2 weeks within 12 months, with partial or full remission between them or a switch to the opposite pole, and it carries a high risk of recurrence. Mood lability is the trap here: it shifts every one or two hours rather than across a year. Hypomania names a single episode type, and cyclothymia is a milder fluctuating pattern with no full episode of either pole.",
+            topic: "Bipolar & Related Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which features are part of DIG FAST, the clinical picture of mania and hypomania? Select all that apply.",
+            options: [
+              "Distractibility",
+              "Flight of ideas",
+              "Psychomotor retardation",
+              "Grandiosity",
+              "Sleep deficit"
+            ],
+            answers: [0, 1, 3, 4],
+            rationale: "DIG FAST is distractibility, indiscretion, grandiosity, flight of ideas, activity increase, sleep deficit, and talkativeness — and it covers both mania and hypomania. Psychomotor retardation is the visible slowing seen in severe depression, the opposite pole, which is what makes it the tempting wrong answer in a bipolar question.",
+            topic: "Bipolar & Related Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient on lithium works outdoors year-round and asks about salt intake before shifts. What should the nurse teach?",
+            options: [
+              "Load up on salty foods before every shift spent working outdoors",
+              "Restrict sodium intake to protect kidney function",
+              "Keep sodium intake steady, and hydrate more before the shift",
+              "Skip the morning dose on days spent working outdoors"
+            ],
+            answer: 2,
+            rationale: "Sodium intake stays steady, which is also what makes the monitored lithium levels interpretable, and extra hydration covers the sweating. Pre-loading sodium before a habitual daily activity is the classic wrong answer — that activity is already the baseline the levels reflect; extra sodium is for an unaccustomed exertion. Restricting sodium raises toxicity risk, because losing sodium makes the kidneys retain lithium. Skipping doses is never patient-directed.",
+            topic: "Bipolar & Related Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient on lithium develops dry skin, hair loss, constipation, bradycardia, and cold intolerance after 10 months. What does the nurse suspect?",
+            options: [
+              "Decreased thyroid function",
+              "Early lithium toxicity",
+              "Impaired renal function",
+              "An anticholinergic reaction"
+            ],
+            answer: 0,
+            rationale: "Thyroid function may decrease on lithium, usually after 6 to 18 months, and this cluster is the hypothyroid picture — which is why thyroid hormones are checked every 6 months. Early toxicity presents with GI upset, coarse tremor, and confusion instead. Renal damage is a real long-term risk but shows in creatinine rather than in these symptoms, and lithium is not an anticholinergic drug.",
+            topic: "Bipolar & Related Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient with bipolar disorder in a depressive phase asks why an antidepressant alone will not be prescribed. Which explanation is correct?",
+            options: [
+              "An antidepressant alone has no effect on the depressive phase",
+              "Antidepressants interact with every mood stabilizer in use",
+              "An antidepressant alone can precipitate a manic episode",
+              "Antidepressants must be reserved until lithium has failed"
+            ],
+            answer: 2,
+            rationale: "An antidepressant given alone can throw a patient with bipolar disorder into mania, which is why mood stabilizers are the first medications used and why Symbyax pairs fluoxetine with olanzapine rather than giving the SSRI on its own. Antidepressants do work on depressive symptoms, so the first option is simply false. The blanket interaction claim is not the reason, and lamotrigine, not a failed lithium trial, is what targets the depressed phase.",
+            topic: "Bipolar & Related Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        eaq: []
+      }
+    },
+
+    /* ==========================================================
+       TOPIC 10 — SUICIDE  (Week 2)
+       7 mustKnow, one per Learning Outcomes bullet on
+       must-know.html#suicide. 5 extraPractice from the Key Terms table.
+       ========================================================== */
+    {
+      id: "week2-suicide",
+      label: "Suicide",
+      week: 2,
+      sets: {
+        mustKnow: [
+          {
+            stem: "A nurse is charting after a patient death. Which phrasing is acceptable?",
+            options: [
+              "The patient committed suicide",
+              "The patient died by suicide",
+              "The patient's suicide attempt was successful",
+              "The patient completed suicide"
+            ],
+            answer: 1,
+            rationale: "\"Died by suicide\" is the accepted phrasing, and \"suicide attempt\" replaces the older language for a non-fatal act. \"Committed\" carries the connotation of a crime or a sin. \"Successful\" and \"completed\" both frame a death as an achievement, which is precisely what the terminology change was made to stop.",
+            topic: "Suicide",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient screens positive for suicide risk on admission. Which tool structures the plan the patient helps build for coping with a future crisis?",
+            options: [
+              "The C-SSRS severity rating scale",
+              "The SAFE-T triage framework",
+              "The Stanley-Brown safety plan",
+              "The Self-Harm Inventory"
+            ],
+            answer: 2,
+            rationale: "The Stanley-Brown safety plan is the collaborative plan the patient builds for what to do in a future crisis. The C-SSRS is the severity rating scale used to screen and assess risk, and SAFE-T is the five-step evaluation and triage framework — both assess rather than plan. The Self-Harm Inventory is the scale used when nonsuicidal self-injury is suspected.",
+            topic: "Suicide",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which findings increase a patient's immediate suicide risk? Select all that apply.",
+            options: [
+              "A history of a previous suicide attempt",
+              "Increasing alcohol use over recent weeks",
+              "A strong sense of responsibility to dependent children",
+              "Withdrawing from friends and family",
+              "An ongoing relationship with an outpatient provider"
+            ],
+            answers: [0, 1, 3],
+            rationale: "A past attempt is among the strongest predictors, and rising substance use and social withdrawal are both warning signs of escalating risk. Responsibility for dependent children and a working relationship with a provider are protective factors — they lower risk rather than raise it. Distinguishing risk factors, warning signs, and protective factors is the point of a comprehensive assessment.",
+            topic: "Suicide",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient is admitted on suicide precautions. Which action reflects correct environmental safety practice?",
+            options: [
+              "Return belongings once the patient is taken off precautions",
+              "Allow the patient to keep a belt if they promise not to use it",
+              "Search belongings and perform a full skin assessment on entry",
+              "Place the patient in a private room at the end of the hall"
+            ],
+            answer: 2,
+            rationale: "Searching belongings and doing a full skin assessment on entry is standard, both to remove means and to find injuries the patient has not reported. Belongings are held until discharge, not returned when precautions lift — patients move around the unit, so an item returned early puts others at risk too. A no-harm promise is not a safety intervention, and an isolated room at the end of a hall reduces observation rather than increasing it.",
+            topic: "Suicide",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient admitted after a suicide attempt sits alone and says nothing about what happened. Which nursing action best promotes recovery?",
+            options: [
+              "Avoid raising the attempt until the patient brings it up",
+              "Encourage the patient to put their feelings into words",
+              "Provide extended time alone for private reflection",
+              "Redirect the conversation whenever the attempt is mentioned"
+            ],
+            answer: 1,
+            rationale: "Recovery after an attempt depends on the patient talking about what they feel, and encouraging that is the therapeutic move. Waiting for the patient to raise it and redirecting away from it both signal the subject is off limits. Extended time alone delays the conversation and cuts observation of a patient who has just attempted suicide.",
+            topic: "Suicide",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which pharmacological intervention is used specifically to reduce suicidal ideation quickly?",
+            options: [
+              "Low-dose lithium, about 25 mg PO daily for a few weeks",
+              "A tricyclic antidepressant taken at bedtime for its sedation",
+              "An MAOI with a tyramine-restricted diet",
+              "A long-acting benzodiazepine taken daily"
+            ],
+            answer: 0,
+            rationale: "Low-dose lithium, about 25 mg PO daily for a few weeks, reduces suicidal ideation quickly, though the mechanism is not established. A tricyclic is the opposite choice for a patient at risk, being deadly in overdose. MAOIs sit last on the drug ladder and carry the tyramine restriction, and daily benzodiazepines are sedative-hypnotics that are addictive and used only short-term.",
+            topic: "Suicide",
+            source: "quiz-bank"
+          },
+          {
+            stem: "During a routine assessment a patient says, \"Honestly, some mornings I wonder why I bother getting up at all.\" What should the nurse do first?",
+            options: [
+              "Note the statement and continue the physical assessment",
+              "Reassure the patient that many people feel this way",
+              "Ask directly whether the patient is thinking of killing themselves",
+              "Arrange a psychiatric consult before discussing it further"
+            ],
+            answer: 2,
+            rationale: "Safety comes before anything else, and the way to establish it is to ask about suicide directly — asking does not increase risk or plant the idea; it opens the door to help. Continuing the assessment lets the cue pass. Reassurance minimizes what the patient just disclosed and tends to close the conversation. A consult may well follow, but it does not replace assessing the risk in front of you now.",
+            topic: "Suicide",
+            source: "quiz-bank"
+          }
+        ],
+        extraPractice: [
+          {
+            stem: "A support group is offered for people whose family member died by suicide. Which term describes these participants?",
+            options: [
+              "Suicide survivors",
+              "Interrupted self-directed violence, by other",
+              "Suicide attempt survivors",
+              "A suicide cluster"
+            ],
+            answer: 0,
+            rationale: "Suicide survivor means the family and friends grieving a loved one's suicide — not the person who attempted, which is the common misreading. Interrupted self-directed violence by other describes someone stopped mid-act by another person. A cluster is an increase in suicides in a population, not a group of bereaved people.",
+            topic: "Suicide",
+            source: "quiz-bank"
+          },
+          {
+            stem: "After a student's suicide, mental health professionals are sent into the school and reporters are asked to omit details of the method. What are they trying to prevent?",
+            options: [
+              "Interrupted self-directed violence",
+              "Suicide contagion",
+              "Non-suicidal self-directed violence",
+              "A rise in nonsuicidal self-injury"
+            ],
+            answer: 1,
+            rationale: "Suicide contagion is the increase in suicides that follows prominent, lengthy, or dramatic reporting, and detailing a method increases the use of that method — which is why press guidelines exist and why professionals go into a school afterward. The interrupted and non-suicidal terms describe individual behaviors rather than a population effect, and the concern here is suicide rather than self-injury without intent.",
+            topic: "Suicide",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient begins a suicide attempt and then stops on their own before serious injury. Which term applies?",
+            options: [
+              "Interrupted self-directed violence, by other",
+              "Non-suicidal self-directed violence",
+              "Interrupted self-directed violence, by self",
+              "A non-fatal suicide attempt"
+            ],
+            answer: 2,
+            rationale: "Interrupted self-directed violence by self is exactly this: the person takes steps toward injury and then stops themselves before the fatal injury. \"By other\" would require another person to intervene. Non-suicidal self-directed violence would mean no evidence of suicidal intent, and the intent here is present. A completed non-fatal attempt would mean the act was carried through.",
+            topic: "Suicide",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which behaviors are classified as suicidal self-directed violence rather than non-suicidal self-directed violence? Select all that apply.",
+            options: [
+              "Overdosing on pills intending to die",
+              "Cutting the forearm to relieve emotional tension",
+              "Driving into a barrier hoping not to survive",
+              "Scratching the skin during a panic episode",
+              "Taking a lethal dose of a medication by accident"
+            ],
+            answers: [0, 2],
+            rationale: "The dividing line is evidence of suicidal intent, not the severity of the injury or the method. Overdosing to die and crashing hoping not to survive both carry intent. Cutting for relief of tension and scratching during panic are self-injury without intent to die, which makes them non-suicidal self-directed violence however serious the wound looks. An accidental lethal dose carries no intent at all, so it falls outside both categories — lethality alone never establishes intent.",
+            topic: "Suicide",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient took a non-lethal quantity of pills and later says they had hoped not to wake up. Which two terms does this history establish?",
+            options: [
+              "Suicidal plan and suicide contagion",
+              "Suicide attempt and suicide intent",
+              "Suicidal ideation only, with no attempt",
+              "Non-suicidal self-directed violence and suicidal ideation"
+            ],
+            answer: 1,
+            rationale: "A suicide attempt is a non-fatal self-directed potentially injurious behavior with any intent to die, and suicide intent is the wish to die at the time of the act — both are established here, and lethality does not enter the definition. A plan is the organized method and time frame, which was not described, and contagion is a population effect. Ideation alone would mean no act occurred, and the presence of intent rules out the non-suicidal category.",
+            topic: "Suicide",
+            source: "quiz-bank"
+          }
+        ],
+        eaq: []
+      }
+    },
+
+    /* ==========================================================
+       TOPIC 11 — NONSUICIDAL SELF-INJURY  (Week 2)
+       4 mustKnow, one per Learning Outcomes bullet on
+       must-know.html#nssi. That section has NO Key Terms table (the
+       Exam Focus deck has no Key Terms slide for NSSI), so the 5
+       extraPractice draw on the topic page instead.
+       ========================================================== */
+    {
+      id: "week2-nssi",
+      label: "Nonsuicidal Self-Injury",
+      week: 2,
+      sets: {
+        mustKnow: [
+          {
+            stem: "Which statement best defines nonsuicidal self-injury?",
+            options: [
+              "Any self-inflicted injury, regardless of the person's intent",
+              "A suicide attempt that results in no lasting physical harm",
+              "Self-inflicted destruction of body tissue without suicidal intent",
+              "Risk-taking behavior that could foreseeably cause injury"
+            ],
+            answer: 2,
+            rationale: "NSSI is the deliberate, self-inflicted destruction or injury of body tissue without suicidal intent, and the absence of intent is the entire distinction from a suicide attempt. Defining it by injury alone drops that distinction. A low-lethality suicide attempt still carries intent to die, so it is not NSSI. Risk-taking without deliberate tissue injury does not meet the definition either.",
+            topic: "Nonsuicidal Self-Injury",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which findings meet the DSM-5 criteria for nonsuicidal self-injury? Select all that apply.",
+            options: [
+              "Self-injury on at least 5 days in the past year",
+              "Getting a tattoo as part of a cultural ritual",
+              "Injuring oneself to relieve negative thoughts or feelings",
+              "Preoccupation with the behavior that is difficult to resist",
+              "Self-injury occurring only during episodes of psychosis"
+            ],
+            answers: [0, 2, 3],
+            rationale: "The criteria require at least 5 days of the behavior in the past year — not necessarily consecutive days — done to relieve negative feelings, resolve an interpersonal difficulty, or induce a positive state, and preceded by negative thoughts, conflict, or a preoccupation that is hard to resist. Socially sanctioned body modification such as tattooing or piercing is explicitly excluded, and the diagnosis does not apply if the behavior occurs solely within another mental disorder.",
+            topic: "Nonsuicidal Self-Injury",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient discloses ongoing self-injury during an ED visit for an unrelated complaint. Which nursing action is most important beyond caring for the wounds?",
+            options: [
+              "Assess previous coping mechanisms and build healthier alternatives",
+              "Advise the patient to stop the behavior and explain its dangers",
+              "Arrange an involuntary psychiatric admission",
+              "Have the patient sign an agreement not to self-injure again"
+            ],
+            answer: 0,
+            rationale: "Establishing the relationship and building coping mechanisms the patient can use instead of self-harm is the psychotherapeutic core of the care, and asking what has helped before gives something concrete to reinforce. Instructing the patient to stop offers no replacement for what the behavior does for them. Involuntary admission is not indicated by self-injury without suicidal intent, and a signed agreement is not a safety intervention.",
+            topic: "Nonsuicidal Self-Injury",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which therapies are described as successful for nonsuicidal self-injury, inpatient or outpatient?",
+            options: [
+              "Electroconvulsive therapy and bright light phototherapy together",
+              "Cognitive behavioral therapy and dialectical behavior therapy",
+              "Psychoanalysis and free association",
+              "Aversion therapy and flooding"
+            ],
+            answer: 1,
+            rationale: "CBT and DBT are both described as successful for this condition in either setting, alongside group therapy and psychopharmacology; DBT in particular targets the distress tolerance and emotion regulation that self-injury substitutes for. ECT and phototherapy are physiological treatments for mood disorders. Psychoanalysis and the behavioral exposure therapies are not the treatments named for NSSI.",
+            topic: "Nonsuicidal Self-Injury",
+            source: "quiz-bank"
+          }
+        ],
+        extraPractice: [
+          {
+            stem: "A patient with a history of cutting is admitted voicing hopelessness and behaving impulsively. What must the nurse determine?",
+            options: [
+              "Whether the wounds require sutures before the psychiatric assessment",
+              "Whether the family is aware of the self-injury",
+              "Whether suicidal ideation, a plan, and the means are present",
+              "Whether the behavior meets the 5-day DSM-5 threshold"
+            ],
+            answer: 2,
+            rationale: "NSSI and suicidal ideation are not the same thing and the nurse has to tell them apart — a patient showing self-injury with impulsivity and hopelessness gets asked directly about thoughts of suicide, a plan, and the means. Wound care matters but does not settle the question of risk. Family awareness and the diagnostic day-count are both assessment details that can wait behind safety.",
+            topic: "Nonsuicidal Self-Injury",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which observations should raise suspicion of nonsuicidal self-injury? Select all that apply.",
+            options: [
+              "Long sleeves and long pants worn in hot weather",
+              "Frequently reported accidents and mishaps",
+              "Keeping sharp objects on hand",
+              "Consistent attendance at group therapy",
+              "Persistent questions about personal identity"
+            ],
+            answers: [0, 1, 2, 4],
+            rationale: "Concealing clothing in hot weather, a pattern of claimed accidents, keeping sharps available, and persistent \"who am I\" questioning are all recognized signs, along with scars, time spent alone, and voiced worthlessness. Consistent group attendance is engagement in treatment, not a warning sign — it is the option that tests whether the pattern is being recognized rather than any negative-sounding detail being selected.",
+            topic: "Nonsuicidal Self-Injury",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A school nurse suspects self-harm in a student. Which scale is used?",
+            options: [
+              "The Self-Harm Inventory",
+              "The C-SSRS",
+              "The Brøset Violence Checklist",
+              "SAFE-T"
+            ],
+            answer: 0,
+            rationale: "The Self-Harm Inventory is the scale used when self-harm is suspected, in a school, a primary care office, the ED, or a medical unit; mental health leans on scales because there are no lab values for a condition like NSSI. The C-SSRS and SAFE-T assess suicide risk specifically, and the Brøset checklist predicts imminent violence toward others.",
+            topic: "Nonsuicidal Self-Injury",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which statement about nonsuicidal self-injury is accurate?",
+            options: [
+              "It is always an attempt to manipulate other people",
+              "It reliably indicates a wish to die",
+              "It is typically a way to get relief from distress",
+              "It occurs only in adolescents"
+            ],
+            answer: 2,
+            rationale: "Self-injury typically functions as a release from distress rather than as an attempt to die, which is what the \"without suicidal intent\" in the definition captures. Calling it manipulation is one of the misconceptions that damages the therapeutic relationship. Reading it as a wish to die collapses the distinction the whole diagnosis rests on, and it is not confined to adolescence.",
+            topic: "Nonsuicidal Self-Injury",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient asks why a facial piercing they got last month is not considered self-injury. What is the basis for the distinction?",
+            options: [
+              "The piercing was not severe enough to qualify as tissue damage",
+              "It was performed by another person rather than by the patient themselves",
+              "It caused no clinically significant distress",
+              "Body piercing is socially sanctioned behavior and is excluded"
+            ],
+            answer: 3,
+            rationale: "The criteria exclude socially sanctioned behavior outright — body piercing, tattooing, and injury that is part of a religious or cultural ritual — so the exclusion is categorical rather than a judgment about the wound. Severity does not appear in the criteria. Who performed it is not the test either, and while distress is a separate criterion, the sanctioned-behavior exclusion is what settles this case.",
+            topic: "Nonsuicidal Self-Injury",
+            source: "quiz-bank"
+          }
+        ],
+        eaq: []
+      }
     }
   ]
 };
@@ -2025,5 +2750,9 @@ window.TOPIC_ORDER = [
   "Assessment, Theories & Therapies",
   "Group & Physiologic Therapies",
   "Therapeutic Communication & Relationships",
-  "Cultural Care"
+  "Cultural Care",
+  "Depressive Disorders",
+  "Bipolar & Related Disorders",
+  "Suicide",
+  "Nonsuicidal Self-Injury"
 ];

@@ -52,31 +52,47 @@ const SITE = {
         { id: "week1-group-physio", num: "5", title: "Group &amp; Physiologic Therapies",    file: "week1-group-physiologic-therapies.html" },
       ]
     },
-    /* Copy the block above for Week 2, Week 3, ... as the course goes on. */
+    {
+      label: "Week 2",
+      items: [
+        { id: "week2-depressive",   num: "1", title: "Depressive Disorders",            file: "week2-depressive-disorders.html" },
+        { id: "week2-bipolar",      num: "2", title: "Bipolar &amp; Related Disorders",     file: "week2-bipolar-disorders.html" },
+        { id: "week2-suicide",      num: "3", title: "Suicide",                            file: "week2-suicide.html" },
+        { id: "week2-nssi",         num: "4", title: "Nonsuicidal Self-Injury",           file: "week2-nssi.html" },
+      ]
+    },
+    /* Copy a block above for Week 3, Week 4, ... as the course goes on. */
 
     /* ============================================================
        EXAM PREP — RESTORED on 2026-08-29, at Holly's request, after being
-       hidden since 2026-08-26. Three of the four entries are live: Must
-       Know, Build Your Own Exam, and the Torture Chamber. The matching
-       section in index.html was restored in the same pass — if this group
-       is ever hidden again, hide that section too, or the nav and the home
-       page disagree, and take must-know.html back out of the PAGES array
-       in build-search-index.html.
+       hidden since 2026-08-26. The matching section in index.html was
+       restored in the same pass — if this group is ever hidden again, hide
+       that section too, or the nav and the home page disagree, and take
+       must-know.html back out of the PAGES array in build-search-index.html.
 
-       lecture-review-template.html stays commented out: the Week 1 live
-       lecture was never posted, so there is no Lecture Review page to
-       link to yet. It has no prev/next as a result, which is why
-       verify.js still lists it. That is expected, not a defect.
+       Week 1 Lecture Review joined this group on 2026-08-31, once the
+       instructor posted the in-class question deck. The old template page
+       it was modelled on was deleted on 2026-09-02 — copy this entry's
+       page for the next week's review instead.
+
+       THE TORTURE CHAMBER WAS REMOVED FROM THE SITE on 2026-09-02 at
+       Holly's request. The page was NOT deleted: torture-chamber.html and
+       its data file were moved up to the PROJECT ROOT, out of site/, so
+       verify.js no longer sees them. To restore it, move both back
+       (torture-chamber.html into site/, torture-chamber.js into
+       site/data/), undo the two src path edits noted in that file's own
+       header, and re-add the entry here plus the .tile-torture tile in
+       index.html. The body.torture CSS was deliberately LEFT IN
+       styles.css so restoring is a move-and-two-edits job.
        ============================================================ */
     {
       label: "Exam Prep",
       items: [
         { id: "must-know",       num: "1", title: "Key Terms &amp; Learning Outcomes", file: "must-know.html" },
-        { id: "quiz-builder",    num: "2", title: "Build Your Own Exam",       file: "quiz-builder.html" },
-        { id: "torture-chamber", num: "3", title: "The Torture Chamber",       file: "torture-chamber.html" },
-        /* Hidden until there is a live lecture to review:
-        { id: "lecture-review-template", num: "4", title: "Lecture Review Template", file: "lecture-review-template.html" },
-        */
+        { id: "medications",     num: "2", title: "Medications",               file: "medications.html" },
+        { id: "quiz-builder",    num: "3", title: "Build Your Own Exam",       file: "quiz-builder.html" },
+        { id: "week1-lecture-review", num: "4", title: "Week 1 Lecture Review",  file: "week1-lecture-review.html" },
+        { id: "week2-lecture-review", num: "5", title: "Week 2 Lecture Review",  file: "week2-lecture-review.html" },
       ]
     }
   ]
@@ -307,19 +323,39 @@ const SITE_VER = (function () {
       h.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } });
     });
 
+    /* ---- Tabbed pages ------------------------------------------
+       A page may split its h2.block sections into panels, each a
+         <div class="tab-panel" id="tab-week2" data-tab-label="Week 2">
+       and the tab strip is BUILT HERE from those labels, the same way
+       the nav is built from SITE — there is no tab markup on the page
+       to hand-edit. Adding a tab is one wrapper div and one attribute.
+       `data-tab-end` pushes a button to the far right of the strip, for
+       a panel that isn't one of the sequence (e.g. "Not Tested").
+       Pages with no .tab-panel are completely unaffected.            */
+    const panels = Array.from(contentRoot.querySelectorAll(".tab-panel[data-tab-label]"));
+    const tabbed = panels.length > 1;
+    const headingsIn = p => headings.filter(h => p.contains(h));
+    const visibleSections = () =>
+      tabbed ? sections.filter(s => !s.h.closest(".tab-panel[hidden]")) : sections;
+
     // "On this page" TOC (long pages only), always a single column.
+    // On a tabbed page it lists only the ACTIVE panel's sections — the box
+    // has to describe what is actually on screen.
+    function tocList(hs) {
+      return hs.filter(h => !h.hasAttribute("data-toc-skip")).map(h => {
+        const label = (h.firstChild ? h.firstChild.textContent : h.textContent).trim();
+        return `<li><a href="#${h.id}">${label}</a></li>`;
+      }).join("");
+    }
     let details = null;
     if (headings.length >= 3) {
       details = document.createElement("details");
       details.className = "page-toc";
       if (!isMobile()) details.open = true;
-      const links = headings.filter(h => !h.hasAttribute("data-toc-skip")).map(h => {
-        const label = (h.firstChild ? h.firstChild.textContent : h.textContent).trim();
-        return `<li><a href="#${h.id}">${label}</a></li>`;
-      }).join("");
-      details.innerHTML = `<summary>On this page</summary><nav aria-label="On this page"><ul>${links}</ul></nav>`;
-      details.querySelectorAll("a").forEach(a => {
-        a.addEventListener("click", () => { if (isMobile()) details.open = false; });
+      details.innerHTML = `<summary>On this page</summary><nav aria-label="On this page"><ul>${tocList(headings)}</ul></nav>`;
+      // Delegated, because the list is re-rendered on every tab change.
+      details.addEventListener("click", e => {
+        if (isMobile() && e.target.closest("nav a")) details.open = false;
       });
     }
 
@@ -333,23 +369,110 @@ const SITE_VER = (function () {
       let collapsedMode = false;
       cbtn.addEventListener("click", () => {
         collapsedMode = !collapsedMode;
-        sections.forEach(sec => setCollapsed(sec, collapsedMode));
+        visibleSections().forEach(sec => setCollapsed(sec, collapsedMode));
         cbtn.textContent = collapsedMode ? "Expand all headings" : "Collapse all headings";
       });
     }
 
-    // Top block: TOC, with the collapse/expand button directly beneath it.
-    if (details || cbtn) {
-      const top = document.createElement("div");
-      top.className = "page-top";
-      if (details) top.appendChild(details);
-      if (cbtn) top.appendChild(cbtn);
+    // Build the tab strip (buttons only — the panels are already in the page).
+    let tabBar = null;
+    const tabBtns = [];
+    if (tabbed) {
+      tabBar = document.createElement("div");
+      tabBar.className = "tab-bar";
+      tabBar.setAttribute("role", "tablist");
+      tabBar.setAttribute("aria-label", "Page sections");
+      panels.forEach((p, i) => {
+        if (!p.id) p.id = "tab-panel-" + (i + 1);
+        const b = document.createElement("button");
+        b.type = "button";
+        b.id = p.id + "-tab";
+        b.className = "tab-btn" + (p.hasAttribute("data-tab-end") ? " tab-btn-end" : "");
+        b.setAttribute("role", "tab");
+        b.setAttribute("aria-controls", p.id);
+        b.textContent = p.getAttribute("data-tab-label");
+        p.setAttribute("role", "tabpanel");
+        p.setAttribute("aria-labelledby", b.id);
+        p.tabIndex = 0;
+        b.addEventListener("click", () => selectTab(i));
+        b.addEventListener("keydown", e => {
+          const n = panels.length;
+          let j = -1;
+          if (e.key === "ArrowRight") j = (i + 1) % n;
+          else if (e.key === "ArrowLeft") j = (i - 1 + n) % n;
+          else if (e.key === "Home") j = 0;
+          else if (e.key === "End") j = n - 1;
+          if (j < 0) return;
+          e.preventDefault();
+          selectTab(j);
+          tabBtns[j].focus();
+        });
+        tabBar.appendChild(b);
+        tabBtns.push(b);
+      });
+    }
+
+    function selectTab(idx) {
+      panels.forEach((p, i) => {
+        const on = i === idx;
+        p.hidden = !on;
+        tabBtns[i].classList.toggle("is-active", on);
+        tabBtns[i].setAttribute("aria-selected", on ? "true" : "false");
+        tabBtns[i].tabIndex = on ? 0 : -1;
+      });
+      const hs = headingsIn(panels[idx]);
+      if (details) {
+        details.querySelector("nav ul").innerHTML = tocList(hs);
+        details.hidden = hs.length < 3;   // same "long pages only" bar, per tab
+      }
+      if (cbtn) cbtn.hidden = hs.length < 2;  // nothing to collapse *all* of
+      // study.js freezes table column widths by measuring them, and a table
+      // in a hidden panel measures 0. Tell it to re-measure what just appeared.
+      document.dispatchEvent(new CustomEvent("tabchange", { detail: { panel: panels[idx] } }));
+    }
+
+    // Which tab owns a given element id, or -1.
+    function tabOf(id) {
+      const t = id && document.getElementById(id);
+      const owner = t && t.closest(".tab-panel[data-tab-label]");
+      return owner ? panels.indexOf(owner) : -1;
+    }
+
+    // Top block: the tab strip, then the TOC with the collapse button beneath.
+    const top = document.createElement("div");
+    top.className = "page-top";
+    if (tabBar) top.appendChild(tabBar);
+    if (details) top.appendChild(details);
+    if (cbtn) top.appendChild(cbtn);
+    if (top.childNodes.length) {
       const anchorEl = contentRoot.querySelector(".lead") || contentRoot.querySelector(".page-head");
       if (anchorEl) anchorEl.insertAdjacentElement("afterend", top);
       else {
         const inner = contentRoot.querySelector(".page-inner") || contentRoot;
         inner.insertBefore(top, inner.firstChild);
       }
+    }
+
+    if (tabbed) {
+      /* A link into a section that lives in another tab — a search result, a
+         cross-reference from another page, must-know.html#not-tested — has to
+         open that tab before the browser can scroll to it. */
+      const startId = decodeURIComponent((location.hash || "").slice(1));
+      const start = tabOf(startId);
+      selectTab(start < 0 ? 0 : start);
+      if (start > 0) {
+        const t = document.getElementById(startId);
+        if (t) setTimeout(() => t.scrollIntoView(), 0);
+      }
+      window.addEventListener("hashchange", () => {
+        const id = decodeURIComponent((location.hash || "").slice(1));
+        const i = tabOf(id);
+        if (i >= 0 && panels[i].hidden) {
+          selectTab(i);
+          const t = document.getElementById(id);
+          if (t) t.scrollIntoView();
+        }
+      });
     }
   }
 

@@ -673,7 +673,14 @@ footer.site-foot{
 .result-score{ font-family:var(--serif); font-size:2.5rem; font-weight:700; line-height:1; white-space:nowrap; }
 .result-detail{ flex:1; min-width:200px; }
 .result-detail .rmsg{ font-size:1.02rem; font-weight:600; margin:0 0 12px; color:var(--on-brand-dim); }
-.result-detail .btn-ghost{ background:#fff; }
+/* White pill on the result card. The card is brand-DARK in both themes
+   (see the [data-theme="dark"] .result-card override below), so this button
+   looks the same either way and both colours are literals on purpose: the
+   colour used to come from --brand-strong, which flips light in dark mode and
+   left light text on this white background, unreadable. Don't revert it to a
+   var without checking dark mode. */
+.result-detail .btn-ghost{ background:#fff; color:#334657; border-color:transparent; }
+.result-detail .btn-ghost:hover{ background:#eef1f5; color:#334657; }
 .result-ring{ --pct:0; flex:none;
   width:92px; height:92px; border-radius:50%;
   background:conic-gradient(var(--accent) calc(var(--pct)*1%), rgba(255,255,255,.18) 0);
@@ -842,6 +849,45 @@ h2.block, h3.sub{ scroll-margin-top:80px; }
 .to-top.show{ opacity:1; transform:none; pointer-events:auto; }
 .to-top:hover{ background:var(--brand-strong); }
 .to-top svg{ width:22px; height:22px; }
+
+/* ============================================================
+   PAGE TABS
+   A long page (must-know.html) splits its sections into
+   .tab-panel wrappers; site.js builds the strip of buttons from
+   each panel's data-tab-label and hides all but one panel. The
+   strip sits inside .page-top, above the "On this page" box,
+   which re-renders to list only the visible panel's sections.
+   ============================================================ */
+.tab-bar{
+  display:flex; align-items:flex-end; gap:4px; width:100%;
+  border-bottom:2px solid var(--border); margin:0 0 6px;
+  overflow-x:auto; scrollbar-width:none; -ms-overflow-style:none;
+}
+.tab-bar::-webkit-scrollbar{ display:none; }
+.tab-btn{
+  flex:none; appearance:none; background:transparent; border:0;
+  border-bottom:3px solid transparent; margin-bottom:-2px;
+  padding:10px 16px; border-radius:8px 8px 0 0; cursor:pointer;
+  font-family:var(--serif); font-size:.95rem; font-weight:700;
+  color:var(--text-soft); white-space:nowrap;
+  transition:color .14s, background .14s, border-color .14s;
+}
+.tab-btn:hover{ color:var(--brand-strong); background:var(--brand-tint); }
+.tab-btn.is-active{ color:var(--brand-strong); background:var(--brand-tint); border-bottom-color:var(--brand); }
+.tab-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:-2px; }
+/* data-tab-end: a panel outside the sequence (Not Tested), parked right. */
+.tab-btn-end{ margin-left:auto; color:var(--text-faint); }
+.tab-btn-end:hover{ color:var(--accent-strong); background:var(--accent-tint); }
+.tab-btn-end.is-active{ color:var(--accent-strong); background:var(--accent-tint); border-bottom-color:var(--accent); }
+
+.tab-panel[hidden]{ display:none; }
+.tab-panel:focus{ outline:none; }
+.tab-empty{ color:var(--text-soft); font-style:italic; margin:26px 0 6px; }
+
+@media (max-width:640px){
+  .tab-btn{ padding:9px 12px; font-size:.9rem; }
+  .tab-btn-end{ margin-left:8px; }   /* no room to park it right */
+}
 
 /* ============================================================
    "ON THIS PAGE" TABLE OF CONTENTS
@@ -1038,6 +1084,8 @@ h2.block, h3.sub{ scroll-margin-top:80px; }
   .topnav, .nav-utils, .nav-toggle, .read-progress, .to-top, .search-overlay,
   .flash-toolbar, .fig-trigger, .page-flip, .lightbox-overlay,
   .exam-actions, .fc-grade, .page-toc, .page-toc-collapse-btn, .sec-caret{ display:none !important; }
+  .tab-bar{ display:none !important; }
+  .tab-panel[hidden]{ display:block !important; }   /* print every tab, not just the open one */
   .section-body, .section-body.section-collapsed{ display:block !important; }
   body{ background:#fff; color:#000; }
   #content{ padding:0; max-width:100%; }

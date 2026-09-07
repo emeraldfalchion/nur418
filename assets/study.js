@@ -350,6 +350,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   freezeTableColumns();
 
+  /* A table inside a hidden tab panel measures 0 and is skipped above, so it
+     is still unfrozen when its tab is first opened. site.js fires "tabchange"
+     on every tab switch; re-measure whatever just became visible. */
+  document.addEventListener("tabchange", () => freezeTableColumns());
+
   let freezeTimer;
   window.addEventListener("resize", () => {
     clearTimeout(freezeTimer);
