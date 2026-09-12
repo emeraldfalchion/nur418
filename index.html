@@ -11,6 +11,11 @@
      Weekly topics use the compact row layout: one .wk-row per week,
      each holding a square .wk-badge (the week number) and a
      .wk-strip grid of tiles. Weeks are labelled by number only.
+
+     WEEKS RUN NEWEST-FIRST — 3, then 2, then 1 (Holly, 2026-09-11), so the
+     current week is the first thing on the page. A new week's .wk-row goes
+     at the TOP of the Weekly Topics section, not the bottom. Do not
+     "restore" chronological order. Exam Prep stays above it all.
      ============================================================ -->
 <html lang="en">
 <head>
@@ -18,7 +23,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NUR418 · Psychiatric Nursing Study Guide</title>
 <script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
-<link rel="stylesheet" href="assets/styles.css?v=20260905">
+<link rel="stylesheet" href="assets/styles.css?v=20260912">
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
@@ -68,11 +73,51 @@
         <span class="tnum">5</span>
         <span class="tbody"><h3>Week 2 Lecture Review</h3><p>All 25 in-class questions from the live lecture, exactly as asked.</p></span>
       </a>
+      <a class="tile" href="week3-lecture-review.html">
+        <span class="tnum">6</span>
+        <span class="tbody"><h3>Week 3 Lecture Review</h3><p>All 18 clicker questions on personality disorders and substance use, exactly as asked.</p></span>
+      </a>
     </div>
   </section>
 
   <section class="home-section home-weeks" aria-label="Topics by week">
     <h2>Weekly Topics</h2>
+
+    <div class="wk-row">
+      <span class="wk-badge" aria-label="Week 3">3</span>
+      <div class="wk-strip">
+        <a class="tile" href="week3-substance-use-disorders.html">
+          <span class="tnum">1</span>
+          <span class="tbody"><h3>Substance Use &amp; Addictive Disorders</h3><p>The four symptom groups, stigma and person-first language, the reward pathway, opioid and alcohol withdrawal, DTs, Wernicke-Korsakoff, and the screening tools.</p></span>
+        </a>
+        <a class="tile" href="week3-personality-disorders.html">
+          <span class="tnum">2</span>
+          <span class="tbody"><h3>Personality Disorders</h3><p>The diagnostic criteria, the three clusters and all ten disorders, splitting, and the nursing care guidelines for each type.</p></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="wk-row">
+      <span class="wk-badge" aria-label="Week 2">2</span>
+      <div class="wk-strip">
+        <a class="tile" href="week2-depressive-disorders.html">
+          <span class="tnum">1</span>
+          <span class="tbody"><h3>Depressive Disorders</h3><p>MDD and the other four disorders, the clinical judgment model, and the antidepressants — SSRIs, TCAs, MAOIs, serotonin syndrome, and hypertensive crisis.</p></span>
+        </a>
+        <a class="tile" href="week2-bipolar-disorders.html">
+          <span class="tnum">2</span>
+          <span class="tbody"><h3>Bipolar &amp; Related Disorders</h3><p>Bipolar I, II and cyclothymia, mania versus hypomania, nursing care for acute mania, lithium levels and toxicity, and the mood stabilizers.</p></span>
+        </a>
+        <a class="tile" href="week2-suicide.html">
+          <span class="tnum">3</span>
+          <span class="tbody"><h3>Suicide</h3><p>Key terms and unacceptable terms, risk and protective factors, safety planning, environmental safety, and levels of observation.</p></span>
+        </a>
+        <a class="tile" href="week2-nssi.html">
+          <span class="tnum">4</span>
+          <span class="tbody"><h3>Nonsuicidal Self-Injury</h3><p>What NSSI is and is not, the DSM-5 criteria, comorbidity and risk factors, recognition and nursing care, and the misconceptions.</p></span>
+        </a>
+      </div>
+    </div>
 
     <div class="wk-row">
       <span class="wk-badge" aria-label="Week 1">1</span>
@@ -100,30 +145,9 @@
       </div>
     </div>
 
-    <div class="wk-row">
-      <span class="wk-badge" aria-label="Week 2">2</span>
-      <div class="wk-strip">
-        <a class="tile" href="week2-depressive-disorders.html">
-          <span class="tnum">1</span>
-          <span class="tbody"><h3>Depressive Disorders</h3><p>MDD and the other four disorders, the clinical judgment model, and the antidepressants — SSRIs, TCAs, MAOIs, serotonin syndrome, and hypertensive crisis.</p></span>
-        </a>
-        <a class="tile" href="week2-bipolar-disorders.html">
-          <span class="tnum">2</span>
-          <span class="tbody"><h3>Bipolar &amp; Related Disorders</h3><p>Bipolar I, II and cyclothymia, mania versus hypomania, nursing care for acute mania, lithium levels and toxicity, and the mood stabilizers.</p></span>
-        </a>
-        <a class="tile" href="week2-suicide.html">
-          <span class="tnum">3</span>
-          <span class="tbody"><h3>Suicide</h3><p>Key terms and unacceptable terms, risk and protective factors, safety planning, environmental safety, and levels of observation.</p></span>
-        </a>
-        <a class="tile" href="week2-nssi.html">
-          <span class="tnum">4</span>
-          <span class="tbody"><h3>Nonsuicidal Self-Injury</h3><p>What NSSI is and is not, the DSM-5 criteria, comorbidity and risk factors, recognition and nursing care, and the misconceptions.</p></span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Copy the .wk-row block above for each new week. A .wk-strip holds
-         up to 3 tiles per row on desktop, 2 below 900px, 1 below 560px. -->
+    <!-- Copy a .wk-row block for each new week and put it at the TOP of
+         this section — weeks run newest-first. A .wk-strip holds up to 3
+         tiles per row on desktop, 2 below 900px, 1 below 560px. -->
 
   </section>
 
@@ -132,6 +156,6 @@
 </div>
 </main>
 
-<script src="assets/site.js?v=20260905"></script>
+<script src="assets/site.js?v=20260912"></script>
 </body>
 </html>

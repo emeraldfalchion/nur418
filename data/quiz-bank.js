@@ -50,6 +50,23 @@
    the five Week 1 topic pages, which are themselves cross-checked
    against the decks. No live lecture existed for Week 1, so nothing
    here derives from in-class questions.
+
+   2026-09-11 — WEEK 3 ADDED: topics 12 and 13, "Substance Use &
+   Addictive Disorders" (13 mustKnow + 10 extraPractice) and
+   "Personality Disorders" (7 mustKnow + 10 extraPractice). Holly set
+   the extraPractice count at 10 per topic. Sourced only from the two
+   Week 3 topic pages. No live lecture exists for Week 3 either, so
+   these derive from the pre-lecture material — but the 18 clicker
+   questions archived on week3-lecture-review.html DO exist, and no
+   question here tests a point one of those already tests. Where a
+   Learning Outcomes bullet and a clicker question cover the same
+   ground, the question here takes a different angle on purpose.
+   Both topic blocks carry a comment saying which.
+
+   The "dual diagnosis versus comorbidity" question that would
+   naturally have gone in topic 12's extraPractice was NOT written:
+   week1-intro.mustKnow already tests that exact distinction. The
+   DSM-5 criteria question took its place.
    ============================================================ */
 window.QUIZ_BANK = {
 
@@ -2738,6 +2755,584 @@ window.QUIZ_BANK = {
         ],
         eaq: []
       }
+    },
+
+    /* ==========================================================
+       TOPIC 12 — SUBSTANCE USE & ADDICTIVE DISORDERS  (Week 3)
+       13 mustKnow, one per Learning Outcomes bullet on
+       must-know.html#sud. 10 extraPractice from the Key Terms table
+       and other high-yield material on the topic page.
+
+       NONE of these repeats a point tested by the 18 verbatim
+       questions on week3-lecture-review.html. Where a bullet and a
+       clicker question cover the same ground, the question here takes
+       a different angle deliberately — the COWS question asks about
+       assessment technique rather than the symptom list, and the
+       Wernicke-Korsakoff one asks which stage the patient has reached
+       rather than what causes it.
+       ========================================================== */
+    {
+      id: "week3-sud",
+      label: "Substance Use & Addictive Disorders",
+      week: 3,
+      sets: {
+        mustKnow: [
+          {
+            stem: "Two patients are admitted the same evening — one in opioid withdrawal, one in alcohol withdrawal. Which statement should guide the nurse's planning?",
+            options: [
+              "Both syndromes carry the same mortality risk and both require inpatient detoxification",
+              "Alcohol withdrawal can be fatal; opioid withdrawal is severely uncomfortable but rarely deadly",
+              "Opioid withdrawal is more dangerous than alcohol withdrawal because of its cardiovascular effects",
+              "Neither syndrome requires medication as long as vital signs remain stable and the patient is oriented"
+            ],
+            answer: 1,
+            rationale: "Alcohol and sedative-hypnotic withdrawal progresses through seizures to delirium tremens and can kill, so it is medicated against a CIWA score; opioid withdrawal is extremely uncomfortable and is typically managed outpatient. Treating them as equivalent risks under-monitoring the alcohol patient. Opioid withdrawal does raise pulse and blood pressure, but that is the reverse of intoxication rather than a lethal course, and withholding medication until vital signs change is how withdrawal seizures happen.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A nurse is about to score a patient on the Clinical Opiate Withdrawal Scale. Which action makes the resting pulse rate valid?",
+            options: [
+              "Take the pulse immediately on entering the room",
+              "Take the pulse right after the patient walks back from the bathroom",
+              "Have the patient sit quietly for five minutes first",
+              "Use the pulse recorded on the last set of routine vital signs"
+            ],
+            answer: 2,
+            rationale: "The item is the resting pulse, and activity raises heart rate, so the patient sits for five minutes before it is counted — the same care the tool asks for elsewhere, assessing pupils in good lighting and checking gooseflesh by running fingertips over the inner forearm. A pulse taken on arrival or straight after walking reflects exertion, not withdrawal, and an earlier routine reading does not describe the patient now.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient treated for Wernicke's encephalopathy now fills gaps in conversation with invented detail and cannot retain new information. What has happened?",
+            options: [
+              "The thiamine dose is too high and has produced confusion",
+              "This is the expected response to intravenous thiamine",
+              "The patient has relapsed and is intoxicated again",
+              "The patient has progressed to Korsakoff syndrome"
+            ],
+            answer: 3,
+            rationale: "Confabulation and severe, persistent memory impairment including anterograde amnesia mark the chronic second stage, which is not typically reversible and carries a recovery rate of only about 20%; thiamine then continues for 3 to 12 months rather than the 1 to 2 weeks of the acute stage. Wernicke's itself presents with confusion, ataxia and eye findings, not invented memories. Nothing about thiamine replacement causes this, and intoxication does not produce anterograde amnesia of this kind.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which medication is an alpha agonist given to relieve withdrawal symptoms?",
+            options: [
+              "Clonidine",
+              "Acamprosate",
+              "Disulfiram",
+              "Buprenorphine"
+            ],
+            answer: 0,
+            rationale: "Clonidine is an antihypertensive and alpha agonist that eases withdrawal by blocking the neurotransmitters driving sympathetic activity; lofexidine is the newer drug in the same class. Acamprosate reduces alcohol cravings in recovery and disulfiram deters drinking, and neither treats withdrawal. Buprenorphine does relieve opioid withdrawal, but as a long-acting partial opioid agonist rather than an alpha agonist.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A nurse realizes they feel irritated by a patient with a substance use disorder, and that the patient resembles a relative whose drinking marked the nurse's childhood. What is occurring, and what addresses it?",
+            options: [
+              "Transference, addressed by reassigning the patient to another nurse",
+              "Compassion fatigue, addressed by taking time off the unit",
+              "Countertransference, addressed by self-assessment of one's own attitudes",
+              "Denial, addressed by documenting the patient's behavior objectively in the chart"
+            ],
+            answer: 2,
+            rationale: "Countertransference is the healthcare worker unconsciously displacing feelings about significant figures from their own past onto the patient, and the stated counter to it is examining one's own attitudes about substance use and recognizing how past experience shapes care. Transference runs the other direction, from patient to nurse. Reassignment avoids the feeling rather than addressing it, and neither compassion fatigue nor denial names what is happening here.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which entry in the chart uses person-first language?",
+            options: [
+              "Client is a longtime abuser of alcohol",
+              "Client has an alcohol use disorder",
+              "Client is a recovering alcoholic",
+              "Client was admitted drunk"
+            ],
+            answer: 1,
+            rationale: "Person-first language describes the illness as one part of a person's life instead of defining the person by it, so the disorder is something the client has. Abuser, alcoholic and drunk are all on the list of words providers avoid; if a patient uses such a term about themselves that is their right, but it does not belong in the nurse's documentation.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which findings raise a patient's risk of developing a substance use disorder? Select all that apply.",
+            options: [
+              "A sibling with a substance use disorder",
+              "Childhood exposure to physical or sexual abuse",
+              "A brain that reached full maturity by age 18",
+              "Coping that has shifted onto the substance",
+              "Ready access to the substance",
+              "Dopamine that returns to baseline between uses of the substance"
+            ],
+            answers: [0, 1, 3, 4],
+            rationale: "Addiction runs in families, trauma exposure is a major risk factor, ineffective coping that shifts onto the substance is a named risk, and access to an addictive substance is another, alongside chronic stress, socioeconomic factors, anxiety, and use among family or peers. The brain is not fully developed until about age 24 — immaturity is the risk, so maturity by 18 is a flipped fact. Dopamine returning to baseline is also backwards: the substance floods the brain with 5 to 10 times the normal level, and it is the low between uses that brings anhedonia and craving.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient asks why one use of a drug can start a pattern they cannot break. Which explanation reflects the mesolimbic reward pathway?",
+            options: [
+              "The substance floods the brain with dopamine, the brain ties it to reward, and craving follows",
+              "The substance depletes serotonin, and low serotonin produces the compulsion to use",
+              "The substance destroys the nucleus accumbens, so pleasure can no longer be felt naturally",
+              "The substance blocks endorphin receptors, so pain relief requires steadily larger doses"
+            ],
+            answer: 0,
+            rationale: "The pathway runs dopamine surge, reinforcement, then craving and repeat use: dopamine floods to 5 to 10 times normal, the brain remembers and associates the substance with euphoric reward, and low dopamine between uses leaves anhedonia. Serotonin, GABA, glutamate and endorphins are all involved, but dopamine is the central one. The nucleus accumbens is flooded with dopamine, not destroyed, and opioids mimic endorphins rather than blocking their receptors.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A hospitalized patient is found unresponsive with pinpoint pupils and a respiratory rate of 6. What does the nurse do first?",
+            options: [
+              "Administer naloxone and then reassess in 30 minutes",
+              "Call 9-1-1 and stay with the patient",
+              "Obtain a urine drug screen to confirm the substance",
+              "Open the airway, aspirate secretions and ventilate"
+            ],
+            answer: 3,
+            rationale: "Coma, pinpoint pupils and respiratory depression are the cardinal signs of opioid overdose, and in the hospital breathing is promoted first — aspirate secretions, insert an airway, ventilate — with naloxone given alongside. Naloxone matters, but its half-life is shorter than the opioid's, so the patient is watched continuously and redosed if signs return rather than left for 30 minutes. Calling 9-1-1 is the out-of-hospital action, and confirming the substance delays treatment of an airway emergency.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "At which point does a patient in alcohol withdrawal receive chlordiazepoxide, diazepam or lorazepam?",
+            options: [
+              "Only once hallucinations or seizures have appeared",
+              "On admission, regardless of symptoms",
+              "At a CIWA-Ar score of 8 to 10 or more",
+              "When the blood alcohol concentration falls below 0.08"
+            ],
+            answer: 2,
+            rationale: "Benzodiazepines are given against the score, at a CIWA-Ar of 8 to 10 or more, often as a fixed regimen with PRN doses for breakthrough autonomic symptoms — the goals being to control agitation, decrease seizure risk, and reduce morbidity and mortality. Waiting for hallucinations or seizures forfeits the prevention the protocol exists for. Blanket dosing ignores the tool, and blood alcohol concentration measures intoxication rather than withdrawal severity.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient is admitted in withdrawal from long-term benzodiazepine use. Which tool applies, and how often is it usually done?",
+            options: [
+              "The COWS, every 4 hours and PRN",
+              "The CIWA, every 4 hours and PRN",
+              "The COWS, once on admission",
+              "The CIWA, once every 24 hours"
+            ],
+            answer: 1,
+            rationale: "The CIWA is the tool for sedative-hypnotic and alcohol withdrawal, and benzodiazepines are sedative-hypnotics, so it applies here; it is usually ordered every 4 hours and repeated PRN, sometimes only 30 minutes later if the patient reports worsening symptoms. The COWS scores opioid withdrawal. A single admission score or a daily one would miss the point at which a patient crosses the medication threshold.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient leaving inpatient treatment will attend a non-residential program of highly structured scheduled groups with at least one regular individual session. Which level of care is this?",
+            options: [
+              "A halfway house",
+              "A medically managed detoxification program",
+              "A partial hospitalization program",
+              "An intensive outpatient program"
+            ],
+            answer: 3,
+            rationale: "An intensive outpatient program is the non-residential, highly structured option built on scheduled treatment groups with at least one regular individual session. A halfway house is residential, substance-free communal living that allows independent growth. Detoxification is the medically managed first step, not a discharge destination. Partial hospitalization sits on the continuum too but is not the description given here.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which discharge action has the largest documented effect on relapse rates?",
+            options: [
+              "Involving relatives in the patient's treatment",
+              "Providing written material on the effects of the substance",
+              "Scheduling a follow-up appointment before discharge",
+              "Recommending a smartphone app that tracks relapse cues"
+            ],
+            answer: 0,
+            rationale: "Involving relatives in treatment decreases relapse rates by 20 to 50 percent, which is why family education and therapy sit in the plan rather than beside it. Teaching the nature of the illness, arranging follow-up and using apps that track behavior patterns and relapse cues all belong to discharge planning, but none of them carries a documented effect of that size.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        extraPractice: [
+          {
+            stem: "Which blood alcohol concentration meets the definition of alcohol intoxication?",
+            options: [
+              "40 to 60 mg/dL, or 0.04 to 0.06 g/dL",
+              "80 to 100 mg/dL, or 0.08 to 0.10 g/dL",
+              "120 to 140 mg/dL, or 0.12 to 0.14 g/dL",
+              "200 mg/dL or above, or 0.20 g/dL or above"
+            ],
+            answer: 1,
+            rationale: "Intoxication is a blood concentration of 80 to 100 mg of ethanol per deciliter, written either way, and 0.08 is also the Kentucky DUI threshold. At that level coordination, speech and hearing are altered, danger is harder to detect, and judgment and self-control are impaired — which is why so many people drive believing they can. The lower figure is below the threshold; the higher ones are past it.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which findings are consistent with delirium tremens? Select all that apply.",
+            options: [
+              "Gross confusion and disorientation",
+              "Coarse tremors and seizures",
+              "Tachycardia, diaphoresis and fever",
+              "Pinpoint pupils and slowed respirations",
+              "Visual and tactile hallucinations with paranoia"
+            ],
+            answers: [0, 1, 2, 4],
+            rationale: "Delirium tremens brings agitation and anxiety, gross confusion and disorientation, coarse tremors and seizures, delusions and visual and tactile hallucinations with paranoia, and autonomic hyperactivity — tachycardia, diaphoresis, fever, insomnia and hypertension. Pinpoint pupils with slowed respirations point the other way entirely, to opioid intoxication or overdose. The danger of misdiagnosing this picture as a psychiatric disorder is real, and DTs can kill.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Four patients are admitted in alcohol withdrawal. Which history most increases the likelihood of delirium tremens?",
+            options: [
+              "Daily cigarette use for 20 years",
+              "A previous admission for an opioid overdose",
+              "Hepatitis with impaired liver function",
+              "A diagnosis of major depressive disorder"
+            ],
+            answer: 2,
+            rationale: "Hepatitis or pancreatitis increases the likelihood of delirium tremens, because toxins are filtered poorly. DTs are also rarely seen in people in good physical health — which many with alcohol use disorder are not, since eating and self-care often stop. Smoking, a past opioid overdose and a mood disorder all matter to the overall picture, but none is the named risk factor for this complication.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient's last drink was 14 hours ago. Which complication is the nurse now watching for?",
+            options: [
+              "Generalized tonic-clonic withdrawal seizures",
+              "The first appearance of nausea and tremulousness",
+              "Full resolution of withdrawal symptoms",
+              "Wernicke's encephalopathy from thiamine deficiency"
+            ],
+            answer: 0,
+            rationale: "Untreated withdrawal produces generalized tonic-clonic seizures at 12 to 24 hours after the last drink. The minor symptoms — agitation, nausea, tremulousness, insomnia and rising vital signs — start at 6 to 8 hours and are already present by this point, and alcoholic hallucinosis begins at 8 to 10 hours. Withdrawal usually peaks around 48 hours and is over in 3 to 5 days, so resolution is not expected yet. Wernicke's comes from chronic thiamine deficiency, not from the hour count since the last drink.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient in alcohol withdrawal reports bugs crawling on the skin and sees people who are not in the room. How does the nurse interpret this?",
+            options: [
+              "It indicates an underlying psychotic disorder rather than alcohol withdrawal",
+              "It is an expected finding only after delirium tremens has resolved",
+              "It suggests the patient is not being truthful about the last drink",
+              "It is alcoholic hallucinosis, which is typically tactile or visual"
+            ],
+            answer: 3,
+            rationale: "The hallucinations of alcohol withdrawal are usually tactile or visual — commonly the sensation of bugs crawling on the skin, or seeing people or things that are not there — and they begin 8 to 10 hours after the last drink. The auditory hallucinations more typical of schizophrenia are what distinguishes that picture from this one, so this finding does not by itself point to a psychotic disorder or to an inaccurate history.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "How is a DSM-5 diagnosis of alcohol use disorder established?",
+            options: [
+              "By a blood alcohol concentration above the legal threshold on two occasions",
+              "By at least 2 of 11 criteria within a 12-month period",
+              "By the presence of tolerance and withdrawal together",
+              "By any 6 criteria appearing at any point in the person's life"
+            ],
+            answer: 1,
+            rationale: "The diagnosis needs at least 2 of the 11 criteria inside a 12-month period, and the count sets severity: mild 2 to 3, moderate 4 to 5, severe 6 or more. Tolerance and withdrawal are two of the physical criteria, not a required pair. A blood level measures intoxication at a moment rather than a disorder, and 6 criteria is the severe band, not the threshold for diagnosis.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A 16-year-old is screened with the CRAFFT and scores 2. What does this indicate?",
+            options: [
+              "The tool was the wrong choice for this age group",
+              "The score is negative, so no further screening or evaluation is needed",
+              "A higher likelihood of a substance use disorder, needing further evaluation",
+              "Dependence, requiring immediate referral for medically managed detoxification"
+            ],
+            answer: 2,
+            rationale: "CRAFFT is the six-question tool for ages 12 to 21 — Car, Relax, Alone, Forget, Family or friends, Trouble — and a score of 2 or more indicates a higher likelihood of a substance use disorder and needs further evaluation. A score of 4 or more is what raises suspicion of dependence. At 16 the tool is correctly chosen, and a score of 2 is not a negative result.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which question belongs to the CAGE screening tool?",
+            options: [
+              "“Have you ever had a drink first thing in the morning?”",
+              "“How many drinks do you have on a typical day when you are drinking?”",
+              "“Have you ever ridden in a car driven by someone who had been using?”",
+              "“Have you ever forgotten things you did while using?”"
+            ],
+            answer: 0,
+            rationale: "CAGE asks about cutting down, being annoyed by criticism, feeling guilty about drinking, and the eye-opener — a drink first thing in the morning — with a score of 2 or more significant and a score of 1 requiring further assessment. CAGE-AID asks the same four adapted to include drugs. Quantity and frequency questions belong to the 10-item AUDIT, and the car and forgetting items are CRAFFT questions.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient sober for nine years asks whether one drink at a wedding would really matter. What is the basis of the nurse's answer?",
+            options: [
+              "Tolerance will have fallen, so a single drink would cause severe intoxication",
+              "One drink would restart physical withdrawal within hours",
+              "Liver function will have normalized after nine years, so alcohol is now metabolized at the usual rate",
+              "Acetate triggers craving for more acetate, and that effect never resets with abstinence"
+            ],
+            answer: 3,
+            rationale: "Alcohol breaks down into acetate, and acetate triggers craving for more of it; in alcohol use disorder the liver and pancreas process alcohol at only a third to a tenth of the normal rate, so it lingers and accumulates across drinks. The way this works does not change over time, even after years of abstinence, which is exactly why abstinence is critical. Withdrawal follows sustained use rather than a single drink, and the craving mechanism is what makes that first drink dangerous.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient starting disulfiram asks what to avoid besides alcoholic drinks. What does the nurse teach?",
+            options: [
+              "Caffeine, chocolate and aged or fermented cheeses",
+              "Grapefruit juice and high-potassium foods",
+              "Mouthwash, aftershave, paint thinners and many liquid medications",
+              "Nothing else — only beverages contain enough alcohol to cause a reaction"
+            ],
+            answer: 2,
+            rationale: "Alcohol is not only in drinks, and disulfiram makes any exposure severely unpleasant — patients avoid perfumes, aftershaves, mouthwash, many liquid medications, especially nighttime formulas, and paint thinners, since even splashing on aftershave can make them very ill. Aged cheese belongs to MAOI teaching and grapefruit to other drug interactions; telling the patient nothing else matters is the misunderstanding this teaching exists to prevent.",
+            topic: "Substance Use & Addictive Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        eaq: []
+      }
+    },
+
+    /* ==========================================================
+       TOPIC 13 — PERSONALITY DISORDERS  (Week 3)
+       7 mustKnow, one per Learning Outcomes bullet on
+       must-know.html#personality. 10 extraPractice from the cluster
+       table and the per-disorder sections of the topic page.
+
+       The clicker questions on week3-lecture-review.html already test
+       recognition of borderline, obsessive-compulsive, schizoid,
+       antisocial, paranoid and narcissistic presentations, so nothing
+       here re-tests those. The questions below work on the cluster
+       taxonomy, the disorders the clicker set never reaches, and
+       nursing care.
+       ========================================================== */
+    {
+      id: "week3-personality",
+      label: "Personality Disorders",
+      week: 3,
+      sets: {
+        mustKnow: [
+          {
+            stem: "What turns a personality trait into a personality disorder?",
+            options: [
+              "The trait becomes noticeable to other people",
+              "The trait first appears in adulthood rather than developing early in life, when traits normally form",
+              "The trait deviates markedly from cultural expectation, turns rigid and inflexible, and impairs functioning",
+              "The trait persists after treatment for another mental health condition"
+            ],
+            answer: 2,
+            rationale: "Traits are patterns a person is born with or develops early, largely outside their awareness; they become a disorder when they deviate markedly from cultural expectation, become rigid and inflexible, and produce maladaptive behavior, impaired functioning and distress, with dysfunction across cognition, impulse control, relationships and affect. Visibility to others is not the test, the pattern is enduring rather than new in adulthood, and persistence after treatment for something else is not what defines it.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which disorders make up Cluster C?",
+            options: [
+              "Paranoid, schizoid and schizotypal",
+              "Dependent, obsessive-compulsive and avoidant",
+              "Borderline, antisocial, histrionic and narcissistic",
+              "Schizotypal, borderline and dependent"
+            ],
+            answer: 1,
+            rationale: "The DSM-5 sorts 10 personality disorders into three clusters, and Cluster C is the anxious or fearful group: dependent, obsessive-compulsive and avoidant — the party is DOA. Cluster A is the odd or eccentric group, paranoid, schizoid and schizotypal. Cluster B is the dramatic, emotional and erratic group, borderline, antisocial, histrionic and narcissistic. Symptoms do overlap across clusters, but the membership itself does not.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which behaviors are characteristic of dependent personality disorder? Select all that apply.",
+            options: [
+              "Difficulty making everyday decisions without reassurance",
+              "Avoiding activities involving contact with others for fear of criticism",
+              "Intense anxiety when left alone, even briefly",
+              "Staying in an unhealthy or abusive relationship rather than being alone",
+              "Preoccupation with orderliness and control at the expense of flexibility"
+            ],
+            answers: [0, 2, 3],
+            rationale: "Dependent personality disorder is submissive, clinging behavior driven by an overwhelming need to be cared for: the person distrusts their own judgment, struggles to start projects or decide alone, becomes intensely anxious when left even briefly, and will go to great lengths to keep a relationship, urgently seeking a new one if it ends. Avoiding contact for fear of criticism is avoidant, and preoccupation with orderliness and control is obsessive-compulsive — the two Cluster C disorders most easily confused with it.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient whose mother has a personality disorder develops one herself after a violent assault. Which explanation fits?",
+            options: [
+              "The disorder was inherited directly from her mother, as personality disorders are genetically transmitted",
+              "The assault alone caused it, since trauma is the only established cause",
+              "Neurotransmitters regulate temperament, so the disorder reflects a chemical imbalance",
+              "The diathesis-stress model — a biological predisposition plus a stressor that brings out the disorder"
+            ],
+            answer: 3,
+            rationale: "The diathesis-stress model pairs a genetic or biological predisposition with a stressor that brings the actual disorder out, which is what this history shows. Personality traits are inherited but the disorders themselves are not, so direct transmission is wrong. Trauma is a major risk factor rather than the only cause, and while neurotransmitters do regulate and influence temperament, that is one contributing theory rather than an account of this patient.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Why is short-term treatment focused on problem-solving, social skills and coping increasingly used for personality disorders?",
+            options: [
+              "Restructuring a personality takes years of psychotherapy, time and money",
+              "Personality disorders resolve on their own within several months",
+              "Medications have replaced psychotherapy as the long-term treatment of choice",
+              "Insight-oriented therapy is contraindicated in personality disorders"
+            ],
+            answer: 0,
+            rationale: "Restructuring a personality through psychotherapy takes years and considerable expense, so treatment increasingly targets immediate problem-solving, social skills and coping skills, alongside DBT, family education, social skills groups and group therapy. These disorders do not resolve on their own. Medications are rarely indicated long-term — they are used briefly to keep patients safe and to manage anxiety or psychotic symptoms — so they have replaced nothing.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Two patients carry the same personality disorder diagnosis. What most determines the difference in their prognosis?",
+            options: [
+              "Which cluster the diagnosis belongs to — A, B or C",
+              "The age at which the pattern was first noticed by others",
+              "The degree of impairment and the person's motivation for help",
+              "Whether medication is prescribed as part of long-term treatment"
+            ],
+            answer: 2,
+            rationale: "Prognosis rests on the degree of impairment and on motivation — the patient has to want change — and the current view is that these disorders are treatable, because people keep growing and changing throughout life. The obstacle is that many do not believe a problem exists, do not see themselves as its cause, or are unaware their behavior is unusual. Cluster membership, age at recognition and long-term medication are not what the outcome turns on.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient with borderline personality disorder tells the nurse she is the only one on the unit who understands, and that the other nurses are useless. What should the nurse do?",
+            options: [
+              "Accept the compliment and agree to be the patient's primary contact",
+              "Recognize splitting and keep limits consistent across the staff",
+              "Tell the patient the statement is manipulative and end the conversation",
+              "Document the other nurses' failings and report them to the manager"
+            ],
+            answer: 1,
+            rationale: "Splitting is a defense mechanism in which the person cannot integrate positive and negative feelings, so people and situations are all good or all bad — the same nurse may be the best they have ever had and then, after one perceived slight, the worst. The care is consistency and reliability across the team, which also counters the fear of abandonment. Accepting the role feeds the split, and naming the patient manipulative damages the relationship rather than setting a limit.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        extraPractice: [
+          {
+            stem: "A patient with paranoid personality disorder is told the nurse will return in two minutes. Which nursing action matters most?",
+            options: [
+              "That the promise is kept exactly as it was made",
+              "That the nurse returns accompanied by another staff member",
+              "That the nurse greets the patient warmly and apologizes for the wait",
+              "That the nurse documents the interaction immediately"
+            ],
+            answer: 0,
+            rationale: "Care centers on counteracting mistrust, and that means adhering strictly to promises, appointments and schedules — if you say two minutes, you come back in two minutes. Being overly friendly deepens suspicion rather than easing it, so warmth is not the lever here. Bringing a second person or charting promptly may be appropriate for other reasons, but neither builds the reliability this patient measures the nurse by.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient with schizoid personality disorder eats alone and declines all unit groups. Which nursing approach is indicated?",
+            options: [
+              "Assign a peer mentor to accompany the patient to every group session",
+              "Require attendance at one group daily to build tolerance",
+              "Respect personal space and protect the patient from others' ridicule",
+              "Explore with the patient why they fear being rejected by the group"
+            ],
+            answer: 2,
+            rationale: "These patients are loners who do not desire the presence of others, so the care is to respect personal space while gently encouraging participation, avoid being too friendly, and protect them from being made fun of by others on the unit. Pushing socialization is specifically not the goal. Fear of rejection belongs to avoidant personality disorder — the schizoid patient is not staying away because they are afraid of being disliked.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient believes a news anchor's closing remark was a coded message meant personally for them. What is this?",
+            options: [
+              "Magical thinking",
+              "An idea of reference",
+              "A delusion of grandeur",
+              "Depersonalization"
+            ],
+            answer: 1,
+            rationale: "Ideas of reference are incorrect interpretations of events as carrying special personal meaning, and they sit alongside odd beliefs, eccentric dress, constricted affect and brief episodes of hallucination or delusion in schizotypal personality disorder. Magical thinking is the related but separate belief that one is clairvoyant or telepathic. Depersonalization and detachment are schizoid features, and this is not a grandiose belief about the patient's own importance.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient with borderline personality disorder is admitted after self-harm. What should the nurse anticipate?",
+            options: [
+              "Self-harm behavior usually stops entirely once the unit doors are locked",
+              "The patient will most likely be discharged within 24 hours",
+              "Symptoms typically resolve faster inpatient than outpatient",
+              "Attention-seeking and self-harm behavior may intensify inpatient"
+            ],
+            answer: 3,
+            rationale: "These patients tend to get worse when admitted: attention-seeking behavior, boundary-pushing and relationship dynamics intensify on the unit, producing more self-harm behavior and decompensation — even though most are admitted for suicidal ideation or self-harm to begin with. About 75% have a history of at least one deliberate act of self-harm. A locked unit does not remove the behavior, and neither a fixed short stay nor faster inpatient resolution is what the course teaches.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "What belongs in a safety plan written with a patient who has borderline personality disorder? Select all that apply.",
+            options: [
+              "Names and phone numbers of a few people to call right away",
+              "The steps to take when overwhelmed or in emotional crisis",
+              "A signed agreement that the patient will not self-harm",
+              "Coping actions that help, such as journaling, distraction and deep breathing",
+              "Instructions to keep the plan private and stored out of sight"
+            ],
+            answers: [0, 1, 3],
+            rationale: "The plan is built with the patient and holds the steps to take during a crisis, a few named people with phone numbers to call when urges or overwhelm hit, and the things that help — journaling, distraction, deep breathing. It is kept somewhere visible, such as the refrigerator, precisely because the brain in crisis cannot recall who to reach out to. A signed no-harm agreement is not a safety intervention, and hiding the plan defeats its purpose.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which pattern points to antisocial rather than borderline personality disorder?",
+            options: [
+              "Recurrent self-injury with rapid, extreme shifts in mood and intense anger",
+              "Frantic efforts to avoid abandonment",
+              "Legal involvement, outward destructiveness and prior conduct disorder",
+              "Feelings of emptiness with no clear sense of identity or direction"
+            ],
+            answer: 2,
+            rationale: "Antisocial personality disorder typically brings legal involvement and outwardly destructive behavior, requires evidence of conduct disorder with onset before age 15, and is more common in males; borderline can involve the law too but is more self-destructive and more common in females. Self-injury, rapid mood shifts, frantic efforts to avoid abandonment, and emptiness with no sense of identity are all borderline features.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient is dramatic, flirtatious and emotionally excessive at every interaction, day after day. What distinguishes this from a manic episode?",
+            options: [
+              "The emotional display is constant rather than cycling up and down",
+              "The behavior appears only in the presence of staff",
+              "The patient has insight into the effect of the behavior",
+              "The behavior is unintentional and largely outside the patient's control"
+            ],
+            answer: 0,
+            rationale: "In histrionic personality disorder the excessive emotion is constant — moods do not cycle up and down as they do in bipolar disorder — and the behaviors are intentional, motivated by an intense desire to gain nurturance and support. These patients characteristically have no insight: they do not recognize that the attention-seeking is what interferes with relationships, and they consider relationships more intimate than they are.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient with narcissistic personality disorder reacts to a minor correction with fury. What underlies this?",
+            options: [
+              "Genuine superiority that the correction failed to acknowledge properly",
+              "A fragile sense of self-worth and hypersensitivity to criticism",
+              "An inability to recognize that the correction was made",
+              "Profound impairment in daily functioning, worse than in other personality disorders"
+            ],
+            answer: 1,
+            rationale: "Beneath the entitlement, grandiosity and constant need for admiration sit fear of abandonment, weak self-esteem and hypersensitivity to criticism — a fragile sense of self-worth, which is why a small correction lands so hard. The nurse stays neutral and calm, avoids power struggles, and does not take dismissiveness to heart. Narcissistic personality disorder also carries less functional impairment than the other personality disorders.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "What distinguishes obsessive-compulsive personality disorder from obsessive-compulsive disorder?",
+            options: [
+              "Only obsessive-compulsive personality disorder involves rituals",
+              "Only obsessive-compulsive disorder involves perfectionism and inflexible standards",
+              "Obsessive-compulsive personality disorder appears later in life, usually after age 40",
+              "Obsessive-compulsive personality disorder does not disable daily functioning"
+            ],
+            answer: 3,
+            rationale: "The personality disorder does not disable daily function the way obsessive-compulsive disorder does — these patients are not stuck in a compulsive loop and can go about their lives, though perfectionism, rigidity and inflexible standards keep projects from being finished and make delegating hard. Perfectionism belongs to the personality disorder rather than being exclusive to OCD, and the distinction is about function, not about age of onset.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Two patients both keep to themselves on the unit. Which finding identifies the one with avoidant rather than schizoid personality disorder?",
+            options: [
+              "Working a solitary job with no interaction with others",
+              "Flat affect with a sense of detachment from the surroundings",
+              "Wanting relationships but staying away for fear of criticism and rejection",
+              "Rarely marrying, with a history of poor academic performance and disordered family life"
+            ],
+            answer: 2,
+            rationale: "The avoidant patient wants connection but is inhibited by a preoccupation with rejection, humiliation and failure, and will not get involved unless certain of being liked; low self-esteem and shyness that increases with age go with it. The schizoid patient does not desire the presence of others at all — solitary work, flat and detached presentation, rarely marrying and poor academic performance describe that picture, not this one.",
+            topic: "Personality Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        eaq: []
+      }
     }
   ]
 };
@@ -2754,5 +3349,7 @@ window.TOPIC_ORDER = [
   "Depressive Disorders",
   "Bipolar & Related Disorders",
   "Suicide",
-  "Nonsuicidal Self-Injury"
+  "Nonsuicidal Self-Injury",
+  "Substance Use & Addictive Disorders",
+  "Personality Disorders"
 ];

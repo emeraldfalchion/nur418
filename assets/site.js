@@ -61,7 +61,14 @@ const SITE = {
         { id: "week2-nssi",         num: "4", title: "Nonsuicidal Self-Injury",           file: "week2-nssi.html" },
       ]
     },
-    /* Copy a block above for Week 3, Week 4, ... as the course goes on. */
+    {
+      label: "Week 3",
+      items: [
+        { id: "week3-sud",          num: "1", title: "Substance Use &amp; Addictive Disorders", file: "week3-substance-use-disorders.html" },
+        { id: "week3-personality",  num: "2", title: "Personality Disorders",         file: "week3-personality-disorders.html" },
+      ]
+    },
+    /* Copy a block above for Week 4, Week 5, ... as the course goes on. */
 
     /* ============================================================
        EXAM PREP — RESTORED on 2026-08-29, at Holly's request, after being
@@ -93,6 +100,7 @@ const SITE = {
         { id: "quiz-builder",    num: "3", title: "Build Your Own Exam",       file: "quiz-builder.html" },
         { id: "week1-lecture-review", num: "4", title: "Week 1 Lecture Review",  file: "week1-lecture-review.html" },
         { id: "week2-lecture-review", num: "5", title: "Week 2 Lecture Review",  file: "week2-lecture-review.html" },
+        { id: "week3-lecture-review", num: "6", title: "Week 3 Lecture Review",  file: "week3-lecture-review.html" },
       ]
     }
   ]
