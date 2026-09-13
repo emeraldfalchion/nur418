@@ -72,7 +72,7 @@ window.EXAM_DATA = {
       ],
       answer: 1,
       rationale: "Knowing the patient’s interests is the best place to begin to help the patient re-socialize. Knowing with whom the patient wishes to socialize, what transportation she has, or how much spending money she has may be relevant questions but should be asked after the question concerning what activities the patient enjoyed in the past.",
-      topic: "Therapeutic Communication & Relationships"
+      topic: "Therapeutic Communication"
     },
     {
       stem: "Which therapeutic communication techniques would a nurse on a mental health unit plan to use when communicating with a patient? Select all that apply.",
@@ -86,7 +86,7 @@ window.EXAM_DATA = {
       ],
       answers: [0, 1, 3, 4],
       rationale: "Therapeutic communication techniques include listening, maintaining silence, maintaining neutral responses, using broad openings and open-ended questions, focusing and refocusing, restating, clarifying and validating, sharing perceptions, reflecting, providing acknowledgment and feedback, giving information, presenting reality, encouraging formulation of a plan of action, providing nonverbal encouragement, and summarizing. Asking “Why” is often interpreted as being accusatory by the client and should also be avoided. Giving advice or giving approval or disapproval are barriers to communication.",
-      topic: "Therapeutic Communication & Relationships"
+      topic: "Therapeutic Communication"
     },
     {
       stem: "When the nurse directs ideas, feelings, questions or content back to the client she is using which therapeutic communication technique?",
@@ -98,7 +98,7 @@ window.EXAM_DATA = {
       ],
       answer: 3,
       rationale: "Reflecting directs questions, feelings, and ideas back to the patient. Encourages the patient to accept personal ideas and feelings. Acknowledges the patient’s right to have opinions and make decisions and encourages the patient to think of oneself as a capable person. Patient: “My brother spends all of my money and then wants more.” Nurse: “You feel angry when this happens?”",
-      topic: "Therapeutic Communication & Relationships"
+      topic: "Therapeutic Communication"
     },
     {
       stem: "The nurse states, “I’m not sure I understood that.” Which therapeutic communication technique is she using?",
@@ -110,7 +110,7 @@ window.EXAM_DATA = {
       ],
       answer: 0,
       rationale: "Seeking clarification helps patients clarify their own thoughts and maximize mutual understanding between the nurse and patient. “What would you say is the main point of what you just said?”",
-      topic: "Therapeutic Communication & Relationships"
+      topic: "Therapeutic Communication"
     },
     {
       stem: "A 20-year-old college student is admitted to a medical unit due to sudden onset of paralysis in both legs. She reveals that her boyfriend has been pressuring her sexually. The most therapeutic response by the nurse is:",
@@ -122,7 +122,7 @@ window.EXAM_DATA = {
       ],
       answer: 3,
       rationale: "The correct answer is D. The statement focuses on expressing feelings and is therapeutic. Option A is not therapeutic because the nurse passes the responsibility to the counselor. Option B is giving advice, which is not therapeutic as it virtually terminates the conversation. Option C is not also therapeutic because it confronts the underlying cause.",
-      topic: "Therapeutic Communication & Relationships"
+      topic: "Therapeutic Communication"
     },
     {
       stem: "A male patient tells the nurse he was involved in a car accident while he was intoxicated. What would be the most therapeutic response from the nurse?",
@@ -134,7 +134,7 @@ window.EXAM_DATA = {
       ],
       answer: 1,
       rationale: "Choosing option A would make the patient feel defensive and intimidated. Option C is judgmental. Remember, any judgmental approach is not therapeutic. Option D is about giving advice, and here, the nurse suggests that the client isn’t capable of making decisions, thus fostering dependency. For this question, option B is the correct answer as it encourages the widest range of patient responses and makes the patient be an active participant in the conversation.",
-      topic: "Therapeutic Communication & Relationships"
+      topic: "Therapeutic Communication"
     },
 
     /* ---------- Introduction to PMH Nursing (deck slides 14-34) ---------- */
@@ -526,7 +526,7 @@ window.EXAM_DATA = {
 /* Display order for the topic-breakdown strip: the order the topics
    appear in the deck, which is not the order they appear in the nav. */
 window.TOPIC_ORDER = [
-  "Therapeutic Communication & Relationships",
+  "Therapeutic Communication",
   "Introduction to PMH Nursing",
   "Group & Physiologic Therapies",
   "Assessment, Theories & Therapies",

@@ -39,7 +39,7 @@
      week's sections to the bottom of the Week 1 panel, and do not add
      a week-level h2 — the whole point of the tabs is that this page
      never becomes a five-week scroll. "Not Tested" is its own tab
-     (data-tab-end parks it right), because it is course-wide rather
+     (data-tab-end colours it accent; it sits last in the strip), because it is course-wide rather
      than belonging to any one week.
 
      STRUCTURE, set by Holly on 2026-08-29: one section per topic,
@@ -76,7 +76,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Key Terms &amp; Learning Outcomes — NUR418</title>
 <script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
-<link rel="stylesheet" href="assets/styles.css?v=20260912">
+<link rel="stylesheet" href="assets/styles.css?v=20260913b">
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
@@ -88,8 +88,6 @@
     <p class="eyebrow">Exam Prep</p>
     <h1>Key Terms &amp; Learning Outcomes</h1>
   </header>
-
-  <p class="note">A <span class="star">★</span> marks something stated outright as tested.</p>
 
   <!-- ===== TAB PANEL: Week 1 =====
        The tab strip above is BUILT BY site.js from the data-tab-label on
@@ -308,7 +306,7 @@
     </div>
   </div>
 
-  <h2 class="block" id="therapeutic-communication">Therapeutic Communication &amp; Relationships</h2>
+  <h2 class="block" id="therapeutic-communication">Therapeutic Communication</h2>
 
   <h3 class="sub">Key Terms</h3>
 
@@ -516,7 +514,7 @@
         <li><b>Identify common risk factors:</b> genetic predisposition, neurotransmitter disruption, brain structure and function, immature adolescent brain development, the craving and relapse cycle, tolerance and withdrawal; plus chronic stressors, socioeconomic factors, anxiety, substance use in family or peers, trauma or abuse, access, and ineffective coping.</li>
         <li><b>Describe the neurobiological process and the neurotransmitters involved:</b> the mesolimbic reward pathway — dopamine surge up to 5–10 times normal, reinforcement, craving, repeat use. Dopamine is most central; serotonin, GABA, glutamate and endorphins also involved. Alcohol breaks down into acetate, which triggers craving for more acetate, and that effect never resets even with abstinence.</li>
         <li><b>Discuss clinical manifestations of use, intoxication, withdrawal, tolerance, overdose and treatment.</b> Opioid overdose is an emergency — the cardinal signs are coma, pinpoint pupils and respiratory depression; give naloxone and repeat if signs return, because its half-life is shorter than the opioid's.</li>
-        <li><b>Identify pharmacologic and psychological treatments for withdrawal and recovery.</b> Alcohol withdrawal: chlordiazepoxide, diazepam or lorazepam at a CIWA-Ar of 8–10 or more. Recovery: naltrexone, disulfiram and acamprosate, none of which treats withdrawal. Opioids: methadone, buprenorphine, buprenorphine &amp; naloxone, naltrexone, clonidine, lofexidine. Psychological: individual and behavioral therapy, CBT, family therapy, social skills training, support groups.</li>
+        <li><b>Identify pharmacologic and psychological treatments for withdrawal and recovery.</b> Alcohol withdrawal: diazepam or lorazepam at a CIWA-Ar of 8–10 or more. Recovery: naltrexone, disulfiram and acamprosate, none of which treats withdrawal. Opioids: methadone, buprenorphine, buprenorphine &amp; naloxone, naltrexone, clonidine. Psychological: individual and behavioral therapy, CBT, family therapy, social skills training, support groups.</li>
         <li><b>Discuss the use of the CIWA and the COWS.</b> COWS assesses opioid withdrawal; CIWA assesses sedative-hypnotic and alcohol withdrawal, scoring nausea/vomiting, tremors, anxiety, agitation, paroxysmal sweats, headache, tactile, auditory and visual disturbance, and orientation, usually every 4 hours and PRN.</li>
         <li><b>Describe the interdisciplinary approach</b> — SBIRT, recovery supports and collaborative care. The care continuum runs detoxification, rehabilitation, halfway houses, partial hospitalization, intensive outpatient programs, outpatient treatment, AA/NA, and relapse prevention.</li>
         <li><b>Apply the clinical judgment measurement model</b> to individuals with substance use and addictive disorders — recognize and analyze cues through screening and assessment, prioritize hypotheses, generate solutions, take action, evaluate outcomes. Involving relatives in treatment decreases relapse rates by 20 to 50 percent.</li>
@@ -558,8 +556,9 @@
   <!-- ===== TAB PANEL: Not Tested =====
        Its own tab, not a section of Week 1: "Not Tested" is COURSE-WIDE, not
        exam-specific (Holly, 2026-09-02), so it must not sit inside one week
-       and vanish when another is selected. data-tab-end pushes its button to
-       the far right of the strip, away from the week buttons.
+       and vanish when another is selected. data-tab-end gives its button the
+       accent colour; it sits at the end of the strip, right after the week
+       buttons (moved there from the far right on 2026-09-13 — too easy to miss).
 
        INSIDE the tab it is laid out like the Week 1 tab: one h2.block PER
        WEEK, not a single "Not Tested" heading (Holly, 2026-09-02). A later
@@ -624,7 +623,7 @@
 </div>
 </main>
 
-<script src="assets/site.js?v=20260912"></script>
-<script src="assets/study.js?v=20260912"></script>
+<script src="assets/site.js?v=20260913b"></script>
+<script src="assets/study.js?v=20260913b"></script>
 </body>
 </html>

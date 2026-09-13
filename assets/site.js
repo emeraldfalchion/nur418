@@ -337,8 +337,11 @@ const SITE_VER = (function () {
        and the tab strip is BUILT HERE from those labels, the same way
        the nav is built from SITE — there is no tab markup on the page
        to hand-edit. Adding a tab is one wrapper div and one attribute.
-       `data-tab-end` pushes a button to the far right of the strip, for
-       a panel that isn't one of the sequence (e.g. "Not Tested").
+       `data-tab-end` marks a panel that isn't one of the sequence (e.g.
+       "Not Tested"): its button takes the accent colour. It sits at the
+       END of the strip, right after the week tabs, simply because the
+       panel is last in the page — it used to be pushed to the far right,
+       and Holly moved it back on 2026-09-13 as too easy to miss.
        Pages with no .tab-panel are completely unaffected.            */
     const panels = Array.from(contentRoot.querySelectorAll(".tab-panel[data-tab-label]"));
     const tabbed = panels.length > 1;

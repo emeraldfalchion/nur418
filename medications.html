@@ -2,8 +2,18 @@
 <!-- ============================================================
      MEDICATIONS
 
-     A cross-cutting Exam Prep reference: every drug the course has
-     taught, gathered by class, one tab per week.
+     A cross-cutting Exam Prep reference: the drugs on each week's
+     Exam Focus Medications slides, gathered by class, one tab per week.
+
+     ONLY EXAM-FOCUS DRUGS (Holly, 2026-09-13). A week's tab carries only
+     the drugs named on that week's Exam Focus deck ("Week 2 - Exam
+     Focus.pptx", "Week 3 - Exam Focus.pptx" in slides/) — not every drug
+     the full lecture decks mention. Removed that day: Week 2 vortioxetine,
+     vilazodone, desipramine, isocarboxazid, topiramate, ziprasidone,
+     lurasidone, clonazepam, ketamine; Week 3 lofexidine, chlordiazepoxide,
+     gabapentin. They are still on the topic pages. Do not add them back.
+     (A drug on another week's slide does not qualify — gabapentin is on
+     the Week 2 slide, so it stays on the Week 2 tab only.)
 
      WHY IT MAY RESTATE THE TOPIC PAGES. Content rule 2 ("each topic
      is taught in exactly ONE place") governs TOPIC pages. This is an
@@ -17,21 +27,30 @@
      side of it.
 
      THE LAYOUT, chosen by Holly on 2026-09-02 from four options. Each
-     week opens with a thin "At a Glance" roster — drug, class, one
-     line of use, nothing more — and then one h2 section per class
-     carrying the detail. The roster is deliberately the ONLY wide
+     week carries one h2 section per class holding the detail, and
+     CLOSES with a thin "At a Glance" roster — drug, class, one line
+     of indication, nothing more. (Holly, 2026-09-13: the roster used
+     to open each tab; it moved to the end that day, and rows sharing
+     an identical class AND indication were merged into one row with
+     one drug per line in the first cell.) The roster is deliberately the ONLY wide
      matrix on the page; a single big matrix holding every category
      was rejected as overwhelming, which is the whole reason the
      detail lives in per-class sections instead.
 
      EVERY CLASS TABLE USES THE SAME ROW HEADINGS, and they are not
-     arbitrary: Reason for Use · Side Effects & What to Do · Adverse
-     Events · Contraindications · Monitoring & Teaching. Keep them,
+     arbitrary: Indication · Side Effects & What to Do · Adverse
+     Events · Contraindications · Monitoring & Teaching. ("Indication"
+     was "Reason for Use" until Holly renamed it on 2026-09-13.) Keep them,
      keep them in that order, and leave a row out rather than padding
      it when the source says nothing. Because column 1 is the category
      and column 2 the content, study.js's default (glossary) eye-button
      mode turns every one of these into a recall self-quiz for free —
      do NOT add data-hide-mode="all" or data-nohide to them.
+
+     TABLE, THEN CARD BENEATH IT (Holly, 2026-09-13). Each class table
+     runs full width with its Drugs / Treatment / Used With card
+     directly underneath. These used to sit side by side in a
+     .table-aside; do not re-wrap them.
 
      TABS: built by site.js from each .tab-panel's data-tab-label —
      there is no tab markup here to hand-edit. Adding Week 3 is one
@@ -55,7 +74,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Medications — NUR418</title>
 <script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
-<link rel="stylesheet" href="assets/styles.css?v=20260912">
+<link rel="stylesheet" href="assets/styles.css?v=20260913b">
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
@@ -68,8 +87,6 @@
     <h1>Medications</h1>
   </header>
 
-  <p class="note">Every class is laid out the same way: <b>reason for use</b>, <b>side effects and what to do about them</b>, <b>adverse events</b>, <b>contraindications</b>, and <b>monitoring and teaching</b>. Generic names throughout; doses appear only where one was given.</p>
-
   <!-- ===== TAB PANEL: Week 1 ===== -->
   <div class="tab-panel" id="tab-week1" data-tab-label="Week 1">
 
@@ -79,54 +96,6 @@
 
   <!-- ===== TAB PANEL: Week 2 ===== -->
   <div class="tab-panel" id="tab-week2" data-tab-label="Week 2">
-
-  <h2 class="block" id="w2-glance">At a Glance</h2>
-
-  <p class="note">Name to class to reason for use. Hide the columns and work down the list — that pairing is the quickest thing on this page to drill and the easiest to lose.</p>
-
-  <div class="table-wrap"><table>
-    <thead><tr><th>Drug</th><th>Class</th><th>Reason for Use</th></tr></thead>
-    <tbody>
-      <tr><td class="term">fluoxetine</td><td>SSRI</td><td>First-line for MDD; first-line in children and teens.</td></tr>
-      <tr><td class="term">paroxetine</td><td>SSRI</td><td>First-line for MDD.</td></tr>
-      <tr><td class="term">sertraline</td><td>SSRI</td><td>First-line for MDD.</td></tr>
-      <tr><td class="term">citalopram</td><td>SSRI</td><td>First-line for MDD.</td></tr>
-      <tr><td class="term">escitalopram</td><td>SSRI</td><td>First-line for MDD.</td></tr>
-      <tr><td class="term">vortioxetine</td><td>SSRI</td><td>First-line for MDD.</td></tr>
-      <tr><td class="term">vilazodone</td><td>SSRI</td><td>First-line for MDD.</td></tr>
-      <tr><td class="term">venlafaxine</td><td>SNaRI</td><td>MDD; off label in children and teens.</td></tr>
-      <tr><td class="term">duloxetine</td><td>SNaRI</td><td>MDD.</td></tr>
-      <tr><td class="term">desvenlafaxine</td><td>SNRI</td><td>MDD. A metabolite of venlafaxine.</td></tr>
-      <tr><td class="term">imipramine</td><td>TCA</td><td>MDD, second choice after SSRIs.</td></tr>
-      <tr><td class="term">desipramine</td><td>TCA</td><td>MDD, second choice after SSRIs.</td></tr>
-      <tr><td class="term">doxepin</td><td>TCA</td><td>MDD, second choice after SSRIs.</td></tr>
-      <tr><td class="term">amitriptyline</td><td>TCA</td><td>MDD, second choice after SSRIs.</td></tr>
-      <tr><td class="term">phenelzine</td><td>MAOI</td><td>Treatment-resistant depression; third choice.</td></tr>
-      <tr><td class="term">isocarboxazid</td><td>MAOI</td><td>Treatment-resistant depression; third choice.</td></tr>
-      <tr><td class="term">tranylcypromine</td><td>MAOI</td><td>Treatment-resistant depression; third choice.</td></tr>
-      <tr><td class="term">selegiline (Emsam)</td><td>MAOI</td><td>Transdermal patch — far fewer dietary and drug restrictions.</td></tr>
-      <tr><td class="term">bupropion</td><td>NDRI</td><td>Depression where fatigue is prominent; smoking cessation as Zyban.</td></tr>
-      <tr><td class="term">trazodone</td><td>Other antidepressant</td><td>Mainly at bedtime for sleep; antidepressant effect at higher doses.</td></tr>
-      <tr><td class="term">mirtazapine</td><td>NaSSA</td><td>Depression; given at bedtime, good for sleep.</td></tr>
-      <tr><td class="term">lithium carbonate</td><td>Mood stabilizer</td><td>Acute mania and maintenance; low dose for suicidal ideation.</td></tr>
-      <tr><td class="term">valproate / divalproex</td><td>Anticonvulsant mood stabilizer</td><td>Mania; longer periods of mood stabilization.</td></tr>
-      <tr><td class="term">carbamazepine</td><td>Anticonvulsant mood stabilizer</td><td>When lithium fails, or breakthrough mania.</td></tr>
-      <tr><td class="term">lamotrigine</td><td>Anticonvulsant mood stabilizer</td><td>Rapid cycling and the depressed phase.</td></tr>
-      <tr><td class="term">gabapentin</td><td>Anticonvulsant mood stabilizer</td><td>Acute mania, mood stabilization, rapid cycling.</td></tr>
-      <tr><td class="term">topiramate</td><td>Anticonvulsant mood stabilizer</td><td>Mood stabilization.</td></tr>
-      <tr><td class="term">olanzapine</td><td>Second-generation antipsychotic</td><td>Acute severe mania, with a mood stabilizer.</td></tr>
-      <tr><td class="term">risperidone</td><td>Second-generation antipsychotic</td><td>Acute severe mania, with a mood stabilizer.</td></tr>
-      <tr><td class="term">aripiprazole</td><td>Second-generation antipsychotic</td><td>Acute severe mania — for use over age 10.</td></tr>
-      <tr><td class="term">quetiapine</td><td>Second-generation antipsychotic</td><td>Acute severe mania.</td></tr>
-      <tr><td class="term">ziprasidone</td><td>Second-generation antipsychotic</td><td>Acute severe mania.</td></tr>
-      <tr><td class="term">lurasidone</td><td>Second-generation antipsychotic</td><td>Acute severe mania.</td></tr>
-      <tr><td class="term">Symbyax</td><td>Combination — olanzapine + fluoxetine</td><td>Predominantly depressed bipolar, e.g. bipolar II.</td></tr>
-      <tr><td class="term">diazepam</td><td>Benzodiazepine</td><td>Severe agitation, short-term; serotonin syndrome.</td></tr>
-      <tr><td class="term">lorazepam</td><td>Benzodiazepine</td><td>Severe agitation, short-term; serotonin syndrome.</td></tr>
-      <tr><td class="term">clonazepam</td><td>Benzodiazepine</td><td>Severe agitation, short-term.</td></tr>
-      <tr><td class="term">ketamine</td><td>Other</td><td>Nasal, for suicidal ideation.</td></tr>
-    </tbody>
-  </table></div>
 
   <h2 class="block" id="w2-antidepressant-principles">Antidepressant Principles</h2>
 
@@ -178,25 +147,23 @@
 
   <h2 class="block" id="w2-ssri">SSRIs &amp; SNRIs</h2>
 
-  <div class="table-aside">
-    <div class="table-wrap"><table>
-      <thead><tr><th>Category</th><th>Detail</th></tr></thead>
-      <tbody>
-        <tr><td class="term">Reason for Use</td><td><b>First-line therapy for depression.</b> Block the neuronal uptake of serotonin, leaving more in the synaptic cleft. Good for depression with anxiety or with psychomotor agitation; also treat anxiety and obsessive-compulsive disorders. SNaRIs act on both serotonin and norepinephrine and usually carry a few more side effects.</td></tr>
-        <tr><td class="term">Side Effects &amp; What to Do</td><td><b>Dry mouth</b> — increase fluids, sugar-free gum. <b>Sexual problems</b> — reduced desire, difficulty reaching orgasm, or inability to maintain an erection, in <b>up to 80%</b>. <b>Headache</b> and <b>blurred vision</b> — symptomatic care. These four are the most common. <b>Drowsiness</b> — dose at night. <b>Nausea</b> — with food or at bedtime. <b>Insomnia</b> — dose in the morning. <b>Diarrhea</b> — increase fiber. <b>Nervousness, agitation, restlessness, dizziness</b> — relaxation techniques; avoid caffeine if anxious.</td></tr>
-        <tr><td class="term">Adverse Events</td><td><b>Serotonin syndrome</b> — rare but potentially life-threatening; see below. <b>Abrupt discontinuation</b> may be mild or severe: "electrical surges" or "brain shivers" in the head or body, pins-and-needles sensations on the skin, blackouts, short-term memory loss, and feeling on the verge of unconsciousness.</td></tr>
-        <tr><td class="term">Monitoring &amp; Teaching</td><td>Effectiveness takes <b>4&ndash;8 weeks</b>; most side effects diminish in <b>4&ndash;6 weeks</b>. <b>Monitor for suicidal ideation, extreme agitation, fever, increased blood pressure, and manic symptoms.</b> Teach sleep hygiene and relaxation techniques.</td></tr>
-      </tbody>
-    </table></div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Category</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Indication</td><td><b>First-line therapy for depression.</b> Block the neuronal uptake of serotonin, leaving more in the synaptic cleft. Good for depression with anxiety or with psychomotor agitation; also treat anxiety and obsessive-compulsive disorders. SNaRIs act on both serotonin and norepinephrine and usually carry a few more side effects.</td></tr>
+      <tr><td class="term">Side Effects &amp; What to Do</td><td><b>Dry mouth</b> — increase fluids, sugar-free gum. <b>Sexual problems</b> — reduced desire, difficulty reaching orgasm, or inability to maintain an erection, in <b>up to 80%</b>. <b>Headache</b> and <b>blurred vision</b> — symptomatic care. These four are the most common. <b>Drowsiness</b> — dose at night. <b>Nausea</b> — with food or at bedtime. <b>Insomnia</b> — dose in the morning. <b>Diarrhea</b> — increase fiber. <b>Nervousness, agitation, restlessness, dizziness</b> — relaxation techniques; avoid caffeine if anxious.</td></tr>
+      <tr><td class="term">Adverse Events</td><td><b>Serotonin syndrome</b> — rare but potentially life-threatening; see below. <b>Abrupt discontinuation</b> may be mild or severe: "electrical surges" or "brain shivers" in the head or body, pins-and-needles sensations on the skin, blackouts, short-term memory loss, and feeling on the verge of unconsciousness.</td></tr>
+      <tr><td class="term">Monitoring &amp; Teaching</td><td>Effectiveness takes <b>4&ndash;8 weeks</b>; most side effects diminish in <b>4&ndash;6 weeks</b>. <b>Monitor for suicidal ideation, extreme agitation, fever, increased blood pressure, and manic symptoms.</b> Teach sleep hygiene and relaxation techniques.</td></tr>
+    </tbody>
+  </table></div>
 
-    <div class="card">
-      <h4>Drugs</h4>
-      <ul>
-        <li><b>SSRIs</b> — selective serotonin reuptake inhibitors: fluoxetine · paroxetine · sertraline · citalopram · escitalopram · vortioxetine · vilazodone</li>
-        <li><b>SNaRIs</b> — serotonin noradrenergic reuptake inhibitors: venlafaxine · duloxetine</li>
-        <li><b>SNRI</b> — serotonin norepinephrine reuptake inhibitor: desvenlafaxine</li>
-      </ul>
-    </div>
+  <div class="card">
+    <h4>Drugs</h4>
+    <ul>
+      <li><b>SSRIs</b> — selective serotonin reuptake inhibitors: fluoxetine · paroxetine · sertraline · citalopram · escitalopram</li>
+      <li><b>SNaRIs</b> — serotonin noradrenergic reuptake inhibitors: venlafaxine · duloxetine</li>
+      <li><b>SNRI</b> — serotonin norepinephrine reuptake inhibitor: desvenlafaxine</li>
+    </ul>
   </div>
 
   <p class="xref-line"><a class="xref" href="week1-neurobiology.html#discontinuation"><span><b>Discontinuation syndrome</b> and why psychotropics are tapered rather than stopped are taught in <b>Neurobiology &amp; Pharmacology</b></span></a></p>
@@ -205,107 +172,97 @@
 
   <div class="callout-danger"><b>Rare but potentially life-threatening.</b> <b>60%</b> of patients who develop it do so <b>within 6 hours</b> of a first dose, a change in dosing, or an intentional overdose. If the serotonergic medication is not discontinued it progresses to worsening myoclonus, hypertension, rigor, acidosis, respiratory failure, and rhabdomyolysis, and it can be fatal through hyperpyrexia or cardiovascular shock.</div>
 
-  <div class="table-aside">
-    <div class="table-wrap"><table>
-      <thead><tr><th>System</th><th>Symptoms</th></tr></thead>
-      <tbody>
-        <tr><td class="term">Mental status</td><td>Agitation, confusion, restlessness, lethargy, delirium, irritability, dizziness, hallucinations.</td></tr>
-        <tr><td class="term">Autonomic</td><td>Diaphoresis, flushing, fever, tachycardia, mydriasis.</td></tr>
-        <tr><td class="term">Neuromuscular</td><td>Myoclonus (muscle twitching or jerks), hyperreflexia, tremors.</td></tr>
-        <tr><td class="term">Gastrointestinal</td><td>Nausea, vomiting, diarrhea.</td></tr>
-      </tbody>
-    </table></div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>System</th><th>Symptoms</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Mental status</td><td>Agitation, confusion, restlessness, lethargy, delirium, irritability, dizziness, hallucinations.</td></tr>
+      <tr><td class="term">Autonomic</td><td>Diaphoresis, flushing, fever, tachycardia, mydriasis.</td></tr>
+      <tr><td class="term">Neuromuscular</td><td>Myoclonus (muscle twitching or jerks), hyperreflexia, tremors.</td></tr>
+      <tr><td class="term">Gastrointestinal</td><td>Nausea, vomiting, diarrhea.</td></tr>
+    </tbody>
+  </table></div>
 
-    <div class="card">
-      <h4>Treatment</h4>
-      <ul>
-        <li><b>Stop or reduce the contributing medications</b>, depending on symptom severity and as directed by the prescriber. This is the first action.</li>
-        <li><b>Benzodiazepines</b> — diazepam or lorazepam — for agitation, seizures, and muscle stiffness.</li>
-        <li><b>Avoid antipsychotics such as haloperidol</b> for the agitation — they can worsen hyperthermia and contribute to a neuroleptic malignant syndrome–like reaction. The agitation here is an internal restlessness, not outward aggression.</li>
-        <li><b>Oxygen</b> to maintain normal levels; <b>IV fluids</b> for dehydration and fever; symptomatic and supportive care.</li>
-        <li>Tachycardia or hypertension: <b>esmolol</b> or <b>nitroprusside</b>. Hypotension: <b>phenylephrine</b> or <b>epinephrine</b>.</li>
-        <li>If other treatments are not working, a serotonin-production blocker: <b>cyproheptadine HCl</b>.</li>
-        <li>Symptoms usually resolve <b>within 24 hours</b>, but can take several weeks to clear completely.</li>
-      </ul>
-    </div>
+  <div class="card">
+    <h4>Treatment</h4>
+    <ul>
+      <li><b>Stop or reduce the contributing medications</b>, depending on symptom severity and as directed by the prescriber. This is the first action.</li>
+      <li><b>Benzodiazepines</b> — diazepam or lorazepam — for agitation, seizures, and muscle stiffness.</li>
+      <li><b>Avoid antipsychotics such as haloperidol</b> for the agitation — they can worsen hyperthermia and contribute to a neuroleptic malignant syndrome–like reaction. The agitation here is an internal restlessness, not outward aggression.</li>
+      <li><b>Oxygen</b> to maintain normal levels; <b>IV fluids</b> for dehydration and fever; symptomatic and supportive care.</li>
+      <li>Tachycardia or hypertension: <b>esmolol</b> or <b>nitroprusside</b>. Hypotension: <b>phenylephrine</b> or <b>epinephrine</b>.</li>
+      <li>If other treatments are not working, a serotonin-production blocker: <b>cyproheptadine HCl</b>.</li>
+      <li>Symptoms usually resolve <b>within 24 hours</b>, but can take several weeks to clear completely.</li>
+    </ul>
   </div>
 
   <h2 class="block" id="w2-tca">Tricyclic Antidepressants</h2>
 
   <div class="callout-danger"><b>Deadly in overdose,</b> through fatal CNS depression — and equally so combined with alcohol or other CNS depressants. The cardiovascular effects are the serious ones: <b>dysrhythmias, tachycardia, MI, and heart block</b>.</div>
 
-  <div class="table-aside">
-    <div class="table-wrap"><table>
-      <thead><tr><th>Category</th><th>Detail</th></tr></thead>
-      <tbody>
-        <tr><td class="term">Reason for Use</td><td><b>Second choice</b> for MDD after the SSRIs. Block the reuptake of norepinephrine and serotonin at the presynaptic neuron in the CNS, which is thought to elevate mood. Much less expensive than SRIs, and returning to use after several failed SSRI trials.</td></tr>
-        <tr><td class="term">Side Effects &amp; What to Do</td><td><b>Dry mouth</b> — sugar-free hard candy or gum. <b>GI upset</b> — take with food. <b>Diarrhea</b> — frequent small meals. <b>Constipation</b> — increase fiber, fluids, exercise. <b>Insomnia</b> — sleep hygiene; take in the morning. <b>Orthostasis</b> — stay hydrated, get up slowly. <b>Sexual side effects</b> — erectile dysfunction medications. <b>Urinary hesitancy</b> — run water while voiding, measure the amount.</td></tr>
-        <tr><td class="term">Adverse Events</td><td><b>Dysrhythmias, tachycardia, MI, and heart block.</b> Alpha-adrenergic blockade produces <b>orthostatic hypotension and tachycardia</b> — dizziness and falls are the worry in older adults. <b>Urinary retention or severe constipation needs immediate medical attention.</b></td></tr>
-        <tr><td class="term">Contraindications</td><td><b>After an MI or with other cardiovascular disease · narrow-angle glaucoma · any history of seizures · pregnancy.</b> Considered risky in older adults and in anyone with cardiac disease. Avoided in children and adolescents.</td></tr>
-        <tr><td class="term">Monitoring &amp; Teaching</td><td><b>Check an ECG</b> for cardiac disorder before initiating, and <b>check for a history of seizure disorder</b>. Results take <b>10&ndash;14 days</b> to appear and full effects <b>4&ndash;8 weeks</b>; <b>start low and go slow</b>. Often given at night — the sedation aids sleep and the side effects fall during sleeping hours. Warn about <b>early morning awakening, feeling worse in the morning, worry and anxiety</b> early in treatment; these ease as the day goes on.</td></tr>
-      </tbody>
-    </table></div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Category</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Indication</td><td><b>Second choice</b> for MDD after the SSRIs. Block the reuptake of norepinephrine and serotonin at the presynaptic neuron in the CNS, which is thought to elevate mood. Much less expensive than SRIs, and returning to use after several failed SSRI trials.</td></tr>
+      <tr><td class="term">Side Effects &amp; What to Do</td><td><b>Dry mouth</b> — sugar-free hard candy or gum. <b>GI upset</b> — take with food. <b>Diarrhea</b> — frequent small meals. <b>Constipation</b> — increase fiber, fluids, exercise. <b>Insomnia</b> — sleep hygiene; take in the morning. <b>Orthostasis</b> — stay hydrated, get up slowly. <b>Sexual side effects</b> — erectile dysfunction medications. <b>Urinary hesitancy</b> — run water while voiding, measure the amount.</td></tr>
+      <tr><td class="term">Adverse Events</td><td><b>Dysrhythmias, tachycardia, MI, and heart block.</b> Alpha-adrenergic blockade produces <b>orthostatic hypotension and tachycardia</b> — dizziness and falls are the worry in older adults. <b>Urinary retention or severe constipation needs immediate medical attention.</b></td></tr>
+      <tr><td class="term">Contraindications</td><td><b>After an MI or with other cardiovascular disease · narrow-angle glaucoma · any history of seizures · pregnancy.</b> Considered risky in older adults and in anyone with cardiac disease. Avoided in children and adolescents.</td></tr>
+      <tr><td class="term">Monitoring &amp; Teaching</td><td><b>Check an ECG</b> for cardiac disorder before initiating, and <b>check for a history of seizure disorder</b>. Results take <b>10&ndash;14 days</b> to appear and full effects <b>4&ndash;8 weeks</b>; <b>start low and go slow</b>. Often given at night — the sedation aids sleep and the side effects fall during sleeping hours. Warn about <b>early morning awakening, feeling worse in the morning, worry and anxiety</b> early in treatment; these ease as the day goes on.</td></tr>
+    </tbody>
+  </table></div>
 
-    <div class="card">
-      <h4>Drugs</h4>
-      <ul>
-        <li>imipramine</li>
-        <li>desipramine</li>
-        <li>doxepin</li>
-        <li>amitriptyline</li>
-      </ul>
-    </div>
+  <div class="card">
+    <h4>Drugs</h4>
+    <ul>
+      <li>imipramine</li>
+      <li>doxepin</li>
+      <li>amitriptyline</li>
+    </ul>
   </div>
 
   <div class="mnemonic"><b>Anticholinergic side effects.</b> <b>Hot as a hare</b> — increased temperature · <b>Dry as a bone</b> — dry mouth and eyes, urinary retention, constipation · <b>Blind as a bat</b> — mydriasis, dilated pupils, blurred vision · <b>Red as a beet</b> — flushed face · <b>Mad as a hatter</b> — confusion, delirium. Also sedation and weight gain. Usually not serious and often transitory.</div>
 
   <h2 class="block" id="w2-maoi">MAOIs</h2>
 
-  <div class="table-aside">
-    <div class="table-wrap"><table>
-      <thead><tr><th>Category</th><th>Detail</th></tr></thead>
-      <tbody>
-        <tr><td class="term">Reason for Use</td><td>Usually the <b>third choice</b> for depression, reserved for treatment-resistant cases. Block monoamine oxidase, the enzyme that metabolizes serotonin, norepinephrine, dopamine, and tyramine, so the mood-elevating neurotransmitters increase. Also used for panic disorder, social phobias, generalized anxiety disorders, and bulimia. Effective for <b>unconventional depression</b> — a depression that can lift with positive news or events, where the arms and legs feel heavy as lead, with oversleeping and overeating.</td></tr>
-        <tr><td class="term">Side Effects &amp; What to Do</td><td><b>Common:</b> dry mouth · nausea · diarrhea or constipation · headache · drowsiness · insomnia · dizziness or lightheadedness · skin reaction at the patch site. <b>Less common:</b> involuntary muscle jerks · low blood pressure · reduced sexual desire or orgasm · weight gain · difficulty starting urine flow · muscle cramps · paresthesia.</td></tr>
-        <tr><td class="term">Adverse Events</td><td><b>Hypertensive crisis</b> after a contraindicated substance — see below. <b>Serotonin syndrome</b> when combined with an SSRI.</td></tr>
-        <tr><td class="term">Contraindications</td><td><b>Tyramine-rich foods</b> — see the callout below. <b>Avoid Demerol</b>, and be very careful with <b>OTC cold medications</b>. <b>Rarely used with an SSRI</b> — the combination commonly causes serotonin syndrome. Limit caffeine, chocolate, and avocados.</td></tr>
-        <tr><td class="term">Monitoring &amp; Teaching</td><td><b>Monitor blood pressure routinely, especially during the first 6 weeks.</b> Crisis occurs <b>15&ndash;90 minutes</b> after ingesting a contraindicated substance.</td></tr>
-      </tbody>
-    </table></div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Category</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Indication</td><td>Usually the <b>third choice</b> for depression, reserved for treatment-resistant cases. Block monoamine oxidase, the enzyme that metabolizes serotonin, norepinephrine, dopamine, and tyramine, so the mood-elevating neurotransmitters increase. Also used for panic disorder, social phobias, generalized anxiety disorders, and bulimia. Effective for <b>unconventional depression</b> — a depression that can lift with positive news or events, where the arms and legs feel heavy as lead, with oversleeping and overeating.</td></tr>
+      <tr><td class="term">Side Effects &amp; What to Do</td><td><b>Common:</b> dry mouth · nausea · diarrhea or constipation · headache · drowsiness · insomnia · dizziness or lightheadedness · skin reaction at the patch site. <b>Less common:</b> involuntary muscle jerks · low blood pressure · reduced sexual desire or orgasm · weight gain · difficulty starting urine flow · muscle cramps · paresthesia.</td></tr>
+      <tr><td class="term">Adverse Events</td><td><b>Hypertensive crisis</b> after a contraindicated substance — see below. <b>Serotonin syndrome</b> when combined with an SSRI.</td></tr>
+      <tr><td class="term">Contraindications</td><td><b>Tyramine-rich foods</b> — see the callout below. <b>Avoid Demerol</b>, and be very careful with <b>OTC cold medications</b>. <b>Rarely used with an SSRI</b> — the combination commonly causes serotonin syndrome. Limit caffeine, chocolate, and avocados.</td></tr>
+      <tr><td class="term">Monitoring &amp; Teaching</td><td><b>Monitor blood pressure routinely, especially during the first 6 weeks.</b> Crisis occurs <b>15&ndash;90 minutes</b> after ingesting a contraindicated substance.</td></tr>
+    </tbody>
+  </table></div>
 
-    <div class="card">
-      <h4>Drugs</h4>
-      <ul>
-        <li>phenelzine</li>
-        <li>isocarboxazid</li>
-        <li>tranylcypromine</li>
-        <li><b>selegiline (Emsam)</b>, a transdermal patch — <b>far fewer dietary restrictions and drug interactions</b></li>
-      </ul>
-    </div>
+  <div class="card">
+    <h4>Drugs</h4>
+    <ul>
+      <li>phenelzine</li>
+      <li>tranylcypromine</li>
+      <li><b>selegiline (Emsam)</b>, a transdermal patch — <b>far fewer dietary restrictions and drug interactions</b></li>
+    </ul>
   </div>
 
   <h3 class="sub" id="w2-hypertensive-crisis">Hypertensive Crisis</h3>
 
   <div class="callout-danger"><b>Tyramine-rich foods to avoid.</b> Aged, smoked, fermented, marinated, and processed meats (pepperoni, bologna, salami, pickled herring, liver, frankfurters, bacon, ham) · aged cheeses (blue, cheddar, provolone, brie, Romano, parmesan, swiss) · overripe fruits and vegetables (bananas, sauerkraut) · beans (fava, Italian, Chinese pea pod, tofu) · condiments (soy sauce, bouillon cubes, meat tenderizers) · beer, ales, liquors, red wine, <b>and non-alcoholic wine or beer</b>.</div>
 
-  <div class="table-aside">
-    <div class="table-wrap"><table>
-      <thead><tr><th>Stage</th><th>Signs</th></tr></thead>
-      <tbody>
-        <tr><td class="term">Early</td><td>Irritability, anxiety, flushing, sweating, and a <b>severe headache</b>.</td></tr>
-        <tr><td class="term">Established</td><td><b>Occipital headache</b>, palpitations, nausea and vomiting, <b>hypertension but with orthostatic hypotension on standing</b>, neck stiffness or soreness, dilated pupils, photophobia, blurred vision, chest pain, tachycardia <i>or</i> bradycardia, disturbed cardiac rate and rhythm, dyspnea, mental status changes.</td></tr>
-        <tr><td class="term">Life-threatening</td><td>Severe fever, seizures, then coma or death. Can also produce intracranial hemorrhage.</td></tr>
-      </tbody>
-    </table></div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Stage</th><th>Signs</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Early</td><td>Irritability, anxiety, flushing, sweating, and a <b>severe headache</b>.</td></tr>
+      <tr><td class="term">Established</td><td><b>Occipital headache</b>, palpitations, nausea and vomiting, <b>hypertension but with orthostatic hypotension on standing</b>, neck stiffness or soreness, dilated pupils, photophobia, blurred vision, chest pain, tachycardia <i>or</i> bradycardia, disturbed cardiac rate and rhythm, dyspnea, mental status changes.</td></tr>
+      <tr><td class="term">Life-threatening</td><td>Severe fever, seizures, then coma or death. Can also produce intracranial hemorrhage.</td></tr>
+    </tbody>
+  </table></div>
 
-    <div class="card">
-      <h4>Treatment</h4>
-      <ul>
-        <li><b>phentolamine</b>, an alpha-adrenergic blocker and vasodilator.</li>
-        <li><b>Sublingual nifedipine</b>, a calcium channel blocker that relaxes cardiac muscle.</li>
-        <li>Symptomatic and supportive care.</li>
-      </ul>
-    </div>
+  <div class="card">
+    <h4>Treatment</h4>
+    <ul>
+      <li><b>phentolamine</b>, an alpha-adrenergic blocker and vasodilator.</li>
+      <li><b>Sublingual nifedipine</b>, a calcium channel blocker that relaxes cardiac muscle.</li>
+      <li>Symptomatic and supportive care.</li>
+    </ul>
   </div>
 
   <h2 class="block" id="w2-other-antidepressants">Other Antidepressants</h2>
@@ -323,26 +280,24 @@
 
   <div class="callout-danger"><b>Coarse hand tremor, slurred speech, ataxia, confusion, or GI upset in a patient on lithium: hold the next dose and request a lithium level.</b> Do not treat these as an expected early reaction that will subside.</div>
 
-  <div class="table-aside">
-    <div class="table-wrap"><table>
-      <thead><tr><th>Category</th><th>Detail</th></tr></thead>
-      <tbody>
-        <tr><td class="term">Reason for Use</td><td><b>Acute mania and maintenance treatment.</b> The most widely used mood stabilizer; effective in about <b>40%</b> of patients with bipolar disorder. Action uncertain — crosses cell membranes, alters sodium transport, and is not protein-bound.</td></tr>
-        <tr><td class="term">Levels &amp; Dosing</td><td><b>Therapeutic 0.6 to 1.4 mEq/L; toxic 1.5 mEq/L and above.</b> <b>1200&ndash;3000 mg/day</b>; start low and titrate up. Onset <b>5 to 7 days</b>, and may take as long as 2 weeks — faster than the antidepressants.</td></tr>
-        <tr><td class="term">Adverse Events</td><td><b>Kidney damage is a real risk</b> when levels go unmonitored. Thyroid function may decrease, usually after <b>6&ndash;18 months</b> — watch for dry skin, hair loss, constipation, bradycardia, and cold intolerance. <b>Increased risk of suicidal ideation when lithium is discontinued.</b></td></tr>
-        <tr><td class="term">Contraindications</td><td><b>Cardiovascular disease · renal disease · brain damage · thyroid disease · pregnant or breastfeeding mothers.</b></td></tr>
-        <tr><td class="term">Monitoring &amp; Teaching</td><td>Labs <b>1&ndash;2 times per week</b> at first, then <b>creatinine, thyroid hormones, and CBC every 6 months</b>. <b>Do not restrict sodium — maintain a normal, steady intake</b>; losing fluid means losing sodium, which increases the potential for toxicity, and steady intake is what makes the blood levels interpretable. <b>Hydrate</b>, and more than usual before strenuous activity that causes sweating. <b>Do not pre-load sodium before habitual activity</b> — a daily workout or an outdoor job is already the baseline the monitored levels reflect — but <b>increase it ahead of an unaccustomed exertion</b>, such as a sedentary patient going hiking. <b>Contact the provider if illness causes fluid loss.</b> Keep the blood-test appointments.</td></tr>
-      </tbody>
-    </table></div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Category</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Indication</td><td><b>Acute mania and maintenance treatment.</b> The most widely used mood stabilizer; effective in about <b>40%</b> of patients with bipolar disorder. Action uncertain — crosses cell membranes, alters sodium transport, and is not protein-bound.</td></tr>
+      <tr><td class="term">Levels &amp; Dosing</td><td><b>Therapeutic 0.6 to 1.4 mEq/L; toxic 1.5 mEq/L and above.</b> <b>1200&ndash;3000 mg/day</b>; start low and titrate up. Onset <b>5 to 7 days</b>, and may take as long as 2 weeks — faster than the antidepressants.</td></tr>
+      <tr><td class="term">Adverse Events</td><td><b>Kidney damage is a real risk</b> when levels go unmonitored. Thyroid function may decrease, usually after <b>6&ndash;18 months</b> — watch for dry skin, hair loss, constipation, bradycardia, and cold intolerance. <b>Increased risk of suicidal ideation when lithium is discontinued.</b></td></tr>
+      <tr><td class="term">Contraindications</td><td><b>Cardiovascular disease · renal disease · brain damage · thyroid disease · pregnant or breastfeeding mothers.</b></td></tr>
+      <tr><td class="term">Monitoring &amp; Teaching</td><td>Labs <b>1&ndash;2 times per week</b> at first, then <b>creatinine, thyroid hormones, and CBC every 6 months</b>. <b>Do not restrict sodium — maintain a normal, steady intake</b>; losing fluid means losing sodium, which increases the potential for toxicity, and steady intake is what makes the blood levels interpretable. <b>Hydrate</b>, and more than usual before strenuous activity that causes sweating. <b>Do not pre-load sodium before habitual activity</b> — a daily workout or an outdoor job is already the baseline the monitored levels reflect — but <b>increase it ahead of an unaccustomed exertion</b>, such as a sedentary patient going hiking. <b>Contact the provider if illness causes fluid loss.</b> Keep the blood-test appointments.</td></tr>
+    </tbody>
+  </table></div>
 
-    <div class="card">
-      <h4>Used With</h4>
-      <ul>
-        <li><b>Acute, severe mania:</b> lithium <i>plus</i> an antipsychotic — for example lithium with risperidone. Once the mania is controlled the lithium continues and the antipsychotic is stopped.</li>
-        <li><b>Less severe mania:</b> bordering on hypomania, lithium alone may be enough.</li>
-        <li><b>Suicidal ideation:</b> low-dose lithium, about <b>25 mg PO daily</b> for a few weeks.</li>
-      </ul>
-    </div>
+  <div class="card">
+    <h4>Used With</h4>
+    <ul>
+      <li><b>Acute, severe mania:</b> lithium <i>plus</i> an antipsychotic — for example lithium with risperidone. Once the mania is controlled the lithium continues and the antipsychotic is stopped.</li>
+      <li><b>Less severe mania:</b> bordering on hypomania, lithium alone may be enough.</li>
+      <li><b>Suicidal ideation:</b> low-dose lithium, about <b>25 mg PO daily</b> for a few weeks.</li>
+    </ul>
   </div>
 
   <div class="table-wrap"><table>
@@ -368,7 +323,6 @@
       <tr><td class="term">carbamazepine</td><td><b>Check serum levels.</b> Risk of <b>low white blood cell counts</b> — check a CBC at the start and every 6 months — and <b>monitor hepatic and renal function</b>. Used when there has been no response to lithium, or with secondary breakthrough mania. <b>Rash may be life-threatening.</b></td></tr>
       <tr><td class="term">lamotrigine</td><td>For <b>rapid cycling and the depressed phase</b> of bipolar illness; used as add-on therapy in refractory mood disorders. Usually tried after lithium fails. <b>Rash may be life-threatening.</b></td></tr>
       <tr><td class="term">gabapentin</td><td>Effective for <b>acute mania, mood stabilization, and rapid cycling</b>.</td></tr>
-      <tr><td class="term">topiramate</td><td>Also used as an anticonvulsant mood stabilizer.</td></tr>
     </tbody>
   </table></div>
 
@@ -381,9 +335,9 @@
     <tbody>
       <tr><td class="term">Acute, severe mania</td><td>A combination: <b>lithium plus an antipsychotic</b>, or <b>divalproex/valproate plus an antipsychotic</b> — for example lithium with risperidone, or divalproex with olanzapine. Once the mania is controlled, the lithium continues and the antipsychotic is stopped.</td></tr>
       <tr><td class="term">Less severe mania</td><td>Bordering on hypomania, <b>lithium or divalproex alone</b> may be enough.</td></tr>
-      <tr><td class="term">Severe agitation</td><td><b>Benzodiazepines</b> — diazepam, lorazepam, clonazepam. They calm agitation and reduce aggression, panic, and insomnia, but they are sedative-hypnotics and <b>addictive</b>, so they are used only when necessary and only short-term.</td></tr>
+      <tr><td class="term">Severe agitation</td><td><b>Benzodiazepines</b> — diazepam, lorazepam. They calm agitation and reduce aggression, panic, and insomnia, but they are sedative-hypnotics and <b>addictive</b>, so they are used only when necessary and only short-term.</td></tr>
       <tr><td class="term">Predominantly depressed</td><td><b>Symbyax</b>, a combination of the second-generation antipsychotic olanzapine and the SSRI fluoxetine — used, for example, in bipolar II where full mania does not occur.</td></tr>
-      <tr><td class="term">Second-generation antipsychotics</td><td>olanzapine · risperidone · aripiprazole (for use over age 10) · quetiapine · ziprasidone · lurasidone.</td></tr>
+      <tr><td class="term">Second-generation antipsychotics</td><td>olanzapine · risperidone · aripiprazole (for use over age 10) · quetiapine.</td></tr>
     </tbody>
   </table></div>
 
@@ -393,11 +347,40 @@
     <thead><tr><th>Drug</th><th>What to Know</th></tr></thead>
     <tbody>
       <tr><td class="term">Low-dose lithium</td><td>About <b>25 mg PO daily</b> for a few weeks. The mechanism is not established, but it reduces suicidal ideation quickly.</td></tr>
-      <tr><td class="term">Nasal ketamine</td><td>Newer research supports its effectiveness for suicidal ideation.</td></tr>
     </tbody>
   </table></div>
 
   <p class="xref-line"><a class="xref" href="week2-suicide.html#interventions"><span><b>Where these sit among the other suicide interventions</b> is covered in <b>Suicide</b></span></a></p>
+
+
+  <h2 class="block" id="w2-glance">At a Glance</h2>
+
+  <div class="table-wrap"><table>
+    <thead><tr><th>Drug</th><th>Class</th><th>Indication</th></tr></thead>
+    <tbody>
+      <tr><td class="term">fluoxetine</td><td>SSRI</td><td>First-line for MDD; first-line in children and teens.</td></tr>
+      <tr><td class="term">paroxetine<br> sertraline<br> citalopram<br> escitalopram</td><td>SSRI</td><td>First-line for MDD.</td></tr>
+      <tr><td class="term">venlafaxine</td><td>SNaRI</td><td>MDD; off label in children and teens.</td></tr>
+      <tr><td class="term">duloxetine</td><td>SNaRI</td><td>MDD.</td></tr>
+      <tr><td class="term">desvenlafaxine</td><td>SNRI</td><td>MDD. A metabolite of venlafaxine.</td></tr>
+      <tr><td class="term">imipramine<br> doxepin<br> amitriptyline</td><td>TCA</td><td>MDD, second choice after SSRIs.</td></tr>
+      <tr><td class="term">phenelzine<br> tranylcypromine</td><td>MAOI</td><td>Treatment-resistant depression; third choice.</td></tr>
+      <tr><td class="term">selegiline (Emsam)</td><td>MAOI</td><td>Transdermal patch — far fewer dietary and drug restrictions.</td></tr>
+      <tr><td class="term">bupropion</td><td>NDRI</td><td>Depression where fatigue is prominent; smoking cessation as Zyban.</td></tr>
+      <tr><td class="term">trazodone</td><td>Other antidepressant</td><td>Mainly at bedtime for sleep; antidepressant effect at higher doses.</td></tr>
+      <tr><td class="term">mirtazapine</td><td>NaSSA</td><td>Depression; given at bedtime, good for sleep.</td></tr>
+      <tr><td class="term">lithium carbonate</td><td>Mood stabilizer</td><td>Acute mania and maintenance; low dose for suicidal ideation.</td></tr>
+      <tr><td class="term">valproate / divalproex</td><td>Anticonvulsant mood stabilizer</td><td>Mania; longer periods of mood stabilization.</td></tr>
+      <tr><td class="term">carbamazepine</td><td>Anticonvulsant mood stabilizer</td><td>When lithium fails, or breakthrough mania.</td></tr>
+      <tr><td class="term">lamotrigine</td><td>Anticonvulsant mood stabilizer</td><td>Rapid cycling and the depressed phase.</td></tr>
+      <tr><td class="term">gabapentin</td><td>Anticonvulsant mood stabilizer</td><td>Acute mania, mood stabilization, rapid cycling.</td></tr>
+      <tr><td class="term">olanzapine<br> risperidone</td><td>Second-generation antipsychotic</td><td>Acute severe mania, with a mood stabilizer.</td></tr>
+      <tr><td class="term">aripiprazole</td><td>Second-generation antipsychotic</td><td>Acute severe mania — for use over age 10.</td></tr>
+      <tr><td class="term">quetiapine</td><td>Second-generation antipsychotic</td><td>Acute severe mania.</td></tr>
+      <tr><td class="term">Symbyax</td><td>Combination — olanzapine + fluoxetine</td><td>Predominantly depressed bipolar, e.g. bipolar II.</td></tr>
+      <tr><td class="term">diazepam<br> lorazepam</td><td>Benzodiazepine</td><td>Severe agitation, short-term; serotonin syndrome.</td></tr>
+    </tbody>
+  </table></div>
 
   </div><!-- /tab-week2 -->
 
@@ -407,10 +390,17 @@
        their decks. Rule 4b governs this page: the overlap with those two
        topic pages is DELIBERATE and nothing was removed from either.
 
-       The eleven drugs on the Substance Use deck's "Medications To Know"
-       slide are marked in the At a Glance roster. Chlordiazepoxide,
-       gabapentin and lofexidine are lectured but are NOT on that slide, so
-       they appear here without the mark.
+       The roster is exactly the eleven drugs on the "Medications To Know"
+       slide of the Week 3 Exam Focus deck. Until 2026-09-13 those eleven
+       were bolded to set them apart from three lectured-only drugs; the
+       three were removed that day (see the page header), so the bold went
+       with them.
+
+       "MEDICATIONS IN PERSONALITY DISORDERS" WAS DELETED 2026-09-13 (Holly).
+       The Personality Disorders focus slides have no Medications slide, so
+       nothing in that section qualified. Its key point — medications are
+       rarely indicated long-term — still stands on must-know.html and the
+       topic page. Do not re-add it.
 
        Rows are left OUT rather than padded where the source says nothing —
        most of these drugs were taught by reason for use and monitoring only,
@@ -433,76 +423,48 @@
 
   <div class="tab-panel" id="tab-week3" data-tab-label="Week 3">
 
-  <h2 class="block" id="w3-glance">At a Glance</h2>
-
-  <p class="note">Name to class to reason for use. <b>Bolded drugs are the eleven named on the "Medications To Know" slide</b>; the rest were taught alongside them. Hide the columns and work down the list.</p>
-
-  <div class="table-wrap"><table>
-    <thead><tr><th>Drug</th><th>Class</th><th>Reason for Use</th></tr></thead>
-    <tbody>
-      <tr><td class="term"><b>naloxone</b></td><td>Opioid antagonist</td><td>Reverses opioid overdose.</td></tr>
-      <tr><td class="term"><b>methadone</b></td><td>Synthetic narcotic opioid</td><td>Opioid withdrawal and maintenance.</td></tr>
-      <tr><td class="term"><b>buprenorphine</b></td><td>Partial opioid agonist</td><td>Reduces opioid cravings and withdrawal symptoms.</td></tr>
-      <tr><td class="term"><b>buprenorphine &amp; naloxone</b></td><td>Combination</td><td>Reduce or quit opioids; relieves cravings and reduces mortality.</td></tr>
-      <tr><td class="term"><b>naltrexone</b></td><td>Opioid antagonist</td><td>Recovery in both opioid and alcohol use disorder — blocks the high, reduces cravings.</td></tr>
-      <tr><td class="term"><b>clonidine</b></td><td>Antihypertensive, alpha agonist</td><td>Withdrawal symptoms, especially HR and BP — opioid, alcohol or nicotine; elevated BP in DTs.</td></tr>
-      <tr><td class="term">lofexidine</td><td>Alpha agonist</td><td>Opioid withdrawal symptoms, especially on abrupt discontinuation.</td></tr>
-      <tr><td class="term"><b>diazepam</b></td><td>Benzodiazepine</td><td>Alcohol withdrawal; DTs; withdrawal seizures.</td></tr>
-      <tr><td class="term"><b>lorazepam</b></td><td>Benzodiazepine</td><td>Alcohol withdrawal; IV if delirium appears.</td></tr>
-      <tr><td class="term">chlordiazepoxide</td><td>Benzodiazepine</td><td>Alcohol withdrawal; acute agitation and impending DTs.</td></tr>
-      <tr><td class="term">gabapentin</td><td>Anticonvulsant</td><td>Added in alcohol withdrawal when there is a seizure history.</td></tr>
-      <tr><td class="term"><b>disulfiram</b></td><td>Aversive agent</td><td>Deters drinking by causing severe illness if alcohol is taken.</td></tr>
-      <tr><td class="term"><b>acamprosate</b></td><td>Anti-craving agent</td><td>Reduces alcohol cravings; maintains abstinence.</td></tr>
-      <tr><td class="term"><b>thiamine</b></td><td>Vitamin B1</td><td>Replaced daily in alcohol use disorder; treats Wernicke-Korsakoff syndrome.</td></tr>
-    </tbody>
-  </table></div>
-
   <h2 class="block" id="w3-opioid-overdose">Opioid Overdose Reversal</h2>
 
-  <div class="table-aside">
-    <div class="table-wrap"><table>
-      <thead><tr><th>Category</th><th>Detail</th></tr></thead>
-      <tbody>
-        <tr><td class="term">Reason for Use</td><td><b>Reverses an opioid overdose</b> — an opioid antagonist that displaces the opioid from its receptor. Also used with buprenorphine as a combination product for opioid use disorder. <b>Do not confuse it with naltrexone</b>, the recovery-phase antagonist that reduces cravings.</td></tr>
-        <tr><td class="term">Adverse Events</td><td><b>Sends the patient into instant withdrawal</b> by throwing the opioid off the receptor.</td></tr>
-        <tr><td class="term">Monitoring &amp; Teaching</td><td>Available as a <b>nasal spray or injection</b> — intranasal, IM, sub-q or IV. <b>Its half-life is shorter than that of opioids, so keep watching and repeat the dose if signs return.</b> <b>Naloxone kits go home</b> with patients at risk of overdose, and family or friends are taught the signs of severe intoxication and impending overdose.</td></tr>
-      </tbody>
-    </table></div>
-    <div class="card">
-      <h4>Drugs</h4>
-      <ul>
-        <li><b>naloxone</b></li>
-      </ul>
-    </div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Category</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Indication</td><td><b>Reverses an opioid overdose</b> — an opioid antagonist that displaces the opioid from its receptor. Also used with buprenorphine as a combination product for opioid use disorder. <b>Do not confuse it with naltrexone</b>, the recovery-phase antagonist that reduces cravings.</td></tr>
+      <tr><td class="term">Adverse Events</td><td><b>Sends the patient into instant withdrawal</b> by throwing the opioid off the receptor.</td></tr>
+      <tr><td class="term">Monitoring &amp; Teaching</td><td>Available as a <b>nasal spray or injection</b> — intranasal, IM, sub-q or IV. <b>Its half-life is shorter than that of opioids, so keep watching and repeat the dose if signs return.</b> <b>Naloxone kits go home</b> with patients at risk of overdose, and family or friends are taught the signs of severe intoxication and impending overdose.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="card">
+    <h4>Drugs</h4>
+    <ul>
+      <li><b>naloxone</b></li>
+    </ul>
   </div>
 
   <div class="callout-danger"><b>Opioid overdose is an emergency.</b> Outside hospital, <b>call 9-1-1 and give naloxone if available</b>. In hospital, <b>promote breathing first</b> — aspirate secretions, insert an airway, ventilate — then give naloxone. The cardinal signs are <b>coma, pinpoint pupils and respiratory depression</b>.</div>
 
   <h2 class="block" id="w3-oud">Medication-Assisted Treatment: Opioid Use Disorder</h2>
 
-  <div class="table-aside">
-    <div class="table-wrap"><table>
-      <thead><tr><th>Category</th><th>Detail</th></tr></thead>
-      <tbody>
-        <tr><td class="term">Reason for Use</td><td><b>Methadone</b> — the first medication marketed for opioid withdrawal; acts like heroin, morphine and fentanyl but far more slowly, flattening the highs and the withdrawal lows. <b>Buprenorphine</b> — long-acting and slow, reducing cravings and withdrawal so the patient can focus on recovery. <b>Buprenorphine &amp; naloxone</b> — produces a weaker euphoria than heroin or methadone, relieves cravings and withdrawal symptoms, and <b>reduces the mortality of opioid use disorder by 50%</b> by reducing the risk of overdose. <b>Naltrexone</b> — blocks the effects of opioids and alcohol, reducing cravings and preventing relapse. <b>Clonidine</b> — relieves withdrawal symptoms, especially <b>heart rate and blood pressure</b>, and the anxiety and agitation common in withdrawal from <b>alcohol, opioids or nicotine</b>; used alongside drugs like methadone. <b>Lofexidine</b> — relieves withdrawal symptoms.</td></tr>
-        <tr><td class="term">Adverse Events</td><td><b>Methadone carries significant overdose potential and dependence is still possible.</b> Buprenorphine does not carry methadone's overdose potential.</td></tr>
-        <!-- SETTLED 2026-09-11 on Holly's explicit call: 10 TO 14 DAYS. The
-             recording said 7 to 10; the instructor's "Week 3 - MAT
-             TABLE-2.docx" says 10 to 14, and Holly chose the MAT figure for
-             the whole site (the topic page's callout-danger too). Do not
-             revert to 7 to 10. -->
-        <tr><td class="term">Contraindications</td><td><b>Naltrexone requires 10 to 14 days opioid-free before the first dose</b> — sooner precipitates a rapid, severe withdrawal.</td></tr>
-        <tr><td class="term">Monitoring &amp; Teaching</td><td><b>Methadone must be monitored closely</b>, with <b>daily clinic visits</b>. For replacement therapy, stabilize the patient first, then <b>taper slowly until off methadone</b> to prevent more severe withdrawal. <b>Naltrexone does not treat withdrawal symptoms.</b> Clonidine works by blocking the neurotransmitters that trigger sympathetic activity.</td></tr>
-      </tbody>
-    </table></div>
-    <div class="card">
-      <h4>Drugs</h4>
-      <ul>
-        <li><b>Opioid agonists</b> — methadone · buprenorphine · buprenorphine &amp; naloxone</li>
-        <li><b>Antagonist</b> — naltrexone</li>
-        <li><b>Alpha agonists</b> — clonidine · lofexidine</li>
-      </ul>
-    </div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Category</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Indication</td><td><b>Methadone</b> — the first medication marketed for opioid withdrawal; acts like heroin, morphine and fentanyl but far more slowly, flattening the highs and the withdrawal lows. <b>Buprenorphine</b> — long-acting and slow, reducing cravings and withdrawal so the patient can focus on recovery. <b>Buprenorphine &amp; naloxone</b> — produces a weaker euphoria than heroin or methadone, relieves cravings and withdrawal symptoms, and <b>reduces the mortality of opioid use disorder by 50%</b> by reducing the risk of overdose. <b>Naltrexone</b> — blocks the effects of opioids and alcohol, reducing cravings and preventing relapse. <b>Clonidine</b> — relieves withdrawal symptoms, especially <b>heart rate and blood pressure</b>, and the anxiety and agitation common in withdrawal from <b>alcohol, opioids or nicotine</b>; used alongside drugs like methadone.</td></tr>
+      <tr><td class="term">Adverse Events</td><td><b>Methadone carries significant overdose potential and dependence is still possible.</b> Buprenorphine does not carry methadone's overdose potential.</td></tr>
+      <!-- SETTLED 2026-09-11 on Holly's explicit call: 10 TO 14 DAYS. The
+           recording said 7 to 10; the instructor's "Week 3 - MAT
+           TABLE-2.docx" says 10 to 14, and Holly chose the MAT figure for
+           the whole site (the topic page's callout-danger too). Do not
+           revert to 7 to 10. -->
+      <tr><td class="term">Contraindications</td><td><b>Naltrexone requires 10 to 14 days opioid-free before the first dose</b> — sooner precipitates a rapid, severe withdrawal.</td></tr>
+      <tr><td class="term">Monitoring &amp; Teaching</td><td><b>Methadone must be monitored closely</b>, with <b>daily clinic visits</b>. For replacement therapy, stabilize the patient first, then <b>taper slowly until off methadone</b> to prevent more severe withdrawal. <b>Naltrexone does not treat withdrawal symptoms.</b> Clonidine works by blocking the neurotransmitters that trigger sympathetic activity.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="card">
+    <h4>Drugs</h4>
+    <ul>
+      <li><b>Opioid agonists</b> — methadone · buprenorphine · buprenorphine &amp; naloxone</li>
+      <li><b>Antagonist</b> — naltrexone</li>
+      <li><b>Alpha agonist</b> — clonidine</li>
+    </ul>
   </div>
 
   <div class="two-col">
@@ -526,84 +488,80 @@
 
   <h2 class="block" id="w3-alcohol-withdrawal">Benzodiazepines for Alcohol Withdrawal</h2>
 
-  <div class="table-aside">
-    <div class="table-wrap"><table>
-      <thead><tr><th>Category</th><th>Detail</th></tr></thead>
-      <tbody>
-        <tr><td class="term">Reason for Use</td><td><b>Alcohol and sedative-hypnotic withdrawal</b>, given <b>at a CIWA-Ar score of 8 to 10 or more</b>. Goals: <b>control agitation, decrease the risk of seizures, and reduce morbidity and mortality</b>.</td></tr>
-        <tr><td class="term">Monitoring &amp; Teaching</td><td>The patient may be on a <b>fixed, scheduled regimen with PRN doses</b> for breakthrough autonomic symptoms — for example <b>diazepam 10 mg every 6 hours for four doses, then 5 mg every 6 hours for eight doses</b>. <b>Diazepam is the current standard at UK HealthCare</b>, having replaced chlordiazepoxide, because its <b>long half-life</b> works better and it is particularly effective at decreasing seizures. Where there is a <b>history of seizures, gabapentin is typically started as well</b>. Rescore with the CIWA whenever the patient reports worsening symptoms.</td></tr>
-      </tbody>
-    </table></div>
-    <div class="card">
-      <h4>Drugs</h4>
-      <ul>
-        <li><b>Benzodiazepines</b> — diazepam · lorazepam · chlordiazepoxide</li>
-        <li><b>Anticonvulsant adjunct</b> — gabapentin</li>
-      </ul>
-      <p><b>In DTs:</b> seizures &rarr; IV diazepam · acute agitation, tremors, impending or acute DTs, hallucinosis &rarr; oral chlordiazepoxide or diazepam · delirium appears &rarr; IV lorazepam · elevated BP &rarr; clonidine · dehydration &rarr; oral or IV fluids.</p>
-    </div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Category</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Indication</td><td><b>Alcohol and sedative-hypnotic withdrawal</b>, given <b>at a CIWA-Ar score of 8 to 10 or more</b>. Goals: <b>control agitation, decrease the risk of seizures, and reduce morbidity and mortality</b>.</td></tr>
+      <tr><td class="term">Monitoring &amp; Teaching</td><td>The patient may be on a <b>fixed, scheduled regimen with PRN doses</b> for breakthrough autonomic symptoms — for example <b>diazepam 10 mg every 6 hours for four doses, then 5 mg every 6 hours for eight doses</b>. <b>Diazepam is the current standard at UK HealthCare</b> because its <b>long half-life</b> works better and it is particularly effective at decreasing seizures. Rescore with the CIWA whenever the patient reports worsening symptoms.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="card">
+    <h4>Drugs</h4>
+    <ul>
+      <li><b>Benzodiazepines</b> — diazepam · lorazepam</li>
+    </ul>
+    <p><b>In DTs:</b> seizures &rarr; IV diazepam · acute agitation, tremors, impending or acute DTs, hallucinosis &rarr; oral diazepam · delirium appears &rarr; IV lorazepam · elevated BP &rarr; clonidine · dehydration &rarr; oral or IV fluids.</p>
   </div>
 
   <div class="callout-danger"><b>Delirium tremens is the most severe form of alcohol withdrawal and can result in death.</b> Prevention is the goal — assess and monitor symptoms, labs, electrolytes and vital signs, hydrate, medicate adequately, and provide life-sustaining measures if indicated.</div>
 
   <h2 class="block" id="w3-aud">Medication-Assisted Treatment: Alcohol Use Disorder</h2>
 
-  <div class="table-aside">
-    <div class="table-wrap"><table>
-      <thead><tr><th>Category</th><th>Detail</th></tr></thead>
-      <tbody>
-        <tr><td class="term">Reason for Use</td><td><b>Naltrexone</b> — blocks the euphoric effects of opioids and alcohol, so relapse produces no high, and reduces alcohol cravings. Long-acting; given <b>IM</b>. <b>Disulfiram</b> — <b>prevents the breakdown of acetaldehyde</b>, so drinking while taking it produces severely unpleasant flu-like illness; it <b>does not reduce cravings</b>. <b>Acamprosate</b> — reduces cravings and helps maintain abstinence.</td></tr>
-        <tr><td class="term">Adverse Events</td><td><b>Disulfiram plus any alcohol produces severe flu-like illness.</b></td></tr>
-        <tr><td class="term">Monitoring &amp; Teaching</td><td><b>None of the three treats withdrawal symptoms — all are recovery-phase medications.</b> Disulfiram teaching: <b>alcohol is not only in drinks</b>. Patients must avoid being near, touching or consuming alcohol-based products — <b>perfumes, aftershaves, toners, mouthwash, many liquid medications</b> (especially nighttime formulas) and <b>paint thinners</b>. Even splashing on aftershave can make them severely ill. Alongside these, treat withdrawal symptoms symptomatically and <b>replace thiamine daily</b>.</td></tr>
-      </tbody>
-    </table></div>
-    <div class="card">
-      <h4>Drugs</h4>
-      <ul>
-        <li><b>naltrexone</b> — also used in opioid use disorder</li>
-        <li><b>disulfiram</b></li>
-        <li><b>acamprosate</b></li>
-      </ul>
-      <p>A combination of medication with individual and behavioral therapies is what sustains recovery.</p>
-    </div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Category</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Indication</td><td><b>Naltrexone</b> — blocks the euphoric effects of opioids and alcohol, so relapse produces no high, and reduces alcohol cravings. Long-acting; given <b>IM</b>. <b>Disulfiram</b> — <b>prevents the breakdown of acetaldehyde</b>, so drinking while taking it produces severely unpleasant flu-like illness; it <b>does not reduce cravings</b>. <b>Acamprosate</b> — reduces cravings and helps maintain abstinence.</td></tr>
+      <tr><td class="term">Adverse Events</td><td><b>Disulfiram plus any alcohol produces severe flu-like illness.</b></td></tr>
+      <tr><td class="term">Monitoring &amp; Teaching</td><td><b>None of the three treats withdrawal symptoms — all are recovery-phase medications.</b> Disulfiram teaching: <b>alcohol is not only in drinks</b>. Patients must avoid being near, touching or consuming alcohol-based products — <b>perfumes, aftershaves, toners, mouthwash, many liquid medications</b> (especially nighttime formulas) and <b>paint thinners</b>. Even splashing on aftershave can make them severely ill. Alongside these, treat withdrawal symptoms symptomatically and <b>replace thiamine daily</b>.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="card">
+    <h4>Drugs</h4>
+    <ul>
+      <li><b>naltrexone</b> — also used in opioid use disorder</li>
+      <li><b>disulfiram</b></li>
+      <li><b>acamprosate</b></li>
+    </ul>
+    <p>A combination of medication with individual and behavioral therapies is what sustains recovery.</p>
   </div>
 
   <h2 class="block" id="w3-thiamine">Thiamine &amp; Wernicke-Korsakoff Syndrome</h2>
 
-  <div class="table-aside">
-    <div class="table-wrap"><table>
-      <thead><tr><th>Category</th><th>Detail</th></tr></thead>
-      <tbody>
-        <tr><td class="term">Reason for Use</td><td><b>Replaced daily in alcohol use disorder</b> — the standard regimen is a multivitamin, thiamine and folic acid. Treats <b>Wernicke-Korsakoff syndrome</b>, a neurological disorder caused by lack of thiamine (B1). Chronic alcohol use <b>decreases intestinal absorption of thiamine by about 70%</b>.</td></tr>
-        <tr><td class="term">Monitoring &amp; Teaching</td><td><b>Wernicke's encephalopathy</b> — large doses, <b>IV, 2–3 times daily for 1–2 weeks</b>, typically about 10 days. Acute and <b>reversible</b>; may clear in a few weeks or progress. <b>Korsakoff syndrome</b> — thiamine replacement for <b>3–12 months</b>, varying with symptoms, severity and whether psychosis is present. Chronic and not typically reversible; <b>recovery rate only about 20%</b>. Rule out other causes of thiamine deficiency — eating disorders, bariatric surgery, poor nutrition, chronic infection, bowel surgery.</td></tr>
-      </tbody>
-    </table></div>
-    <div class="card">
-      <h4>Drugs</h4>
-      <ul>
-        <li><b>thiamine</b> — vitamin B1</li>
-      </ul>
-    </div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Category</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Indication</td><td><b>Replaced daily in alcohol use disorder</b> — the standard regimen is a multivitamin, thiamine and folic acid. Treats <b>Wernicke-Korsakoff syndrome</b>, a neurological disorder caused by lack of thiamine (B1). Chronic alcohol use <b>decreases intestinal absorption of thiamine by about 70%</b>.</td></tr>
+      <tr><td class="term">Monitoring &amp; Teaching</td><td><b>Wernicke's encephalopathy</b> — large doses, <b>IV, 2–3 times daily for 1–2 weeks</b>, typically about 10 days. Acute and <b>reversible</b>; may clear in a few weeks or progress. <b>Korsakoff syndrome</b> — thiamine replacement for <b>3–12 months</b>, varying with symptoms, severity and whether psychosis is present. Chronic and not typically reversible; <b>recovery rate only about 20%</b>. Rule out other causes of thiamine deficiency — eating disorders, bariatric surgery, poor nutrition, chronic infection, bowel surgery.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="card">
+    <h4>Drugs</h4>
+    <ul>
+      <li><b>thiamine</b> — vitamin B1</li>
+    </ul>
   </div>
 
   <p class="xref-line"><a class="xref" href="week3-substance-use-disorders.html#wernicke-korsakoff"><span><b>The two stages and their symptoms</b> are covered in <b>Substance Use &amp; Addictive Disorders</b></span></a></p>
 
-  <h2 class="block" id="w3-personality">Medications in Personality Disorders</h2>
 
-  <p class="note"><b>Medications are rarely indicated in the long-term treatment of personality disorders.</b> They are used for a short period to <b>keep patients safe</b> and to manage <b>anxiety</b> or <b>psychotic symptoms</b>. No drug is named on a Medications slide for this topic — the agents below are the ones named by class in the lecture.</p>
+  <h2 class="block" id="w3-glance">At a Glance</h2>
 
   <div class="table-wrap"><table>
-    <thead><tr><th>Disorder</th><th>What Is Used</th></tr></thead>
+    <thead><tr><th>Drug</th><th>Class</th><th>Indication</th></tr></thead>
     <tbody>
-      <tr><td class="term">Schizoid</td><td><b>Antidepressants</b> or <b>second-generation antipsychotics</b>, alongside psychotherapy or group therapy.</td></tr>
-      <tr><td class="term">Schizotypal</td><td><b>Low-dose antipsychotics</b> with supportive psychological care.</td></tr>
-      <tr><td class="term">Antisocial</td><td>Medications as part of <b>anger control assistance</b>.</td></tr>
-      <tr><td class="term">Obsessive-compulsive</td><td><b>Clomipramine</b> or <b>fluoxetine</b> for anxiety, depression or obsessions.</td></tr>
-      <tr><td class="term">Cluster C generally</td><td><b>Antidepressants and anti-anxiety medications.</b></td></tr>
+      <tr><td class="term">naloxone</td><td>Opioid antagonist</td><td>Reverses opioid overdose.</td></tr>
+      <tr><td class="term">methadone</td><td>Synthetic narcotic opioid</td><td>Opioid withdrawal and maintenance.</td></tr>
+      <tr><td class="term">buprenorphine</td><td>Partial opioid agonist</td><td>Reduces opioid cravings and withdrawal symptoms.</td></tr>
+      <tr><td class="term">buprenorphine &amp; naloxone</td><td>Combination</td><td>Reduce or quit opioids; relieves cravings and reduces mortality.</td></tr>
+      <tr><td class="term">naltrexone</td><td>Opioid antagonist</td><td>Recovery in both opioid and alcohol use disorder — blocks the high, reduces cravings.</td></tr>
+      <tr><td class="term">clonidine</td><td>Antihypertensive, alpha agonist</td><td>Withdrawal symptoms, especially HR and BP — opioid, alcohol or nicotine; elevated BP in DTs.</td></tr>
+      <tr><td class="term">diazepam</td><td>Benzodiazepine</td><td>Alcohol withdrawal; DTs; withdrawal seizures.</td></tr>
+      <tr><td class="term">lorazepam</td><td>Benzodiazepine</td><td>Alcohol withdrawal; IV if delirium appears.</td></tr>
+      <tr><td class="term">disulfiram</td><td>Aversive agent</td><td>Deters drinking by causing severe illness if alcohol is taken.</td></tr>
+      <tr><td class="term">acamprosate</td><td>Anti-craving agent</td><td>Reduces alcohol cravings; maintains abstinence.</td></tr>
+      <tr><td class="term">thiamine</td><td>Vitamin B1</td><td>Replaced daily in alcohol use disorder; treats Wernicke-Korsakoff syndrome.</td></tr>
     </tbody>
   </table></div>
-
-  <p class="xref-line"><a class="xref" href="week3-personality-disorders.html#treatment"><span><b>Treatment and prognosis as a whole</b> are covered in <b>Personality Disorders</b></span></a></p>
 
   </div><!-- /tab-week3 -->
 
@@ -613,7 +571,7 @@
 </div>
 </main>
 
-<script src="assets/site.js?v=20260912"></script>
-<script src="assets/study.js?v=20260912"></script>
+<script src="assets/site.js?v=20260913b"></script>
+<script src="assets/study.js?v=20260913b"></script>
 </body>
 </html>

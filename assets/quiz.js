@@ -31,7 +31,7 @@ const QUIZ_VER = (function () {
      topic's third set empty and the column renders greyed out. */
   const SET_COLUMNS = bank.columns || [
     { key: "mustKnow",      label: "Must Know",      blurb: "Everything the lectures explicitly stated or heavily hinted will be tested." },
-    { key: "extraPractice", label: "Extra Practice", blurb: "Other topics from the lecture content, prioritized by highest yield." },
+    { key: "medications",   label: "Medications",    blurb: "One question for every drug on the Medications page." },
     { key: "eaq",           label: "Question Bank",  blurb: "Imported questions from your publisher's question bank, sorted by topic, with duplicates removed." }
   ];
   function setQuestions(topic, key) { return (topic.sets && topic.sets[key]) || []; }
@@ -50,7 +50,8 @@ const QUIZ_VER = (function () {
   });
   html += '</tr></thead><tbody>';
 
-  html += '<tr class="qb-selectall-row"><td class="term">Select All</td>';
+  // No row label: each checkbox already reads "Select All" (Holly, 2026-09-13).
+  html += '<tr class="qb-selectall-row"><td class="term"></td>';
   SET_COLUMNS.forEach(c => {
     html += `<td><label class="qb-cell">` +
       `<input type="checkbox" class="qb-col-all" data-set="${c.key}">` +
@@ -149,8 +150,8 @@ const QUIZ_VER = (function () {
        it settling into the visible A-B-C-A-B-C rotation that a plain
        "always take the biggest" pass produces. Order *within* a topic
        stays shuffled, so no two runs of the same exam match.
-       Questions from different sets of one topic (Must Know, Extra
-       Practice, EAQs) count as that one topic here.
+       Questions from different sets of one topic (Must Know,
+       Medications, EAQs) count as that one topic here.
        ---------------------------------------------------------- */
     const byTopic = new Map();
     chosen.forEach(b => {
