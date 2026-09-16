@@ -5043,7 +5043,715 @@ window.QUIZ_BANK = {
           }
         ]
       }
+    },
+
+    /* ==========================================================
+       TOPIC 13 — EATING & FEEDING DISORDERS  (Week 4)
+       One mustKnow question per Learning Outcomes bullet on
+       must-know.html#eating (11 of them), two of which are SATA.
+       NO medications set: that deck has no Medications slide, so the
+       topic contributes nothing to medications.html (rule 4b, confirmed
+       by Holly 2026-09-16). The empty set renders the cell disabled,
+       which is correct, not missing content.
+       ========================================================== */
+    {
+      id: "week4-eating",
+      label: "Eating & Feeding Disorders",
+      week: 4,
+      sets: {
+        mustKnow: [
+          {
+            /* LO: compare and contrast the physical characteristics */
+            stem: "A patient of normal body weight reports fatigue. The nurse notes calluses across the knuckles, swelling along the jaw, and eroded tooth enamel. Which disorder do these findings together suggest?",
+            options: [
+              "Binge-eating disorder",
+              "Anorexia nervosa, restricting type",
+              "Avoidant/restrictive food intake disorder",
+              "Bulimia nervosa"
+            ],
+            answer: 3,
+            rationale: "Calluses on the back of the hands and knuckles are Russell's Sign, caused by self-induced vomiting, and parotid swelling and enamel erosion are the other purging signs. Normal body weight is typical of bulimia and is what keeps it hidden. Anorexia would present with a significantly low BMI, lanugo and low vital signs. Binge-eating disorder involves no compensatory behavior, so none of the purging signs appear.",
+            topic: "Eating & Feeding Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: compare and contrast the epidemiology */
+            stem: "Which statement about the epidemiology of eating disorders is accurate?",
+            options: [
+              "Anorexia nervosa is the most common and has the lowest sex ratio.",
+              "Bulimia nervosa is the most common, at a ratio of 3:1 female to male.",
+              "Binge-eating disorder is the most common, affecting 3.6% of women.",
+              "All three occur at roughly equal lifetime prevalence."
+            ],
+            answer: 2,
+            rationale: "Binge-eating disorder is the most common eating disorder, with a lifetime incidence of 3.6% for women and 2.1% for men. Anorexia is the least common of the three at 0.5% and carries the 3:1 ratio. Bulimia sits between them at 2.3% of women with the widest sex ratio, 10:1.",
+            topic: "Eating & Feeding Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: compare signs, symptoms and risk factors */
+            stem: "Which features are shared risk factors across anorexia nervosa, bulimia nervosa and binge-eating disorder? Select all that apply.",
+            options: [
+              "Body dissatisfaction",
+              "A history of abuse or trauma",
+              "Amenorrhea",
+              "Low self-esteem",
+              "Comorbid anxiety or depression",
+              "Compensatory purging behavior"
+            ],
+            answers: [0, 1, 3, 4],
+            rationale: "Body dissatisfaction, a history of abuse or trauma, low self-esteem and comorbid anxiety or depression run through all three disorders. Amenorrhea is a physical consequence of starvation specific to anorexia, not a risk factor. Compensatory behavior is a diagnostic feature that separates the disorders rather than a factor they share: it is always present in bulimia, present only in the binge-purge type of anorexia, and absent in binge-eating disorder.",
+            topic: "Eating & Feeding Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: distinguish the two types of anorexia nervosa */
+            stem: "A patient with anorexia nervosa has lost weight over the past year through fasting and running twice daily, with no vomiting or laxative use in that time. How should the nurse expect this presentation to be classified?",
+            options: [
+              "Restricting type, based on behavior over the last 3 months",
+              "Binge-eating and purging type, because exercise is a compensatory behavior",
+              "Restricting type, based on behavior over the last 12 months",
+              "Unspecified, because the type requires a BMI to assign"
+            ],
+            answer: 0,
+            rationale: "The type is assigned on behavior during the last 3 months. Restricting type describes weight loss accomplished through dieting, fasting and excessive exercise without regular binge eating or purging. Although excessive exercise is compensatory in bulimia, in anorexia it is part of the restricting picture, and purging type requires self-induced vomiting or misuse of laxatives, diuretics or enemas. BMI determines severity, not type.",
+            topic: "Eating & Feeding Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: state the DSM-5 criteria for each disorder */
+            stem: "Which behaviors count toward the DSM-5 requirement that binge-eating disorder episodes be associated with three or more features? Select all that apply.",
+            options: [
+              "Eating much more rapidly than normal",
+              "Eating until uncomfortably full",
+              "Self-induced vomiting or laxative use after the episode",
+              "Eating alone because of embarrassment over the amount",
+              "Feeling disgusted, depressed or very guilty afterward"
+            ],
+            answers: [0, 1, 3, 4],
+            rationale: "The DSM-5 lists five features, three or more of which must accompany the binge episodes: eating much more rapidly than normal, eating until uncomfortably full, eating large amounts when not physically hungry, eating alone from embarrassment, and feeling disgusted, depressed or very guilty afterward. Self-induced vomiting is a compensatory behavior, and its recurrent presence would make the diagnosis bulimia nervosa instead.",
+            topic: "Eating & Feeding Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: describe the biological factors */
+            stem: "A student asks which neurotransmitter is implicated in the biology of eating disorders. Which response is correct?",
+            options: [
+              "Serotonin, through appetite, mood and impulse control",
+              "Dopamine, through the reward pathway",
+              "Norepinephrine, through the stress response",
+              "GABA, through inhibition of appetite signalling"
+            ],
+            answer: 0,
+            rationale: "Altered brain serotonin function contributes to the dysregulation of appetite, mood and impulse control, and bulimia nervosa specifically involves lower brain serotonin. This is also why SSRIs are the pharmacologic option in bulimia and binge-eating disorder. Dopamine, norepinephrine and GABA are not the pathways described for these disorders.",
+            topic: "Eating & Feeding Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: describe the cognitive and environmental factors */
+            stem: "A patient with anorexia nervosa states that she understands the medical risks of her low weight but believes staying thin is worth them. Which concept does this illustrate?",
+            options: [
+              "Anosognosia",
+              "Denial of the medical findings",
+              "An ego-syntonic disorder",
+              "Concrete thinking"
+            ],
+            answer: 2,
+            rationale: "Anorexia nervosa is ego-syntonic: the person knows the actions are harmful but believes the benefits outweigh the harm. That is what makes motivation to change so low. Anosognosia is an inability to recognize illness caused by the illness itself, which is a cognitive symptom of schizophrenia rather than a weighed judgment. She is not denying the findings, she is accepting them and valuing thinness more.",
+            topic: "Eating & Feeding Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: describe the criteria for hospitalization */
+            stem: "Which assessment finding in a patient with anorexia nervosa meets the criteria for hospitalization?",
+            options: [
+              "Weight at 82% of ideal body weight",
+              "A temperature of 97.4 degrees Fahrenheit",
+              "A systolic blood pressure of 94",
+              "A daytime heart rate of 46 beats per minute"
+            ],
+            answer: 3,
+            rationale: "A daytime heart rate below 50 is one of the hospitalization criteria, along with weight below 75% of ideal body weight, less than 10% body fat, a systolic blood pressure below 90, a temperature below 96 degrees Fahrenheit, arrhythmias, and extreme electrolyte imbalance. The other three findings are abnormal but each falls on the safe side of its threshold, which is why the exact cutoffs matter.",
+            topic: "Eating & Feeding Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: describe the biological treatments */
+            stem: "A patient with bulimia nervosa asks whether any medication is approved for her condition. Which response is accurate?",
+            options: [
+              "No medication is FDA-approved for any eating disorder.",
+              "Lisdexamfetamine dimesylate is approved, and works best alone.",
+              "Fluoxetine is approved, but only after maintenance weight is reached.",
+              "Fluoxetine is approved, and works best alongside CBT."
+            ],
+            answer: 3,
+            rationale: "Fluoxetine is the only FDA-approved medication for bulimia nervosa in adults, and is most effective in conjunction with CBT. The qualifier about maintenance weight belongs to anorexia nervosa, where fluoxetine helps obsessive-compulsive behavior only after weight is restored, and where no medication is FDA-approved at all. Lisdexamfetamine dimesylate is used in binge-eating disorder, not bulimia.",
+            topic: "Eating & Feeding Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: describe the psychological therapies */
+            stem: "Which statement about psychological therapy for eating disorders is accurate?",
+            options: [
+              "Family-based treatment is first-line for adults with anorexia nervosa.",
+              "CBT is first-line for bulimia nervosa.",
+              "Family therapy is the usual approach for adults with bulimia nervosa.",
+              "No therapy has evidence in any age group with anorexia nervosa."
+            ],
+            answer: 1,
+            rationale: "CBT is the first-line treatment for bulimia nervosa. Family therapy is not usually used in bulimia because of the age of the patient. In anorexia there is no empirical support for any specific model in adults, but in adolescents there is evidence for insight-oriented therapy, family-based treatment, adolescent-focused therapy and CBT, so the evidence depends on age rather than being absent entirely.",
+            topic: "Eating & Feeding Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: describe the three feeding disorders */
+            stem: "A caregiver reports that their 8-month-old brings food back up into the mouth after feeds, chews it again and swallows it. The infant is gaining weight poorly. Which disorder does the nurse suspect, and what is the first intervention?",
+            options: [
+              "Pica, and monitoring the infant's eating behavior",
+              "Rumination disorder, and repositioning during feeding",
+              "ARFID, and behavioral modification to increase intake",
+              "Rumination disorder, and immediate family therapy"
+            ],
+            answer: 1,
+            rationale: "Rumination disorder is undigested food returned to the mouth to be rechewed, reswallowed or spit out, and in infants onset is usually between 3 and 12 months. Interventions begin with repositioning during feeding, improving caregiver and child interaction, and distracting the child when the behavior starts. Family therapy may be required but is not the first step. Pica is the ingestion of non-nutritive substances, and ARFID is food avoidance often tied to the sensory qualities of food.",
+            topic: "Eating & Feeding Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        medications: [],
+        eaq: []
+      }
+    },
+
+    /* ==========================================================
+       TOPIC 14 — SCHIZOPHRENIA & SCHIZOAFFECTIVE DISORDER  (Week 4)
+       ONE topic, even though Week 4 has three topic pages: the
+       schizophrenia topic page was split on size grounds but the deck
+       carries one set of Learning Outcomes and Key Terms, so
+       must-know.html and this bank both keep it whole.
+
+       14 mustKnow, one per Learning Outcomes bullet on
+       must-know.html#schizophrenia, two of them SATA.
+       21 medications: one per drug on the medications.html Week 4 tab
+       (18 of them) plus 3 "which are indicated for" SATA questions.
+       Every medications question is sourced from medications.html alone
+       and takes a DIFFERENT angle from the four starred mustKnow
+       bullets, which already cover what each classification treats,
+       which drugs fall under each, how side effects are managed, and
+       clozapine's agranulocytosis monitoring.
+       ========================================================== */
+    {
+      id: "week4-schizophrenia",
+      label: "Schizophrenia & Schizoaffective Disorder",
+      week: 4,
+      sets: {
+        mustKnow: [
+          {
+            /* STARRED LO: which symptoms each classification treats */
+            stem: "A patient taking chlorpromazine has no hallucinations or delusions but remains withdrawn, unmotivated and flat in affect. Which explanation best accounts for this?",
+            options: [
+              "The medication has not yet reached a therapeutic level.",
+              "Typical antipsychotics have little effect on negative symptoms.",
+              "These residual findings indicate the dose is too high.",
+              "The patient is experiencing extrapyramidal side effects."
+            ],
+            answer: 1,
+            rationale: "Typical antipsychotics primarily treat the positive symptoms and have little effect on the negative symptoms, which is exactly this picture: the hallucinations and delusions have resolved while affective blunting, avolition and asociality remain. Atypical antipsychotics treat both. A subtherapeutic level would leave the positive symptoms present as well. Extrapyramidal side effects are movement findings, not flat affect and withdrawal.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* STARRED LO: which medications fall under each classification */
+            stem: "Which medications are atypical antipsychotics? Select all that apply.",
+            options: [
+              "Chlorpromazine",
+              "Clozapine",
+              "Haloperidol",
+              "Quetiapine",
+              "Aripiprazole",
+              "Benztropine"
+            ],
+            answers: [1, 3, 4],
+            rationale: "Clozapine, quetiapine and aripiprazole are atypical antipsychotics, along with olanzapine, risperidone and paliperidone palmitate. Chlorpromazine and haloperidol are the two typical antipsychotics. Benztropine is an anticholinergic given to treat the extrapyramidal side effects of antipsychotics, not an antipsychotic itself.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* STARRED LO: how to treat or manage side effects */
+            stem: "A patient started on haloperidol three days ago is pacing constantly and cannot sit still. Which action should the nurse take first?",
+            options: [
+              "Administer a PRN dose of the antipsychotic for agitation",
+              "Assess whether the restlessness is akathisia rather than anxiety",
+              "Request an order for the AIMS scale",
+              "Prepare to stop all antipsychotics immediately"
+            ],
+            answer: 1,
+            rationale: "Akathisia is motor restlessness that is easily mistaken for anxiety or agitation, and treating it as agitation means giving more of the drug that caused it, which makes it worse. Assessment comes before medicating. Once identified, treatment is a dose reduction or medication change, benztropine, and possibly propranolol or a short-term benzodiazepine. The AIMS assesses tardive dyskinesia, not akathisia. Stopping all antipsychotics immediately is the response to neuroleptic malignant syndrome.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* STARRED LO: agranulocytosis and clozapine */
+            stem: "A patient has been taking clozapine for six weeks. Which laboratory value requires the most urgent nursing action?",
+            options: [
+              "A fasting blood glucose of 118 mg/dL",
+              "A total cholesterol trending upward",
+              "A white blood cell count that has dropped",
+              "A mildly elevated alanine aminotransferase"
+            ],
+            answer: 2,
+            rationale: "Agranulocytosis is the potentially fatal side effect specific to clozapine, and it presents as white blood cell counts dropping to dangerous levels, limiting the ability to fight infection. Risk is greatest during the first months, which is why WBC is monitored weekly for the first 18 weeks, and the drug is discontinued for leucopenia or neutropenia. It is reversible if treated early. Elevated glucose and cholesterol reflect metabolic syndrome, which matters but is not the acute threat here.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: etiologies and epidemiology */
+            stem: "Which statement about the epidemiology of schizophrenia is accurate?",
+            options: [
+              "It affects about 1% of the world's population, with peak onset between 15 and 35.",
+              "It affects about 5% of the world's population, with peak onset after age 40.",
+              "It is diagnosed more frequently in women and in rural areas.",
+              "New cases are most common in children under 10."
+            ],
+            answer: 0,
+            rationale: "Schizophrenia affects roughly 1% to 1.1% of the world's population regardless of racial, ethnic or economic background, about 3.5 million people in the United States, with peak onset between 15 and 35 and half of cases beginning before age 25. It is diagnosed more frequently among males and in urban areas. New cases are rare before age 10 and after age 40, and childhood diagnosis is uncommon at about 1 in 40,000.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: differentiate the positive symptoms */
+            stem: "A patient says: I heard the bell. Well, hell then I fell. Which alteration does this demonstrate?",
+            options: [
+              "Word salad",
+              "Neologism",
+              "Clang association",
+              "Echolalia"
+            ],
+            answer: 2,
+            rationale: "Clang association is choosing words based on their sound rather than their meaning, often a rhyme, which is exactly what bell, hell and fell are doing here. Word salad is a string of totally unconnected words that carries no structure at all. A neologism is a made-up word meaningful only to the patient. Echolalia is the pathological repetition of another person's words.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: differentiate the negative symptoms */
+            stem: "Which findings are negative symptoms of schizophrenia? Select all that apply.",
+            options: [
+              "Avolition",
+              "Thought insertion",
+              "Anhedonia",
+              "Alogia",
+              "Echopraxia",
+              "Asociality"
+            ],
+            answers: [0, 2, 3, 5],
+            rationale: "Negative symptoms are those that should be present but are not: affective blunting, alogia, anhedonia, apathy, asociality and avolition. Thought insertion is a positive symptom, an alteration in thought, and echopraxia is a positive symptom, an alteration in behavior. Both of those are things that exist but should not, which is the defining difference between the two categories.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: differentiate the cognitive and affective symptoms */
+            stem: "A patient with schizophrenia repeatedly stops taking medication, insisting there is nothing wrong with him. Which cognitive symptom does this reflect?",
+            options: [
+              "Concrete thinking",
+              "Impaired executive functioning",
+              "Anosognosia",
+              "Impaired information processing"
+            ],
+            answer: 2,
+            rationale: "Anosognosia is the inability to realize one is ill, caused by the illness itself, and it commonly results in resistance to or cessation of treatment. It is often combined with paranoia, which makes accepting help close to impossible. Concrete thinking is an impaired ability to think abstractly. Impaired executive functioning affects reasoning and planning, and impaired information processing produces delayed responses and misperceptions.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: DSM-5 criteria for schizophrenia */
+            stem: "Which combination satisfies the DSM-5 symptom requirement for a diagnosis of schizophrenia?",
+            options: [
+              "Negative symptoms and disorganized behavior for 1 month",
+              "Delusions and negative symptoms for 1 month",
+              "Any one characteristic symptom for 6 months",
+              "Catatonic behavior alone for 6 months"
+            ],
+            answer: 1,
+            rationale: "Two or more characteristic symptoms must be present for a significant portion of a 1-month period, and at least one must be delusions, hallucinations or disorganized speech. Delusions plus negative symptoms satisfies both parts. Negative symptoms with disorganized behavior gives two symptoms but neither is from the required first three. A single symptom is never sufficient. The separate 6-month requirement applies to continuous signs of the disturbance, not to one symptom alone.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: name the phases */
+            stem: "A patient's positive symptoms have largely resolved, a new baseline has been established, but negative and cognitive symptoms continue to interfere with work. Which phase does this describe?",
+            options: [
+              "Prodromal",
+              "Acute",
+              "Stabilization",
+              "Maintenance or residual"
+            ],
+            answer: 3,
+            rationale: "In the maintenance or residual phase the condition has stabilized and a new baseline is set, with positive symptoms usually absent or significantly diminished while negative and cognitive symptoms continue to be a concern. Stabilization is the phase before it, where symptoms are still diminishing and moving toward the previous level of function. The prodromal phase precedes the first full episode by 1 to 12 months, and the acute phase is when symptoms are active and disabling.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: schizoaffective disorder symptoms and treatments */
+            stem: "Which finding distinguishes schizoaffective disorder from a mood disorder with psychotic features?",
+            options: [
+              "Hallucinations and delusions for two or more weeks with no major mood episode",
+              "The presence of both manic and depressive episodes over the course of the illness",
+              "Psychotic symptoms that appear only during the mood episodes",
+              "A lifetime prevalence higher than that of schizophrenia"
+            ],
+            answer: 0,
+            rationale: "Schizoaffective disorder requires hallucinations and delusions for two or more weeks in the absence of a major mood episode at some point in the illness. The schizophrenia symptoms persist even after the mood episodes subside, which is precisely what psychotic symptoms confined to a mood episode do not do. Having both manic and depressive episodes describes the bipolar type rather than the diagnosis itself, and at 0.3% its prevalence is lower than that of schizophrenia.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: care considerations */
+            stem: "Which outcome statement for a patient with schizophrenia is written correctly?",
+            options: [
+              "The patient will decrease auditory hallucinations.",
+              "The patient will have improved coping by discharge.",
+              "The patient will state 2 to 3 coping strategies prior to discharge.",
+              "The patient will increase participation in unit activities."
+            ],
+            answer: 2,
+            rationale: "Outcomes are specific and measurable with a timeframe, and are developed alongside the patient. Stating 2 to 3 coping strategies prior to discharge attaches both a number and a deadline. Open words like increase and decrease are avoided precisely because they cannot be measured, and improved coping by discharge names a timeframe but no measurable quantity.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: non-adherence and relapse */
+            stem: "A patient asks why he must keep taking his antipsychotic when his symptoms are gone. Which response is accurate?",
+            options: [
+              "Most patients can taper off safely once their symptoms have fully resolved.",
+              "Stopping almost certainly leads to relapse, 80% within 2 years.",
+              "Relapse becomes uncommon once a patient has been stable for a full year.",
+              "Medication can be stopped so long as weekly psychotherapy continues."
+            ],
+            answer: 1,
+            rationale: "Stopping medication almost certainly leads to relapse, with 80% relapsing within 2 years, and non-adherence is the major reason relapse occurs at all. Between 80% and 90% of patients relapse during the course of the illness, and each relapse takes longer to recover from. Combining medication with psychotherapy reduces the severity and frequency of relapses, but psychotherapy does not replace the medication.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: intervening with delusions and hallucinations */
+            stem: "A patient states that the staff are part of a plot to poison his food. Which nursing response is therapeutic?",
+            options: [
+              "Point out that no one has been harmed by the food on the unit.",
+              "Agree with the patient so that trust can be established.",
+              "Explain the kitchen procedures that make poisoning impossible.",
+              "Acknowledge that this must feel frightening and offer to stay with him."
+            ],
+            answer: 3,
+            rationale: "The therapeutic approach addresses the underlying theme of fear and helps the patient feel safe, rather than engaging the delusional content. Offering presence and acknowledging the fear does that. Pointing to evidence and explaining kitchen procedures are both attempts to disprove the delusion, which intensifies it and makes staff appear untrustworthy. Agreeing with the delusion is never appropriate, since it confirms a false belief and undermines reality testing.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          }
+        ],
+        medications: [
+          {
+            /* chlorpromazine */
+            stem: "A patient is prescribed chlorpromazine. Which statement about its place in therapy is accurate?",
+            options: [
+              "It treats negative symptoms more effectively than atypical agents.",
+              "It carries no risk of extrapyramidal side effects.",
+              "It requires weekly white blood cell monitoring.",
+              "It is as effective as newer agents for positive symptoms and costs less."
+            ],
+            answer: 3,
+            rationale: "Chlorpromazine is a typical antipsychotic, and typicals are as effective as newer antipsychotics for positive symptoms and much less expensive, which is why they remain an option when cost or metabolic risk matters. They have little effect on negative symptoms. Extrapyramidal side effects are their most common and distressing problem. Weekly WBC monitoring belongs to clozapine.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* haloperidol */
+            stem: "A patient receiving haloperidol intramuscularly for acute agitation should be monitored especially closely for which reason?",
+            options: [
+              "Side effects are intensified and less easily managed by the IM route.",
+              "The IM route delays the onset of action by several weeks.",
+              "IM administration eliminates the risk of extrapyramidal symptoms.",
+              "The drug loses potency when given outside the oral route."
+            ],
+            answer: 0,
+            rationale: "Short-acting injectable antipsychotics are used primarily for agitation in psychiatric emergencies, and their side effects can be intensified and are less easily managed when the medication is administered intramuscularly. Onset is faster by this route, not slower, and the two to six week window applies to therapeutic effect on psychosis rather than to acute agitation. The IM route does not remove EPS risk.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* haloperidol decanoate */
+            stem: "A patient with repeated hospitalizations for stopping his oral antipsychotic is switched to haloperidol decanoate. What is the primary advantage?",
+            options: [
+              "It eliminates extrapyramidal side effects entirely.",
+              "It allows the patient to skip all routine laboratory monitoring.",
+              "It works within hours rather than over several weeks.",
+              "It is dosed every 2 to 4 weeks, which improves adherence."
+            ],
+            answer: 3,
+            rationale: "Haloperidol decanoate is the long-acting injectable form, given every 2 to 4 weeks or up to months. Requiring less frequent administration reduces conflict about taking medication and improves adherence, which is exactly the problem here. It remains a typical antipsychotic, so EPS risk persists and the AIMS is still done. The patient must have transportation to receive the injection.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* olanzapine */
+            stem: "A patient started on olanzapine six months ago has gained 30 pounds, mostly around the abdomen. Which laboratory tests should the nurse anticipate?",
+            options: [
+              "White blood cell count and absolute neutrophil count",
+              "Blood glucose and a lipid panel",
+              "Serum lithium level and thyroid function",
+              "Liver enzymes and ammonia"
+            ],
+            answer: 1,
+            rationale: "Olanzapine is an atypical antipsychotic, and all atypicals carry a risk of metabolic syndrome: weight gain especially abdominal, dyslipidemia, increased blood glucose and insulin resistance. Monitoring covers weight and girth, an initial glucose tolerance test and regular blood glucose. WBC and neutrophil monitoring is specific to clozapine. Lithium levels and thyroid studies belong to mood stabilization.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* quetiapine */
+            stem: "A patient taking quetiapine reports that he feels very drowsy during the day. Which statement by the nurse is accurate?",
+            options: [
+              "Sedation is a recognized side effect of atypical antipsychotics.",
+              "Drowsiness means the drug has reached a toxic level.",
+              "This indicates the early stage of neuroleptic malignant syndrome.",
+              "Sedation only occurs with typical antipsychotics."
+            ],
+            answer: 0,
+            rationale: "Sedation is a recognized side effect of the atypical antipsychotics, alongside sexual dysfunction and the metabolic effects. It does not by itself indicate toxicity. Neuroleptic malignant syndrome presents with severe muscle rigidity, altered mental status and a temperature over 103 degrees Fahrenheit, not isolated drowsiness. Sedation occurs with both classifications.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* aripiprazole */
+            stem: "Aripiprazole is being considered for a 15-year-old with schizophrenia. Which statement supports this choice?",
+            options: [
+              "It is the only antipsychotic approved for any age group.",
+              "It carries no risk of metabolic effects in adolescents.",
+              "It is one of the agents used in children and adolescents.",
+              "It is a typical antipsychotic, which is preferred in younger patients."
+            ],
+            answer: 2,
+            rationale: "Risperidone and aripiprazole are the antipsychotics named for use in children and adolescents, alongside individual and family psychotherapy, social and academic skills training, and hospitalization where needed. Aripiprazole is an atypical antipsychotic, not a typical one, and as an atypical it still carries metabolic risk that must be monitored.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* risperidone */
+            stem: "Which statement about risperidone is accurate?",
+            options: [
+              "It is available only in oral form.",
+              "It is available as both an oral drug and a long-acting injection.",
+              "It is a typical antipsychotic with strong anticholinergic effects.",
+              "It requires a 10 to 14 day washout before the first dose."
+            ],
+            answer: 1,
+            rationale: "Risperidone is an atypical antipsychotic available both orally and as a long-acting injectable, which makes it useful where adherence is a concern. As an atypical it is less likely than typicals to produce anticholinergic effects. The requirement for a drug-free interval before the first dose belongs to naltrexone in opioid use disorder, not to any antipsychotic.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* paliperidone palmitate */
+            stem: "Before a patient is started on paliperidone palmitate, which practical factor must be assessed?",
+            options: [
+              "Whether the patient has reliable transportation to the clinic",
+              "Whether the patient can tolerate weekly blood draws",
+              "Whether the patient has a 10-day opioid-free period",
+              "Whether the patient can swallow tablets without difficulty"
+            ],
+            answer: 0,
+            rationale: "Paliperidone palmitate is a long-acting injectable, given every 2 to 4 weeks or up to months, and the patient must have transportation to receive the injection. That is the practical barrier that decides whether this form will work. Weekly blood draws are the clozapine requirement. Difficulty swallowing is a reason to choose a liquid or fast-dissolving form, and it is not an obstacle for an injectable.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* clozapine — different angle from the starred mustKnow question */
+            stem: "Under which circumstance is a clozapine trial justified?",
+            options: [
+              "As the first-line agent for any newly diagnosed patient",
+              "Whenever a patient reports extrapyramidal side effects",
+              "Only after tardive dyskinesia has already developed",
+              "After two monotherapy trials with other antipsychotics have failed"
+            ],
+            answer: 3,
+            rationale: "A clozapine trial is justified after the failure of two monotherapy trials, and it is considered the gold standard in treatment-resistant schizophrenia, which accounts for about 30% of the thought disorder population. It is not first-line precisely because of agranulocytosis. Extrapyramidal side effects are managed with dose changes or anticholinergics rather than by moving straight to clozapine, and waiting for tardive dyskinesia is not the trigger.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* benztropine */
+            stem: "A patient given benztropine for pseudoparkinsonism should be taught to expect which set of effects?",
+            options: [
+              "Increased salivation, diarrhea, bradycardia and sweating",
+              "Weight gain, increased thirst, polyuria and blurred vision",
+              "Muscle rigidity, high fever, diaphoresis and incontinence",
+              "Dry mouth, blurred vision and urinary retention"
+            ],
+            answer: 3,
+            rationale: "Benztropine is an anticholinergic, so it produces anticholinergic effects: dry mouth, blurred vision, dry eyes, constipation, urinary retention or hesitancy, drowsiness, dizziness, confusion, tachycardia and skin flushing from decreased sweating. The first option lists cholinergic effects, the opposite pattern. Muscle rigidity with fever and diaphoresis describes neuroleptic malignant syndrome.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* trihexyphenidyl */
+            stem: "Trihexyphenidyl is added for a patient with a shuffling gait and pill-rolling tremor on an antipsychotic. What is the purpose of this addition?",
+            options: [
+              "To treat the underlying psychosis more aggressively",
+              "To prevent agranulocytosis from developing",
+              "To alleviate the symptoms of pseudoparkinsonism",
+              "To reverse tardive dyskinesia that has already appeared"
+            ],
+            answer: 2,
+            rationale: "Trihexyphenidyl is an oral anticholinergic added to alleviate the symptoms of pseudoparkinsonism, alongside identifying the causative medication for slow, safe discontinuation or a dose reduction. It treats the side effect, not the schizophrenia. Agranulocytosis is prevented by WBC monitoring on clozapine, and tardive dyskinesia is managed with valbenazine or deutetrabenazine.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* propranolol */
+            stem: "Propranolol is prescribed alongside a dose reduction for a patient with antipsychotic-induced akathisia. What is its role?",
+            options: [
+              "An added agent used when the dose change alone is not enough.",
+              "It is the first-line treatment for acute dystonic reactions.",
+              "It reverses the metabolic effects of atypical antipsychotics.",
+              "It prevents the progression of tardive dyskinesia."
+            ],
+            answer: 0,
+            rationale: "For akathisia the provider may add propranolol, lorazepam or diazepam on top of a dose reduction or medication change and an anticholinergic such as benztropine. Acute dystonic reactions are monitored for and acted on emergently if the airway is involved. Propranolol does nothing for metabolic syndrome, which is managed by monitoring weight, girth and glucose, and it does not affect tardive dyskinesia.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* lorazepam */
+            stem: "Lorazepam appears twice in the care of a patient on antipsychotics. Which two uses are correct?",
+            options: [
+              "Short-term for akathisia, and for agitation in NMS",
+              "For agranulocytosis, and for metabolic syndrome",
+              "For tardive dyskinesia, and for acute dystonic reactions",
+              "For long-term maintenance, and for negative symptoms"
+            ],
+            answer: 0,
+            rationale: "Lorazepam may be added for akathisia, on a short-term basis only, and is used for agitation in neuroleptic malignant syndrome alongside dantrolene sodium and bromocriptine mesylate. Agranulocytosis is managed by stopping clozapine, and metabolic syndrome by monitoring and lifestyle support. Tardive dyskinesia is managed with valbenazine or deutetrabenazine. Benzodiazepines are never the maintenance treatment for schizophrenia.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* diazepam */
+            stem: "A provider adds diazepam for a patient with akathisia. Which instruction is most important?",
+            options: [
+              "The drug should be continued indefinitely to prevent recurrence.",
+              "Benzodiazepines in this situation are for short-term use only.",
+              "The dose should be increased if restlessness persists beyond a week.",
+              "The antipsychotic should be stopped while diazepam is given."
+            ],
+            answer: 1,
+            rationale: "Benzodiazepines added for akathisia are for short-term use only, because longer use risks dependence and adds sedation to a patient already at risk of it. The primary interventions remain a dose reduction or medication change plus an anticholinergic. Stopping the antipsychotic entirely is the response to neuroleptic malignant syndrome, not to akathisia.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* valbenazine */
+            stem: "Valbenazine is prescribed for a patient with established tardive dyskinesia. What should the nurse teach about what to expect?",
+            options: [
+              "It reverses the movements completely within a few days.",
+              "It allows the antipsychotic dose to be safely doubled.",
+              "It prevents tardive dyskinesia from ever developing.",
+              "It manages the symptoms, which usually persist after dose changes."
+            ],
+            answer: 3,
+            rationale: "Valbenazine is one of two FDA-approved medications that help manage tardive dyskinesia symptoms. Symptoms usually persist even after the antipsychotic dose is lowered or stopped, so these agents manage rather than reverse the condition. It is not a preventive drug, and the way to reduce risk is regular AIMS assessment and choosing an agent with lower risk.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* deutetrabenazine */
+            stem: "Which medication, along with valbenazine, is FDA-approved to manage tardive dyskinesia?",
+            options: [
+              "Bromocriptine mesylate",
+              "Deutetrabenazine",
+              "Dantrolene sodium",
+              "Trihexyphenidyl"
+            ],
+            answer: 1,
+            rationale: "Valbenazine and deutetrabenazine are the two FDA-approved medications for managing the symptoms of tardive dyskinesia. Dantrolene sodium and bromocriptine mesylate treat neuroleptic malignant syndrome by relieving muscle rigidity and reducing fever. Trihexyphenidyl is an anticholinergic used for pseudoparkinsonism.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* dantrolene sodium */
+            stem: "A patient with neuroleptic malignant syndrome is admitted to the ICU. What is the purpose of dantrolene sodium in this patient?",
+            options: [
+              "To restore the white blood cell count",
+              "To sedate the patient for the duration of treatment",
+              "To relieve muscle rigidity and reduce fever",
+              "To replace the antipsychotic at a lower dose"
+            ],
+            answer: 2,
+            rationale: "Dantrolene sodium and bromocriptine mesylate relieve muscle rigidity and reduce the fever in neuroleptic malignant syndrome, alongside supportive care, hydration, cooling measures and vital sign monitoring. Lorazepam is what is used for agitation. All antipsychotics are stopped immediately rather than replaced at a lower dose, and white cell counts relate to clozapine-induced agranulocytosis.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* bromocriptine mesylate */
+            stem: "Bromocriptine mesylate is given to a patient being treated for neuroleptic malignant syndrome. Which nursing action accompanies it?",
+            options: [
+              "Restart the antipsychotic at half the previous dose",
+              "Draw a white blood cell count weekly for 18 weeks",
+              "Perform the AIMS assessment every 3 months",
+              "Monitor vital signs and continue cooling and hydration"
+            ],
+            answer: 3,
+            rationale: "Neuroleptic malignant syndrome is managed with symptomatic and supportive treatment: hydration with oral and IV fluids, monitoring vital signs, cooling measures as ordered, correcting electrolyte imbalances and treating any dysrhythmia, all in the ICU. The antipsychotic is stopped, not restarted. Weekly WBC monitoring belongs to clozapine, and the AIMS is for tardive dyskinesia.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* SATA 1 — long-acting injectables */
+            stem: "Which medications are available as long-acting injections for schizophrenia? Select all that apply.",
+            options: [
+              "Haloperidol decanoate",
+              "Chlorpromazine",
+              "Risperidone",
+              "Paliperidone palmitate",
+              "Benztropine",
+              "Quetiapine"
+            ],
+            answers: [0, 2, 3],
+            rationale: "Haloperidol decanoate, risperidone and paliperidone palmitate are the long-acting injectable forms, given every 2 to 4 weeks or up to months for patients at risk of non-adherence. Chlorpromazine and quetiapine appear in oral form here, and benztropine is an anticholinergic used to treat side effects rather than an antipsychotic.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* SATA 2 — treating EPS */
+            stem: "Which medications are indicated for treating the extrapyramidal side effects of antipsychotics? Select all that apply.",
+            options: [
+              "Benztropine",
+              "Clozapine",
+              "Trihexyphenidyl",
+              "Propranolol",
+              "Diazepam",
+              "Dantrolene sodium"
+            ],
+            answers: [0, 2, 3, 4],
+            rationale: "Benztropine and trihexyphenidyl are the anticholinergics used for akathisia and pseudoparkinsonism. Propranolol may be added for akathisia, as may diazepam or lorazepam, on a short-term basis only. Dantrolene sodium treats neuroleptic malignant syndrome, which is an adverse event rather than an extrapyramidal side effect. Clozapine is an antipsychotic and a cause of side effects, not a treatment for them.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          },
+          {
+            /* SATA 3 — indicated in NMS */
+            stem: "Which medications are indicated in the treatment of neuroleptic malignant syndrome? Select all that apply.",
+            options: [
+              "Dantrolene sodium",
+              "Valbenazine",
+              "Bromocriptine mesylate",
+              "Lorazepam",
+              "Haloperidol"
+            ],
+            answers: [0, 2, 3],
+            rationale: "Dantrolene sodium and bromocriptine mesylate relieve muscle rigidity and reduce fever, and lorazepam is used for agitation. Valbenazine manages tardive dyskinesia, a different adverse effect. Haloperidol is an antipsychotic and would be stopped immediately, since the first action in neuroleptic malignant syndrome is to discontinue all antipsychotics.",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "quiz-bank"
+          }
+        ],
+        eaq: []
+      }
     }
+
   ]
 };
 
@@ -5060,5 +5768,7 @@ window.TOPIC_ORDER = [
   "Suicide",
   "Nonsuicidal Self-Injury",
   "Substance Use & Addictive Disorders",
-  "Personality Disorders"
+  "Personality Disorders",
+  "Eating & Feeding Disorders",
+  "Schizophrenia & Schizoaffective Disorder"
 ];

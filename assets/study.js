@@ -305,6 +305,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const source = document.getElementById(btn.dataset.lightboxTarget);
         if (!source) return;
         lbBody.innerHTML = source.innerHTML;
+        /* The store is hidden, so its images carry loading="lazy" and never
+           download while the page sits there. The CLONES we just made are
+           what the reader is about to look at, so force them to load now:
+           a lazy image inserted into the overlay can otherwise sit forever
+           with an empty currentSrc and render as a blank box. Keep both
+           halves — the lazy attribute in the store is what stops a 1 MB
+           photo loading on every page view. */
+        lbBody.querySelectorAll("img[loading='lazy']").forEach(img => {
+          img.removeAttribute("loading");
+          img.src = img.src;
+        });
         lightbox.classList.add("show");
       });
     });

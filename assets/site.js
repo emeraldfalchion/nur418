@@ -68,7 +68,22 @@ const SITE = {
         { id: "week3-personality",  num: "2", title: "Personality Disorders",         file: "week3-personality-disorders.html" },
       ]
     },
-    /* Copy a block above for Week 4, Week 5, ... as the course goes on. */
+    {
+      /* Week 4's schizophrenia lecture was SPLIT across two pages (Holly,
+         2026-09-16). Written to standard as one page it measured ~4,300
+         words against the 3,600 ceiling, and everything left was deck
+         content, so cutting it would have breached content rule 1. Same
+         call as the Suicide/NSSI split. Note that must-know.html and
+         data/quiz-bank.js still carry ONE schizophrenia topic, because the
+         deck has one set of Learning Outcomes and Key Terms for it. */
+      label: "Week 4",
+      items: [
+        { id: "week4-eating",       num: "1", title: "Eating &amp; Feeding Disorders",  file: "week4-eating-feeding-disorders.html" },
+        { id: "week4-schizophrenia",num: "2", title: "Schizophrenia &amp; Schizoaffective", file: "week4-schizophrenia.html" },
+        { id: "week4-antipsychotics",num: "3", title: "Antipsychotic Medications",      file: "week4-antipsychotic-medications.html" },
+      ]
+    },
+    /* Copy a block above for Week 5, Week 6, ... as the course goes on. */
 
     /* ============================================================
        EXAM PREP — RESTORED on 2026-08-29, at Holly's request, after being
