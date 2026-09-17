@@ -101,6 +101,18 @@
    renamed "Therapeutic Communication" (from "Therapeutic
    Communication & Relationships"). The imported questions' wording
    is untouched; only their topic tag changed.
+
+   2026-09-16 — WEEK 4 EAQs IMPORTED: 70 questions from two quizzes
+   (a 20-question ticket to class and a 50-question end of week),
+   filed by subject into topics 13 and 14: Eating & Feeding 29,
+   Schizophrenia 41. Extracted from the PDFs with
+   tools/eaq-extract.js — every glyph mapped, no structural problems.
+   Antipsychotic questions go to the SCHIZOPHRENIA topic: the bank
+   carries one schizophrenia topic even though Week 4 has three topic
+   pages. No exact duplicates across all 260 eaq questions, by
+   normalised stem and by option-set-plus-key. The nine repairs and
+   the near-duplicate pairs kept on purpose are listed in
+   SESSION-LOG.md.
    ============================================================ */
 window.QUIZ_BANK = {
 
@@ -109,7 +121,7 @@ window.QUIZ_BANK = {
        set is added or a question is removed, or the page will quietly lie. */
     { key: "mustKnow",      label: "Must Know",      blurb: "One question for every Learning Outcome in the pre-lecture slides." },
     { key: "medications",   label: "Medications",    blurb: "One question for every drug on the Medications page, plus select-all questions on which drugs are indicated for what." },
-    { key: "eaq",           label: "EAQs",           blurb: "All 190 Sherpath questions sorted by topic, with duplicates removed." }
+    { key: "eaq",           label: "EAQs",           blurb: "All 260 Sherpath questions sorted by topic, with duplicates removed." }
   ],
 
   topics: [
@@ -5219,7 +5231,390 @@ window.QUIZ_BANK = {
           }
         ],
         medications: [],
-        eaq: []
+        eaq: [
+          /* Imported 2026-09-16 from the two Week 4 EAQ quizzes (ticket to class,
+             then end of week), in their original order and wording. Repairs are
+             itemised in SESSION-LOG.md. */
+          {
+            stem: "Which clinical finding would the nurse anticipate when caring for a patient diagnosed with anorexia?",
+            options: [
+              "Bradycardia",
+              "Leukocytosis",
+              "Hyperkalemia",
+              "Hyperthyroidism"
+            ],
+            answer: 0,
+            rationale: "The nurse should anticipate bradycardia during the assessment of a patient with anorexia. Hypokalemia (not hyperkalemia), leukopenia (not leukocytosis), and hypothyroidism (not hyperthyroidism) are other clinical findings in a patient with anorexia. (p. 334)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which physiological response may cause a finding in a patient with severe anorexia and yellow skin?",
+            options: [
+              "Hypoalbuminemia",
+              "Hypercarotenemia",
+              "Hyperbilirubinemia",
+              "Estrogen deficiency"
+            ],
+            answer: 1,
+            rationale: "Hypercarotenemia causes the skin to appear yellow in patients with severe anorexia. Estrogen deficiency causes decreased bone density. Hypoalbuminemia results in peripheral edema. Hyperbilirubinemia is the result of excessive red blood cell breakdown, not anorexia. (p. 334)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which reason would the nurse suspect for the presence of gastric dilation in a patient with bulimia nervosa?",
+            options: [
+              "Binge eating",
+              "Induced vomiting",
+              "Use of laxatives",
+              "Ipecac intoxication"
+            ],
+            answer: 0,
+            rationale: "Binge eating can cause gastric dilation or rupture. Induced vomiting causes reflux of hydrochloric acid over the tooth enamel, causing dental cavities. Use of laxatives causes electrolyte imbalances. Ipecac intoxication can cause cardiac failure. (p. 341)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient presents with decreased cardiac output. The nurse notes that the patient experiences bingeing and then purges to make up for the calories gained. Which condition would the nurse suspect?",
+            options: [
+              "Binge eating",
+              "Bulimia nervosa",
+              "Anorexia nervosa",
+              "Weight management"
+            ],
+            answer: 1,
+            rationale: "Bulimia nervosa is having repeated episodes of binge eating followed by inappropriate behaviors to compensate such as induced vomiting or purgation. Binge eating is repeated episodes of overindulgence in eating followed by a feeling of guilt and distress but no compensatory behavior. Anorexia nervosa is having intense fear of weight gain and refusing to maintain optimal weight. Weight management has a specific plan of diet and exercise and does not include bingeing followed by excessive exercise. (p. 340)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which symptom is consistent with bulimia?",
+            options: [
+              "Presence of lanugo",
+              "Severe restriction of food intake",
+              "Maintain a normal weight",
+              "Binge eating without purging"
+            ],
+            answer: 2,
+            rationale: "Patients with bulimia are often at or close to ideal body weight and do not appear physically ill. Not engaging in compensatory measures refers to signs of binge-eating disorder and severely restricting food and lanugo refers to anorexia nervosa, not bulimia. (p. 341)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which assessment finding is associated with bulimia nervosa?",
+            options: [
+              "Lymphocytosis",
+              "Dental erosion",
+              "Osteoporosis",
+              "Anemia"
+            ],
+            answer: 1,
+            rationale: "Dental erosion is most likely to occur in patients diagnosed with bulimia nervosa as a result of chronic self-induced vomiting. Lymphocytosis, osteoporosis, and anemia are conditions that are more likely to occur as a result of anorexia nervosa, not bulimia nervosa. (p. 341)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient with anorexia nervosa reveals self-induced vomiting as often as 12 times a day. The nurse would expect assessment findings to reveal which symptom?",
+            options: [
+              "Tachycardia",
+              "Hypokalemia",
+              "Hypolipidemia",
+              "Hypercalcemia"
+            ],
+            answer: 1,
+            rationale: "Vomiting causes loss of potassium, leading to hypokalemia. Tachycardia, hypolipidemia, and hypercalcemia are not associated with self-induced vomiting. (p. 334)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which assessment by the nurse is important for a patient suspected of experiencing bulimia nervosa?",
+            options: [
+              "Analysis of body fat percentage",
+              "Examination of body cavities",
+              "Inspection of the oral cavity",
+              "Determination of joint range of motion"
+            ],
+            answer: 2,
+            rationale: "Repeated vomiting often causes dental erosions and caries. Analyzing body fat would be an assessment for a patient with anorexia. Examining body cavities and range of motion is not indicated for this patient. (p. 341)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient with bulimia nervosa uses enemas and laxatives to purge to maintain weight. For which imbalance would the nurse assess?",
+            options: [
+              "Increased serum sodium level",
+              "Decreased red blood cell count",
+              "Elevated serum potassium level",
+              "Fluid and electrolyte levels"
+            ],
+            answer: 3,
+            rationale: "Imbalanced fluid and electrolyte levels are usually the result of excessive use of enemas and laxatives. An increased serum sodium level and decreased red blood cell count is not indicated as an imbalance to monitor in a patient with bulimia nervosa. A decreased serum potassium level rather than an elevated level is considered in an assessment and plan of care. (p. 341)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "The nurse understands that facial edema found next to the ear in a patient diagnosed with bulimia nervosa is most likely caused by which condition?",
+            options: [
+              "Electrolyte imbalance",
+              "Excessive use of laxatives",
+              "Hydrochloric acid reflux",
+              "Increased serum amylase levels"
+            ],
+            answer: 3,
+            rationale: "The patient diagnosed with bulimia nervosa has a parotid swelling, which can be caused by increased serum amylase levels. An electrolyte imbalance can cause many body manifestations, none of which are indicative of swelling in front of the ear. Patients diagnosed with bulimia nervosa may use laxatives to purge, and this would rather cause electrolyte imbalances. Dental caries and enamel erosion occur in patients with diagnosed bulimia nervosa as a result of hydrochloric acid reflux from repetitive vomiting. (p. 341)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which subjective symptom would the nurse expect to note during assessment of a patient with anorexia nervosa?",
+            options: [
+              "Lanugo",
+              "Hypotension",
+              "25-pound (11.3-kg) weight loss",
+              "Fear of gaining weight"
+            ],
+            answer: 3,
+            rationale: "Fear of gaining weight is the only subjective datum listed and is universally true. Lanugo, hypotension, and a 25-pound (11.3-kg) weight loss are all objective data. (p. 334)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient diagnosed with anorexia nervosa currently weighs 97 pounds (44 kg). The patient's ideal body weight is 127 pounds (57.6 kg). Which goal is the highest priority for this patient?",
+            options: [
+              "Attain a weight of 114.3 pounds (51.8 kg).",
+              "Verbalize a realistic body image.",
+              "Demonstrate elevated self-concept.",
+              "Seek input from others when making decisions."
+            ],
+            answer: 0,
+            rationale: "After intervention for any acute symptoms, the patient with anorexia begins a weight restoration program that allows for incremental weight gain. A treatment goal is set at 90% of ideal body weight, the weight at which most women are able to menstruate. Verbalizing a realistic body image and demonstrating an improved self-concept are important goals, but nutritional integrity is a higher priority. The goal of treatment is to achieve independence with decision-making processes. (p. 336)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which assessment finding would the nurse anticipate for a patient newly diagnosed with binge-eating disorder?",
+            options: [
+              "Russell's sign",
+              "Hypotension",
+              "Normal weight",
+              "Use of laxatives"
+            ],
+            answer: 2,
+            rationale: "The nurse should find that the patient newly diagnosed with a binge-eating disorder is of normal weight. Over time, repeated binge eating can result in obesity. Russell's sign and the use of laxatives are more typical of patients with bulimia nervosa. Hypotension is more likely to be found with anorexia or bulimia nervosa as the disease state worsens. Laxative use is common with purging behaviors in anorexia and bulimia. (p. 342)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which neurobiological factor contributes to the dysregulation of appetite, mood, and impulse control in eating disorders?",
+            options: [
+              "Altered serotonin",
+              "Altered glutamate",
+              "Increased tryptophan",
+              "Decreased dopamine"
+            ],
+            answer: 0,
+            rationale: "Altered serotonin levels contribute to the dysregulation of appetite, mood, and impulse control in eating disorders. Glutamate is a neurotransmitter that sends signals between nerve cells and plays a role in learning and memory, not eating disorders. Tryptophan is an amino acid essential to serotonin synthesis and is only available through diet. A function of dopamine is \"pleasure\" or \"reward\" chemical in the brain. A decrease in dopamine is not associated with anorexia. (pp. 334-335)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "At a health camp, the nurse is teaching about eating disorders. Which statement by a participant indicates a need for further teaching?",
+            options: [
+              "\"Patients with an eating disorder often have personality disorders.\"",
+              "\"Adolescents get social support by viewing 'pro anorexia' websites.\"",
+              "\"Psychotherapy is the most effective treatment for bulimia nervosa.\"",
+              "\"Anorexia nervosa can be completely cured with adequate treatment.\""
+            ],
+            answer: 3,
+            rationale: "Anorexia nervosa cannot be completely cured with treatment. Nearly half the patients have a relapse within 1 year. \"Pro anorexia\" websites try to provide rationales for anorexic food choices and reinforce the adolescents' behaviors and attitudes; in this way, they provide social support to adolescents with anorexia nervosa. Personality disorders are common in those with eating disorders. Obsessive-compulsive personality disorder is seen more often among patients with anorexia nervosa than in the general population. A history of major depression or anxiety is common among those with binge-eating disorders. The most effective treatment for bulimia nervosa is cognitive-behavioral therapy, which is a type of psychotherapy. (p. 343)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which assessment question would be asked of a patient whose symptoms are consistent with a diagnosis of anorexia nervosa?",
+            options: [
+              "\"Do you find yourself feeling hungry?\"",
+              "\"How would you describe your body?\"",
+              "\"Why do you choose to take laxatives?\"",
+              "\"How often do you force yourself to vomit?\""
+            ],
+            answer: 1,
+            rationale: "The question \"How would you describe your body?\" will reveal the cognitive distortion consistent with anorexia nervosa. Invariably, the patient will describe self as fat despite being excessively underweight. Feeling hungry is not an appropriate question to diagnose this condition. Use of laxatives and behaviors of vomiting do not narrow down the diagnosis to anorexia, because bulimia is also associated with these. (pp. 332-333)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement by a patient indicates the presence of a binge-eating disorder?",
+            options: [
+              "\"I do not want to eat food.\"",
+              "\"I overuse diuretics and laxatives.\"",
+              "\"I do not exercise to reduce weight.\"",
+              "\"I have a tendency to induce vomiting.\""
+            ],
+            answer: 2,
+            rationale: "Patients with binge-eating disorder have episodes of uncontrolled eating followed by feelings of guilt. But they show no compensatory behavior, such as exercise to reduce the weight. Patients with anorexia nervosa do not want to eat food because of fear of weight gain, and they starve themselves. Patients with bulimia nervosa may use diuretics or laxatives to compensate for overeating. They may induce vomiting to compensate for overeating. (p. 345)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A nurse is assessing a child who does not like certain foods in the daily diet. On examination, the nurse notes that the body mass index of the child is very low. Which diagnosis would the nurse suspect for this patient?",
+            options: [
+              "Encopresis",
+              "Rumination",
+              "Elimination disorder",
+              "Avoidant/restrictive food intake disorder"
+            ],
+            answer: 3,
+            rationale: "Avoidant or restrictive food intake is a feeding disorder where the patient avoids or restricts certain foods right from childhood. Encopresis is an elimination disorder in which the child voluntarily or involuntarily passes feces in inappropriate places. Rumination is a feeding problem where there is regurgitation with chewing again and then swallowing or spitting. Elimination disorder is related to voluntary or involuntary passage of urine or feces in inappropriate places or at inappropriate times. (p. 348)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "The nurse is assessing a teenager who is underweight compared with others in a similar age and height category. On interviewing, the nurse finds that the teen has a fear of gaining weight and is refusing to eat. Which condition would the nurse consider?",
+            options: [
+              "Binge eating",
+              "Bulimia nervosa",
+              "Anorexia nervosa",
+              "Rumination disorder"
+            ],
+            answer: 2,
+            rationale: "Anorexia nervosa refers to intense fear of weight gain and refusal of food to maintain weight. Binge eating is repeated episodes of overindulgence in eating followed by a feeling of guilt and distress but no compensatory behavior. Rumination disorder is characterized by regurgitation, followed by rechewing and reswallowing or spitting. Bulimia nervosa involves repeated episodes of binge eating followed by inappropriate behaviors like induced vomiting or purgation to compensate. (p. 332)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "An adult patient is diagnosed with anorexia nervosa. Which assessment finding meets the criteria for hospitalization for this patient?",
+            options: [
+              "Oral temperature, 98.1°F (36.7°C)",
+              "Heart rate, 56 beats per minute",
+              "Respiratory rate, 12 breaths per minute",
+              "Systolic blood pressure, 88 mm Hg"
+            ],
+            answer: 3,
+            rationale: "Hypotension with a systolic blood pressure of less than 90 mm Hg is one criterion for hospitalization for a patient with anorexia nervosa. Hypothermia (temperature lower than 96°F or 35.6°C) is a criterion for hospitalization. A heart rate less than 50 beats per minute is a criterion for hospitalization. Respiratory rate is not included as a criterion for hospitalization and a rate of 12 breaths per minute for an adult would be a normal level. Cardiac arrhythmias are also a criterion for hospitalization. (p. 335)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient diagnosed with anorexia nervosa presents to the clinic with a body mass index (BMI) of 15 kg/m2. Based on the BMI, which level of severity would the nurse document?",
+            options: [
+              "Mild",
+              "Severe",
+              "Extreme",
+              "Moderate"
+            ],
+            answer: 1,
+            rationale: "A BMI of 15 to 15.99 kg/m2 is considered severe. A BMI of 17 kg/m2 or more is mild. A BMI less than 15 kg/m2 is considered extreme. A BMI of 16 to 16.99 kg/m2 is moderate. (pp. 334-335)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient with anorexia nervosa was discharged from a specialized eating-disorder unit 3 weeks ago, weighing 123 pounds (55.8 kg). The patient returns to the outpatient clinic for a follow-up visit. The patient's ideal body weight is 154 pounds (69.9 kg) with a current body weight of 112 pounds (50.8). Which action is the nurse's priority?",
+            options: [
+              "Notify the healthcare provider.",
+              "Obtain a 24-hour diet recall.",
+              "Request to view the nutrition log.",
+              "Proceed with the treatment plan."
+            ],
+            answer: 0,
+            rationale: "The nurse's priority action is to notify the healthcare provider. The patient weighs 75% below their ideal body weight and will require immediate medical stabilization. Obtaining a 24-hour diet recall, requesting to view the nutrition log, and proceeding with the treatment plan are actions that may be taken once the healthcare provider is consulted. (p. 335)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which diagnosis would be given priority for a patient diagnosed with bulimia nervosa?",
+            options: [
+              "Impaired body image",
+              "Chronic low self-esteem",
+              "Electrolyte imbalance",
+              "Impaired coping"
+            ],
+            answer: 2,
+            rationale: "The patient who engages in purging and excessive use of laxatives and enemas is at risk for metabolic acidosis from bicarbonate loss. Impaired body image, chronic low self-esteem, and impaired coping are all common nursing diagnoses, but the priority is addressing the electrolyte levels. (pp. 334, 339)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A nurse is teaching a patient with bulimia nervosa about scheduling healthy, balanced meals. Which rationale is appropriate for this intervention?",
+            options: [
+              "Identify trigger foods.",
+              "Realize effects of purging.",
+              "Include forbidden foods.",
+              "Avoid binge–purge cycles."
+            ],
+            answer: 3,
+            rationale: "Learning about scheduled balanced meals can help the patient to maintain a steady dietary regimen and avoid binge–purge cycles. Identifying trigger foods can be done by encouraging the patient to explore ideas about trigger foods. Including forbidden foods can be achieved by discussing the patient's irrational thoughts regarding those foods. Health effects of purging can be taught by educating the patient about the ill effects of induced vomiting. (p. 341)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement is true related to a patient with bulimia nervosa?",
+            options: [
+              "Maintains a normal weight",
+              "Tends to exercise rigorously after meals",
+              "Avoids purging behaviors",
+              "Holds a distorted body image"
+            ],
+            answer: 0,
+            rationale: "Many patients with bulimia nervosa are at or near normal weight. Patients with anorexia may exercise rigorously after meals to lose weight. Patients with bulimia have frequent purging after binging. Patients with anorexia hold a distorted body image. (p. 340)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which comment by the patient indicates bulimia nervosa rather than anorexia nervosa?",
+            options: [
+              "\"I feel good. I feel just fine. I don't have any problems.\"",
+              "\"I try to do what my parents want, but I usually don't get things right.\"",
+              "\"If I want to do something, I just do it. I don't like to analyze things too much.\"",
+              "\"I don't look as good as most of my friends. That's why I don't have many dates.\""
+            ],
+            answer: 2,
+            rationale: "Impulsivity is characteristic of bulimia nervosa. Statements of denial, defeat and comparison to others indicate low self-esteem, feelings of ineffectiveness, and alexithymia, which are findings in all eating disorders. (p. 340)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which factor would the nurse discuss when educating the patient about bulimia nervosa? Select all that apply.",
+            options: [
+              "Meal planning",
+              "Effects of purging",
+              "Consequences of starvation",
+              "Relaxation techniques",
+              "Eating \"forbidden\" foods"
+            ],
+            answers: [0, 1, 3, 4],
+            rationale: "Bulimia nervosa is characterized by repeated episodes of binge eating followed by inappropriate behaviors like induced vomiting or purgation to compensate. Meal planning will help the patient follow a healthy diet and avoid bingeing and purging. Understanding the effects of purging is important to be able to avoid it and maintain a healthy routine. Use of relaxation techniques can help in relieving stress by ways other than using food and help in recovery. These patients should be encouraged to eat \"forbidden\" foods. Understanding the effects of starvation are more important in patients with anorexia nervosa because there is avoidance of food as a result of fear of weight gain. (p. 343)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient has been hospitalized with anorexia nervosa. The patient's weight is 65% of normal. Which short-term goal is realistic for the first week of hospitalization?",
+            options: [
+              "Gain a maximum of 3 pounds (1.4 kg).",
+              "Develop a pattern of normal eating behavior.",
+              "Deny having fear about gaining weight.",
+              "Verbalize awareness of binging behaviors."
+            ],
+            answer: 0,
+            rationale: "The critical outcome during hospitalization for anorexia nervosa is weight gain. A maximum of 3 pounds (1.4 kg) weekly is considered sufficient initially. Weight gain that is too rapid can cause pulmonary edema. Developing a normal eating behavior and overcoming fears about weight gain are long-term goals. Binging occurs with bulimia and not anorexia. (pp. 337-338)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which patient statement or behavior supports the diagnosis of anorexia nervosa? Select all that apply.",
+            options: [
+              "\"I know I weigh 90 pounds; I still look fat!\"",
+              "\"Nobody will like me if I look so grossly obese.\"",
+              "Engages in both a pre- and postmeal exercising ritual.",
+              "\"I understand this isn't a healthy way to live, but I can't be fat.\"",
+              "Places one potato onto the plate and cuts it into many, small pieces."
+            ],
+            answers: [0, 1, 2, 4],
+            rationale: "Thoughts and behaviors that are associated with anorexia nervosa include a view of the self as fat even when emaciated, peculiar handling of food (e.g., cutting food into small bits), possible development of a rigorous exercise regimen, and cognition so disturbed that the individual judges self-worth by their weight. Saying \"I understand this isn't a healthy way to live, but I can't be fat\" demonstrates self-reflection that usually is lacking in the patient diagnosed with such an eating disorder. (pp. 334, 335)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          }
+        ]
       }
     },
 
@@ -5748,7 +6143,556 @@ window.QUIZ_BANK = {
             source: "quiz-bank"
           }
         ],
-        eaq: []
+        eaq: [
+          /* Imported 2026-09-16 from the two Week 4 EAQ quizzes (ticket to class,
+             then end of week), in their original order and wording. Repairs are
+             itemised in SESSION-LOG.md. */
+          {
+            stem: "Which side effect of antipsychotic medication is generally nonreversible?",
+            options: [
+              "Dystonic reaction",
+              "Tardive dyskinesia",
+              "Pseudoparkinsonism",
+              "Anticholinergic effects"
+            ],
+            answer: 1,
+            rationale: "Tardive dyskinesia is not always reversible with discontinuation of the medication and has no proven cure. The side effects of anticholinergic effects, pseudoparkinsonism, and dystonic reaction often appear early in therapy and can be minimized with treatment. (p. 208)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which potential side effect of antipsychotic medications does the Abnormal Involuntary Movement Scale (AIMS) assessment detect?",
+            options: [
+              "Acute dystonia",
+              "Tardive dyskinesia",
+              "Cholestatic jaundice",
+              "Pseudoparkinsonism"
+            ],
+            answer: 1,
+            rationale: "An AIMS assessment should be performed periodically on patients who are being treated with antipsychotic medication known to cause tardive dyskinesia. The AIMS assessment does not detect acute dystonia, cholestatic jaundice, or pseudoparkinsonism. (p. 208)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which type of hallucination is a patient diagnosed with schizophrenia most likely to experience?",
+            options: [
+              "Visual",
+              "Tactile",
+              "Auditory",
+              "Olfactory"
+            ],
+            answer: 2,
+            rationale: "Patients diagnosed with schizophrenia may experience hallucinations arising out of any of the senses; however, auditory hallucinations are experienced by 60% of people with schizophrenia at some time during their lives. Visual hallucinations more commonly are associated with substance abuse and withdrawal. Tactile and olfactory hallucinations are rare. (p. 196)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which symptom in a patient with schizophrenia can be categorized as a positive symptom?",
+            options: [
+              "Delusions",
+              "Dysphoria",
+              "Loss of motivation",
+              "Impaired judgment"
+            ],
+            answer: 0,
+            rationale: "The behavioral traits not normally found in healthy patients are called positive symptoms of schizophrenia and include delusions, hallucinations, bizarre behavior, and paranoia. Dysphoria and suicidal intentions are affective symptoms of schizophrenia, which involve emotions and their expression. Behaviors that are present in healthy people but lacking in patients with schizophrenia are negative symptoms, such as loss of motivation and alogia (poverty of thought or inability to speak). Impaired judgment and illogical thinking are the cognitive symptoms associated with schizophrenia. (p. 194)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which term is correct to use when documenting that a patient with schizophrenia stated, \"Cheese dog run fast\"?",
+            options: [
+              "Neologism",
+              "Word salad",
+              "Circumstantiality",
+              "Magical thinking"
+            ],
+            answer: 1,
+            rationale: "A word salad is a jumble of words that is meaningless to the listener and results from an extreme level of disorganization. A neologism is an invented word. Circumstantiality refers to verbal expression with excessive detail. Magical thinking means believing that one's thoughts or actions can affect others. (p. 195)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which type of altered perception is most commonly experienced by patients with schizophrenia?",
+            options: [
+              "Visual hallucinations",
+              "Illusions",
+              "Tactile hallucinations",
+              "Auditory hallucinations"
+            ],
+            answer: 3,
+            rationale: "Hallucinations, especially auditory hallucinations, are the most common example of alterations of perception in schizophrenia. Auditory hallucinations are experienced by as many as 70% of individuals with schizophrenia. Visual hallucinations are the second most common form in schizophrenia. Illusions are misinterpretations of a real experience and are considered another type of altered perception, but less prevalent than auditory hallucinations. Tactile hallucinations are unusual in mental illness. (pp. 190, 194, 196)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which cause of schizophrenia is currently understood?",
+            options: [
+              "A combination of inherited and nongenetic factors",
+              "Deficient amounts of the neurotransmitter dopamine",
+              "Excessive amounts of the neurotransmitter serotonin",
+              "Stress-related and ineffective stress management skills"
+            ],
+            answer: 0,
+            rationale: "Causation is a complicated matter. Schizophrenia is most likely caused by a combination of inherited genetic factors and extreme nongenetic factors (e.g., viral infection, birth injuries, and nutritional factors) that can affect the genes governing the brain or directly injure the brain. Changes in dopamine and serotonin are signs of schizophrenia but are not thought to be the cause of the disease. Stress and ineffective stress management are risk factors but are not thought to cause schizophrenia. (p. 191)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which medication classification is most often associated with the side effects gynecomastia, amenorrhea, and galactorrhea?",
+            options: [
+              "Anticholinergic medications",
+              "Third-generation antipsychotics",
+              "Second-generation (atypical) antipsychotics",
+              "First-generation (conventional) antipsychotics"
+            ],
+            answer: 3,
+            rationale: "First-generation antipsychotic medications commonly have side effects that relate to sexual dysfunction. These side effects include gynecomastia (enlarged breast tissue), amenorrhea (absence of menstruation), and galactorrhea (discharge from nipples). The incidence of these side effects is much less in second- and third-generation antipsychotic medications. Anticholinergic medications have side effects of constipation and blurred vision. (p. 208)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which cue will the nurse anticipate when reviewing the care plan for a patient with schizophrenia and a nursing diagnosis of impaired ability to perform hygiene?",
+            options: [
+              "Paranoia",
+              "Anosognosia",
+              "Lack of energy",
+              "Internalized stigma"
+            ],
+            answer: 2,
+            rationale: "Patients with a lack of energy may be unable to perform hygiene. Patients experiencing paranoia generally mistrust others, exhibit withdrawn behavior, are suspicious, and may have a risk for displaying violence. Anosognosia refers to a patient's unawareness of their condition. Internalized stigma causes a negative self-image and risk of loneliness. (p. 199)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which electrolyte imbalance can occur in patients with schizophrenia who are experiencing polydipsia?",
+            options: [
+              "Hypokalemia",
+              "Hypocalcemia",
+              "Hyponatremia",
+              "Hypercalcemia"
+            ],
+            answer: 2,
+            rationale: "In patients with schizophrenia, polydipsia occurs because of dry mouth. Patients experience excessive thirst because of antipsychotic drugs and drink a lot of water. Polydipsia is characterized by hyponatremia, confusion, and severe symptoms of schizophrenia and is caused by the inability of the kidneys to filter excess fluids. Hypokalemia is a condition that produces reduced levels of potassium, which can be caused by antibiotics. Hypocalcemia refers to increased levels of calcium resulting from vitamin D deficiency or defective absorption. Hypocalcemia can also result from impaired metabolism of vitamin D in the body. Hypercalcemia is an increase in levels of calcium seen during hyperparathyroidism. (p. 191)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which condition would prompt the primary healthcare provider to prescribe 25 mg of diphenhydramine hydrochloride?",
+            options: [
+              "Peptic ulcer and asthma",
+              "Mydriasis and photosensitivity",
+              "Tremors and tardive dyskinesia",
+              "Excessively dry mucous membranes"
+            ],
+            answer: 2,
+            rationale: "Patients with schizophrenia are generally prescribed antipsychotic drugs. These drugs cause extrapyramidal side effects, such as tremors, and abnormal involuntary movements, such as tardive dyskinesia. Diphenhydramine hydrochloride 25 mg (intramuscular or intravenous route) is prescribed to such patients to treat extrapyramidal side effects. Diphenhydramine hydrochloride is contraindicated in patients with peptic ulcer and asthma because it causes stomach distress (e.g., nausea, vomiting, and diarrhea). Physostigmine and benzodiazepines are administered to control these symptoms. Photosensitivity and mydriasis are symptoms of anticholinergic toxicity. Dry mucous membranes can be a symptom of anticholinergic toxicity but are not a major concern with the administration of diphenhydramine hydrochloride. (p. 208)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which is the most likely cause of hyponatremia, increased confusion, and delirium in a patient on conventional antipsychotics?",
+            options: [
+              "Dehydration",
+              "Medication withdrawal",
+              "Lack of response to the medication",
+              "Water intoxication"
+            ],
+            answer: 3,
+            rationale: "Antipsychotics are usually prescribed in combination with anticholinergics because they cause dry mouth. The patient can feel excessive thirst and may drink lots of water, which results in water intoxication, as indicated by hyponatremia, confusion, and worsening of the psychotic symptoms. If the patient has stopped taking medication or is not responding to them, it would lead the psychotic conditions to worsen as well. It would not produce hyponatremia. In addition, mental stress would not cause hyponatremia. Fatal water intoxication occurs because of excessive water intake. The signs do not indicate that the patient is dehydrated. (p. 191)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which laboratory test would be most helpful in determining the cause of sore throat, fever, and malaise in a patient who started taking clozapine 3 weeks ago?",
+            options: [
+              "Urinalysis",
+              "Liver panel",
+              "Serum lithium level",
+              "Complete blood cell count"
+            ],
+            answer: 3,
+            rationale: "Agranulocytosis is the reduction of white blood cells (WBCs) and is a possible adverse effect of antipsychotic drugs, particularly clozapine. Chief complaints are flulike symptoms. A complete blood cell count would show the reduction in WBCs. Serum lithium level, liver panel, and urinalysis are not necessary. (p. 211)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which belief voiced by a patient with schizophrenia correlates with exhibiting grandiose delusions?",
+            options: [
+              "\"My brain is rotting.\"",
+              "\"I am President of the United States.\"",
+              "\"The food in the hospital is being poisoned.\"",
+              "\"The nurse has romantic feelings for me.\""
+            ],
+            answer: 1,
+            rationale: "Grandiose delusions involve believing that one is a powerful or important person, such as the President of the United States. Believing that the brain is rotting away is an example of somatic delusions. Believing that food is being poisoned is an example of persecutory delusions. Believing that the nurse has romantic feelings for them is an example of erotomanic delusions. (p. 195)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which information about comorbidity would be included when educating the parents of an adolescent diagnosed with schizophrenia?",
+            options: [
+              "\"Watch your child for signs of substance abuse.\"",
+              "\"Make sure your child does not become dehydrated.\"",
+              "\"With schizophrenia, your child will not experience any depression.\"",
+              "\"Contact the healthcare provider immediately if your child has anxiety.\""
+            ],
+            answer: 0,
+            rationale: "Substance use disorders involving alcohol, marijuana, and nicotine occur in nearly half of the people who are diagnosed with schizophrenia. Substance use is linked to higher rates of treatment nonadherence. Schizophrenia may cause polydipsia, which is a compulsive drinking of excess fluids, not dehydration. Depression frequently cooccurs in individuals with schizophrenia. Anxiety cooccurs with schizophrenia, but it is not necessary to contact the healthcare provider immediately if these symptoms present. (p. 190)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement is true regarding schizophrenia, treatment, and outcomes?",
+            options: [
+              "If treated quickly after diagnosis, schizophrenia can be cured.",
+              "Schizophrenia can be managed by receiving treatment only at the time of acute exacerbations.",
+              "If patients with schizophrenia stay on their drug regimen, they usually lead fully productive lives with no further symptoms.",
+              "Patients with schizophrenia often do not fully respond to treatment and have residual symptoms and varying degrees of disability."
+            ],
+            answer: 3,
+            rationale: "Unfortunately, in most cases, schizophrenia does not respond fully to available treatments; it leaves residual symptoms and causes varying degrees of dysfunction or disability. Untrue statements about schizophrenia include that it can be cured if treated quickly; that it can be managed by receiving treatment only at the time of acute exacerbations; and that if patients with schizophrenia stay on their drug regimen, they usually lead fully productive lives with no further symptoms. (p. 192)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which condition is most likely present when a patient diagnosed with schizophrenia who has been taking perphenazine for 12 weeks is instructed to go on bed rest and follow a diet rich in proteins and carbohydrates?",
+            options: [
+              "Agranulocytosis",
+              "Cholestatic jaundice",
+              "Postural hypotension",
+              "Autonomic dysfunction"
+            ],
+            answer: 1,
+            rationale: "Patients with schizophrenia who are taking perphenazine, a first-generation antipsychotic drug, may experience toxic effects from long-term therapy. The nurse should identify the signs and symptoms of the toxic effects, like cholestatic jaundice, which results from collection of bile juice in the gallbladder. The patient should be instructed to go on bed rest and consume a diet rich in proteins and carbohydrates. Agranulocytosis is characterized by dangerously low levels of white blood cells; this condition is not related to bed rest and diet changes. Postural hypotension is characterized by a drop in blood pressure with a change in position and cannot be managed by a protein-rich diet. The autonomic nervous system controls involuntary actions of the body, and autonomic dysfunction is not treated by bed rest and diet changes. (p. 215)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which side effect does the nurse anticipate when caring for a patient with schizophrenia who was given an injectable dose of dopamine (D2) antagonists for the limbic center? Select all that apply.",
+            options: [
+              "Tremors",
+              "Difficulty walking",
+              "Increased energy",
+              "Loosening of reflexes",
+              "Pacing back and forth",
+              "Muscular contraction in the neck"
+            ],
+            answers: [0, 1, 4, 5],
+            rationale: "D2 antagonists are first-generation antipsychotics that are used less frequently because of their side effects. The medications block D2 receptors, causing extrapyramidal side effects that include pacing and general restlessness (akathisia), muscular contractions (acute dystonia), gait impairment, and tremors (pseudoparkinsonism). These agents do not loosen reflexes or increase energy, though akathisia can sometimes be confused with increased energy. (pp. 207-208)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which phase of schizophrenia is a patient in when they report diminishing symptoms and the ability to \"remember things clearly again\"?",
+            options: [
+              "Acute",
+              "Prodromal",
+              "Stabilization",
+              "Maintenance"
+            ],
+            answer: 2,
+            rationale: "The patient with diminishing or stabilizing symptoms with movement toward a previous level of functioning is in the stabilization phase of schizophrenia. The acute phase is when symptoms vary from mild to severe and become disabling. During this phase, the patient experiences delusions, hallucinations, withdrawn behaviors, and other functional impairment. The prodromal phase is the first phase in which the patient presents with mild changes in thinking and mood, but symptoms are insufficient to meet the diagnostic criteria for schizophrenia. The maintenance (or residual) phase is when the condition has stabilized and a new baseline is established. (p. 199)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which topic would take priority when planning a series of psychoeducational groups for people diagnosed with schizophrenia?",
+            options: [
+              "How to give and receive compliments",
+              "The importance of taking medication correctly",
+              "How to complete an application for employment",
+              "Ways to dress and behave when attending community events"
+            ],
+            answer: 1,
+            rationale: "Although completing applications, dressing and behaving correctly, and giving and receiving compliments are important, correct self-management of pharmacotherapy takes priority. The patient cannot maintain remission without the appropriate medication. (p. 200)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which symptom would alert a healthcare provider to a possible diagnosis of schizophrenia in a young adult patient?",
+            options: [
+              "Excessive sleeping with disturbing dreams",
+              "Command hallucinations to hurt roommate",
+              "Withdrawal from college because of failing grades",
+              "Chaotic and dysfunctional relationships with family and peers"
+            ],
+            answer: 1,
+            rationale: "People diagnosed with schizophrenia all have at least one psychotic symptom, such as hallucinations, delusional thinking, or disorganized speech. Excessive sleeping, failing grades, and chaotic and dysfunctional relationships do not describe schizophrenia but could be caused by a number of problems. (p. 192)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which patient action indicates a negative symptom of schizophrenia?",
+            options: [
+              "Refusing to eat anything that is not tasted by the staff first",
+              "Having difficulty focusing on any task for more than a few minutes",
+              "Communicating using a pattern of speech identified as \"word salad\"",
+              "Reporting hearing voices telling the patient that the world will end soon"
+            ],
+            answer: 1,
+            rationale: "Attention impairment is considered a negative symptom because it represents a diminution or loss of normal brain function. Paranoia, hallucinations, and distorted speech are considered positive symptoms because they are an exaggeration or distortion of normal brain function. (p. 197)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which area of instruction would the nurse include when educating the family of a patient diagnosed with schizophrenia? Select all that apply.",
+            options: [
+              "Medication side effects",
+              "Stress as a psychotic trigger",
+              "Relapse prevention strategies",
+              "Need for family to take over the management of care",
+              "Family's role in achieving positive treatment outcomes"
+            ],
+            answers: [0, 1, 2, 4],
+            rationale: "Education is essential and includes teaching the patient and family about the illness, including the causes, medications and side effects, coping strategies, what to expect, and relapse prevention. This knowledge will help the patient and family to appreciate the effect of stress and the importance of treatment on a good outcome. The patient who returns to a warm, concerned, and supportive environment is less likely to experience relapse. The patient should always be involved in the management of their care to the extent of their abilities. (p. 207)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which assessment parameter takes priority when assessing a patient taking olanzapine daily?",
+            options: [
+              "Height",
+              "Weight",
+              "Pupillary response to light",
+              "Integrity of mucous membranes"
+            ],
+            answer: 1,
+            rationale: "An important part of the nurse's role in the community is monitoring the patient's response to medications, compliance, and potential side or adverse effects. Key side effects of sexual dysfunction and weight gain are particularly important to monitor in patients taking antipsychotic medications. Olanzapine is an atypical antipsychotic drug that can cause significant weight gain, which results in diabetes for many patients. Neither height, pupil response, nor mucous membrane integrity takes priority over weight. (p. 211)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which drug can be used to treat alogia, avolition, and anhedonia in patients with schizophrenia?",
+            options: [
+              "Molindone",
+              "Olanzapine",
+              "Thiothixene",
+              "Thioridazine"
+            ],
+            answer: 1,
+            rationale: "Olanzapine is a second-generation antipsychotic prescribed to treat positive symptoms, like hallucination and delusion, and negative symptoms, like alogia, avolition, and anhedonia. Molindone is a medium-potency first-generation antipsychotic and does not treat alogia, avolition, or anhedonia. Thiothixene is a high-potency first-generation antipsychotic prescribed to treat positive symptoms like hallucination and delusion. Thioridazine is a low-potency first-generation antipsychotic used to treat positive symptoms of schizophrenia. (p. 211)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which physiological condition of a patient prescribed clozapine would the nurse monitor? Select all that apply.",
+            options: [
+              "Liver function",
+              "Kidney function",
+              "Total red blood cell count",
+              "Total white blood cell count",
+              "Total water intake and output"
+            ],
+            answers: [0, 3],
+            rationale: "Agranulocytosis is the most common symptom of clozapine. It is characterized by a reduced white blood cell count (less than 3000/mm3) and liver impairment, therefore the nurse should frequently monitor the liver function and total white blood cell count. Clozapine does not have an effect on the kidneys; therefore the total water intake and output and kidney function do not need to be monitored. Clozapine reduces white blood cell count but does not affect red blood cell count; therefore red blood cell count need not be monitored. (p. 214)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which assessment finding indicates a patient is experiencing extrapyramidal symptoms? Select all that apply.",
+            options: [
+              "Tremor",
+              "Drooling",
+              "Dry eyes",
+              "Constipation",
+              "Shuffling gait"
+            ],
+            answers: [0, 1, 4],
+            rationale: "Fluphenazine is a first-generation antipsychotic medication. These medications commonly cause extrapyramidal symptoms, which include masklike faces, stiff and stooped posture, shuffling gait, drooling, tremor, \"pill-rolling\" movements, and akathisia. Constipation and dry eyes are anticholinergic side effects. (p. 208)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement by the family member of a person with schizophrenia demonstrates effective learning about the disease?",
+            options: [
+              "\"The disease probably resulted from the mother's smoking during pregnancy. Nicotine is actually a neurotransmitter.\"",
+              "\"If our family had more money, we could afford the promising psychoneuroimmunological treatments available in other countries.\"",
+              "\"The disease could be cured if our politicians and laws allowed for more stem cell research. Adult stem cells hold so much promise.\"",
+              "\"The disease probably was caused by problems with several genes. These genes cause changes in how certain brain chemicals work.\""
+            ],
+            answer: 3,
+            rationale: "Acknowledging that the disease was probably caused by problems with genes indicates that the person understands the basic information about causative factors of schizophrenia. Rationalizing the use of stem cell research, blaming the problem on the mother's smoking behavior, and having funds to afford alternative treatments do not indicate an understanding about the mental disorder. (p. 191)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which toxic effect of antipsychotic medication can be avoided by ingesting foods rich in carbohydrates and protein?",
+            options: [
+              "Weight gain",
+              "Hyperpyrexia",
+              "Agranulocytosis",
+              "Cholestatic jaundice"
+            ],
+            answer: 3,
+            rationale: "Antipsychotics may cause cholestatic jaundice because of impaired liver function. Hence, a liver function test should be performed every 6 months. The patient must be given foods rich in carbohydrates and protein to enhance liver function. Weight gain is a common side effect with some antipsychotics, and the drugs may need to be changed. Hyperpyrexia is an extreme elevation of the body temperature and is a medical emergency. Agranulocytosis is caused by a reduction in white blood cell count. (pp. 213-214)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which information will be included when teaching a patient and their family about first- and second-generation antipsychotics for schizophrenia?",
+            options: [
+              "\"Most people who take first-generation antipsychotics report fewer side effects.\"",
+              "\"Second-generation antipsychotics are mostly used for treating negative symptoms of schizophrenia.\"",
+              "\"First-generation antipsychotics are used more frequently than second-generation antipsychotics.\"",
+              "\"Second-generation antipsychotics are usually better than first-generation antipsychotics because they have fewer side effects.\""
+            ],
+            answer: 3,
+            rationale: "Both first- and second-generation antipsychotics are used to treat schizophrenia. Second-generation antipsychotics are used more frequently than and are starting to replace first-generation antipsychotics because they are more effective and have fewer side effects. First-generation antipsychotics are used to treat positive symptoms of schizophrenia, not negative symptoms. First-generation antipsychotics are used less frequently than second-generation antipsychotics, not more frequently. First-generation antipsychotics cause more negative side effects, not fewer side effects. (pp. 207, 208, 211)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which response is appropriate when a patient diagnosed with schizophrenia states, \"My, oh my. My mother is brother. Anytime now it can happen to my mother\"?",
+            options: [
+              "\"I will get you an as-needed medication for agitation.\"",
+              "\"You are confused. I will take you to your room to rest awhile.\"",
+              "\"You are having problems with your speech. You need to try harder to be clear.\"",
+              "\"I'm sorry, I didn't understand that. Do you want to talk more about your mother, as we did yesterday?\""
+            ],
+            answer: 3,
+            rationale: "The guidelines for communicating with a patient with disorganized or bizarre speech include placing the difficulty in understanding on the nurse, not the patient, and look for themes that may be helpful in interpreting what the patient wants to say. Telling the patient to try harder to be clearer is unrealistic because the patient would not be unable do this. Taking the patient to their room or getting the patient medication are not useful options in communicating with this patient and attempting to find common themes. (p. 206)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which assessment finding in a 19-year-old patient supports the existence of prepsychotic symptoms associated with schizophrenia? Select all that apply.",
+            options: [
+              "Social withdrawal or decreased social engagement",
+              "Declining academic performance",
+              "Elevated mood and increased goal-directed activity",
+              "Suspiciousness toward others",
+              "Disorganized or eccentric speech"
+            ],
+            answers: [0, 1, 3, 4],
+            rationale: "Schizophrenia is often preceded by a prodromal phase during which milder symptoms appear months or years before the full disorder develops. During this period, individuals may demonstrate declining school performance, reduced cognitive ability, and decreased social engagement. They may also exhibit mild or blunted psychotic symptoms such as suspiciousness or eccentric or disorganized speech or thought. Elevated mood and increased goal-directed activity are more characteristic of manic episodes rather than prodromal schizophrenia. (p. 192)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement is true regarding schizophrenia? Select all that apply.",
+            options: [
+              "Schizophrenia is a potentially devastating brain disorder.",
+              "Social behavior and emotions are affected by schizophrenia.",
+              "This disorder moderately affects the individual's quality of life.",
+              "The disorder often affects an individual's language and thinking skills.",
+              "The disorder disturbs a person's ability to determine what is or is not real."
+            ],
+            answers: [0, 1, 3, 4],
+            rationale: "Schizophrenia spectrum and other psychotic disorders disturb the fundamental inability to determine what is or is not real. Schizophrenia is a potentially devastating brain disorder that affects a person's thinking, language, emotions, social behavior, and ability to perceive reality accurately. Schizophrenia affects more than 3.5 million people in the United States and is among the most disruptive and disabling of mental disorders. (p. 190)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which is the best response by the nurse when a patient with schizophrenia reports that they discontinued their pharmacological treatment plan because their symptoms are cured?",
+            options: [
+              "\"It's fine to stop your medication since you are in control of your own treatment.\"",
+              "\"It is normal to want to stop taking medication, but think about how much better it is making you.\"",
+              "\"You are experiencing something called anosognosia, which means it is difficult to realize you need to continue with treatment.\"",
+              "\"If you stop taking your medication, then you must promise to come to weekly appointments so that you can continue to be monitored.\""
+            ],
+            answer: 2,
+            rationale: "People with schizophrenia are often unable to realize they are ill, a condition known as anosognosia. This can result in the patient stopping treatment or being resistant to continuing treatment. It is important to reassure patients of why they feel as though they no longer need treatment by explaining anosognosia. Telling the patient the medication is making them better is ineffective for a patient with disordered thinking, even if it is true. A patient is unlikely to come to weekly appointments if the schizophrenia is not appropriately managed. Although the nurse cannot force adherence, the nurse should explain why the medication is important. (pp. 200-202)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which assessment information indicates a patient is presenting with alterations in perception? Select all that apply.",
+            options: [
+              "Feels depressed",
+              "Sees their dead relative",
+              "Hears babies crying in a quiet room",
+              "Feels disoriented in the hospital room",
+              "Feels like ants are crawling on their skin"
+            ],
+            answers: [1, 2, 4],
+            rationale: "Hallucinations are alterations in perception and include auditory (hearing the sounds of babies crying), visual (seeing people or things that are not there), and tactile (feeling ants crawling on the skin). Patients who feel disoriented or depressed are experiencing affective signs, not alterations in perception. (p. 196)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which patient information identifies a risk factor for schizophrenia? Select all that apply.",
+            options: [
+              "Was raised in an affluent environment",
+              "Was a victim of childhood sexual abuse",
+              "Had a concussion from a sports accident",
+              "Mother had an infection during the pregnancy",
+              "Was exposed to tetrachloroethylene in drinking water"
+            ],
+            answers: [1, 3, 4],
+            rationale: "A maternal infection is a prenatal risk factor for schizophrenia. Exposure to tetrachloroethylene in drinking water is an environmental risk factor for schizophrenia. Childhood sexual abuse is a psychological risk factor for schizophrenia. Concussions do not predispose people to schizophrenia. Being raised in poverty, not affluence, is a risk factor for schizophrenia. (p. 191)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which sign or symptom indicates a patient may have schizophrenia? Select all that apply.",
+            options: [
+              "Headaches",
+              "Depression",
+              "Incoherence",
+              "Hearing voices",
+              "Withdrawn behavior"
+            ],
+            answers: [2, 3, 4],
+            rationale: "Incoherence is a type of disorganized speech, which is also a symptom of schizophrenia. Hearing voices is an auditory hallucination, which is a symptom of psychosis that could be present with schizophrenia. Withdrawn behavior is a sign of psychosis and schizophrenia. Headaches are general symptoms that could indicate many types of diseases or disorders and are not specific to schizophrenia. Depression is not an initial symptom of schizophrenia or psychosis but may cooccur with schizophrenia. (pp. 190, 191)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement by a person with paranoid schizophrenia most clearly indicates that the antipsychotic medication is effective?",
+            options: [
+              "\"My medicine is working fine. I'm not having any problems.\"",
+              "\"I used to hear scary voices, but now I don't hear them anymore.\"",
+              "\"Sometimes it's hard for me to fall asleep, but I usually sleep all night.\"",
+              "\"I think some of the staff members don't like me. They're mean to me.\""
+            ],
+            answer: 1,
+            rationale: "Auditory hallucinations are a common manifestation of paranoid schizophrenia, so their absence is an indicator of medication effectiveness. The statements, \"My medicine is working fine. I'm not having any problems\" and \"Sometimes it's hard for me to fall asleep, but I usually sleep all night\" are too vague. The comment about staff members not liking and being mean to this patient indicates paranoid thinking. (p. 211)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which priority action would the nurse take when a patient, whose dose of haloperidol was increased, is experiencing laryngeal dystonia?",
+            options: [
+              "Document the finding.",
+              "Maintain a patent airway.",
+              "Offer oral fluids to the patient.",
+              "Engage the patient in an alternative activity."
+            ],
+            answer: 1,
+            rationale: "Laryngeal dystonia is associated with an acute dystonic reaction and may impair the integrity of the patient's airway. The nurse will document the events after they are managed. Oral fluids could be aspirated. Immediate nursing action is indicated; it would be inappropriate to try to engage the patient in an alternative activity. (pp. 212, 213)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which diagnostic finding associated with structural brain anomalies has been observed in patients diagnosed with schizophrenia? Select all that apply.",
+            options: [
+              "Increased cortical thickness",
+              "Increased frontal lobe volume",
+              "Enlargement of the lateral cerebral ventricles",
+              "Reduced connectivity in various brain regions",
+              "Increased size of the sulci (fissures) on the brain's surface"
+            ],
+            answers: [2, 3, 4],
+            rationale: "Brain imaging techniques provide substantial evidence that some people with schizophrenia have structural brain abnormalities that include the following: enlargement of the lateral cerebral ventricles, reduced frontal lobe volume, reduced cortical thickness, reduced connectivity in various brain regions, and increased size of the sulci (fissures) on the surface of the brain. (p. 192)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which factor will help achieve the long-term treatment goal for a patient diagnosed with schizophrenia? Select all that apply.",
+            options: [
+              "A trusting nurse-patient relationship",
+              "Patient adherence to treatment plan",
+              "Patient achievement of accepted cognitive and social skills",
+              "Medication therapy that is reviewed regularly for effectiveness",
+              "Patient interaction with community-based therapeutic services"
+            ],
+            answers: [0, 1, 3, 4],
+            rationale: "Effective long-term care of persons with schizophrenia relies on a three-pronged approach: relationships with trusted care providers, medication administration/adherence, and community-based therapeutic services. Cognitive and social skills are not relevant. (p. 207)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          }
+        ]
       }
     }
 
