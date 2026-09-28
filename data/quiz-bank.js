@@ -121,7 +121,7 @@ window.QUIZ_BANK = {
        set is added or a question is removed, or the page will quietly lie. */
     { key: "mustKnow",      label: "Must Know",      blurb: "One question for every Learning Outcome in the pre-lecture slides." },
     { key: "medications",   label: "Medications",    blurb: "One question for every drug on the Medications page, plus select-all questions on which drugs are indicated for what." },
-    { key: "eaq",           label: "EAQs",           blurb: "All 260 Sherpath questions sorted by topic, with duplicates removed." }
+    { key: "eaq",           label: "EAQs",           blurb: "All 330 Sherpath questions sorted by topic, with duplicates removed." }
   ],
 
   topics: [
@@ -642,6 +642,21 @@ window.QUIZ_BANK = {
             ],
             answer: 1,
             rationale: "Different areas in the brain control different functions of the body. The area of the brain that is known to be associated with aggression is the amygdala, which is a part of the limbic system. The limbic system mediates primitive emotions and behaviors that are required for the survival of a person. Cochlea is not a part of the brain. It is the auditory portion of the inner ear. Carotid body refers to the group of receptors present in the bifurcation of the carotid artery. It detects changes in blood pressure. The parotid gland is not a part of the brain but part of the salivary glands. (p. 503)",
+            topic: "Neurobiology & Pharmacology",
+            source: "eaq"
+          },
+          /* Imported 2026-09-21 from the Week 5 EAQ quiz (ticket to class, the
+             only Week 5 set), in original order and wording. */
+          {
+            stem: "Which neuromodulator is involved in regulating mood and anxiety?",
+            options: [
+              "Dopamine",
+              "Substance P",
+              "Neurotensin",
+              "Somatostatin"
+            ],
+            answer: 1,
+            rationale: "Substance P is involved in regulating mood and anxiety. Dopamine is a monoamine neurotransmitter. Neurotensin and somatostatin are neuromodulators, but they are not involved in regulating mood and anxiety. (p. 41)",
             topic: "Neurobiology & Pharmacology",
             source: "eaq"
           }
@@ -1743,6 +1758,21 @@ window.QUIZ_BANK = {
             ],
             answer: 3,
             rationale: "Susto is a cultural syndrome associated with the Latin American culture characterized by a broad range of somatic and psychological symptoms similar to posttraumatic stress disorder. The cultural syndrome is believed to be caused by a traumatic incident or fright that caused the patient's soul to leave the body and is treated by an espiritista, or spiritual healer. The patient's symptoms will not necessarily specifically correlate with depression, schizophrenia, or bipolar disorder. (p. 85)",
+            topic: "Therapeutic Communication",
+            source: "eaq"
+          },
+          /* Imported 2026-09-21 from the Week 5 EAQ quiz (ticket to class, the
+             only Week 5 set), in original order and wording. */
+          {
+            stem: "Which phase of the nurse–patient relationship may cause anxieties to reappear and past losses to be reviewed?",
+            options: [
+              "Working phase",
+              "Orientation phase",
+              "Termination phase",
+              "Preorientation phase"
+            ],
+            answer: 2,
+            rationale: "Termination, a stage in which the patient must face the loss or ending of the therapeutic relationship, often reawakens the pain of earlier losses. The working, orientation, and preorientation phases do not include review of past losses. (p. 131)",
             topic: "Therapeutic Communication",
             source: "eaq"
           }
@@ -6694,6 +6724,2014 @@ window.QUIZ_BANK = {
           }
         ]
       }
+    },
+
+    /* ==========================================================
+       TOPIC 17 — ANXIETY & OCD DISORDERS  (Week 5, topic 1)
+
+       Sits BEFORE topic 15 because it is Week 5's first lecture. The
+       topic numbers follow the order topics were added, not display
+       order.
+
+       TAUGHT as of 2026-09-21, when the deck and transcript arrived.
+       11 mustKnow, one per Learning Outcomes bullet on must-know.html,
+       3 of them SATA. 20 medications: one per drug on the Week 5
+       medications tab's three anxiety sections (17), plus 3 SATA
+       "which are indicated for" questions. The row was created earlier
+       the same day for 9 imported EAQs, which stay below untouched.
+
+       Sertraline, paroxetine, fluoxetine and venlafaxine also have PTSD
+       questions under topic 15 and depression questions under Week 2.
+       Every question here is written on an ANXIETY fact (OCD approval,
+       the 4 to 8 week window, panic second-line, social phobia) so none
+       re-tests those. Lorazepam, diazepam and propranolol likewise take
+       anxiety angles distinct from their Week 3 and Week 4 questions.
+
+       FOUR MORE Week 5 EAQ questions are STILL HELD OUT of the bank
+       (Holly, 2026-09-21): Q7 estazolam for insomnia, Q11
+       somatization, Q14 and Q18 cognitive reframing for stress. The
+       Anxiety & OCD deck, read 2026-09-21, covers none of them:
+       estazolam is never named, somatization appears only as "somatic
+       symptoms", and cognitive reframing is not taught. They wait in
+       eaq_sets/extracted/Week 5 EAQ 1.review.txt.
+       ========================================================== */
+    {
+      id: "week5-anxiety",
+      label: "Anxiety & OCD Disorders",
+      week: 5,
+      sets: {
+        mustKnow: [
+          {
+            /* LO: define anxiety */
+            stem: "Which statement correctly distinguishes anxiety from fear?",
+            options: [
+              "Fear responds to a vague or unknown threat, while anxiety responds to a specific danger.",
+              "Anxiety comes from a real or perceived threat, while fear reacts to a specific danger.",
+              "Anxiety is the external pressure, while fear is the emotional response to that pressure.",
+              "Fear occurs only in anxiety disorders, while anxiety is part of normal daily experience."
+            ],
+            answer: 1,
+            rationale: "Anxiety is apprehension, uneasiness, uncertainty or dread from a real or perceived threat, and it can come from thoughts alone. Fear is a reaction to a specific danger. The first option reverses the two. The third confuses anxiety with stress: stress is the external pressure, and anxiety is the emotional response to it. Fear is a normal reaction, not a feature of anxiety disorders only.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: normal anxiety vs an anxiety disorder */
+            stem: "Which finding most suggests that a patient's anxiety has moved from normal anxiety to an anxiety disorder?",
+            options: [
+              "Feeling tense but eager before a scheduled job interview",
+              "Pacing briefly while waiting for biopsy results due today",
+              "Skipping a final exam after worrying about parking there",
+              "Feeling uneasy after a severe storm warning for the area"
+            ],
+            answer: 2,
+            rationale: "Anxiety becomes pathological when its intensity is greater than the situation warrants and when it curtails daily or social activities. Missing an exam over a parking worry does both. Tension before an interview, pacing while awaiting results and unease at a storm warning are proportionate responses to a real situation, and they do not stop the person functioning.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: the four levels of anxiety */
+            stem: "A patient's anxiety is assessed as moderate. Which findings are consistent with this level? Select all that apply.",
+            options: [
+              "Focuses on what is causing the worry and misses some details",
+              "Able to follow the nurse's directions",
+              "Feels that problem solving is impossible",
+              "Voice tremors and an increased pulse",
+              "Hallucinations and an inability to speak"
+            ],
+            answers: [0, 1, 3],
+            rationale: "Moderate anxiety narrows the perceptual field, so some details are excluded and the person focuses on the source of the anxiety. Problem solving continues below the optimal level and the person can still follow directions. Sympathetic symptoms begin, with voice tremors, shaking and an increased pulse. Problem solving that feels impossible marks severe anxiety, and hallucinations with an inability to speak mark panic.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: interventions for each level, panic attack emergency care */
+            stem: "A patient in the emergency department reports sudden chest pain, palpitations, choking and a fear of dying, and says this has happened before. Which action does the nurse take first?",
+            options: [
+              "Administer the PRN antianxiety medication that is ordered",
+              "Walk with the patient in a quiet hallway to reduce stimulation",
+              "Explain that panic attacks usually subside within minutes",
+              "Rule out a cardiac event, then treat this as panic"
+            ],
+            answer: 3,
+            rationale: "The first emergency measure for a panic attack is to rule out a life-threatening illness, especially a cardiac event, because the symptoms overlap. Once that is done the nurse stays with the patient, gives clear directions, moves them to an environment with minimal stimulation, may walk with them, and gives PRN antianxiety medication. Explaining the attack is teaching, which a patient at the panic level cannot process.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: identify defense mechanisms */
+            stem: "After being criticized by a supervisor, a nurse arrives home and yells at their teenager for leaving shoes by the door. Which defense mechanism is this?",
+            options: [
+              "Displacement",
+              "Projection",
+              "Reaction formation",
+              "Sublimation"
+            ],
+            answer: 0,
+            rationale: "Displacement transfers emotions about one person or situation to another, nonthreatening one: the anger belongs to the supervisor and lands on the teenager. Projection attributes one's own unacceptable feelings to someone else. Reaction formation shows the opposite of the real feeling, such as excessive politeness to the supervisor. Sublimation channels a negative impulse into something productive.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: genetic, biological, psychological and cultural factors */
+            stem: "Which statement about the biological basis of anxiety is accurate?",
+            options: [
+              "The cerebellum alerts the brain to the presence of danger.",
+              "Acetylcholine is the main neurochemical that regulates anxiety.",
+              "The amygdala alerts the brain to the presence of danger.",
+              "Anxiety disorders show no pattern of clustering in families."
+            ],
+            answer: 2,
+            rationale: "The amygdala alerts the brain to danger and brings about fear or anxiety. The neurochemicals that regulate anxiety are epinephrine, norepinephrine, dopamine, serotonin and GABA, and acetylcholine is not among them. Anxiety disorders do cluster in families, and genetic variants linked to increased risk have been identified.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: clinical manifestations, GAD and separation anxiety */
+            stem: "A 9-year-old has worried excessively about school and friendships on most days for 7 months, finds the worry hard to control, and is irritable. How does this presentation relate to the DSM-5 criteria for generalized anxiety disorder?",
+            options: [
+              "It falls short, because at least three of the six symptoms are required.",
+              "It meets them, because only one of the six symptoms is required in children.",
+              "It falls short, because the worry must persist for at least 12 months.",
+              "It meets the criteria for separation anxiety disorder instead."
+            ],
+            answer: 1,
+            rationale: "GAD requires excessive, hard-to-control worry more days than not for at least 6 months. Adults need at least three of the six symptoms, but only one is required in children, and irritability is one of the six. Three symptoms is the adult threshold, and the duration is 6 months, not 12. Separation anxiety centers on being away from a significant other, which is not described.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: clinical manifestations, phobias, social anxiety and panic */
+            stem: "A patient with panic disorder now sits near the exit in every room and carries a water bottle everywhere, saying it helps them feel in control and less likely to have an attack. Which psychological symptom does this represent?",
+            options: [
+              "Anticipatory anxiety",
+              "Depersonalization",
+              "Compulsion",
+              "Avoidance anxiety"
+            ],
+            answer: 3,
+            rationale: "Avoidance anxiety is the use of personal strategies to increase the feeling of control and decrease the risk of panic. Anticipatory anxiety, the other psychological symptom of panic disorder, is the fearful expectation that an attack will start. Depersonalization is a feeling of detachment from oneself during an attack. A compulsion is a ritual performed to relieve the anxiety of an obsession.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: clinical manifestations, OCD and the related disorders */
+            stem: "Which statements about obsessive-compulsive disorder and its related disorders are accurate? Select all that apply.",
+            options: [
+              "Body dysmorphic disorder carries a high risk for suicide.",
+              "Hoarding disorder tends to improve with each decade of life.",
+              "Trichotillomania most often involves the scalp, eyebrows and eyelashes.",
+              "Excoriation disorder is more common in men than in women.",
+              "Stress can increase the symptoms of OCD.",
+              "Hoarding disorder often co-occurs with depression or an anxiety disorder."
+            ],
+            answers: [0, 2, 4, 5],
+            rationale: "Body dysmorphic disorder carries a high suicide risk. Hair pulling in trichotillomania most often comes from the scalp, eyebrows and eyelashes. Stress increases OCD symptoms. About 75% of people with hoarding disorder also have major depressive disorder or an anxiety disorder. Hoarding worsens with each decade rather than improving, and excoriation disorder is more common in women, at 75%.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: pharmacological treatments */
+            stem: "A patient with a specific phobia of flying asks for a medication so they can skip therapy. Which response reflects the treatment of specific phobias?",
+            options: [
+              "\"Drugs alone have not proven successful, so therapy stays in the plan.\"",
+              "\"A daily benzodiazepine is the treatment of choice for a specific phobia.\"",
+              "\"An SSRI taken for 4 to 8 weeks is expected to cure the phobia.\"",
+              "\"Buspirone can replace exposure-based therapy for a specific phobia.\""
+            ],
+            answer: 0,
+            rationale: "Medications have not proven successful as the only treatment for specific phobias. The treatment of choice is psychotherapy, systematic desensitization or flooding, which may be combined with medication. No drug is the treatment of choice, benzodiazepines are for short-term use, and 4 to 8 weeks is the window for judging an antidepressant's efficacy, not a cure.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: psychological treatments */
+            stem: "A patient with a severe fear of dogs begins systematic desensitization. Which features belong to this therapy? Select all that apply.",
+            options: [
+              "Exposure starts with the least frightening step.",
+              "A large amount of the feared stimulus is presented at once.",
+              "A relaxation technique is used at each step.",
+              "The patient learns to resist a compulsive ritual.",
+              "Prolonged exposure teaches the patient that survival is possible."
+            ],
+            answers: [0, 2],
+            rationale: "Systematic desensitization introduces the feared object gradually, in steps from least to most frightening, with a relaxation technique at each step. Presenting a large amount of the stimulus and learning through prolonged exposure that survival is possible describe flooding. Resisting a compulsive ritual is exposure and response prevention, used for OCD.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        medications: [
+          {
+            /* fluoxetine */
+            stem: "An 8-year-old with obsessive-compulsive disorder is started on fluoxetine. Which therapy does the nurse expect to accompany it?",
+            options: [
+              "Cognitive behavioral therapy, first line at every age",
+              "Flooding with the feared object in a single session",
+              "Exposure and response prevention behavior therapy",
+              "Transcranial magnetic stimulation after two failed trials"
+            ],
+            answer: 2,
+            rationale: "Fluoxetine is one of the medications used for OCD in children and adolescents, alongside behavior therapy: exposure and response prevention. Cognitive behavioral therapy is reserved for adolescents only because of their cognitive level, so it does not fit an 8-year-old. TMS is approved for adults aged 22 to 68.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* citalopram */
+            stem: "A patient asks why citalopram, an SSRI, was chosen as the first medication for their anxiety disorder. Which explanation is accurate?",
+            options: [
+              "SSRIs carry fewer safety risks than the other classes.",
+              "SSRIs relieve anxiety within hours of the first dose.",
+              "SSRIs carry no risk of withdrawal when they are stopped.",
+              "SSRIs need no suicide risk assessment when they are started."
+            ],
+            answer: 0,
+            rationale: "SSRIs and SNRIs are first line in anxiety disorders because the other classes carry more safety risks. Relief in hours describes benzodiazepines, while antidepressants are judged over 4 to 8 weeks. Stopping an SSRI may cause withdrawal, and suicide risk is assessed when any of these medications is started.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* escitalopram oxalate */
+            stem: "A patient started on escitalopram oxalate for generalized anxiety disorder 2 weeks ago says it is not working and wants to stop. Which response is accurate?",
+            options: [
+              "\"Stop it today, and a benzodiazepine will replace it.\"",
+              "\"If it has not helped by 2 weeks, it will not help you.\"",
+              "\"Double your dose yourself to speed up the effect.\"",
+              "\"Efficacy is judged over 4 to 8 weeks, so keep taking it.\""
+            ],
+            answer: 3,
+            rationale: "After an antidepressant is started for anxiety it is monitored for 4 to 8 weeks for efficacy, so 2 weeks is too early to judge. The patient should not change the dose or frequency without the provider's approval. Benzodiazepines are a short-term bridge, not a replacement for a first-line drug that has not yet had time to work.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* sertraline */
+            stem: "A patient with excoriation disorder is prescribed sertraline. Which therapy is it combined with?",
+            options: [
+              "Flooding",
+              "Cognitive behavioral therapy",
+              "Deep brain stimulation",
+              "Electroconvulsive therapy"
+            ],
+            answer: 1,
+            rationale: "Excoriation disorder is treated with a combination of SSRIs and CBT. Flooding is used for phobias. Deep brain stimulation is approved for OCD in adults 18 and older who do not respond to traditional treatment, not for skin picking. ECT is not a treatment for this disorder.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* paroxetine */
+            stem: "Paroxetine is prescribed for a patient with social anxiety disorder. Which other medication class is used to treat this disorder?",
+            options: [
+              "Typical antipsychotics",
+              "Anticonvulsant mood stabilizers",
+              "Benzodiazepines",
+              "Stimulants"
+            ],
+            answer: 2,
+            rationale: "SSRIs such as paroxetine and benzodiazepines are the medications used to treat social phobia. Typical antipsychotics treat the positive symptoms of schizophrenia, anticonvulsant mood stabilizers are used in bipolar disorder, and stimulants are not part of anxiety treatment.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* duloxetine */
+            stem: "A patient has taken duloxetine for generalized anxiety disorder for 8 weeks with little improvement. Which change is an expected option?",
+            options: [
+              "Increase the dose, or switch to another drug or class",
+              "Stop all medication and rely on relaxation alone",
+              "Continue unchanged for 6 more months, then reassess",
+              "Add an MAOI to the duloxetine for a faster effect"
+            ],
+            answer: 0,
+            rationale: "When an antidepressant has not worked after the 4 to 8 week monitoring window, the options are to increase the dose, switch the drug or the drug class, or add a second drug. Waiting another 6 months ignores the window. Stopping medication entirely abandons the combined approach. Adding an MAOI to a serotonergic drug risks serotonin syndrome and a dangerous drug interaction.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* venlafaxine */
+            stem: "A patient with panic disorder is started on venlafaxine along with CBT. Where do benzodiazepines fall in this patient's treatment?",
+            options: [
+              "They are first line and would replace the venlafaxine.",
+              "They are never used in the treatment of panic disorder.",
+              "They are used only after CBT has failed twice.",
+              "They are a second-line medication treatment."
+            ],
+            answer: 3,
+            rationale: "For panic disorder, CBT is first line, antidepressants such as SSRIs, SNRIs like venlafaxine, TCAs and MAOIs are used, and benzodiazepines are second line. They are used, and PRN antianxiety medication is part of emergency care during an attack, so they are not excluded. No two-failure rule applies to them.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* desvenlafaxine */
+            stem: "A patient with generalized anxiety disorder who also drinks heavily is started on desvenlafaxine. Which statement reflects the treatment approach for GAD?",
+            options: [
+              "Medication alone is expected to resolve both conditions.",
+              "Psychotherapy is combined with it, and the drinking is treated too.",
+              "The drinking is addressed only once the GAD has resolved.",
+              "Desvenlafaxine is used only after a benzodiazepine has failed."
+            ],
+            answer: 1,
+            rationale: "GAD is treated with a combination of medication and psychotherapy, and co-occurring conditions must also be treated with their own therapies. Alcoholism can be a significant problem in GAD, so it is not deferred. SNRIs are first line, not a fallback after benzodiazepines.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* fluvoxamine */
+            stem: "Fluvoxamine is prescribed for a patient with obsessive-compulsive disorder. What does the nurse understand about this treatment?",
+            options: [
+              "It usually cures OCD within a few months.",
+              "It works best when the patient avoids all triggers.",
+              "It is most effective combined with psychotherapy.",
+              "It is reserved for patients 18 and older."
+            ],
+            answer: 2,
+            rationale: "The two main treatments for OCD are psychotherapy and medication, and treatment is most effective combining them. OCD is very difficult to treat, and treatment may not cure it, but it brings symptoms under control. Avoiding triggers is the opposite of exposure and response prevention. Fluvoxamine is also used in children and adolescents, while 18 and older is the approval age for deep brain stimulation.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* clomipramine (added 2026-09-28, Holly) */
+            stem: "Clomipramine is prescribed for a patient with obsessive-compulsive disorder. How is it classified?",
+            options: [
+              "Tricyclic antidepressant",
+              "Selective serotonin reuptake inhibitor",
+              "Serotonin-norepinephrine reuptake inhibitor",
+              "Monoamine oxidase inhibitor"
+            ],
+            answer: 0,
+            rationale: "Clomipramine is a tricyclic antidepressant (TCA). It is FDA-approved for OCD together with four SSRIs, fluoxetine, fluvoxamine, paroxetine and sertraline, which makes it easy to mistake for one. Duloxetine, venlafaxine and desvenlafaxine are the SNRIs, and phenelzine is the MAOI on this week's list.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* propranolol */
+            stem: "A patient whose anxiety shows mainly as palpitations and a racing heart is prescribed propranolol. Which teaching is essential?",
+            options: [
+              "\"It is safe to stop once your symptoms settle down.\"",
+              "\"It is a first-line, FDA-approved drug for anxiety.\"",
+              "\"It will raise your heart rate for the first few days.\"",
+              "\"Do not stop it abruptly, to avoid rebound anxiety.\""
+            ],
+            answer: 3,
+            rationale: "Propranolol must not be discontinued abruptly, to avoid rebound anxiety symptoms. It may be the most effective choice when anxiety has prominent cardiovascular symptoms, but its use for anxiety is off-label and controversial rather than first line. It lowers heart rate and blood pressure, and its side effects include bradycardia and hypotension.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* clonazepam */
+            stem: "A patient who has taken clonazepam for 3 months wants to stop it this weekend. Which response is accurate?",
+            options: [
+              "\"It must be tapered. Stopping suddenly causes severe withdrawal.\"",
+              "\"You can stop at once, since it is not habit forming.\"",
+              "\"Stopping suddenly is safe as long as you avoid caffeine.\"",
+              "\"Halve the dose tonight and stop completely tomorrow.\""
+            ],
+            answer: 0,
+            rationale: "Benzodiazepines must be tapered, because abrupt discontinuation can trigger severe withdrawal and intense rebound anxiety. They carry a high risk of dependence, so they are habit forming. Avoiding caffeine does not make stopping safe, and a one-day halving is not a taper.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* alprazolam */
+            stem: "Which teaching about alprazolam is accurate?",
+            options: [
+              "Caffeine strengthens its calming effect.",
+              "Taking it with alcohol can be fatal.",
+              "It is safe to take throughout pregnancy.",
+              "It is effective for long-term daily use."
+            ],
+            answer: 1,
+            rationale: "Ingesting a benzodiazepine with alcohol can be fatal, and alcohol and other antianxiety drugs potentiate its depressant effects. Caffeine and nicotine decrease the desired effect rather than strengthening it. Benzodiazepines are teratogenic and avoided in pregnancy, and they show no long-term effectiveness.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* lorazepam */
+            stem: "Why is lorazepam used in the early stage of treating an anxiety disorder?",
+            options: [
+              "It is non-habit forming and safe for long-term use.",
+              "It has proven effectiveness over the long term.",
+              "Its onset is in hours, while other drugs take weeks.",
+              "It spares the sexual function that SSRIs affect."
+            ],
+            answer: 2,
+            rationale: "Benzodiazepines are used in the initial stages because their onset is quick, hours rather than weeks, while first-line antidepressants take effect. They show no long-term effectiveness and carry a risk of dependence, so they are used only until other treatments reduce the symptoms. Non-habit forming describes buspirone, and sparing sexual function describes bupropion.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* diazepam */
+            stem: "A patient is admitted after an intentional overdose of diazepam. Which antidote does the nurse anticipate?",
+            options: [
+              "Naloxone",
+              "Dantrolene",
+              "Cyproheptadine",
+              "Flumazenil"
+            ],
+            answer: 3,
+            rationale: "Flumazenil is the antidote for benzodiazepines such as diazepam. Naloxone reverses an opioid overdose. Dantrolene treats the muscle rigidity of neuroleptic malignant syndrome, and cyproheptadine is used in serotonin syndrome when other treatments fail.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* buspirone */
+            stem: "Buspirone is chosen for a patient's anxiety because the patient is sensitive to SSRIs and has a history of substance use. Which property supports that choice?",
+            options: [
+              "Less drowsiness and abuse potential, and non-habit forming",
+              "Relief of anxiety within an hour of the first dose",
+              "Muscle relaxant and amnesic properties that aid sleep",
+              "It enhances the action of GABA, as benzodiazepines do"
+            ],
+            answer: 0,
+            rationale: "Buspirone relieves anxiety with less drowsiness and abuse potential, is non-habit forming, has low toxicity, and is prescribed when a patient is sensitive to SSRI treatment. It takes several weeks to work, not an hour. Muscle relaxation, amnesia and enhancing GABA are benzodiazepine effects, which is exactly what a history of substance use argues against.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* bupropion */
+            stem: "Bupropion is added to a patient's SSRI. What is the most likely reason?",
+            options: [
+              "To strengthen the SSRI's effect on sleep",
+              "To counter the SSRI's sexual side effects",
+              "To act as an antidote if serotonin syndrome develops",
+              "To increase appetite and help the patient gain weight"
+            ],
+            answer: 1,
+            rationale: "Bupropion does not tend to affect libido or sexual function, so it is often prescribed with other antidepressants to counter their sexual side effects. It has a stimulant effect and decreases appetite, with weight loss among its side effects, so it does not promote sleep or weight gain. It is not a serotonin syndrome treatment.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* hydroxyzine */
+            stem: "Hydroxyzine (Vistaril) is ordered for a patient's anxiety. How is it classified?",
+            options: [
+              "Benzodiazepine",
+              "Beta blocker",
+              "Antihistamine",
+              "Atypical antidepressant"
+            ],
+            answer: 2,
+            rationale: "Hydroxyzine is an antihistamine, the same class as over-the-counter Benadryl, but its different mechanism of action makes it effective for anxiety. Clonazepam, alprazolam, lorazepam and diazepam are the benzodiazepines, propranolol is the beta blocker, and bupropion is the atypical antidepressant on the anxiety medication list.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which medications are used to treat obsessive-compulsive disorder in children and adolescents? Select all that apply.",
+            options: [
+              "fluvoxamine",
+              "paroxetine",
+              "sertraline",
+              "buspirone",
+              "fluoxetine",
+              "alprazolam"
+            ],
+            answers: [0, 2, 4],
+            rationale: "The medications for OCD in children and adolescents are clomipramine, fluvoxamine, fluoxetine and sertraline. Paroxetine is FDA-approved for OCD but is not on the list for this age group. Buspirone is an antianxiety drug for patients sensitive to SSRIs, and alprazolam is a benzodiazepine, and neither is an OCD treatment.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which medications are indicated for quick relief of anxiety in the early stage of treatment, while other treatments take effect? Select all that apply.",
+            options: [
+              "clonazepam",
+              "buspirone",
+              "lorazepam",
+              "alprazolam",
+              "bupropion",
+              "diazepam",
+              "escitalopram oxalate"
+            ],
+            answers: [0, 2, 3, 5],
+            rationale: "The benzodiazepines clonazepam, lorazepam, alprazolam and diazepam act within hours and are used only until other treatments reduce the symptoms. Buspirone takes several weeks, bupropion 1 to 3 weeks, and escitalopram oxalate is judged over 4 to 8 weeks, so none gives quick relief.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "A patient with an anxiety disorder cannot safely be prescribed benzodiazepines. Which medications are options? Select all that apply.",
+            options: [
+              "hydroxyzine",
+              "alprazolam",
+              "propranolol",
+              "buspirone",
+              "clonazepam"
+            ],
+            answers: [0, 2, 3],
+            rationale: "Hydroxyzine, propranolol and buspirone are among the other medications used for anxiety, and they are options for patients who cannot tolerate SSRIs or cannot safely take benzodiazepines. Alprazolam and clonazepam are themselves benzodiazepines.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        eaq: [
+          /* Imported 2026-09-21 from the Week 5 EAQ quiz (ticket to class, the
+             only Week 5 set), in original order and wording. */
+          {
+            stem: "Which mental health disorder can be a direct physiological result of hyperthyroidism?",
+            options: [
+              "Anxiety",
+              "Panic attacks",
+              "Generalized anxiety disorder",
+              "Obsessive-compulsive disorder (OCD)"
+            ],
+            answer: 0,
+            rationale: "Anxiety can be a direct physiological result of hyperthyroidism. Panic attacks are a key feature of panic disorders. Generalized anxiety disorder is excessive worry, which is out of proportion to the true effect of events or situations. It is often comorbid with major depressive disorder and other anxiety disorders. OCD is characterized by both obsession and compulsions that may occur as a result of a genetic disposition or trauma. (p. 276)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A young adult applying for a position is mildly tense but eager to begin the interview. This can be assessed as showing which behavior?",
+            options: [
+              "Denial",
+              "Compensation",
+              "Normal anxiety",
+              "Selective inattention"
+            ],
+            answer: 2,
+            rationale: "Normal anxiety is a healthy life force needed to carry out the tasks of living and striving toward goals. It prompts constructive actions. Denial and compensation are defense mechanisms, which are not in use in this situation. Selective inattention is present in worsening stages of anxiety. (p. 268)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which action is included in the nursing plan of care for a patient diagnosed with panic-level anxiety who is exhibiting severe hyperactivity?",
+            options: [
+              "Place the patient in seclusion.",
+              "Attend to the patient’s physical needs.",
+              "Help the patient identify the source of anxiety.",
+              "Communicate using simple, loud, clear statements."
+            ],
+            answer: 1,
+            rationale: "The nursing care plan for a patient diagnosed with anxiety who is exhibiting severe hyperactivity is to attend to the patient’s physical needs. Severe hyperactivity is characteristic of a panic level of anxiety and attending to physical needs such as elimination, fluids, and nutrition are important. Seclusion should only be initiated after all other interventions have been tried and are unsuccessful. Helping a patient identify the source of anxiety is more effective for a patient experiencing mild to moderate anxiety. When the nurse is communicating with a patient experiencing severe anxiety, a low-pitched voice should be used. (p. 279)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient approaches the nurse’s station, begins tapping a finger on the desk, and tells the nurse, \"I am feeling pretty anxious.\" Which nursing action will assist this patient?",
+            options: [
+              "Move the patient to a quieter setting.",
+              "Escort the patient to an exercise class.",
+              "Offer the patient antianxiety medication.",
+              "Encourage the patient to attend art therapy."
+            ],
+            answer: 1,
+            rationale: "The nurse’s best action is to escort the patient to an exercise class. The patient is displaying a sign of moderate anxiety by tapping their fingers on the desk, and it is ideal to provide this patient outlets for working off excess energy. A patient experiencing severe to panic levels of anxiety should be moved to a quieter setting. Medication is offered to a patient experiencing severe to panic levels of anxiety only after all other interventions have been tried and are unsuccessful. Art therapy will not offer an outlet for expending excess energy the way an exercise class will. (p. 280)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient is experiencing a panic attack. The nurse can be therapeutic by taking which action?",
+            options: [
+              "Encouraging the patient to take slow, deep breaths",
+              "Verbalizing mild disapproval of the anxious behavior",
+              "Offering an explanation about why the symptoms are occurring",
+              "Asking the patient what is meant when they say \"I am dying\""
+            ],
+            answer: 0,
+            rationale: "Slow diaphragmatic breathing can induce relaxation and reduce symptoms of anxiety. Often the nurse must tell the patient to \"breathe with me\" and keep the patient focused on the task. The slower breathing also reduces the threat of hypercapnia with its attendant symptoms. Verbalizing mild disapproval does not assist the patient. With a panic attack, the nurse should use minimal communication. Teaching the patient about why the symptoms are occurring will not be effective; that would be distracting to a patient who is in a panic state. Asking the patient to explain what is meant by \"dying\" is nontherapeutic when the patient is in the panic state. (p. 279)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which outcome is a possible criterion for a patient diagnosed with anxiety disorder?",
+            options: [
+              "Patient reports reduced hallucinations.",
+              "Patient reports feelings of tension and fatigue.",
+              "Patient demonstrates effective coping strategies.",
+              "Patient demonstrates persistent avoidance behaviors."
+            ],
+            answer: 2,
+            rationale: "The patient demonstrating effective coping strategies is the only desirable outcome. Reduced hallucinations is an outcome associated with distorted thinking or psychosis. Feelings of tension indicate increased anxiety levels. Avoiding situations that cause anxiety indicate the person is experiencing anxiety. (p. 279)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient is displaying symptomology reflective of a moderate anxiety. To help the patient regain control, the nurse would respond in which way?",
+            options: [
+              "\"You need to calm yourself.\"",
+              "\"What is it that you would like me to do to help you?\"",
+              "\"Can you tell me what you were feeling just before your attack?\"",
+              "\"I will get you some medication to help calm you.\""
+            ],
+            answer: 2,
+            rationale: "A response that helps the patient identify the precipitant stressor is most therapeutic. It is nontherapeutic to tell a patient \"You need to calm yourself.\" If the patient is capable of self-calming, the patient already would have done so. Asking, \"What is it that you would like me to do to help you?\" is focusing the attention on the nurse. Getting medication may not be necessary if the nurse is able to help the patient lower their anxiety level. (p. 280)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which outcome is the primary purpose of performing a physical examination before beginning treatment for any anxiety disorder?",
+            options: [
+              "Protect the nurse legally.",
+              "Establish the nursing diagnoses of priority.",
+              "Obtain information about the patient's psychosocial background.",
+              "Determine whether the anxiety is primary or secondary in origin."
+            ],
+            answer: 3,
+            rationale: "The symptoms of anxiety can be caused by a number of underlying physical disorders. The treatment for secondary anxiety is treatment of the underlying cause. The main reason for searching for an underlying medical condition is to treat the root cause, not to protect the nurse legally or establish the priority nursing diagnosis. After a physical disorder has been ruled out, the nurse can then focus on the patient’s psychosocial background. (p. 276)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient who is demonstrating a moderate level of anxiety tells the nurse, \"I am so anxious, and I do not know what to do.\" Which response is helpful for the nurse to make?",
+            options: [
+              "\"Let's try to focus on that adorable little granddaughter of yours.\"",
+              "\"Why don't you sit down over there and work on that jigsaw puzzle?\"",
+              "\"Try not to think about the feelings and sensations you're experiencing.\"",
+              "\"Which things have you done in the past that helped you feel more comfortable?\""
+            ],
+            answer: 3,
+            rationale: "Because the patient is not able to think through the problem and arrive at an action that would lower anxiety, the nurse can assist by asking what has worked in the past. Often what has been helpful in the past can be used again. The nurse is changing the subject by asking about the granddaughter. A patient with anxiety is not likely able to work on a jigsaw puzzle. A patient with anxiety is focused on the feelings and sensations being experienced. (p. 278)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          /* Imported 2026-09-24 from the Week 5 EAQ 2 quiz, in original order
+             and wording. */
+          {
+            stem: "A patient diagnosed with panic disorder is prescribed chlordiazepoxide. Which instruction is the most appropriate suggestion by the nurse?",
+            options: [
+              "Follow contraceptive methods.",
+              "Stop the medication after 3 months.",
+              "Change the medication if there is insomnia.",
+              "Coffee and tea are fine to drink and will not interact with the medication."
+            ],
+            answer: 0,
+            rationale: "Chlordiazepoxide belongs to the benzodiazepine class of antianxiety drugs. It causes congenital anomalies in the fetus; therefore the patient should avoid becoming pregnant. As caffeine decreases the efficacy of the benzodiazepines, the nurse should suggest the patient avoid drinking coffee and tea. The nurse should suggest discussing continuing medication with the healthcare provider after 3 to 4 months. Abruptly stopping the medication can cause withdrawal symptoms like dry mouth, tremors, and convulsions. (p. 282)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A nurse observes a patient who often pulls out their hair. Which condition does the nurse report to the primary healthcare provider based on this observation?",
+            options: [
+              "The patient has trichorrhexis.",
+              "The patient has trichophagia.",
+              "The patient has trichotillomania.",
+              "The patient has Rapunzel syndrome."
+            ],
+            answer: 2,
+            rationale: "Psychiatric patients often pull out hair to relieve stress. This condition is called trichotillomania. Trichorrhexis is a defect in the hair shaft where the hair becomes thin and breaks off easily. Patients who secretly swallow the pulled hair have a condition called trichophagia. The masses of hair present in the stomach are referred to as Rapunzel syndrome. (pp. 285-286)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Buspirone is prescribed for a patient with anxiety. Which instruction would the nurse provide to this patient?",
+            options: [
+              "\"Take this medication on an empty stomach.\"",
+              "\"Take this medication only when you feel anxious.\"",
+              "\"It will take 2 to 4 weeks for you to feel the full benefit.\"",
+              "\"Avoid aged cheese products while you are taking this medication.\""
+            ],
+            answer: 2,
+            rationale: "Buspirone is an alternative antianxiety medication that does not cause dependence, but 2 to 4 weeks are required for it to reach full effect. It should be taken with food. The drug may be used for long-term treatment and should be taken regularly. Aged cheese products should be avoided when taking monoamine oxidase inhibitors (MAOIs). (p. 282)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient is fearful of riding in elevators and always takes the stairs. Which brain structure is involved in this fear and behavior?",
+            options: [
+              "Thalamus",
+              "Amygdala",
+              "Hypothalamus",
+              "Pituitary gland"
+            ],
+            answer: 1,
+            rationale: "The amygdala plays a role in anxiety disorders. It alerts the brain to the presence of danger and brings about fear or anxiety to preserve the system. Memories with emotional significance are stored in the amygdala and are implicated in phobic responses. The thalamus relays sensory information to other brain centers. The hypothalamus is involved in regulation of the autonomic nervous system. The pituitary gland secretes regulatory hormones. (p. 289)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which therapeutic intervention can the nurse implement within the scope of nursing practice guidelines to help a patient diagnosed with a mild anxiety disorder regain control?",
+            options: [
+              "Flooding",
+              "Modeling",
+              "Thought stopping",
+              "Systematic desensitization"
+            ],
+            answer: 1,
+            rationale: "Modeling calm behavior in the face of anxiety or unafraid behavior in the presence of a feared stimulus are interventions that can be used independently, within the scope of practice guidelines. Flooding, thought stopping, and systematic desensitization require agreement of the treatment team. Healthcare providers such as psychiatrists or psychiatric nurse practitioners would be providing those interventions. (p. 280)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement demonstrates an expression of anxiety rather than fear?",
+            options: [
+              "\"I can't stand spiders.\"",
+              "\"You'd never get me on a roller coaster.\"",
+              "\"I dislike knowing that when I'm older, I won't have enough money.\"",
+              "\"I can't imagine why anyone would want to parachute out of an airplane.\""
+            ],
+            answer: 2,
+            rationale: "Anxiety is an emotion without a specific object that is provoked by the unknown or by new experiences. Being worried about future finances is a common expression of anxiety. An intense dislike for spiders, roller coasters, and parachuting are fears because they are focused. (p. 268)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement about the comorbidity of anxiety disorders is true?",
+            options: [
+              "Anxiety disorders generally exist alone.",
+              "A secondary anxiety disorder may coexist with the first.",
+              "Anxiety disorders virtually never coexist with mood disorders.",
+              "Substance abuse disorders rarely coexist with anxiety disorders."
+            ],
+            answer: 1,
+            rationale: "In many instances, when one anxiety disorder is present, a second one coexists. Healthcare providers and researchers have clearly shown that anxiety disorders frequently cooccur with other psychiatric problems. Major depression often cooccurs and produces a greater impairment with poorer response to treatment. Substance abuse can coexist with anxiety disorders, as the patient may turn to substances to deal with the unpleasant anxiety symptoms. Some substances can cause anxiety symptoms. (pp. 272, 273)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient diagnosed with panic disorder begins a new prescription for lorazepam. Which daily activity would the nurse instruct the patient to discontinue?",
+            options: [
+              "Knitting",
+              "Mowing the lawn",
+              "Playing video games",
+              "Preparing dinner for the family"
+            ],
+            answer: 1,
+            rationale: "Lorazepam is a benzodiazepine commonly prescribed for short-term management of anxiety. These medications may make it unsafe to handle mechanical equipment, such as a lawn mower. It would be safe for the patient to knit, play video games, and prepare meals. (p. 282)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "The nurse is providing teaching to a patient just before surgery. The patient is becoming more and more anxious as the information is presented. Soon the patient begins to report dizziness and heart pounding. The nurse observes obvious trembling and that the patient appears confused. Which intervention would the nurse take immediately?",
+            options: [
+              "Reinforcing the preoperative teaching by restating it slowly",
+              "Staying calm, remaining at the bedside, and reducing environmental stimuli",
+              "Having the patient read the teaching materials instead of listening to them",
+              "Having a familiar family member read the preoperative materials to the patient"
+            ],
+            answer: 1,
+            rationale: "Patients experiencing severe anxiety, as the symptoms suggest, are unable to learn or solve problems. Stay calm, remain with the patient, and minimize environmental stimuli. Restating the preoperative teaching slowly, having the patient read the teaching materials instead of listening to them, and having a familiar family member read the preoperative materials to the patient would not be effective because the nurse is still attempting to teach someone who has a severe level of anxiety. (p. 280)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          }
+        ]
+      }
+    },
+
+    /* ==========================================================
+       TOPIC 15 — TRAUMA & STRESSOR DISORDERS  (Week 5)
+
+       10 mustKnow, one per Learning Outcomes bullet on must-know.html,
+       2 of them SATA. 8 medications, one per drug on the Week 5
+       medications tab plus 3 "which are indicated for" select-alls.
+
+       eaq: 5 from the Week 5 EAQ quiz (2026-09-21), filed here because this
+       page teaches dissociation, EMDR and resilience in children.
+
+       ALL FIVE DRUGS ALSO APPEAR IN week2-depressive.medications with a
+       DIFFERENT indication, depression there and PTSD here. That is rule
+       2's genuine exception, the same as lorazepam and diazepam sitting on
+       both the Week 3 and Week 4 tabs. The questions below are written on
+       the PTSD facts only: on-label versus off-label status, what the
+       antidepressants relieve, and the absence of pediatric approval. None
+       of them re-tests a Week 2 point.
+       ========================================================== */
+    {
+      id: "week5-trauma",
+      label: "Trauma & Stressor Disorders",
+      week: 5,
+      sets: {
+        mustKnow: [
+          {
+            /* LO: traumatic stress events and trauma exposure */
+            stem: "Which of these meet the criteria for the trauma exposure required to diagnose PTSD? Select all that apply.",
+            options: [
+              "Witnessing a fatal car crash in person",
+              "Watching televised footage of a mass shooting for several hours",
+              "Learning that a sibling was killed in a violent robbery",
+              "Serving in military combat",
+              "Reading a newspaper photograph essay about a natural disaster",
+              "Being physically assaulted during a mugging"
+            ],
+            answers: [0, 2, 3, 5],
+            rationale: "Qualifying exposure is directly experiencing a traumatic event, witnessing one in person, or learning of one that happened to a close friend or family member, where a death must be violent or unexpected. Combat and a mugging are direct experience, the crash is witnessed in person, and a sibling killed in a robbery is a violent death learned of. Exposure through electronic media, television, movies or photographs does not count, which rules out both the televised footage and the photograph essay however distressing they are.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: describe trauma-informed care */
+            stem: "A nurse admitting a patient to a medical unit deliberately asks what has happened to the patient rather than what is wrong with the patient. Which framework is the nurse applying?",
+            options: [
+              "Trauma-informed care",
+              "Motivational interviewing",
+              "Crisis intervention",
+              "Cognitive processing therapy"
+            ],
+            answer: 0,
+            rationale: "Trauma-informed care shifts the focus from \"What's wrong with you?\" to \"What happened to you?\" It is a treatment framework for recognizing and responding to the effects of all types of trauma and actively avoiding re-traumatization. Motivational interviewing addresses ambivalence about changing a behavior. Cognitive processing therapy is one specific trauma-focused psychotherapy, not a framework for the whole care encounter.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: risk factors, timeframe and symptoms of acute stress disorder */
+            stem: "A patient is evaluated 8 days after surviving a building collapse and reports flashbacks, feeling in a daze, an inability to recall part of the event, avoidance of the area and an exaggerated startle response. Which diagnosis fits this presentation?",
+            options: [
+              "Post-traumatic stress disorder",
+              "Adjustment disorder",
+              "Depersonalization/derealization disorder",
+              "Acute stress disorder"
+            ],
+            answer: 3,
+            rationale: "Acute stress disorder is diagnosed 3 days to 1 month after the traumatic event, and 8 days sits inside that window. The dissociative findings, feeling in a daze and being unable to recall part of the event, carry the diagnostic emphasis that separates acute stress disorder from PTSD. PTSD requires symptoms lasting longer than 1 month. Adjustment disorder follows a stressor that need not be traumatic and produces a milder, time-limited reaction.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: risk factors, timeframe and symptoms of PTSD */
+            stem: "A patient is being evaluated for PTSD. Which findings belong to the arousal and reactivity symptom group? Select all that apply.",
+            options: [
+              "Being easily startled",
+              "Trouble remembering key features of the event",
+              "Difficulty sleeping",
+              "Angry outbursts",
+              "Staying away from places that are reminders",
+              "Feeling tense or on edge"
+            ],
+            answers: [0, 2, 3, 5],
+            rationale: "At least two arousal and reactivity symptoms are required for the diagnosis, and that group holds being easily startled, feeling tense or on edge, difficulty sleeping, and angry outbursts. Trouble remembering key features of the traumatic event belongs to the cognition and mood group, which also requires at least two. Staying away from reminders is the avoidance group, of which at least one is required.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: apply the nursing process to ASD and PTSD */
+            stem: "A patient newly diagnosed with acute stress disorder asks which laboratory test confirmed the diagnosis. Which response by the nurse is correct?",
+            options: [
+              "\"A brain MRI shows the structural changes that confirm the diagnosis.\"",
+              "\"There is no test. It follows a thorough psychological assessment.\"",
+              "\"A blood panel measures the stress hormones that establish it.\"",
+              "\"A sleep study confirms the arousal symptoms that define it.\""
+            ],
+            answer: 1,
+            rationale: "There is no test that diagnoses acute stress disorder. A provider makes the diagnosis after a thorough psychological assessment against the DSM-5 criteria, drawing on history, interviewing, observation and interaction. No imaging study, blood panel or sleep study establishes it, and offering one would give the patient a false account of how the diagnosis was reached.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* STARRED LO: pharmacological and psychological treatment modalities */
+            stem: "A patient with PTSD asks whether medication alone will treat the disorder. Which response by the nurse is accurate?",
+            options: [
+              "\"Medication is the primary treatment, and therapy is optional.\"",
+              "\"Neither medication nor therapy has strong evidence in this disorder.\"",
+              "\"Medication is started only after psychotherapy has been tried and failed.\"",
+              "\"Trauma-focused psychotherapy is primary, and medication eases symptoms.\""
+            ],
+            answer: 3,
+            rationale: "Trauma-focused psychotherapy is the primary treatment for PTSD, with prolonged exposure, cognitive processing therapy and EMDR as the options. Antidepressants are used alongside it and help with the symptoms of depression and anxiety, with sleep problems and with concentration. They are not held back until psychotherapy fails, and both modalities carry evidence, so neither dismissing therapy nor dismissing both is correct.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: inpatient management of a patient with PTSD */
+            stem: "A patient with PTSD is admitted to a medical unit for pneumonia. Which nursing action best reflects trauma-informed inpatient management?",
+            options: [
+              "Ask the patient's preference for nighttime lighting and avoid overnight vitals.",
+              "Perform vital signs every 4 hours overnight to detect deterioration early.",
+              "Keep the room lights on overnight so the patient can see the surroundings.",
+              "Limit visitors through the day so the patient can rest without any interruption."
+            ],
+            answer: 0,
+            rationale: "Typical hospital routines can worsen the anxiety and anger of a patient with PTSD, so inpatient management individualizes care and broadens safe opportunities for control. Asking the patient's lighting preference and avoiding overnight vital signs where possible are both listed strategies. Routine overnight vitals disrupt the sleep routine this patient needs, and deciding the lighting or the visitors for the patient removes exactly the control the approach is trying to restore.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: depersonalization/derealization disorder */
+            stem: "A patient reports that the world feels dreamlike and distant, as though an invisible veil separates them from everything around them. Which term describes this experience?",
+            options: [
+              "Depersonalization",
+              "Dissociative amnesia",
+              "Derealization",
+              "Hypervigilance"
+            ],
+            answer: 2,
+            rationale: "Derealization focuses on the outside world: the recurring feeling that one's surroundings are unreal or distant, often described as a fog, a bubble or an invisible veil, sometimes with visual or auditory distortions. Depersonalization is the opposite focus, the uncomfortable feeling of being an observer of one's own body or mental processes. Hypervigilance is an arousal symptom rather than an alteration in the sense of reality.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: symptoms and treatment of trauma-related disorders in children */
+            stem: "A 3-year-old in foster care repeatedly approaches unfamiliar adults in a clinic waiting room, climbs into their laps and never looks back at the foster parent. Which disorder does this behavior suggest?",
+            options: [
+              "Reactive attachment disorder",
+              "Disinhibited social engagement disorder",
+              "Adjustment disorder",
+              "Developmental delay"
+            ],
+            answer: 1,
+            rationale: "Disinhibited social engagement disorder occurs in the first 2 years of life and is defined by culturally inappropriate, overly familiar behavior with relative strangers: approaching unfamiliar adults, violating social boundaries, failing to check back with the caregiver, and willingness to go with an unfamiliar person. Reactive attachment disorder is the opposite picture, inhibited and withdrawn, with a child who neither seeks nor responds to comfort. Developmental delay is an explicit rule-out for this diagnosis, not the diagnosis itself.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: nursing interventions for children with trauma-related disorders */
+            stem: "A nurse is planning care for a 5-year-old admitted after severe neglect. Which intervention belongs to stage 1 of the phase model of treatment?",
+            options: [
+              "Social skills training and helping the child develop a value system",
+              "Transforming traumatic memories through structured memory work",
+              "Creating a safe, predictable environment and stopping self-harm",
+              "Nurturing self-awareness and enhancing problem-solving skills"
+            ],
+            answer: 2,
+            rationale: "Stage 1 is safety and stabilization: creating a safe and predictable environment, stopping self-harm and self-destructive behaviors, and providing general education about trauma and its effects. Memory work and reducing arousal belong to stage 2. Social skills training, problem-solving, self-awareness and a value system are the developmental catch-up of stage 3, which comes last.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        medications: [
+          {
+            /* sertraline */
+            stem: "A patient with PTSD is started on sertraline. Which statement about this medication is accurate?",
+            options: [
+              "It is used off-label for PTSD and is aimed at the flashbacks specifically.",
+              "It removes the need for trauma-focused psychotherapy to continue.",
+              "It is approved for PTSD and eases depression, anxiety and sleep problems.",
+              "It is approved for children with PTSD at a reduced starting dose."
+            ],
+            answer: 2,
+            rationale: "Sertraline is one of the two SSRIs that carry on-label approval for PTSD, and antidepressants in this role relieve the symptoms of depression and anxiety, sleep problems and difficulty concentrating. There are currently no FDA-approved medications for children with PTSD. Medication supplements trauma-focused psychotherapy, which remains the primary treatment, and it does not act on flashbacks directly.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* paroxetine */
+            stem: "A patient prescribed paroxetine for PTSD asks why an antidepressant was chosen when they do not feel depressed. Which response by the nurse is correct?",
+            options: [
+              "\"It helps with anxiety, sleep and concentration, not only with mood.\"",
+              "\"It treats the flashbacks of this disorder directly.\"",
+              "\"It is the only medication approved for this disorder.\"",
+              "\"It will be stopped as soon as your trauma-focused psychotherapy begins.\""
+            ],
+            answer: 0,
+            rationale: "Antidepressants in PTSD help with the symptoms of depression and anxiety, with sleep problems and with concentration, so they are useful even when depressed mood is not what brought the patient in. Sertraline is also approved for PTSD, so paroxetine is not the only one. They do not act on flashbacks directly, and they are used alongside trauma-focused psychotherapy rather than stopped when it starts.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* fluoxetine */
+            stem: "A student asks why fluoxetine appears on the PTSD medication list when it does not carry FDA approval for that indication. Which response is correct?",
+            options: [
+              "\"It was approved for PTSD in children only.\"",
+              "\"It is first-line and approved for both PTSD and acute stress disorder.\"",
+              "\"It was included in error and is not used for PTSD.\"",
+              "\"It is used off-label, as are venlafaxine and phenelzine.\""
+            ],
+            answer: 3,
+            rationale: "Fluoxetine is used off-label for PTSD, as are the SNRI venlafaxine and the MAOI phenelzine. Only sertraline and paroxetine carry on-label approval. There are no FDA-approved medications for children with PTSD, and no agent is approved for acute stress disorder, where the evidence supporting medication is minimal.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* venlafaxine */
+            stem: "Venlafaxine appears among the medications used for PTSD. To which classification does it belong?",
+            options: [
+              "SSRI",
+              "SNRI",
+              "MAOI",
+              "Tricyclic antidepressant"
+            ],
+            answer: 1,
+            rationale: "Venlafaxine is the SNRI on the PTSD medication list and is used off-label. Sertraline, paroxetine and fluoxetine are the SSRIs on that list, and phenelzine is the MAOI. No tricyclic antidepressant appears among the medications to know for this disorder.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* phenelzine */
+            stem: "A patient with PTSD is prescribed phenelzine. Which classification does this represent, and what does it indicate about the prescription?",
+            options: [
+              "An MAOI, used off-label for this disorder.",
+              "An SSRI, and the usual first choice for it.",
+              "An SNRI, approved specifically for this disorder.",
+              "A mood stabilizer, added for irritability."
+            ],
+            answer: 0,
+            rationale: "Phenelzine is the MAOI on the PTSD medication list, and like fluoxetine and venlafaxine it is used off-label. The SSRIs sertraline and paroxetine are the only agents with on-label approval for PTSD. Venlafaxine is the SNRI, also off-label, and no mood stabilizer appears among the medications to know for this disorder.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which medications appear on the list of antidepressants used for PTSD? Select all that apply.",
+            options: [
+              "sertraline",
+              "lithium carbonate",
+              "venlafaxine",
+              "haloperidol",
+              "phenelzine",
+              "paroxetine"
+            ],
+            answers: [0, 2, 4, 5],
+            rationale: "The PTSD medication list holds the SSRIs sertraline, paroxetine and fluoxetine, the SNRI venlafaxine, and the MAOI phenelzine. Lithium carbonate is a mood stabilizer used in bipolar disorder and, at low dose, in suicide care. Haloperidol is a typical antipsychotic used in schizophrenia and neither appears on nor relates to this list.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Which of the PTSD medications are used off-label for that indication? Select all that apply.",
+            options: [
+              "fluoxetine",
+              "sertraline",
+              "venlafaxine",
+              "paroxetine",
+              "phenelzine"
+            ],
+            answers: [0, 2, 4],
+            rationale: "Fluoxetine, venlafaxine and phenelzine are all used off-label for PTSD. Sertraline and paroxetine are the two agents that carry on-label approval for the disorder, which is why they are usually the starting point.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            stem: "Antidepressants are added to the care of a patient with PTSD. Which symptoms are they expected to help? Select all that apply.",
+            options: [
+              "Exaggerated startle response",
+              "Depression",
+              "Anxiety",
+              "Sleep problems",
+              "Concentration"
+            ],
+            answers: [1, 2, 3, 4],
+            rationale: "Antidepressants in PTSD help with the symptoms of depression and anxiety, with sleep problems and with concentration. An exaggerated startle response is an arousal symptom that trauma-focused psychotherapy addresses, and medication is not described as targeting it.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        eaq: [
+          /* Imported 2026-09-21 from the Week 5 EAQ quiz (ticket to class, the
+             only Week 5 set), in original order and wording. */
+          {
+            stem: "Which situation most closely resembles the use of dissociation?",
+            options: [
+              "Performing mundane tasks on \"autopilot\"",
+              "Feeling angry with a coworker who shirks work",
+              "Developing a headache to avoid an unpleasant task",
+              "Finding a socially acceptable reason to meet a need"
+            ],
+            answer: 0,
+            rationale: "Mild, fleeting dissociative experiences are relatively common; for example, one says one is on \"automatic pilot\" when driving home from work and cannot recall the last 15 minutes before reaching the house. Dissociative events do not correlate with getting angry at a coworker, developing headaches, or finding a socially acceptable reason to meet a need. (p. 304)",
+            topic: "Trauma & Stressor Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement about dissociative disorders is true?",
+            options: [
+              "Dissociative symptoms are always negative.",
+              "Dissociative symptoms are usually a cry for attention.",
+              "Dissociative symptoms are under the person's conscious control.",
+              "Dissociative symptoms are not under the person's conscious control."
+            ],
+            answer: 3,
+            rationale: "Dissociation is involuntary and results in failure of normal control over a person's mental processes and normal integration of conscious awareness. Dissociative symptoms are not a cry for attention and are not always negative. (p. 309)",
+            topic: "Trauma & Stressor Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement concerning syndromes seen in other cultures—such as piblokto, Navajo frenzy witchcraft, and amok—is true?",
+            options: [
+              "They are physical disorders, not mental disorders.",
+              "They are culture-bound syndromes that are not dissociative disorders.",
+              "They are dissociative disorders, such as dissociative identity disorders.",
+              "They are myths or rumors, because they have not been sufficiently studied to be classified as real."
+            ],
+            answer: 1,
+            rationale: "Certain culture-bound disorders exist in which there is a high level of activity, a trance-like state, and running or fleeing, followed by exhaustion, sleep, and amnesia regarding the episode. These syndromes, if observed in individuals native to the corresponding geographical areas, should be differentiated from dissociative disorders. These are not physical disorders, myths, or rumors. (p. 305)",
+            topic: "Trauma & Stressor Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "The nurse is caring for a child who has witnessed a car accident and does not remember anything that took place during the accident. Which therapy would the nurse expect the advanced practice mental health clinicians to adopt to help the child regain memory of the car accident?",
+            options: [
+              "Psychopharmacological therapy",
+              "Cognitive-behavioral therapy (CBT)",
+              "Dialectical developmental psychotherapy",
+              "Eye movement desensitization and reprocessing therapy (EMDR)"
+            ],
+            answer: 3,
+            rationale: "EMDR is an evidence-based therapy. It is an eight-phase protocol by which the child is encouraged to recollect the traumatic event by using stimulations such as audio tones. In CBT, the nurse teaches stress management techniques to the child. In psychopharmacological therapy, medications are prescribed to the patient to treat the pathological changes caused by stress. In dialectical developmental psychotherapy, emotion regulation techniques like meditation and deep breathing are taught to the child. (p. 299)",
+            topic: "Trauma & Stressor Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which term describes a child who is able to regain mental stability after a traumatic event?",
+            options: [
+              "Mature",
+              "Resilient",
+              "Autonomous",
+              "Independent"
+            ],
+            answer: 1,
+            rationale: "The term resilient refers to positive adaptation, or the ability to maintain or regain mental health despite adversity. Maturity, autonomy, and independence do not best describe the ability to regain mental stability after a traumatic event. (p. 296)",
+            topic: "Trauma & Stressor Disorders",
+            source: "eaq"
+          },
+          /* Imported 2026-09-24 from the Week 5 EAQ 2 quiz, in original order
+             and wording. */
+          {
+            stem: "Which intervention is appropriate for stage 2 of the staged model of trauma treatment?",
+            options: [
+              "Engaging in memory work",
+              "Social skills training",
+              "Providing a predictable environment",
+              "Enhancing problem-solving skills"
+            ],
+            answer: 0,
+            rationale: "Appropriate interventions for stage 2 of the staged model of trauma treatment include regulating emotion through symptom reduction and memory work. Social skills training occurs in stage 3. Providing a safe, predictable environment occurs in stage 1. Enhancing problem-solving skills occurs in stage 3. (p. 298)",
+            topic: "Trauma & Stressor Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "The nurse is caring for a child with posttraumatic stress disorder (PTSD). The parents ask the nurse about psychopharmacological interventions. Which statement is the best response by the nurse?",
+            options: [
+              "\"Medication that cures PTSD has undesirable side effects.\"",
+              "\"Certain medications can be taken to help minimize symptoms of PTSD.\"",
+              "\"Your child could be cured of PTSD with natural supplements rather than drugs.\"",
+              "\"Pharmacological interventions are the optimal treatment for children with PTSD.\""
+            ],
+            answer: 1,
+            rationale: "There are no Food and Drug Administration (FDA)-approved medications for children who have PTSD. Rather, certain medications can be prescribed to help manage the symptoms of PSTD, such as anxiety or depression. Medications that treat some of the PTSD symptoms do have some side effects, but these are not always undesirable; the healthcare provider and the parents must consider risk versus benefits. There are no medications that can cure PTSD, not even with the use of natural supplements or drugs. The optimal treatment for children with PTSD is cognitive behavioral therapy (CBT), and this intervention can be used in addition to medication. (pp. 298-299)",
+            topic: "Trauma & Stressor Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which factor is considered in posttraumatic stress disorder (PTSD) in children?",
+            options: [
+              "There are no specific risk factors; anything can cause PTSD.",
+              "Good social support can help build a child's resilience to PTSD.",
+              "PTSD is a genetic condition, which comes from one or both parents.",
+              "All people are born predisposed to PTSD because of brain chemistry."
+            ],
+            answer: 1,
+            rationale: "Environmental factors can cause certain children to be more susceptible to PTSD. Therefore children with good social support are more resilient when faced with PTSD triggers. There are environmental, biological, and psychological risk factors for PTSD. PTSD is not a genetic condition, although there may be genetic factors that put children at a higher risk of getting PTSD. It is not accurate that all people are born predisposed to PTSD because not everyone has the same neurobiological makeup. (p. 296)",
+            topic: "Trauma & Stressor Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A nurse is performing an assessment of a child diagnosed with disinhibited social engagement disorder. Which behavior would the nurse expect to find in the child?",
+            options: [
+              "The child throws stones at strangers.",
+              "The child willingly goes with a stranger.",
+              "The child cries when touched by a stranger.",
+              "The child hides when a stranger approaches."
+            ],
+            answer: 1,
+            rationale: "Disinhibited social engagement disorder is characterized by absence of normal fear toward strangers and unresponsiveness to separation from a caregiver. The child demonstrates no normal fear of strangers. A child throwing stones at a stranger is indicative of antisocial behavior. A child crying when being touched by a stranger demonstrates sensitive behavior. A child hiding when approached by a stranger reflects shyness and is not a symptom of disinhibited social engagement disorder. (p. 294)",
+            topic: "Trauma & Stressor Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A child from a minority family is at greatest risk for which disorder?",
+            options: [
+              "Bullying",
+              "Homicidal thoughts",
+              "Eating- and sleep-related disorders",
+              "Traumatic experiences in early childhood"
+            ],
+            answer: 3,
+            rationale: "Poverty, parental substance abuse, and exposure to violence have received increasing attention and place minority children at greater risk for trauma and stress. Bullying can affect anyone. Homicidal thoughts and eating- and sleep-related disorders are not more prominent in any particular racial or cultural group. (p. 296)",
+            topic: "Trauma & Stressor Disorders",
+            source: "eaq"
+          }
+        ]
+      }
+    },
+
+    /* ==========================================================
+       TOPIC 16 — CARING FOR PERSONS WITH ABUSE  (Week 5)
+
+       17 mustKnow, one per Learning Outcomes bullet on must-know.html,
+       3 of them SATA. The bullet count is high because this topic carries
+       TWO Objectives slides, chapters 28 and 29, one for family violence
+       and one for sexual assault.
+
+       medications is EMPTY on purpose: the abuse deck has NO Medications
+       slide, so rule 4b gives the week no section for it and there is no
+       drug to write a question about. That cell renders disabled, which
+       is correct.
+
+       eaq: 27 from the Week 5 EAQ 2 quiz (2026-09-24), filed here because
+       this page teaches family violence, the cycle of violence, child and
+       elder abuse, and rape and sexual assault. The date-rape-drug
+       questions from the same import (GHB, flunitrazepam, ketamine) are
+       NOT here — that subject is never taught on this page — and neither
+       are the dissociative-identity-disorder questions; both went to the
+       new "Other EAQ Topics" catch-all instead.
+       ========================================================== */
+    {
+      id: "week5-abuse",
+      label: "Caring for Persons with Abuse",
+      week: 5,
+      sets: {
+        mustKnow: [
+          {
+            /* LO: nature and scope of family violence */
+            stem: "Which statement about intimate partner violence is accurate?",
+            options: [
+              "It is defined uniformly across all 50 states.",
+              "Men and women experience it at about the same lifetime rate.",
+              "Rates are highest in women over the age of 55.",
+              "It occurs in about 50% of married couples."
+            ],
+            answer: 3,
+            rationale: "Intimate partner violence occurs in about 50% of married couples. Legal definitions of family or domestic violence vary from state to state, with 38 states placing them inside criminal codes. 25% of women and 10% of men experience it in their lifetime, so the rates are not equal, and females between 18 and 34 have the highest rates rather than women over 55.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: risk factors for victimization and perpetration */
+            stem: "A nurse is screening older adults for risk of abuse. Which patient matches the most typical victim profile?",
+            options: [
+              "A 62-year-old man living alone with well-controlled hypertension",
+              "An 80-year-old woman with Alzheimer's disease living with her daughter",
+              "A 70-year-old woman in assisted living with no cognitive impairment at all",
+              "A 78-year-old man living with a spouse and no functional limitations"
+            ],
+            answer: 1,
+            rationale: "The most typical victim of older adult abuse is female, over 75, white, living with a relative, and physically or mentally impaired, often with Alzheimer's disease. The dependency needs of older adults are usually what create the risk, and family members are the perpetrators in most incidents. The other profiles each lack the combination of advanced age, impairment and living with a relative that defines the typical picture.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: describe the cycle of violence */
+            stem: "A patient in an abusive relationship reports that her partner has been buying her gifts and promising that it will never happen again. Which stage is this, and what is the nursing concern?",
+            options: [
+              "Tension-building, and the concern is that minor incidents are minimized.",
+              "Acute-battering, and the concern is immediate physical safety.",
+              "Honeymoon, and the concern is that plans to leave will be abandoned.",
+              "Tension-building, and the concern is substance use by the abuser."
+            ],
+            answer: 2,
+            rationale: "The honeymoon stage follows the violence: the abuser demonstrates kindness and loving behavior, at least initially feels remorseful and apologetic, brings presents and promises it will never happen again. Legal proceedings or plans to leave that were started are often abandoned during this stage, which is the nursing concern. Minimizing incidents and the abuser's use of alcohol or drugs both belong to the tension-building stage.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: three indicators each of physical, sexual, neglect, emotional */
+            stem: "Which assessment findings point to neglect rather than another form of abuse? Select all that apply.",
+            options: [
+              "Undernourishment",
+              "Bruises in various stages of healing",
+              "Poorly clothed appearance",
+              "Lack of immunizations",
+              "Unpaid utility bills",
+              "Untreated dental conditions"
+            ],
+            answers: [0, 2, 3, 5],
+            rationale: "Neglect is the failure to provide for physical, emotional, educational and medical needs, and it shows as undernourishment, a dirty and poorly clothed appearance, and inadequate medical or dental care including missing immunizations and untreated conditions. Bruises in various stages of healing are an overt sign of physical abuse. Unpaid utility bills point to economic abuse, where needs go unmet although adequate funds are available.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: four areas to assess when interviewing */
+            stem: "A nurse is preparing to interview a patient suspected of experiencing abuse. Which action is correct?",
+            options: [
+              "Interview the patient alone, and ask about conflict resolution.",
+              "Interview the patient with the accompanying partner present for support.",
+              "Use the words \"abuse\" and \"violence\" so the patient knows the topic.",
+              "Ask closed questions so the patient can answer with a yes or a no."
+            ],
+            answer: 0,
+            rationale: "Any assessment for abuse is completed with the victim alone and in private, and the interview avoids the words \"abuse\" and \"violence\" in favor of specific questions about how conflict is resolved. Keeping the accompanying person in the room may mean keeping the perpetrator in the room. Open-ended questions requiring a descriptive response are less threatening and elicit more relevant information than closed yes-or-no questions.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: formulate priority problems and supporting data */
+            stem: "A survivor of intimate partner abuse is admitted after being assaulted by her partner. Which priority problem does the nurse address first?",
+            options: [
+              "Chronic low self-esteem",
+              "Impaired family process",
+              "Caregiver stress",
+              "Risk of violence"
+            ],
+            answer: 3,
+            rationale: "Safety is the number one concern in this population, which makes risk of violence the priority problem addressed first. Chronic low self-esteem, impaired family process and caregiver stress are all genuine priority problems for the survivor of abuse, and each is supported by real assessment data, but none of them is the immediate threat to life that safety represents.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: legal and ethical responsibilities */
+            stem: "A nurse suspects that an older adult patient is being abused by an adult child, but the patient denies it. What is the nurse's obligation?",
+            options: [
+              "Document the concern and take no action without the patient's consent.",
+              "Confront the adult child directly, since nurses may address family conflict.",
+              "Report the suspicion, because nurses are mandated reporters.",
+              "Wait for physical evidence before involving any outside agency."
+            ],
+            answer: 2,
+            rationale: "Nurses are legally mandated to report suspected or actual cases of child and vulnerable adult abuse, and the duty attaches to the suspicion rather than to proof or to the patient's agreement. The report goes to the state or a law enforcement agency, juvenile court or a county health department, with each state setting the form and the timeframe. Confronting the suspected perpetrator is not the nurse's role and can increase the danger to the patient.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: compare primary, secondary and tertiary prevention */
+            stem: "Which nursing actions are examples of secondary prevention of abuse? Select all that apply.",
+            options: [
+              "Screening at-risk individuals for abuse",
+              "Teaching stress reduction to a family under strain",
+              "Providing medical treatment for injuries",
+              "Running a support group for survivors of abuse",
+              "Coordinating community services after a disclosure"
+            ],
+            answers: [0, 2, 4],
+            rationale: "Secondary prevention is early intervention in abusive situations: screening programs for individuals at risk, medical treatment for injuries, and coordination of community services. Teaching stress reduction to a family before abuse has occurred is primary prevention, which aims to stop it happening at all. A support group for survivors is tertiary prevention, which occurs in mental health settings and facilitates healing and rehabilitation.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: define sexual assault, rape, attempted and completed rape */
+            stem: "Which definition matches attempted rape?",
+            options: [
+              "Penetration of the vagina or anus without the victim's consent",
+              "A threat or intention to rape that is unsuccessful",
+              "Unwanted sexual advances and harassment",
+              "Sexual contact with a person incapable of giving consent"
+            ],
+            answer: 1,
+            rationale: "Attempted rape is a threat of rape, or an intention to rape, that is unsuccessful. Completed rape is penetration, no matter how slight, of the vagina or anus with any body part or object, or oral penetration by a sex organ of another person, without the consent of the victim. Unwanted advances and harassment sit at the other end of the sexual assault range, and contact with a person incapable of consent is the definition of sexual abuse.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: relationships between sexual offenders and victims */
+            stem: "A 15-year-old states that she agreed to sexual activity with a 25-year-old acquaintance. Which term applies to this situation?",
+            options: [
+              "Statutory rape",
+              "Date rape",
+              "Drug-facilitated sexual assault",
+              "Marital rape"
+            ],
+            answer: 0,
+            rationale: "Statutory rape assumes that minors do not have the capacity to consent to sexual activity even if they agree to it or initiate it, and in most states the age of consent is between 16 and 18 years old. Date or acquaintance rape refers to a non-domestic relationship where the perpetrator is known to the victim, without reference to age. Drug-facilitated sexual assault involves intoxication that removes the ability to consent.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: epidemiology of rape, stalking and sexual assault */
+            stem: "Which statement about the epidemiology of rape is accurate?",
+            options: [
+              "Most women who are raped are victimized by strangers rather than acquaintances.",
+              "Rape is the most common violent crime in the United States.",
+              "Male and female perpetrators occur at roughly equal rates.",
+              "Most female victims of completed rape are victimized by age 25."
+            ],
+            answer: 3,
+            rationale: "79% of female victims of completed rape are victimized by age 25. 50% of women who are raped are victimized by acquaintances rather than strangers. Rape is the third most common violent crime in the United States, behind aggravated assault and robbery. The perpetrator is usually male regardless of the victim's gender, so the rates are not equal.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: role of the sexual assault nurse examiner */
+            stem: "Which description fits the sexual assault nurse examiner?",
+            options: [
+              "A social worker who coordinates the response team",
+              "A forensic technician who processes laboratory evidence",
+              "A registered nurse trained to conduct medical and legal evaluations",
+              "An advanced practice nurse who provides long-term psychotherapy to survivors"
+            ],
+            answer: 2,
+            rationale: "A SANE is a registered nurse with specialized training in caring for sexual assault patients, competent in conducting medical and legal evaluations and capable of being an expert witness in court. The SANE is one member of the Sexual Assault Response Team, which also includes social workers, attorneys, advocates and forensic laboratory professionals. The role is the acute examination rather than long-term therapy.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: common reactions to rape and sexual assault */
+            stem: "Three weeks after a sexual assault, a patient reports intrusive memories, nightmares, avoidance of the area where it happened, and being easily startled. Which diagnosis is most likely?",
+            options: [
+              "Post-traumatic stress disorder",
+              "Acute stress disorder",
+              "Adjustment disorder",
+              "Depersonalization/derealization disorder"
+            ],
+            answer: 1,
+            rationale: "Three weeks places the patient inside the 3-day-to-1-month window, so the picture is acute stress disorder. PTSD is diagnosed only once symptoms have lasted longer than 1 month. Adjustment disorder follows a stressor that need not be traumatic. Depersonalization and derealization can accompany the reaction to an assault, but here they are absent from the findings described.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: five areas to assess after sexual assault */
+            stem: "Which areas does the nurse assess when working with a patient who has been sexually assaulted? Select all that apply.",
+            options: [
+              "Level of anxiety",
+              "The patient's sexual history before the assault",
+              "Coping mechanisms",
+              "Available support systems",
+              "Signs and symptoms of emotional trauma",
+              "Signs and symptoms of physical trauma"
+            ],
+            answers: [0, 2, 3, 4, 5],
+            rationale: "The five areas are level of anxiety, coping mechanisms, available support systems, signs and symptoms of emotional trauma, and signs and symptoms of physical trauma. Prior sexual history is not among them. The patient has the right to decline all or part of the examination, and pursuing material outside the assessment adds to the trauma of an already stressful evaluation.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: analyze personal thoughts and feelings */
+            stem: "Why should a nurse examine personal feelings about abortion before caring for a survivor of sexual assault?",
+            options: [
+              "Because the patient may choose one if a pregnancy results from the rape.",
+              "Because state law requires a written disclosure of the nurse's beliefs.",
+              "Because it determines which unit the patient will be assigned to.",
+              "Because the nurse is expected to counsel the patient toward a decision about it."
+            ],
+            answer: 0,
+            rationale: "A patient might choose an abortion if a pregnancy results from the rape, and nurses' attitudes influence the physical and psychological care a survivor receives. Examining those feelings in advance, along with knowing the myths and facts surrounding sexual assault, is what prepares the nurse to give empathetic and effective care. The nurse's role is not to counsel the patient toward any particular decision.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: priority nursing problems for sexual assault */
+            stem: "Which priority nursing problem is defined as the physical and psychological condition following forced participation in sexual relations or intercourse?",
+            options: [
+              "Disturbed personal identity",
+              "Situational low self-esteem",
+              "Impaired sexual functioning",
+              "Rape-trauma"
+            ],
+            answer: 3,
+            rationale: "Rape-trauma is defined as the physical and psychological condition after forced participation in sexual relations or intercourse. Disturbed personal identity, situational low self-esteem and impaired sexual functioning are all priority problems that address responses to sexual assault, but each names one narrower response rather than the whole condition.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: two long-term outcomes and two short-term goals for rape-trauma */
+            stem: "Which outcome is appropriate for a survivor of sexual assault before discharge from the emergency department?",
+            options: [
+              "Emotional healing of intrusive memories and nightmares",
+              "Return to pre-assault sexual functioning and interest",
+              "Connecting with a community-based rape victims' advocate",
+              "Physical healing of all injuries sustained in the assault"
+            ],
+            answer: 2,
+            rationale: "Short-term outcomes achieved before leaving acute care include verbalizing details of the experience, expressing feelings, understanding the common responses to assault, identifying a short-term plan for the immediate situation, and connecting with a community-based rape victims' advocate. Emotional healing of intrusive memories, physical healing and a return to pre-assault sexual functioning are long-term goals that cannot be met before discharge.",
+            topic: "Caring for Persons with Abuse",
+            source: "quiz-bank"
+          }
+        ],
+        medications: [],
+        eaq: [
+          /* Imported 2026-09-24 from the Week 5 EAQ 2 quiz, in original order
+             and wording. */
+          {
+            stem: "Which statement reflects a truth about rape?",
+            options: [
+              "Most rapes are planned.",
+              "Some women want to be raped.",
+              "Most charges of rape are unfounded.",
+              "Most women are raped by strangers."
+            ],
+            answer: 0,
+            rationale: "Many myths about rape exist. Most rapes are not impulsive, spur-of-the-moment acts but are carefully planned and orchestrated. The statements that some women want to be raped, that most charges of rape are unfounded, and that most women are raped by strangers are not true. (p. 540)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which type of prevention focuses on strategies to prevent the occurrence of abuse, such as reducing stress in the home?",
+            options: [
+              "Primary",
+              "Tertiary",
+              "Primordial",
+              "Secondary"
+            ],
+            answer: 0,
+            rationale: "Primary prevention includes measures taken to prevent the occurrence of abuse, such as reducing stress. Tertiary prevention involves counseling and support for individuals who are survivors of violence. Primordial prevention is preventing the risk factors in social and environmental conditions. Secondary prevention involves screening programs for high-risk individuals. (p. 528)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement reflects a fact about family violence?",
+            options: [
+              "Violence occurs in families of all backgrounds.",
+              "Ninety-five percent of abuse victims are women.",
+              "Alcohol and stress are the major causes of abuse.",
+              "The victim's behavior is often the cause of the violence."
+            ],
+            answer: 0,
+            rationale: "Violence occurs in families of all backgrounds is a true statement. Ninety-five percent of abuse victims are women, the victim's behavior is often the cause of the violence, and alcohol and stress are the major causes of abuse are false. (p. 516)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which term identifies a patient of sexual assault in the legal system?",
+            options: [
+              "Victim",
+              "Client",
+              "Patient",
+              "Survivor"
+            ],
+            answer: 0,
+            rationale: "The patients of sexual assault are referred to as victims in the legal system. They are referred to as patients in the healthcare system. These patients are known as survivors in advocacy groups such as support groups. The victims of sexual assault are not referred to as clients. (p. 536)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which distinction can be made between abuse and neglect?",
+            options: [
+              "Neglect is a failure to provide; abuse is an act of violence.",
+              "Neglect is perpetrated against children; abuse victims can be children or adults.",
+              "Neglect is always physical; abuse can be verbal, physical, sexual, or emotional.",
+              "Neglect occurs in the psychological domain; abuse occurs in the physical domain."
+            ],
+            answer: 0,
+            rationale: "Neglect is a failure to provide necessary care, and abuse is taking action to harm someone emotionally, physically, financially, or sexually. Neglect can occur in both the psychological and physical domains. Neglect is not always physical in its form and can be directed toward all age groups. (p. 527)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which priority outcome is appropriate for a child who has been sexually abused?",
+            options: [
+              "The sexual abuse will cease.",
+              "The child will no longer act out sexually.",
+              "The parent will learn effective coping techniques.",
+              "The child will be able to verbalize exactly what happened to them."
+            ],
+            answer: 0,
+            rationale: "The highest priority in this case is that the abuse stops so that the patient can be safe and undergo recovery. The priority is not to stop the sexualized behavior. Teaching the parent effective coping techniques may be needed, but the question asks about the priority outcome for the victim, not the parent. Verbalizing exactly what happened is not a priority. (pp. 523, 526)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which patient is at the highest increased risk for abuse?",
+            options: [
+              "A young new mother who grew up in a divorced family",
+              "A teenage parent who has a strong family support system",
+              "A new mother who requests that the infant be kept in the nursery at all times",
+              "A homosexual couple who had in vitro fertilization to assist with the pregnancy"
+            ],
+            answer: 2,
+            rationale: "A new mother who requests the infant be kept in the nursery at all times may be experiencing abuse. There is nothing to indicate that the mother who grew up with divorced parents, the teenage parent, or the homosexual couple are experiencing abuse. (p. 522)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which information would the nurse include when teaching about sexual assault?",
+            options: [
+              "Rape is a sexual act.",
+              "Only females are raped.",
+              "Most rapes are impulsive.",
+              "Fifty percent of all rapes occur in the home."
+            ],
+            answer: 3,
+            rationale: "People believe myths about the incidents of rape. The nurse should educate people and teach the facts about rape. It is a myth that rape occurs in dark alleys, but the fact is that more than 50% of all rapes occur in the home. It is also a myth that only females are raped, and there are, in fact, an increasing number of male rape victims. Rape is more than a sexual act; it is a violent expression of aggression, anger, and need for power. Most rapes are planned, not impulsive. (p. 540)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which information regarding statistics about sexual violence in the United States is accurate?",
+            options: [
+              "They are unreliable because rape is underreported.",
+              "More men than women are victimized by rape.",
+              "White women are the most common racial group victimized by rape.",
+              "Male rape victims experience more psychological trauma than physical trauma."
+            ],
+            answer: 0,
+            rationale: "Statistics on sexual violence are unreliable because these crimes are underreported. Approximately 19.3% of women and 1.7% of men in the United States have been raped at some time in their lives. Women who identify as multiracial are the most likely to be raped, followed by American Indian/Alaskan Native and black non-Hispanic. A male who is raped is more likely to experience physical trauma. (p. 536)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which priority intervention would the nurse take if it is suspected a child is being abused?",
+            options: [
+              "Notify the pediatrician.",
+              "Document the findings.",
+              "Report it to the state child welfare agency.",
+              "Request a conference meeting with the family."
+            ],
+            answer: 2,
+            rationale: "Nurses are legally mandated to report suspected child abuse to the state or county child welfare agency, law enforcement, juvenile court, or county health department. Notifying the pediatrician can happen after a report has been made. Documenting the findings is not a priority. Requesting a conference meeting with the family is not appropriate until more information is gathered. (p. 526)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement made by an adolescent indicates further teaching about ways to prevent rape must occur?",
+            options: [
+              "\"Women do not want to be raped.\"",
+              "\"Rape can occur in the home.\"",
+              "\"Rape is not always done for the purpose of sex.\"",
+              "\"It isn't rape if the participants are in a relationship.\""
+            ],
+            answer: 3,
+            rationale: "Intimate partner violence is common in rape cases, and the adolescent should be taught that regardless of the participants' relationship to one another, if consent is not obtained, this is considered rape. The statements that women do not want to be raped, that rape can occur at home, and that sex is not the primary motivation for rape indicate effective teaching. (pp. 535, 540)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "A child comes into the physician's office with several infected wounds on their extremities. The nurse notes the child has poor hygiene and is malnourished, and there is dirt in the wounds. Which type of abuse does the nurse suspect?",
+            options: [
+              "Neglect",
+              "Sexual abuse",
+              "Physical abuse",
+              "Economic abuse"
+            ],
+            answer: 0,
+            rationale: "Neglected children appear malnourished, have poor hygiene, and have untreated medical conditions. Sexual abuse in children may be demonstrated by sexual misbehavior. Physical abuse can be evident in children who report headaches and dizziness and have frequent accidents. Economic abuse occurs when the abuser fails to provide for the needs of the victim when financial funds are available. (p. 523)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement accurately describes the epidemiology of rape?",
+            options: [
+              "Men are less likely to be raped by another man.",
+              "More than 25% of women in the United States have been raped.",
+              "Nearly half of female survivors have been raped by an acquaintance.",
+              "Men are raped more often than women, but incidents are underreported."
+            ],
+            answer: 2,
+            rationale: "Almost half of female victims have been raped by an acquaintance. Intimate partners account for nearly 45% of female victims. Women are raped more often than men. An estimated 19.3% of women in the United States have been raped, not 25%. Men are more likely to be raped by another man than they are likely to be raped by a woman. (p. 536)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which development related to the common sequelae of acquaintance rape would the nurse realize when providing discharge treatment and support to a victim?",
+            options: [
+              "An eating disorder",
+              "A paranoid psychosis",
+              "Anxiety and fear of men",
+              "Symptoms of sexual distress"
+            ],
+            answer: 3,
+            rationale: "Women who have been raped by acquaintances frequently develop symptoms that prevent them from participating in normal sexual relations. Sexual distress is more common among women who have been sexually assaulted by intimates; fear and anxiety are more common in those assaulted by strangers. Depression occurs in both groups. Although anxiety and fear of men, a paranoid psychosis, or an eating disorder may occur, sexual distress is the most common outcome of sexual assault. (p. 537)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which long-term outcome is appropriate for a rape victim?",
+            options: [
+              "Repress feelings of shame, embarrassment, and self-blame.",
+              "Blame the rapist rather than blame themself for the situation.",
+              "Integrate the rape event and resume an optimal level of functioning.",
+              "Identify and develop coping skills necessary to reduce level of anxiety."
+            ],
+            answer: 2,
+            rationale: "The long-term outcome includes the absence of any residual symptoms after the trauma. The ideal long-term result of treatment for a rape victim is that life will go on and the patient will return to the usual pretrauma level of functioning. For survivors to return to their previous level of functioning, it is necessary for them to fully mourn their losses, experience anger, and work through their fears. Therefore, repressing feelings, blaming the rapist, and identifying coping skills are not identified as long-term positive outcomes for the patient. (p. 540)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which role of the advanced practice nurse assists in the management of a rape victim?",
+            options: [
+              "Provide legal consultation.",
+              "Be an expert witness in court.",
+              "Conduct the medical evaluation.",
+              "Provide individual psychotherapy."
+            ],
+            answer: 3,
+            rationale: "The advanced practice nurse provides individual and group psychotherapy to rape victims. This will help them to cope with the physical and psychological symptoms related to the rape. The Sexual Assault Nurse Examiners (SANEs) are responsible for conducting medical and legal evaluations and serve as expert witnesses in the court. (p. 542)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which stage in the cycle of violence does the abuser apologize and promise the abuser that the abuse will never happen again?",
+            options: [
+              "Crisis",
+              "Honeymoon",
+              "Acute battering",
+              "Tension-building"
+            ],
+            answer: 1,
+            rationale: "During the honeymoon stage in the cycle of violence, the abuser is remorseful and apologizes and promises the abuse will never happen again. Crisis is not a stage in the cycle of violence. In the acute battering stage, the tension builds and abuse occurs. During the tension-building stage, the abuser may push, shove, or verbally abuse. (p. 520)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which approach is best when interviewing an adult victim of abuse?",
+            options: [
+              "Gentle and direct",
+              "Direct and professional",
+              "Sympathetic and outraged",
+              "Confrontational and assertive"
+            ],
+            answer: 1,
+            rationale: "Expressing strong emotion does not help the victim. A direct, honest, and professional manner of asking questions produces the best results. Being gentle and direct, sympathetic and outraged, or confrontational and assertive does not help establish the necessary nurse–patient relationship needed in this situation. (p. 521)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which new parent is at risk for abusing their newborn? Select all that apply.",
+            options: [
+              "A mother who recently immigrated to the United States",
+              "A teenage father with moderately impaired cognitive skills",
+              "A mother of three who requests the infant be kept in the nursery at night",
+              "A teenage mother who denied being pregnant until the seventh month of gestation",
+              "A father who states, \"I don't see myself changing diapers and cleaning up spit\""
+            ],
+            answers: [1, 3, 4],
+            rationale: "Nurses who work on a maternity unit are often in a position to identify risk factors for abuse between new parents and initiate appropriate interventions, including education about effective parenting and coping techniques. Parents who are candidates for special attention include new parents whose behavior toward the infant is rejecting, hostile, or indifferent; teenage parents who require special help in handling the baby and discussing their expectations of the baby and their support systems; and parents with cognitive deficits, for whom careful, explicit, and repeated instructions on caring for the child and recognizing the infant's needs are indicated. Recent immigration is not generally considered a risk for child abuse. It is not unusual that the mother of three would make the request to enable uninterrupted sleep before returning home. (p. 518)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which action is indicative of an effective nurse–patient interaction when assessing a patient who was physically and sexually abused?",
+            options: [
+              "Establishes trust and rapport",
+              "Maintains a distance of 1 foot from the patient",
+              "Helps the patient to acknowledge their mistake",
+              "Frequently restates the statements made by the patient"
+            ],
+            answer: 0,
+            rationale: "Patients who have been neglected experience mental trauma and respond slowly. The nurse should spend some time with the patient to establish trust and rapport. Sitting and spending time with the patient gives them assurance and support. Communicating with the patient from a distance of 1 foot would be inappropriate. The patient may feel rejected if the nurse maintains a distance while communicating. The nurse should sit beside the patient to comfort the patient. The nurse should reassure a patient that it was not their mistake and that they are free from blame. When patients blame themselves, it can make them feel guilty and depressed. The nurse should not restate what the patient has said. It could interrupt the patient's conversation and make the patient feel rejected. Patients must be allowed to explain their feelings and situations without interruption to avoid distraction. (p. 521)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement is the most appropriate statement about the victims of abuse?",
+            options: [
+              "Elder abuse is uncommon.",
+              "Children face physical abuse more than any other abuse.",
+              "Women face intimate partner abuse more often than men.",
+              "Girls facing child abuse die at a slightly higher rate than boys."
+            ],
+            answer: 2,
+            rationale: "In intimate partner abuse, four out of five victims are women. Elders commonly face abuse both in domestic and institutional settings, and it is reported that 1 out of every 10 adults older than age 60 are victims of abuse. Neglect is the most common form of child abuse. It is followed by physical abuse. Girls are slightly more likely to be abused but boys die at a slightly higher rate than girls. (p. 518)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which category defines rape? Select all that apply.",
+            options: [
+              "Targeted",
+              "Attempted",
+              "Intentional",
+              "Completed",
+              "Unintentional"
+            ],
+            answers: [1, 3],
+            rationale: "Rape is categorized as completed or attempted. Completed rape is the penetration of the vagina or anus with any body part or object or oral penetration by a sex organ of another person. Attempted rape includes threats of rape or intention to rape another person, but the act is not carried out or is unsuccessful. Targeted, intentional, or unintentional rape are not established categories of rape. (p. 535)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement is currently true regarding the existence of sexual assault in the United States? Select all that apply.",
+            options: [
+              "Nearly one in five women has been raped within her lifetime.",
+              "Nearly half of male victims were raped by an acquaintance.",
+              "The male is likely to have been victimized by several assailants.",
+              "Rape statistics show little variance when race and ethnicity are considered.",
+              "The first rape experience in female victims happens before the age of 25 the majority of the time."
+            ],
+            answers: [0, 1, 2, 4],
+            rationale: "An estimated 19.3%, or one in five, women in the United States have been raped at some time in their lives. Nearly half of male victims were raped by an acquaintance, and a male who is raped is more likely to experience physical trauma and to have been victimized by several assailants. Among female victims of completed rape, the first rape experience happens before the age of 25 the majority of the time. Rape statistics show significant variance when race and ethnicity are considered. (p. 536)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which sample must be collected as legal evidence for sexual assault? Select all that apply.",
+            options: [
+              "Oral swabs",
+              "Urine sample",
+              "Blood sample",
+              "Vaginal swabs",
+              "Facial skin scrapings"
+            ],
+            answers: [0, 2, 3],
+            rationale: "While collecting evidence for sexual assault, the nurse should collect samples such as oral swabs, blood samples, and vaginal swabs. These samples provide information on whether a sexual assault has taken place and also about the perpetrator. Urine samples and the skin scrapings are not used as evidence in cases of sexual violence. These samples are of no use to provide information about the incident of sexual assault and about the perpetrator. (p. 539)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement about rape is accurate? Select all that apply.",
+            options: [
+              "Women usually are raped by a stranger.",
+              "Rape is an expression of aggression and anger.",
+              "Women do not \"ask\" to be raped by their behavior or dress.",
+              "Rape is usually an impulsive, spur-of-the-moment decision by the rapist.",
+              "Most rapes occur away from home areas such as alleys and behind buildings.",
+              "Male victims are more likely to experience physical trauma and to have been victimized by several assailants."
+            ],
+            answers: [1, 2, 5],
+            rationale: "Statements that rape is an expression of aggression and anger; that women do not \"ask\" to be raped by their behavior or dress; and that male victims are more likely to experience physical trauma and to have been victimized by several assailants are all truths regarding rape. The statements that women are usually raped by a stranger; that most rapes occur away from home areas; and that rape is usually an impulsive, spur-of-the-moment decision by the rapist are untrue. (p. 540)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which initial outcome is best for a child assessed to have multiple bruises and welts in odd shapes on their back who has been frequently tardy with episodes of aggressive behavior in school?",
+            options: [
+              "Attends school on time",
+              "Acknowledges abuse by caregivers",
+              "Forms a trusting relationship with the nurse",
+              "Refrains from aggressive behavior with others"
+            ],
+            answer: 2,
+            rationale: "Establishment of trust and rapport is the first outcome. This outcome precedes focusing on details of the injuries because trust is crucial if the child is to feel comfortable enough to self-disclose. Attending school on time, acknowledging abuse by caregivers, and refraining from aggressive behavior may apply later in the relationship. (p. 526)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which stage in the cycle of violence is assessed when an older adult woman who has been abused by her caregiver daughter tells the nurse, \"You don't have to worry about me. My daughter cried and apologized. She promised me she will never hit me again.\"?",
+            options: [
+              "Escalation",
+              "Honeymoon",
+              "Acute battering",
+              "Tension building"
+            ],
+            answer: 1,
+            rationale: "During the honeymoon stage, the perpetrator apologizes, promises never to abuse again, and tries to make up for the violence. This stage is usually brief. Tension building, acute battering, and escalation are not accurate descriptions of this situation. (p. 520)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          }
+        ]
+      }
+    },
+
+    /* ==========================================================
+       TOPIC 18 — OTHER EAQ TOPICS
+
+       A permanent catch-all, added 2026-09-24 (Holly), for imported
+       Sherpath questions on subjects no lectured topic teaches — not
+       tied to any week. mustKnow and medications stay EMPTY on
+       purpose, so those cells render disabled; only eaq is ever filled
+       here. Per rule 5 step 5, filing un-taught material under a
+       lectured topic would make the breakdown strip claim coverage the
+       site does not have, so this is where it goes instead.
+
+       13 eaq questions so far, all from the two Week 5 EAQ files:
+
+       4 held out of Week 5 EAQ 1 since 2026-09-21 (estazolam for
+       insomnia, somatization, two on cognitive reframing for general
+       work stress) — re-checked on 2026-09-24 against the by-then-live
+       Anxiety & OCD Disorders deck and confirmed to still not fit it:
+       estazolam and insomnia pharmacology, somatization as its own
+       term, and general stress-coping technique are each a different
+       textbook chapter from the anxiety chapter that deck teaches.
+
+       9 from Week 5 EAQ 2 (2026-09-24): three date-rape-drug
+       pharmacology questions (GHB, flunitrazepam, ketamine — that
+       subject is never named on the abuse page) and five questions on
+       dissociative identity disorder, dissociative fugue disorder,
+       dissociative amnesia and their assessment/treatment specifically
+       — distinct from the general "dissociation" concept, culture-bound
+       syndromes and depersonalization/derealization disorder that
+       Trauma & Stressor Disorders already teaches and already carries
+       eaq questions on.
+       ========================================================== */
+    {
+      id: "other-eaq",
+      label: "Other EAQ Topics",
+      sets: {
+        mustKnow: [],
+        medications: [],
+        eaq: [
+          /* Held out of Week 5 EAQ 1 (2026-09-21), added 2026-09-24. */
+          {
+            stem: "Which drug is a benzodiazepine used to treat patients with insomnia?",
+            options: [
+              "Silenor",
+              "Estazolam",
+              "Doxylamine",
+              "Diphenhydramine"
+            ],
+            answer: 1,
+            rationale: "Estazolam is a benzodiazepine used to treat patients with insomnia. Silenor is an antidepressant used to treat patients with insomnia. Diphenhydramine and doxylamine are antihistamines used to treat patients with insomnia. (p. 366)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement best defines somatization?",
+            options: [
+              "The holistic approach to managing stress",
+              "The psychological and behavioral response to stress",
+              "The expression of stress through physical symptoms",
+              "The conversion of stress into a physical and emotional form"
+            ],
+            answer: 2,
+            rationale: "Somatization is the expression of stress through physical symptoms. There are holistic approaches to managing stress, but this is not the definition of somatization. Somatization is not just psychological and behavioral; it has a physical component. Conversion disorder describes the conversion of stress into both physical and emotional forms. (p. 314)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "The nurse is caring for a patient who reports chronic stress and related depression and anxiety. The nurse teaches the patient about ways to manage the stress and relax. Which patient outcome indicates the teaching was effective?",
+            options: [
+              "Avoiding thoughts about things that cause feelings of stress",
+              "Forming positive perceptions to replace more irrational beliefs",
+              "Abstaining from physical activity to prevent overstressing the body",
+              "Viewing situations more seriously and avoid joking about stressful situations"
+            ],
+            answer: 1,
+            rationale: "Using positive perceptions to replace irrational beliefs is an example of cognitive reframing, which is a technique used to manage stress. Patients should not avoid the things that make them feel stressed or anxious. Rather, it can be helpful for them to keep a journal to help identify stressors and strategize ways to control them. Patients should partake in, not avoid, healthy physical activities, such as yoga and walking, to help manage stress. Humor can be used as a coping mechanism for stress and can help alleviate feelings of tension, so it is advised to help patients have a sense of humor about events and not look at everything too seriously. (p. 163)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement reflects effective use of cognitive reframing in a patient who reports stress due to work?",
+            options: [
+              "\"I am not worthy of any appraisal.\"",
+              "\"I have messed up all the projects that I manage.\"",
+              "\"I deserve to be fired from my job.\"",
+              "\"I am competent enough to close this profitable deal.\""
+            ],
+            answer: 3,
+            rationale: "Cognitive reframing involves changing the patient's perceptions of stress by reassessing a situation and replacing irrational beliefs with more positive self-statements. Cognitive reframing helps improve self-esteem. Cognitive reframing does not include negative statements related to self-worth, competency, and efficiency. (p. 164)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          /* From Week 5 EAQ 2 (2026-09-24). */
+          {
+            stem: "The nurse finds that the patient who was sexually abused has reduced blood pressure, hypothermia, and respiratory depression. Which \"date rape\" drug would the nurse expect to find in the patient's blood sample report?",
+            options: [
+              "Black hole",
+              "Flunitrazepam",
+              "Forget me pills",
+              "γ-Hydroxybutyric acid (GHB)"
+            ],
+            answer: 3,
+            rationale: "GHB is a \"date rape\" drug. It is given to the victim before the rape attempt to make the victim unconscious. Overdose of GHB causes bradycardia, reduced blood pressure, hypothermia, respiratory depression, vomiting, agitation, delirium, unconsciousness, and coma. Ketamine is also known as black hole. The overdose of ketamine may obstruct the airway. Flunitrazepam may also cause airway obstruction. Flunitrazepam is also known as \"forget me\" pills. (p. 536)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which drug that is associated with date rape has the shortest duration?",
+            options: [
+              "Ketamine",
+              "Clonazepam",
+              "Flunitrazepam",
+              "γ-Hydroxybutyric acid (GHB)"
+            ],
+            answer: 0,
+            rationale: "The duration of ketamine is only 30 to 60 minutes. The durations of clonazepam, flunitrazepam, and GHB are up to 12 hours. (p. 536)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which common drug is illegally used for victims of date rape and also used to treat narcolepsy?",
+            options: [
+              "Ketamine",
+              "Clonazepam",
+              "Flunitrazepam",
+              "γ-Hydroxybutyric acid (GHB)"
+            ],
+            answer: 3,
+            rationale: "GHB is a drug that is legally used for treating narcolepsy. This drug has a high potential to cause relaxation, euphoria, and disinhibition. This drug is also known to be used for date rape. Ketamine is legally used for anesthesia and is also known to be used as a date rape drug. Clonazepam is a benzodiazepine drug with similar effects as flunitrazepam and is also known to be used for date rape. Flunitrazepam is a drug associated with date rape and is not legal in the United States. (p. 536)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "A nurse is performing an assessment of a patient who was sexually assaulted. The patient reports being unconscious 10 minutes after having a cool drink. The nurse anticipates that the patient was given flunitrazepam with the drink. Which symptom does the nurse find in the patient?",
+            options: [
+              "Anxiety",
+              "Tremors",
+              "Tachycardia",
+              "Muscle relaxation"
+            ],
+            answer: 3,
+            rationale: "Flunitrazepam is a \"date rape\" drug banned in most countries. It is available in the form of a pill, and the onset is within 10 to 30 minutes. It causes muscle relaxation, amnesia, and psychomotor slowing. Tachycardia, anxiety, and tremors are seen resulting from γ-hydroxybutyric acid, another \"date rape\" drug that is available as a powder and active within 5 to 20 minutes. (p. 536)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "The nurse provides care to a patient who presents with alterations in identity with fragmented memories of events that happened in the past. During the initial assessment, the patient reports using substances to \"help calm down.\" When completing the psychosocial assessment, the nurse learns that the patient is not in any intimate relationships, has no children, and has stopped showing up for work regularly. Which short-term outcome does the nurse anticipate planning for this patient?",
+            options: [
+              "Makes new friends; performs social roles well",
+              "Perceives the work environment accurately; improves family role",
+              "Monitors intense feelings of anxiety; prevents the onset of depression",
+              "Abstains from use of substances for coping; performs work adequately"
+            ],
+            answer: 3,
+            rationale: "The patient may have a dissociative disorder based on the symptoms they've described. The overall goal for a patient with dissociative disorder is to develop an integrated and complete perception of self. Outcomes are directly related to the signs and symptoms that the patient displays. Therefore abstaining from substance use and performing work adequately are appropriate short-term outcomes for this patient. The patient does not need to make new friends, as the patient is not reporting that there is a problem with friendships. There is no evidence the patient is unable to perform their social role well. Because the patient does not have children, improving family role does not apply. The patient did not report symptoms of anxiety or depression. (p. 309)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Empathetic listening is therapeutic for a patient with a dissociative disorder for which reason?",
+            options: [
+              "Reducing anxiety",
+              "Encouraging resilience",
+              "Enhancing self-esteem",
+              "Providing support during disclosure of painful memories"
+            ],
+            answer: 3,
+            rationale: "Empathetic listening can be healing because it provides support during disclosure of pain memories. Empathetic listening can help reduce anxiety and encourage resilience and self-esteem, but a patient with a dissociative disorder especially needs a great deal of support during disclosure of painful memories. (p. 308)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which type of dissociative disorder does the patient who suddenly travels away from home and lacks the ability to recall their identity and past life events have?",
+            options: [
+              "Derealization disorder",
+              "Dissociative fugue disorder",
+              "Depersonalization disorder",
+              "Dissociative identity disorder"
+            ],
+            answer: 1,
+            rationale: "Dissociative fugue disorder is a subtype of dissociative amnesia. The patient with dissociative fugue travels away from home unexpectedly and does not have the ability to recall their identity and some past life events. Patients with derealization disorder have false perceptions about their surroundings. Patients with depersonalization disorder feel like they are observing their own thoughts and body from outside themselves. Patients with dissociative identity disorder exhibit one or more personalities that alternately dominate each other. (p. 305)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which assessment tool would the nurse use while assessing an adult patient with dissociative identity disorder?",
+            options: [
+              "Somatoform questionnaire",
+              "Child dissociative checklist",
+              "Child sexual behavior inventory",
+              "Posttraumatic stress disorder (PTSD) screening"
+            ],
+            answer: 0,
+            rationale: "Dissociative identity disorder is a type of dissociative disorder. Somatoform questionnaire is an assessment tool used to assess dissociative identity disorder in patients. Child dissociative checklist is used to assess dissociative disorders in children and not in adults. Child sexual behavior inventory is used to assess children with attachment disorder. PTSD screening is an assessment tool used while assessing a patient with PTSD. (p. 307)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "After the intravenous administration of an anxiety medication, a patient with dissociative amnesia had sudden memory retrieval and started identifying family members. Which class of medication did the nurse administer to the patient?",
+            options: [
+              "Beta blockers",
+              "Phenothiazines",
+              "Butyrophenones",
+              "Benzodiazepines"
+            ],
+            answer: 3,
+            rationale: "In acute settings, a patient with dissociative amnesia has sudden memory retrieval after receiving intravenously administered benzodiazepines. Research suggests that benzodiazepines help in retrieval of old memories by reducing anxiety. Beta blockers are primarily prescribed to reduce hypertension caused by anxiety and stress. Phenothiazines are an antipsychotic medication that is prescribed to cause sedation and calm the patient. Butyrophenones are prescribed to treat hallucinations and delusions in patients. (p. 309)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          }
+        ]
+      }
     }
 
   ]
@@ -6714,5 +8752,9 @@ window.TOPIC_ORDER = [
   "Substance Use & Addictive Disorders",
   "Personality Disorders",
   "Eating & Feeding Disorders",
-  "Schizophrenia & Schizoaffective Disorder"
+  "Schizophrenia & Schizoaffective Disorder",
+  "Anxiety & OCD Disorders",
+  "Trauma & Stressor Disorders",
+  "Caring for Persons with Abuse",
+  "Other EAQ Topics"
 ];

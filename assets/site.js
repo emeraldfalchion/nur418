@@ -83,7 +83,22 @@ const SITE = {
         { id: "week4-antipsychotics",num: "3", title: "Antipsychotic Medications",      file: "week4-antipsychotic-medications.html" },
       ]
     },
-    /* Copy a block above for Week 5, Week 6, ... as the course goes on. */
+    {
+      /* WEEK 5 IS COMPLETE as of 2026-09-21. Topic 1, Anxiety & OCD Disorders,
+         arrived last and took the num "1" slot that was left open for it on
+         2026-09-19, so nothing else here was renumbered.
+
+         Topic 2 is built from TWO decks, Dr. Steele's pediatric trauma deck and
+         Amanda Lykins' trauma & stressor deck, which cross-reference each other
+         explicitly. Holly kept them as ONE page on 2026-09-19 at 3,621 words. */
+      label: "Week 5",
+      items: [
+        { id: "week5-anxiety",      num: "1", title: "Anxiety &amp; OCD Disorders",       file: "week5-anxiety-ocd-disorders.html" },
+        { id: "week5-trauma",       num: "2", title: "Trauma &amp; Stressor Disorders",  file: "week5-trauma-stressor-disorders.html" },
+        { id: "week5-abuse",        num: "3", title: "Caring for Persons with Abuse",    file: "week5-caring-for-persons-with-abuse.html" },
+      ]
+    },
+    /* Copy a block above for Week 6, Week 7, ... as the course goes on. */
 
     /* ============================================================
        EXAM PREP — RESTORED on 2026-08-29, at Holly's request, after being
@@ -116,6 +131,8 @@ const SITE = {
         { id: "week1-lecture-review", num: "4", title: "Week 1 Lecture Review",  file: "week1-lecture-review.html" },
         { id: "week2-lecture-review", num: "5", title: "Week 2 Lecture Review",  file: "week2-lecture-review.html" },
         { id: "week3-lecture-review", num: "6", title: "Week 3 Lecture Review",  file: "week3-lecture-review.html" },
+        { id: "week4-lecture-review", num: "7", title: "Week 4 Lecture Review",  file: "week4-lecture-review.html" },
+        { id: "week5-lecture-review", num: "8", title: "Week 5 Lecture Review",  file: "week5-lecture-review.html" },
       ]
     }
   ]
