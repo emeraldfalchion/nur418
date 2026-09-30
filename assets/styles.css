@@ -474,8 +474,10 @@ figure.figure figcaption{ margin-top:8px; font-size:.82rem; color:var(--text-sof
   font-size:.74rem; font-weight:700; color:var(--text-soft);
   margin:7px 3px 18px;
 }
+/* A four-stage progression (the intermittent explosive disorder cycle). */
+.continuum.four{ grid-template-columns:repeat(4,1fr); }
 @media(max-width:700px){
-  .continuum{ grid-template-columns:1fr; }
+  .continuum, .continuum.four{ grid-template-columns:1fr; }
   .cont-step{ border-left:none; border-top:1px solid var(--border); }
   .cont-step:first-child{ border-top:none; }
   .cont-axis{ flex-direction:column; gap:2px; }

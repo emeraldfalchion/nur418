@@ -98,7 +98,18 @@ const SITE = {
         { id: "week5-abuse",        num: "3", title: "Caring for Persons with Abuse",    file: "week5-caring-for-persons-with-abuse.html" },
       ]
     },
-    /* Copy a block above for Week 6, Week 7, ... as the course goes on. */
+    {
+      /* WEEK 6 (2026-09-28). One deck, "Week 6 - Childhood.pptx" (chapters 11
+         and 21), covers all three pages, which follow the three Canvas lecture
+         sections: childhood mental health, neurodevelopmental, impulse control. */
+      label: "Week 6",
+      items: [
+        { id: "week6-childhood",    num: "1", title: "Childhood Mental Health",           file: "week6-childhood-mental-health.html" },
+        { id: "week6-neurodev",     num: "2", title: "Neurodevelopmental Disorders",      file: "week6-neurodevelopmental-disorders.html" },
+        { id: "week6-impulse",      num: "3", title: "Impulse Control Disorders",         file: "week6-impulse-control-disorders.html" },
+      ]
+    },
+    /* Copy a block above for Week 7, Week 8, ... as the course goes on. */
 
     /* ============================================================
        EXAM PREP — RESTORED on 2026-08-29, at Holly's request, after being

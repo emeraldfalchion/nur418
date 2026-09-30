@@ -6734,8 +6734,10 @@ window.QUIZ_BANK = {
        order.
 
        TAUGHT as of 2026-09-21, when the deck and transcript arrived.
-       11 mustKnow, one per Learning Outcomes bullet on must-know.html,
-       3 of them SATA. 20 medications: one per drug on the Week 5
+       10 mustKnow, one per Learning Outcomes bullet on must-know.html,
+       3 of them SATA (11 until 2026-09-28, when the defense mechanisms
+       bullet and its displacement question came off under the Exam 3
+       blueprint). 20 medications: one per drug on the Week 5
        medications tab's three anxiety sections (17), plus 3 SATA
        "which are indicated for" questions. The row was created earlier
        the same day for 9 imported EAQs, which stay below untouched.
@@ -6815,20 +6817,6 @@ window.QUIZ_BANK = {
             ],
             answer: 3,
             rationale: "The first emergency measure for a panic attack is to rule out a life-threatening illness, especially a cardiac event, because the symptoms overlap. Once that is done the nurse stays with the patient, gives clear directions, moves them to an environment with minimal stimulation, may walk with them, and gives PRN antianxiety medication. Explaining the attack is teaching, which a patient at the panic level cannot process.",
-            topic: "Anxiety & OCD Disorders",
-            source: "quiz-bank"
-          },
-          {
-            /* LO: identify defense mechanisms */
-            stem: "After being criticized by a supervisor, a nurse arrives home and yells at their teenager for leaving shoes by the door. Which defense mechanism is this?",
-            options: [
-              "Displacement",
-              "Projection",
-              "Reaction formation",
-              "Sublimation"
-            ],
-            answer: 0,
-            rationale: "Displacement transfers emotions about one person or situation to another, nonthreatening one: the anger belongs to the supervisor and lands on the teenager. Projection attributes one's own unacceptable feelings to someone else. Reaction formation shows the opposite of the real feeling, such as excessive politeness to the supervisor. Sublimation channels a negative impulse into something productive.",
             topic: "Anxiety & OCD Disorders",
             source: "quiz-bank"
           },
@@ -7466,8 +7454,11 @@ window.QUIZ_BANK = {
        TOPIC 15 — TRAUMA & STRESSOR DISORDERS  (Week 5)
 
        10 mustKnow, one per Learning Outcomes bullet on must-know.html,
-       2 of them SATA. 8 medications, one per drug on the Week 5
-       medications tab plus 3 "which are indicated for" select-alls.
+       2 of them SATA. medications is EMPTY since 2026-09-28: the Exam 3
+       blueprint excludes trauma medications, and its 8 questions (one per
+       PTSD drug plus 3 "which are indicated for" select-alls) were removed
+       with the PTSD section of medications.html. The paragraph below
+       describes them as they were.
 
        eaq: 5 from the Week 5 EAQ quiz (2026-09-21), filed here because this
        page teaches dissociation, EMDR and resilience in children.
@@ -7561,16 +7552,18 @@ window.QUIZ_BANK = {
             source: "quiz-bank"
           },
           {
-            /* STARRED LO: pharmacological and psychological treatment modalities */
-            stem: "A patient with PTSD asks whether medication alone will treat the disorder. Which response by the nurse is accurate?",
+            /* LO: psychological treatment modalities (rewritten 2026-09-28: the
+               Exam 3 blueprint excludes trauma medications, and the old question
+               turned on them) */
+            stem: "An adult is diagnosed with PTSD. Which therapy is one of the trauma-focused options that form the primary treatment?",
             options: [
-              "\"Medication is the primary treatment, and therapy is optional.\"",
-              "\"Neither medication nor therapy has strong evidence in this disorder.\"",
-              "\"Medication is started only after psychotherapy has been tried and failed.\"",
-              "\"Trauma-focused psychotherapy is primary, and medication eases symptoms.\""
+              "Psychodynamic therapy",
+              "Play therapy",
+              "Self-hypnosis",
+              "Cognitive processing therapy"
             ],
             answer: 3,
-            rationale: "Trauma-focused psychotherapy is the primary treatment for PTSD, with prolonged exposure, cognitive processing therapy and EMDR as the options. Antidepressants are used alongside it and help with the symptoms of depression and anxiety, with sleep problems and with concentration. They are not held back until psychotherapy fails, and both modalities carry evidence, so neither dismissing therapy nor dismissing both is correct.",
+            rationale: "Trauma-focused psychotherapy is the primary treatment for PTSD, and its options are prolonged exposure, cognitive processing therapy and EMDR. Psychodynamic therapy and self-hypnosis are treatments for depersonalization/derealization disorder, and play therapy is used with children.",
             topic: "Trauma & Stressor Disorders",
             source: "quiz-bank"
           },
@@ -7631,121 +7624,10 @@ window.QUIZ_BANK = {
             source: "quiz-bank"
           }
         ],
-        medications: [
-          {
-            /* sertraline */
-            stem: "A patient with PTSD is started on sertraline. Which statement about this medication is accurate?",
-            options: [
-              "It is used off-label for PTSD and is aimed at the flashbacks specifically.",
-              "It removes the need for trauma-focused psychotherapy to continue.",
-              "It is approved for PTSD and eases depression, anxiety and sleep problems.",
-              "It is approved for children with PTSD at a reduced starting dose."
-            ],
-            answer: 2,
-            rationale: "Sertraline is one of the two SSRIs that carry on-label approval for PTSD, and antidepressants in this role relieve the symptoms of depression and anxiety, sleep problems and difficulty concentrating. There are currently no FDA-approved medications for children with PTSD. Medication supplements trauma-focused psychotherapy, which remains the primary treatment, and it does not act on flashbacks directly.",
-            topic: "Trauma & Stressor Disorders",
-            source: "quiz-bank"
-          },
-          {
-            /* paroxetine */
-            stem: "A patient prescribed paroxetine for PTSD asks why an antidepressant was chosen when they do not feel depressed. Which response by the nurse is correct?",
-            options: [
-              "\"It helps with anxiety, sleep and concentration, not only with mood.\"",
-              "\"It treats the flashbacks of this disorder directly.\"",
-              "\"It is the only medication approved for this disorder.\"",
-              "\"It will be stopped as soon as your trauma-focused psychotherapy begins.\""
-            ],
-            answer: 0,
-            rationale: "Antidepressants in PTSD help with the symptoms of depression and anxiety, with sleep problems and with concentration, so they are useful even when depressed mood is not what brought the patient in. Sertraline is also approved for PTSD, so paroxetine is not the only one. They do not act on flashbacks directly, and they are used alongside trauma-focused psychotherapy rather than stopped when it starts.",
-            topic: "Trauma & Stressor Disorders",
-            source: "quiz-bank"
-          },
-          {
-            /* fluoxetine */
-            stem: "A student asks why fluoxetine appears on the PTSD medication list when it does not carry FDA approval for that indication. Which response is correct?",
-            options: [
-              "\"It was approved for PTSD in children only.\"",
-              "\"It is first-line and approved for both PTSD and acute stress disorder.\"",
-              "\"It was included in error and is not used for PTSD.\"",
-              "\"It is used off-label, as are venlafaxine and phenelzine.\""
-            ],
-            answer: 3,
-            rationale: "Fluoxetine is used off-label for PTSD, as are the SNRI venlafaxine and the MAOI phenelzine. Only sertraline and paroxetine carry on-label approval. There are no FDA-approved medications for children with PTSD, and no agent is approved for acute stress disorder, where the evidence supporting medication is minimal.",
-            topic: "Trauma & Stressor Disorders",
-            source: "quiz-bank"
-          },
-          {
-            /* venlafaxine */
-            stem: "Venlafaxine appears among the medications used for PTSD. To which classification does it belong?",
-            options: [
-              "SSRI",
-              "SNRI",
-              "MAOI",
-              "Tricyclic antidepressant"
-            ],
-            answer: 1,
-            rationale: "Venlafaxine is the SNRI on the PTSD medication list and is used off-label. Sertraline, paroxetine and fluoxetine are the SSRIs on that list, and phenelzine is the MAOI. No tricyclic antidepressant appears among the medications to know for this disorder.",
-            topic: "Trauma & Stressor Disorders",
-            source: "quiz-bank"
-          },
-          {
-            /* phenelzine */
-            stem: "A patient with PTSD is prescribed phenelzine. Which classification does this represent, and what does it indicate about the prescription?",
-            options: [
-              "An MAOI, used off-label for this disorder.",
-              "An SSRI, and the usual first choice for it.",
-              "An SNRI, approved specifically for this disorder.",
-              "A mood stabilizer, added for irritability."
-            ],
-            answer: 0,
-            rationale: "Phenelzine is the MAOI on the PTSD medication list, and like fluoxetine and venlafaxine it is used off-label. The SSRIs sertraline and paroxetine are the only agents with on-label approval for PTSD. Venlafaxine is the SNRI, also off-label, and no mood stabilizer appears among the medications to know for this disorder.",
-            topic: "Trauma & Stressor Disorders",
-            source: "quiz-bank"
-          },
-          {
-            stem: "Which medications appear on the list of antidepressants used for PTSD? Select all that apply.",
-            options: [
-              "sertraline",
-              "lithium carbonate",
-              "venlafaxine",
-              "haloperidol",
-              "phenelzine",
-              "paroxetine"
-            ],
-            answers: [0, 2, 4, 5],
-            rationale: "The PTSD medication list holds the SSRIs sertraline, paroxetine and fluoxetine, the SNRI venlafaxine, and the MAOI phenelzine. Lithium carbonate is a mood stabilizer used in bipolar disorder and, at low dose, in suicide care. Haloperidol is a typical antipsychotic used in schizophrenia and neither appears on nor relates to this list.",
-            topic: "Trauma & Stressor Disorders",
-            source: "quiz-bank"
-          },
-          {
-            stem: "Which of the PTSD medications are used off-label for that indication? Select all that apply.",
-            options: [
-              "fluoxetine",
-              "sertraline",
-              "venlafaxine",
-              "paroxetine",
-              "phenelzine"
-            ],
-            answers: [0, 2, 4],
-            rationale: "Fluoxetine, venlafaxine and phenelzine are all used off-label for PTSD. Sertraline and paroxetine are the two agents that carry on-label approval for the disorder, which is why they are usually the starting point.",
-            topic: "Trauma & Stressor Disorders",
-            source: "quiz-bank"
-          },
-          {
-            stem: "Antidepressants are added to the care of a patient with PTSD. Which symptoms are they expected to help? Select all that apply.",
-            options: [
-              "Exaggerated startle response",
-              "Depression",
-              "Anxiety",
-              "Sleep problems",
-              "Concentration"
-            ],
-            answers: [1, 2, 3, 4],
-            rationale: "Antidepressants in PTSD help with the symptoms of depression and anxiety, with sleep problems and with concentration. An exaggerated startle response is an arousal symptom that trauma-focused psychotherapy addresses, and medication is not described as targeting it.",
-            topic: "Trauma & Stressor Disorders",
-            source: "quiz-bank"
-          }
-        ],
+        /* Emptied 2026-09-28 (Holly): the Exam 3 blueprint says "NO medications"
+           for Trauma and Stressor Disorders. Its 8 questions went with the PTSD
+           section of medications.html. The cell renders disabled. */
+        medications: [],
         eaq: [
           /* Imported 2026-09-21 from the Week 5 EAQ quiz (ticket to class, the
              only Week 5 set), in original order and wording. */
@@ -8522,6 +8404,527 @@ window.QUIZ_BANK = {
     },
 
     /* ==========================================================
+       WEEK 6 (2026-09-28). One deck, "Week 6 - Childhood.pptx", covers
+       all three topics, and its shared Learning Outcomes are split across
+       the three must-know.html sections the same way the questions are:
+       6 / 10 / 6 mustKnow, one per Learning Outcomes bullet.
+
+       Every medication is an ADHD drug, so all 10 medications questions
+       sit under Neurodevelopmental Disorders; the other two topics have an
+       empty set on purpose. No Week 6 EAQ has been imported, so all three
+       eaq sets are empty too.
+
+       The deck ends with six practice questions (slides 58-63: autism
+       language deficits, head banging and risk for injury, a conduct
+       disorder outcome, a quiet area for ODD, a Tourette's social isolation
+       outcome, atomoxetine for anxiety with suicide teaching). None of them
+       is on the site, and no question here re-tests one of their points.
+       The atomoxetine question asks about its slow onset instead.
+
+       Answer slots were assigned as written. Singles: childhood 0/1/2/3,
+       neurodevelopmental 2/0/3/1/2/0/1, impulse 1/3/0/2, medications
+       3/1/0/2/3/0/1. SATA correct counts vary: 3, 4 · 2, 4, 3 · 3, 2 ·
+       3, 4, 2.
+       ========================================================== */
+    {
+      id: "week6-childhood",
+      label: "Childhood Mental Health",
+      week: 6,
+      sets: {
+        mustKnow: [
+          {
+            /* LO: the most common childhood psychiatric disorders (starred) */
+            stem: "A school nurse is planning mental health screening for students aged 8 to 15. Which disorder should the nurse expect to identify most often in this age group?",
+            options: [
+              "ADHD",
+              "Major depressive disorder",
+              "Conduct disorder",
+              "Generalized anxiety disorder"
+            ],
+            answer: 0,
+            rationale: "ADHD is the most common mental disorder in children aged 8 to 15. Mood disorders come next, with major depression the largest of them, then conduct disorder. Generalized anxiety disorder sits near the bottom of the list, above only eating disorders.",
+            topic: "Childhood Mental Health",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: risk factors for mental illness in children */
+            stem: "A nurse is assessing a 10-year-old for risk factors for developing a mental illness. Which findings are environmental risk factors? Select all that apply.",
+            options: [
+              "A history of physical abuse",
+              "A genetic predisposition to depression",
+              "Low family socioeconomic status",
+              "A parent who is emotionally unavailable",
+              "A difficult temperament",
+              "Complications in the postnatal period"
+            ],
+            answers: [0, 2, 3],
+            rationale: "Environmental risk factors are abuse or trauma, low socioeconomic status and parenting, which includes a parent who is overcontrolling or emotionally unavailable. A genetic predisposition and prenatal or postnatal factors are biological risk factors. Temperament is the psychological risk factor.",
+            topic: "Childhood Mental Health",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: factors that promote resilience (protective factors) */
+            stem: "Which finding in a child's history is a protective factor that promotes resilience?",
+            options: [
+              "Few contacts with peers outside the home",
+              "A positive relationship with at least one parent",
+              "A parent who closely controls every activity",
+              "A family that avoids discussing any conflict"
+            ],
+            answer: 1,
+            rationale: "A positive relationship with at least one parent is one of the protective factors that promote mental health by increasing resilience, along with family cohesion, support, academic achievement and positive peer relationships. Few peer contacts removes a protective factor, and an overcontrolling parent is a parenting risk factor.",
+            topic: "Childhood Mental Health",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: assessment, the interview */
+            stem: "A nurse interviews a 9-year-old and the parents about a recent change in the child's behavior. Which information is the child likely to report more accurately than the parents?",
+            options: [
+              "How the child gets along with classmates",
+              "The child's behavior at home after school",
+              "Whether the child has had thoughts of self-harm",
+              "How the child responds to discipline"
+            ],
+            answer: 2,
+            rationale: "Children give better information about internal symptoms: mood, sleep and suicidal ideation. Parents give better information about external symptoms: behavior at home, relationships with peers and the response to discipline.",
+            topic: "Childhood Mental Health",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: conducting the interview by developmental level (starred) */
+            stem: "A nurse is planning interviews with children of different ages. Which approaches are developmentally appropriate? Select all that apply.",
+            options: [
+              "Preschooler: conduct the assessment in a playroom using play",
+              "Preschooler: rely on open-ended questions about feelings",
+              "School-age child: establish rapport through a competitive game",
+              "Adolescent: explain which information will be shared with parents",
+              "Adolescent: conduct the whole interview with the parents present",
+              "Adolescent: use a direct, candid approach"
+            ],
+            answers: [0, 2, 3, 5],
+            rationale: "Preschoolers have difficulty putting feelings into words, so the assessment uses play in a playroom, and children in general need direct rather than open-ended questions. School-age children open up after rapport is built through competitive games. Adolescents are self-conscious and fear being shamed, so the nurse is direct and candid and tells them what will be shared with parents. Adolescents disclose more when the parent is out of the room.",
+            topic: "Childhood Mental Health",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: nursing process, interventions */
+            stem: "A nurse gives a 10-year-old on an inpatient unit a PRN medication for escalating agitation. Which action is required afterward?",
+            options: [
+              "Obtain the child's written assent for the dose",
+              "Place the child on seclusion as a precaution",
+              "Document the dose only if the child resisted it",
+              "Notify the child's parents or guardians"
+            ],
+            answer: 3,
+            rationale: "The nurse must notify parents or guardians whenever a child receives a PRN medication, is physically held, or is placed in seclusion or restraint, along with documenting and calling the provider. Seclusion is a last resort for dangerous behavior only, never a precaution, and every dose is documented.",
+            topic: "Childhood Mental Health",
+            source: "quiz-bank"
+          }
+        ],
+        medications: [],
+        eaq: []
+      }
+    },
+    {
+      id: "week6-neurodev",
+      label: "Neurodevelopmental Disorders",
+      week: 6,
+      sets: {
+        mustKnow: [
+          {
+            /* LO: risk factors for autism and ADHD */
+            stem: "Which findings are associated with an increased risk of autism spectrum disorder? Select all that apply.",
+            options: [
+              "Maternal valproic acid use during pregnancy",
+              "Maternal smoking during pregnancy",
+              "Childhood vaccination on the standard schedule",
+              "Advanced paternal age",
+              "Lead exposure in infancy"
+            ],
+            answers: [0, 3],
+            rationale: "Possible causes of autism include advanced paternal or maternal age, spontaneous genetic mutations, low birth weight and prematurity, and valproic acid taken during pregnancy. There is no substantiated scientific evidence linking it to vaccines. Smoking during pregnancy and lead exposure are ADHD risk factors, and lead poisoning is screened for in autism because it can mimic the criteria, not because it causes it.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: manifestations of the communication, motor and learning disorders */
+            stem: "A 6-year-old's coordination is well below that expected for age, with delayed walking and difficulty tying shoelaces that interferes with school. Which treatment does the nurse anticipate?",
+            options: [
+              "Habit reversal behavioral therapy",
+              "A low-dose antipsychotic",
+              "Physical and occupational therapy",
+              "An Individualized Education Plan for reading"
+            ],
+            answer: 2,
+            rationale: "This is developmental coordination disorder, coordination below the child's developmental age, treated with physical and occupational therapy. Habit reversal treats stereotypic movement and tic disorders, antipsychotics are one of the tic medications, and an IEP delivers special education for a specific learning disorder.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: manifestations of autism spectrum disorder */
+            stem: "Which finding in a 3-year-old is most consistent with autism spectrum disorder?",
+            options: [
+              "Reversing pronouns and becoming distressed when the bedtime routine changes",
+              "Throwing tantrums that stop as soon as a wanted toy is handed over",
+              "Tripping often when running and dropping balls when trying to catch them",
+              "Speaking in full sentences yet deliberately refusing to follow directions"
+            ],
+            answer: 0,
+            rationale: "Autism produces symptoms in socialization, communication and behavior, including pronoun reversal and over-adherence to routines with extreme resistance to change. Tantrums that stop once a need is met are ordinary behavior, poor coordination suggests developmental coordination disorder, and deliberate refusal fits oppositional behavior.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: manifestations of the three types of ADHD */
+            stem: "A teacher describes a 9-year-old with ADHD. Which behaviors point to the inattentive type rather than the hyperactivity-impulsivity type? Select all that apply.",
+            options: [
+              "Repeatedly makes careless mistakes on worksheets",
+              "Blurts out answers before the question is finished",
+              "Often loses homework and school supplies",
+              "Leaves the seat before being excused",
+              "Seems not to listen when spoken to directly",
+              "Avoids tasks that take sustained mental effort"
+            ],
+            answers: [0, 2, 4, 5],
+            rationale: "Inattentive behaviors include careless mistakes, losing things, seeming not to listen and avoiding tasks that require mental effort. Blurting out answers is an impulsivity behavior and leaving the seat is a hyperactivity behavior, both of the hyperactivity-impulsivity type. Either type requires six or more criteria for 6 months.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: treatment of tic disorders, IDD and autism */
+            stem: "A 12-year-old with Tourette's disorder is anxious about having tics in front of classmates. Which nursing intervention is most appropriate?",
+            options: [
+              "Encourage suppressing every tic for the whole school day",
+              "Advise avoiding group activities until the tics resolve",
+              "Request a referral for deep brain stimulation now",
+              "Teach relaxation strategies to reduce and control the tics"
+            ],
+            answer: 3,
+            rationale: "Relaxation strategies help reduce and control tics and ease the anxiety about fitting in, which helps the child adapt socially. Tics can be suppressed only for brief periods, and not by everyone. Deep brain stimulation is reserved for when more conservative approaches fail.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: nursing process for IDD and autism */
+            stem: "A 2-year-old is being evaluated for autism spectrum disorder. Why does the work-up include lead screening?",
+            options: [
+              "Lead exposure is the proven cause of autism",
+              "Lead poisoning can mimic the criteria for autism",
+              "Chelation is the first-line treatment for autism",
+              "Lead levels predict how severe autism will become"
+            ],
+            answer: 1,
+            rationale: "Lead poisoning can mimic some of the criteria for autism spectrum disorder, so it is screened for alongside a hearing evaluation as part of early identification. The cause of autism is not known, and lead is not named among its possible causes.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: treatment of ADHD */
+            stem: "Parents of a 7-year-old newly diagnosed with ADHD ask which approach gives the best results. Which response is accurate?",
+            options: [
+              "\"Play therapy on its own, given the child's age.\"",
+              "\"Cognitive behavioral therapy instead of medication.\"",
+              "\"Behavior management plus an approved medication.\"",
+              "\"Medication alone, adding therapy only if it fails.\""
+            ],
+            answer: 2,
+            rationale: "Behavioral management combined with FDA-approved medication gives the best results in ADHD, with parent management training and group therapy as the behavioral pieces. Play therapy and CBT are not as effective as those treatments for ADHD.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: the stimulants and their formulations (starred) */
+            stem: "A parent reports that their 8-year-old with ADHD cannot swallow capsules or tablets whole. Which stimulant formulations are options? Select all that apply.",
+            options: [
+              "Methylin chewable tablet or oral solution",
+              "Concerta extended-release tablet",
+              "Daytrana transdermal patch",
+              "Ritalin LA capsule opened and sprinkled on food",
+              "Intuniv extended-release tablet"
+            ],
+            answers: [0, 2, 3],
+            rationale: "Methylin comes as a chewable tablet and an oral solution, Daytrana is a patch, and Ritalin LA, unlike the other long-acting methylphenidates, has capsules that can be opened and sprinkled on food. Concerta is one of those other long-acting forms. Intuniv is guanfacine, a non-stimulant.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: side effects and monitoring of stimulants (starred) */
+            stem: "Which finding at an outpatient visit for a child prescribed a stimulant means the stimulant will no longer be prescribed?",
+            options: [
+              "A negative random urine drug screen",
+              "Mild headaches during the first week",
+              "A heart rate slightly above baseline",
+              "Trouble falling asleep on school nights"
+            ],
+            answer: 0,
+            rationale: "A random urine drug screen that is negative in a child who should be taking a stimulant means it is no longer prescribed, because of abuse and diversion. Headaches, tachycardia and trouble getting to sleep are side effects, usually managed by adjusting the dose or when it is given.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: the non-stimulants for ADHD */
+            stem: "A 9-year-old with ADHD also has motor tics. Which medication is especially useful for this child?",
+            options: [
+              "atomoxetine",
+              "clonidine",
+              "dextroamphetamine/amphetamine",
+              "imipramine"
+            ],
+            answer: 1,
+            rationale: "Clonidine, alone or with a stimulant, is especially good when tics are present with ADHD, and it is also one of the medications used for tic disorders. Atomoxetine is especially helpful when ADHD comes with anxiety. Dextroamphetamine/amphetamine is a stimulant, and imipramine is a tricyclic.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        medications: [
+          {
+            /* methylphenidate (Daytrana) */
+            stem: "A child is prescribed methylphenidate as Daytrana. Which teaching is accurate?",
+            options: [
+              "Wear it on the chest around the clock",
+              "Cut it in half to give a lower dose",
+              "It stops working the moment it is removed",
+              "Wear it on the hip and report skin color changes"
+            ],
+            answer: 3,
+            rationale: "Daytrana is a patch worn about 9 hours on the child's hip, and it keeps working for a few more hours after removal. Its dose is adjusted through the time it is worn, not by cutting it. It may cause permanent skin color changes.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* dextroamphetamine/amphetamine */
+            stem: "A parent says their 7-year-old cannot swallow the dextroamphetamine/amphetamine capsule. Which instruction is accurate?",
+            options: [
+              "Crush the capsule and mix it into a drink",
+              "Open the capsule and sprinkle it on applesauce",
+              "Switch to the oral solution of the same drug",
+              "Hold the dose until the child can swallow it"
+            ],
+            answer: 1,
+            rationale: "The dextroamphetamine/amphetamine capsule can be opened and sprinkled onto applesauce, and it is approved for children over 6. The only liquid stimulant is Methylin, a methylphenidate, so no oral solution of this drug is offered.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* atomoxetine */
+            stem: "A parent of a child started on atomoxetine 1 week ago says the ADHD symptoms have not improved. Which response is accurate?",
+            options: [
+              "\"It works slowly and takes time to build up.\"",
+              "\"It works within an hour, so the dose is too low.\"",
+              "\"It should be stopped and a stimulant started.\"",
+              "\"It treats anxiety only, so ADHD will not change.\""
+            ],
+            answer: 0,
+            rationale: "Atomoxetine, an SNRI, has a slow therapeutic response, so families are taught that it takes time to work. Relief within about an hour describes a stimulant. It is used for ADHD, especially when anxiety is also present, and the child is observed closely for suicidal ideation.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* bupropion */
+            stem: "For which ADHD presentation is bupropion especially good?",
+            options: [
+              "The inattentive type only",
+              "ADHD with motor tics",
+              "The combined type",
+              "ADHD in children under 6"
+            ],
+            answer: 2,
+            rationale: "Bupropion, an NDRI, helps inattention, impulsivity and hyperactivity, which makes it good for the combined type. Clonidine is the non-stimulant favored when tics are present, and Dexedrine is the only stimulant FDA-approved for children under 6.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* clonidine */
+            stem: "A child started on clonidine for ADHD yesterday has dry mouth, dizziness and mild sleepiness. Which response is appropriate?",
+            options: [
+              "\"Hold the next dose until the provider is called.\"",
+              "\"These effects mean the drug must be stopped.\"",
+              "\"A stimulant should replace it right away.\"",
+              "\"These usually resolve after several doses.\""
+            ],
+            answer: 3,
+            rationale: "Dry mouth, dizziness, mild sedation and constipation are clonidine's side effects, and they usually resolve after several doses. None of them calls for holding or stopping the drug.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* guanfacine */
+            stem: "When is extended-release guanfacine for ADHD usually taken?",
+            options: [
+              "At bedtime",
+              "Before school each morning",
+              "With lunch at school",
+              "On weekends only"
+            ],
+            answer: 0,
+            rationale: "Extended-release guanfacine (Intuniv) is usually taken at bedtime, and it helps with hyperactivity, difficulty focusing and restlessness. A morning dose that covers the school day describes a long-acting stimulant, and weekend breaks describe stimulant drug holidays.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* imipramine */
+            stem: "A child with ADHD who cannot tolerate stimulants is started on imipramine. Which statement about imipramine is accurate?",
+            options: [
+              "It is a long-acting stimulant",
+              "It is a tricyclic antidepressant",
+              "It is a norepinephrine-dopamine reuptake inhibitor",
+              "It is the first-line ADHD medication"
+            ],
+            answer: 1,
+            rationale: "Imipramine is a tricyclic antidepressant, one of the non-stimulants used as second-line treatment for ADHD. Bupropion is the NDRI, and stimulants are first line.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* SATA: non-stimulants */
+            stem: "Which medications are non-stimulants used to treat ADHD? Select all that apply.",
+            options: [
+              "atomoxetine",
+              "methylphenidate",
+              "guanfacine",
+              "dextroamphetamine/amphetamine",
+              "imipramine",
+              "lisdexamfetamine"
+            ],
+            answers: [0, 2, 4],
+            rationale: "The non-stimulants are atomoxetine, bupropion, clonidine, guanfacine and imipramine, used second line when stimulant side effects are not tolerated or there is a risk of abuse or diversion. Methylphenidate, dextroamphetamine/amphetamine and lisdexamfetamine are stimulants.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* SATA: long-acting stimulants */
+            stem: "Which medications are long-acting stimulants that can cover the school day with one morning dose? Select all that apply.",
+            options: [
+              "Concerta",
+              "Ritalin",
+              "Ritalin LA",
+              "Daytrana",
+              "dextroamphetamine/amphetamine",
+              "guanfacine extended-release"
+            ],
+            answers: [0, 2, 3, 4],
+            rationale: "Long-acting stimulants last 8 to 12 hours and can be taken once a day, useful when a school dose cannot be given. Concerta, Ritalin LA, Daytrana and dextroamphetamine/amphetamine are long-acting. Plain Ritalin is short-acting methylphenidate, and extended-release guanfacine is a non-stimulant.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* SATA: stimulant monitoring */
+            stem: "For which medications does the nurse obtain a random urine drug screen at outpatient visits, along with heart rate, blood pressure and weight? Select all that apply.",
+            options: [
+              "methylphenidate",
+              "atomoxetine",
+              "dextroamphetamine/amphetamine",
+              "guanfacine extended-release",
+              "bupropion"
+            ],
+            answers: [0, 2],
+            rationale: "Children on stimulants, methylphenidate and dextroamphetamine/amphetamine, have heart rate, blood pressure and weight checked and a random urine drug screen at each visit, because stimulants affect heart rate and blood pressure, suppress appetite, and are abused and diverted. Atomoxetine, guanfacine and bupropion are non-stimulants, used partly when abuse or diversion is a concern.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        eaq: []
+      }
+    },
+    {
+      id: "week6-impulse",
+      label: "Impulse Control Disorders",
+      week: 6,
+      sets: {
+        mustKnow: [
+          {
+            /* LO: risk factors for the impulse control disorders */
+            stem: "Which findings in a 12-year-old's history are risk factors for conduct disorder? Select all that apply.",
+            options: [
+              "Placement in several foster homes",
+              "Association with a delinquent peer group",
+              "A faster-than-average resting heart rate",
+              "Inconsistent parenting with harsh discipline",
+              "Lower-than-average testosterone levels",
+              "Close parental supervision after school"
+            ],
+            answers: [0, 1, 3],
+            rationale: "Risk factors for conduct disorder include out-of-home placement, association with a delinquent peer group, inconsistent parenting with harsh discipline, lack of supervision, abuse and parental substance abuse. The biologic findings run the other way: a slower resting heart rate and increased testosterone compared with peers.",
+            topic: "Impulse Control Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: manifestations of oppositional defiant disorder */
+            stem: "Which statement by a 9-year-old is most consistent with oppositional defiant disorder?",
+            options: [
+              "\"I set the fire because I wanted to watch it burn.\"",
+              "\"It's not my fault. My teacher always picks on me.\"",
+              "\"I feel bad that I hurt the cat, and I'm sorry.\"",
+              "\"I get so nervous before school that I feel sick.\""
+            ],
+            answer: 1,
+            rationale: "Children with ODD blame others for their behavior and do not see themselves as angry, oppositional or wrong. Fire setting points to conduct disorder, which includes pyromania. Genuine remorse for hurting an animal does not fit, and nervousness before school suggests anxiety.",
+            topic: "Impulse Control Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: manifestations of conduct disorder */
+            stem: "A 14-year-old with conduct disorder is brought in after injuring a younger child. Which statement best reflects the adolescent's typical emotional response?",
+            options: [
+              "\"I feel terrible about hurting him.\"",
+              "\"I lost my temper for a second, and I regret it.\"",
+              "\"I'm not angry. Everyone else is the problem.\"",
+              "\"The worst part is that I got caught.\""
+            ],
+            answer: 3,
+            rationale: "Children with conduct disorder lack empathy and do not feel guilty, and the only remorse they express is at being caught. A brief loss of temper followed by regret fits the remorse phase of intermittent explosive disorder. Not seeing oneself as angry and blaming others fits ODD.",
+            topic: "Impulse Control Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: manifestations of intermittent explosive disorder */
+            stem: "A 19-year-old punches a hole in the wall when unable to find their keys, feels relieved right afterward, and later says they feel awful about it. Which disorder does this pattern suggest?",
+            options: [
+              "Intermittent explosive disorder",
+              "Conduct disorder",
+              "Oppositional defiant disorder",
+              "Antisocial personality disorder"
+            ],
+            answer: 0,
+            rationale: "Intermittent explosive disorder is an inability to control aggressive impulses, with a mean onset of 13 to 21 years. It follows a cycle of tension and arousal, explosive behavior, relief and release, then remorse. Conduct disorder and antisocial personality disorder lack that remorse, and ODD centers on defiance and blaming others.",
+            topic: "Impulse Control Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: treatment of the impulse control disorders */
+            stem: "A nurse reviews medication orders for an adolescent with intermittent explosive disorder. Which orders are consistent with its treatment? Select all that apply.",
+            options: [
+              "An SSRI such as sertraline",
+              "Lorazepam PRN for agitation",
+              "A beta-blocker such as propranolol",
+              "Alprazolam at bedtime",
+              "A stimulant such as Ritalin"
+            ],
+            answers: [0, 2],
+            rationale: "Off-label treatment includes SSRIs, because of the serotonergic dysfunction, mood stabilizers, antipsychotics and beta-blockers, which calm and lower heart rate and blood pressure. Benzodiazepines such as lorazepam and alprazolam must not be given, because they reduce inhibitions. Stimulants are one of the classes used for conduct disorder, not this disorder.",
+            topic: "Impulse Control Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: nursing process for the impulse control disorders */
+            stem: "Which nursing priority comes first when caring for an adolescent with conduct disorder and a history of aggression?",
+            options: [
+              "Building the adolescent's self-esteem",
+              "Teaching parents behavior modification",
+              "Ongoing assessment of suicide and violence risk",
+              "Advocating for special education at school"
+            ],
+            answer: 2,
+            rationale: "Impulsivity and aggression make suicide attempts and other-directed violence more likely, so continual assessment of both is essential, and nursing diagnoses focus first on protecting self and others. Self-esteem, behavior modification teaching and school advocacy all follow once safety is addressed.",
+            topic: "Impulse Control Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        medications: [],
+        eaq: []
+      }
+    },
+    /* ==========================================================
        TOPIC 18 — OTHER EAQ TOPICS
 
        A permanent catch-all, added 2026-09-24 (Holly), for imported
@@ -8756,5 +9159,8 @@ window.TOPIC_ORDER = [
   "Anxiety & OCD Disorders",
   "Trauma & Stressor Disorders",
   "Caring for Persons with Abuse",
+  "Childhood Mental Health",
+  "Neurodevelopmental Disorders",
+  "Impulse Control Disorders",
   "Other EAQ Topics"
 ];
