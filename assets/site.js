@@ -110,7 +110,17 @@ const SITE = {
         { id: "week6-somatic",      num: "4", title: "Somatic Symptom Disorders",         file: "week6-somatic-symptom-disorders.html" },
       ]
     },
-    /* Copy a block above for Week 7, Week 8, ... as the course goes on. */
+    {
+      /* WEEK 7 (2026-10-04). Two decks, one page each: neurocognitive
+         disorders (chapter 23), then medical illnesses with psychiatric
+         symptoms. Holly set the order. */
+      label: "Week 7",
+      items: [
+        { id: "week7-neurocognitive", num: "1", title: "Neurocognitive Disorders",                    file: "week7-neurocognitive-disorders.html" },
+        { id: "week7-medical",        num: "2", title: "Medical Illnesses with Psychiatric Symptoms", file: "week7-medical-illnesses-psychiatric-symptoms.html" },
+      ]
+    },
+    /* Copy a block above for Week 8, Week 9, ... as the course goes on. */
 
     /* ============================================================
        EXAM PREP — RESTORED on 2026-08-29, at Holly's request, after being

@@ -10417,6 +10417,389 @@ window.QUIZ_BANK = {
       }
     },
     /* ==========================================================
+       WEEK 7 — added 2026-10-04
+
+       NEUROCOGNITIVE DISORDERS. 5 mustKnow, one per Learning Outcomes
+       bullet on must-know.html, 1 of them select-all. 7 medications:
+       one per drug on the Week 7 medications.html tab (donepezil,
+       rivastigmine, galantamine, memantine) plus 3 select-all, sourced
+       from medications.html only. The acetylcholine mechanism is the
+       mustKnow question's point, so no medications question repeats it.
+       eaq: 6 questions moved here from "Other EAQ Topics" on
+       2026-10-04, with only their topic tag changed. The PAINAD
+       question stayed behind: the site does not teach that scale.
+
+       MEDICAL ILLNESSES WITH PSYCHIATRIC SYMPTOMS. 6 mustKnow, one per
+       Learning Outcomes bullet, 1 of them select-all. medications is
+       EMPTY on purpose: that deck has no Medications slide.
+
+       There is no Week 7 Lecture Review page yet, so nothing to avoid
+       duplicating there. If one arrives, re-check these against it.
+       ========================================================== */
+    {
+      id: "week7-neurocognitive",
+      label: "Neurocognitive Disorders",
+      week: 7,
+      sets: {
+        mustKnow: [
+          {
+            /* LO: compare and contrast delirium with dementia */
+            stem: "A nurse is assessing an 80-year-old who became confused two days after surgery. Which findings point to delirium rather than dementia? Select all that apply.",
+            options: [
+              "The confusion developed over a day and a half",
+              "Cognition has declined steadily over three years",
+              "The patient is lucid at breakfast and disoriented by noon",
+              "The level of consciousness is disturbed",
+              "Consciousness is unchanged despite the memory loss",
+              "A urinary tract infection is found on workup"
+            ],
+            answers: [0, 2, 3, 5],
+            rationale: "Delirium has an acute onset over hours to a few days, fluctuates with periods of lucidity across the day, disturbs consciousness, and always has a direct physiological cause such as an infection. Steady decline over years with no change in consciousness is the picture of dementia.",
+            topic: "Neurocognitive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: define neurocognitive disorders */
+            stem: "Which finding separates a major neurocognitive disorder from a mild one?",
+            options: [
+              "The decline began in childhood rather than adulthood",
+              "The decline came on within hours and fluctuates",
+              "The decline interferes with independence in daily life",
+              "The decline is noticed by the patient before the family"
+            ],
+            answer: 2,
+            rationale: "Major neurocognitive disorder is a significant decline that interferes with daily functioning and independence, while mild is a modest decline that does not interfere with ADLs. Neurocognitive disorders are acquired, not developmental, so a childhood origin does not apply, and an onset within hours with fluctuation describes delirium.",
+            topic: "Neurocognitive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: pharmacological management of NCD */
+            stem: "A resident with Alzheimer's disease has become agitated and suspicious in the evenings, and the family asks for \"something to calm her down.\" Which principle guides medication for these behaviors?",
+            options: [
+              "Antipsychotics are approved for this use and carry no added mortality risk in dementia",
+              "A benzodiazepine is preferred because it has no effect on agitation",
+              "The dose is started high, then tapered once the behavior is controlled",
+              "Nonpharmacological measures first, then the lowest dose for the shortest time"
+            ],
+            answer: 3,
+            rationale: "Medications for the behavioral symptoms of dementia are used off label, and antipsychotics may increase the risk of mortality, mostly from infections or cardiovascular effects. Nonpharmacological interventions are tried first, and any medication is started low and kept to the smallest dose for the shortest time. Starting high and tapering reverses that rule.",
+            topic: "Neurocognitive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: anticholinergics, acetylcholine and acetylcholinesterase inhibitors */
+            stem: "A student asks why a cholinesterase inhibitor is prescribed in Alzheimer's disease. Which explanation of acetylcholine in this disease is accurate?",
+            options: [
+              "The brain makes less of it over time, and the drug slows its breakdown",
+              "The brain makes too much of it over time, and the drug blocks its receptors",
+              "Its level is unchanged, and the drug lowers excess glutamate instead",
+              "The enzyme that makes it is lost, and the drug replaces that enzyme"
+            ],
+            answer: 0,
+            rationale: "Acetylcholine is involved with learning, memory and mood, and the brain produces less of it as Alzheimer's disease progresses. Cholinesterase inhibitors keep the acetylcholinesterase enzyme from breaking it down, raising its level and duration. Excess is the problem with glutamate, not acetylcholine, and that is the target of the NMDA antagonist.",
+            topic: "Neurocognitive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: apply the nursing process to a patient with NCD */
+            stem: "A hospitalized patient with delirium is trying to climb out of bed and is pulling at the IV line. Which outcome takes priority?",
+            options: [
+              "The patient will be oriented to time, place and person during periods of clarity",
+              "The patient will remain safe and free from injury",
+              "The patient and family will verbalize understanding of the cause of the illness",
+              "The patient will sleep through the night with minimal disruption"
+            ],
+            answer: 1,
+            rationale: "Remaining safe and free from injury is the first outcome in delirium, where wandering, getting out of bed and pulling out lines make the patient a major fall and injury risk. Orientation during lucid periods and family understanding are also outcomes, but they follow safety.",
+            topic: "Neurocognitive Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        medications: [
+          {
+            /* donepezil */
+            stem: "The daughter of a patient newly prescribed donepezil asks what to expect. Which response by the nurse is accurate?",
+            options: [
+              "\"It should restore the memory she has lost within about 3 months.\"",
+              "\"It delays the decline in memory and language rather than reversing it.\"",
+              "\"It stops the disease from progressing any further once it reaches its peak.\"",
+              "\"It is used only once she reaches the severe stage of the disease.\""
+            ],
+            answer: 1,
+            rationale: "Cholinesterase inhibitors are used to delay, not decrease, cognitive decline, stabilizing memory, language and orientation. They peak in about 3 months and continue to delay decline, with donepezil delaying progression about 6 to 12 months. There is no cure, and donepezil is used in all stages, not only the severe one.",
+            topic: "Neurocognitive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* rivastigmine */
+            stem: "Which teaching applies to a patient using the rivastigmine transdermal patch?",
+            options: [
+              "Change the patch weekly and expect more nausea than with the oral form",
+              "Apply the patch with food to prevent the stomach upset it causes",
+              "Leave mild redness alone, but remove the patch only at the next clinic visit",
+              "Change the patch daily and report irritation that spreads beyond the patch"
+            ],
+            answer: 3,
+            rationale: "The rivastigmine patch is changed daily and can cause skin irritation. It is stopped if the irritation spreads beyond the size of the patch. The patch causes fewer GI effects than the oral form, not more, and taking the dose with food is the measure for the oral form.",
+            topic: "Neurocognitive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* galantamine */
+            stem: "For which stage of Alzheimer's disease is galantamine indicated?",
+            options: [
+              "Mild to moderate",
+              "Moderate to severe",
+              "Severe only",
+              "All stages"
+            ],
+            answer: 0,
+            rationale: "Galantamine is indicated for mild to moderate Alzheimer's disease. Donepezil and rivastigmine are the cholinesterase inhibitors used in all stages, and moderate to severe is the indication for memantine.",
+            topic: "Neurocognitive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* memantine */
+            stem: "A patient with moderate Alzheimer's disease is started on memantine. Which side effects should the nurse teach the family to expect?",
+            options: [
+              "Nausea, vomiting and a slow heart rate",
+              "Skin irritation where the drug is applied",
+              "Dizziness, confusion and constipation",
+              "Insomnia, fainting and loss of appetite"
+            ],
+            answer: 2,
+            rationale: "Memantine has mild side effects: dizziness, confusion, headaches and constipation. Nausea, vomiting and bradycardia come from the extra acetylcholine produced by the cholinesterase inhibitors, and skin irritation belongs to the rivastigmine patch.",
+            topic: "Neurocognitive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* SATA: which drugs are acetylcholinesterase inhibitors */
+            stem: "Which medications are acetylcholinesterase inhibitors used for Alzheimer's disease? Select all that apply.",
+            options: [
+              "memantine",
+              "donepezil",
+              "galantamine",
+              "mirtazapine",
+              "rivastigmine",
+              "lorazepam"
+            ],
+            answers: [1, 2, 4],
+            rationale: "Donepezil, rivastigmine and galantamine are the acetylcholinesterase inhibitors. Memantine also treats Alzheimer's disease but is an NMDA antagonist, acting on glutamate rather than acetylcholine.",
+            topic: "Neurocognitive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* SATA: which cholinesterase inhibitors are indicated for all stages */
+            stem: "Which cholinesterase inhibitors are indicated for all stages of Alzheimer's disease? Select all that apply.",
+            options: [
+              "rivastigmine",
+              "galantamine",
+              "memantine",
+              "donepezil",
+              "mirtazapine"
+            ],
+            answers: [0, 3],
+            rationale: "Donepezil and rivastigmine are indicated for all stages. Galantamine is a cholinesterase inhibitor but is indicated for mild to moderate disease only, and memantine is an NMDA antagonist rather than a cholinesterase inhibitor.",
+            topic: "Neurocognitive Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* SATA: effects to monitor on an oral cholinesterase inhibitor */
+            stem: "A patient is taking an oral cholinesterase inhibitor for Alzheimer's disease. Which effects of the medication should the nurse monitor for? Select all that apply.",
+            options: [
+              "Nausea and vomiting",
+              "Constipation",
+              "Bradycardia",
+              "Insomnia",
+              "Syncope",
+              "Skin irritation"
+            ],
+            answers: [0, 2, 3, 4],
+            rationale: "Nausea and vomiting are the most common side effects of the oral cholinesterase inhibitors, with dizziness, headache and insomnia, and rarely bradycardia and syncope from the cholinergic effect. Constipation is a side effect of memantine, and skin irritation belongs to the patch, not the oral form.",
+            topic: "Neurocognitive Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        eaq: [
+          /* Moved from "Other EAQ Topics" on 2026-10-04. Imported wording untouched. */
+          {
+            stem: "Which term identifies the phenomenon when every evening, several residents on the Alzheimer’s disease wing of a long-term care facility become excessively agitated?",
+            options: [
+              "Apraxia",
+              "Agraphia",
+              "Sundowning",
+              "Confabulation"
+            ],
+            answer: 2,
+            rationale: "Sundowning is the term for the increase in agitation and decrease in mood in the later part of the day or night common among patients with Alzheimer’s disease. Apraxia is the loss of purposeful movement. Agraphia refers to diminishment of reading and writing abilities. Confabulation describes the creation of vivid stories instead of actual memories. (p. 439)",
+            topic: "Neurocognitive Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which nursing diagnosis would be the top priority when caring for a patient with Alzheimer’s disease?",
+            options: [
+              "Risk for injury",
+              "Caregiver strain",
+              "Anticipatory grieving",
+              "Level of communication"
+            ],
+            answer: 0,
+            rationale: "Evaluating the environment for potential injury-causing factors is a priority for all patients with Alzheimer’s disease to prevent falls. Caregiving strain and anticipatory grieving experienced by the family should be included in the care plan, but this is a lower priority than the patient’s immediate safety. Level and type of communication between the patient and others is a lower priority. (pp. 440, 441)",
+            topic: "Neurocognitive Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient diagnosed with Alzheimer's disease fretfully says, \"School is out, and I must pick up my children now. I'm going to be late.\" The patient's children are now adults. The nurse replies, \"It sounds like you are feeling the responsibility of caring for young children.\" Which technique has the nurse used?",
+            options: [
+              "Distraction",
+              "Reassurance",
+              "Reorientation",
+              "Validation therapy"
+            ],
+            answer: 3,
+            rationale: "Patients with cognitive deficits sometimes become agitated because of concerns related to their past. They believe they are young and feel the need to return to important tasks that were a significant part of those earlier years. Validation therapy is helpful by reflecting back to the patient the feelings behind the worry and shows the nurse's understanding and concern. Distraction is a technique that involves using another activity or subject to alter the patient's focus. Reassurance may support the patient, but it does not address the reason for the worry. Reorientation does not address the patient's concerns. (p. 512)",
+            topic: "Neurocognitive Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which community service is available for patients diagnosed with dementia?",
+            options: [
+              "Adult day care",
+              "Meals on Wheels",
+              "Occupational therapy",
+              "Telephonic reassurance"
+            ],
+            answer: 0,
+            rationale: "Community services include adult day care, which provides activities, socialization, and supervision of the patients; physical services; recreational services; and transportation. Home care services include Meals on Wheels, occupational therapy, and telephonic reassurance by calling patients who are isolated and homebound. (p. 444)",
+            topic: "Neurocognitive Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "An older adult patient with dementia is admitted to the medical–surgical unit with abdominal pain and is diagnosed with intestinal obstruction, which requires immediate surgical intervention. Which person listed on the patient’s medical record would the nurse contact to obtain permission for the surgery?",
+            options: [
+              "The patient’s estranged son",
+              "The patient’s legal guardian",
+              "The patient’s cousin living in a neighboring state",
+              "The patient’s neighbor who has known the patient for more than 40 years"
+            ],
+            answer: 1,
+            rationale: "The surgeon and nurse must communicate with the patient’s legal guardian to obtain permission for surgical intervention. A guardianship is a court-ordered relationship in which one party, the guardian, acts on behalf of an individual, the ward. Although other individuals, such as the patient’s cousin living in a neighboring state, a neighbor who has known the patient for many years, and the estranged son, may be listed on the medical record, all healthcare decisions are made by the assigned legal guardian. (p. 570)",
+            topic: "Neurocognitive Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which type of dementia has a clear genetic link?",
+            options: [
+              "Alzheimer's disease",
+              "Multi-infarct dementia",
+              "Alcohol-induced dementia",
+              "Creutzfeldt-Jakob disease"
+            ],
+            answer: 0,
+            rationale: "Family members of people with Alzheimer's disease have a higher risk of developing the disease than does the general population. A genetic link between dementia and alcohol-induced dementia, multi-infarct dementia, and Creutzfeldt-Jakob disease has not yet been made. (p. 438)",
+            topic: "Neurocognitive Disorders",
+            source: "eaq"
+          }
+        ]
+      }
+    },
+    {
+      id: "week7-medical",
+      label: "Medical Illnesses with Psychiatric Symptoms",
+      week: 7,
+      sets: {
+        mustKnow: [
+          {
+            /* LO: recognize psychiatric side effects from pharmacological treatment */
+            stem: "A patient with no psychiatric history is started on a corticosteroid at the usual dose and within days has marked mood changes and voices paranoid beliefs. How should the nurse interpret this?",
+            options: [
+              "A primary psychotic disorder that the stress of illness has unmasked",
+              "A reaction that is possible only when the dose is toxic",
+              "A psychiatric side effect of the corticosteroid",
+              "A sign of diagnostic overshadowing by the medical team"
+            ],
+            answer: 2,
+            rationale: "Psychiatric side effects often resemble spontaneous psychiatric syndromes and occur with usual doses, intoxication or withdrawal. Corticosteroids commonly cause mood changes and psychosis. A toxic dose is not required, and diagnostic overshadowing is the reverse error: attributing symptoms of a physical illness to a mental illness.",
+            topic: "Medical Illnesses with Psychiatric Symptoms",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: identify risk factors for PSEs */
+            stem: "Which patients are at increased risk for psychiatric side effects from medication? Select all that apply.",
+            options: [
+              "An 84-year-old taking eleven prescribed medications",
+              "A patient who is a rapid metabolizer of the drug",
+              "A patient with hepatic insufficiency",
+              "A patient taking a drug with a wide therapeutic index",
+              "A patient being treated for meningitis"
+            ],
+            answers: [0, 2, 4],
+            rationale: "Risk factors include polypharmacy, very young or elderly age, metabolic conditions such as hepatic insufficiency or being a slow metabolizer, and augmented permeability of the blood-brain barrier, as in meningitis. The risk lies with a narrow therapeutic index and slow metabolism, so a wide index and rapid metabolism are the reverse of the risk factors.",
+            topic: "Medical Illnesses with Psychiatric Symptoms",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: identify hallmark risk factors for an underlying medical mimic */
+            stem: "Which finding most strongly suggests a medical mimic rather than a primary psychiatric disorder?",
+            options: [
+              "Auditory hallucinations with first onset at age 19",
+              "A strong family history of psychiatric illness",
+              "Steady improvement after an antipsychotic is started",
+              "Visual hallucinations with first onset at age 68"
+            ],
+            answer: 3,
+            rationale: "Late onset of the initial presentation and visual, olfactory or tactile hallucinations are hallmark risk factors for a medical mimic. Psychosis of unknown cause usually begins in late adolescence or early adulthood with auditory hallucinations, and mental illness tends to run in families. Getting worse after an antipsychotic, not better, is the high-risk feature.",
+            topic: "Medical Illnesses with Psychiatric Symptoms",
+            source: "quiz-bank"
+          },
+          {
+            /* LO (starred): recognize the mental disorders due to a medical condition */
+            stem: "Which medical illnesses can mimic mood, anxiety and psychotic disorders alike?",
+            options: [
+              "Fibromyalgia and chronic fatigue syndrome",
+              "Cushing's disease and thyroid disorders",
+              "Pulmonary embolism and COPD",
+              "Estrogen withdrawal and epilepsy"
+            ],
+            answer: 1,
+            rationale: "Cushing's disease and hyperthyroidism or hypothyroidism appear among the mimics of all three. Fibromyalgia and chronic fatigue syndrome mimic mood disorders through fatigue and sleep changes, pulmonary embolism and COPD bring on anxiety through breathlessness, and estrogen withdrawal and epilepsy are associated with psychotic symptoms.",
+            topic: "Medical Illnesses with Psychiatric Symptoms",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: nursing interventions for clients with a medical illness */
+            stem: "A nurse admitting a 79-year-old with new-onset paranoia decides that questions about substance use are unnecessary at this age. Which principle applies?",
+            options: [
+              "Everyone is asked about substance use, older adults included",
+              "Substance use screening is reserved for adolescents and young adults",
+              "The question is asked only if the urine drug screen is positive",
+              "The family is asked instead, to avoid upsetting the client"
+            ],
+            answer: 0,
+            rationale: "Nursing interventions include asking everyone about substance use, because it occurs in adolescents and in older adults who are not thought of as at risk. Illicit or recent substance use is itself a hallmark risk factor for a medical mimic, so the question cannot wait on a screening result.",
+            topic: "Medical Illnesses with Psychiatric Symptoms",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: nursing implications for a mental disorder due to a medical condition */
+            stem: "A patient known to have schizophrenia and diabetes arrives by ambulance confused, paranoid and with slurred speech. The crew reports, \"It's her schizophrenia again.\" Which action should the nurse take first?",
+            options: [
+              "Request an order for a PRN antipsychotic",
+              "Begin the psychiatric intake assessment",
+              "Check the blood glucose",
+              "Place the patient on one-to-one observation"
+            ],
+            answer: 2,
+            rationale: "Symptoms are treated as medically caused until proven otherwise. Attributing the confusion to schizophrenia without a medical evaluation is diagnostic overshadowing, and hypoglycemia is a medical illness that produces psychotic symptoms. Giving an antipsychotic or starting a psychiatric intake delays treatment of the real cause.",
+            topic: "Medical Illnesses with Psychiatric Symptoms",
+            source: "quiz-bank"
+          }
+        ],
+        medications: [],
+        eaq: []
+      }
+    },
+    /* ==========================================================
        OTHER EAQ TOPICS — always the LAST topic
 
        A permanent catch-all, added 2026-09-24 (Holly), for imported
@@ -10860,19 +11243,6 @@ window.QUIZ_BANK = {
             source: "eaq"
           },
           {
-            stem: "Which term identifies the phenomenon when every evening, several residents on the Alzheimer’s disease wing of a long-term care facility become excessively agitated?",
-            options: [
-              "Apraxia",
-              "Agraphia",
-              "Sundowning",
-              "Confabulation"
-            ],
-            answer: 2,
-            rationale: "Sundowning is the term for the increase in agitation and decrease in mood in the later part of the day or night common among patients with Alzheimer’s disease. Apraxia is the loss of purposeful movement. Agraphia refers to diminishment of reading and writing abilities. Confabulation describes the creation of vivid stories instead of actual memories. (p. 439)",
-            topic: "Other EAQ Topics",
-            source: "eaq"
-          },
-          {
             stem: "Which two reasons are the current leading causes of death in the United States?",
             options: [
               "Suicide and accidents",
@@ -11043,32 +11413,6 @@ window.QUIZ_BANK = {
             source: "eaq"
           },
           {
-            stem: "Which nursing diagnosis would be the top priority when caring for a patient with Alzheimer’s disease?",
-            options: [
-              "Risk for injury",
-              "Caregiver strain",
-              "Anticipatory grieving",
-              "Level of communication"
-            ],
-            answer: 0,
-            rationale: "Evaluating the environment for potential injury-causing factors is a priority for all patients with Alzheimer’s disease to prevent falls. Caregiving strain and anticipatory grieving experienced by the family should be included in the care plan, but this is a lower priority than the patient’s immediate safety. Level and type of communication between the patient and others is a lower priority. (pp. 440, 441)",
-            topic: "Other EAQ Topics",
-            source: "eaq"
-          },
-          {
-            stem: "A patient diagnosed with Alzheimer's disease fretfully says, \"School is out, and I must pick up my children now. I'm going to be late.\" The patient's children are now adults. The nurse replies, \"It sounds like you are feeling the responsibility of caring for young children.\" Which technique has the nurse used?",
-            options: [
-              "Distraction",
-              "Reassurance",
-              "Reorientation",
-              "Validation therapy"
-            ],
-            answer: 3,
-            rationale: "Patients with cognitive deficits sometimes become agitated because of concerns related to their past. They believe they are young and feel the need to return to important tasks that were a significant part of those earlier years. Validation therapy is helpful by reflecting back to the patient the feelings behind the worry and shows the nurse's understanding and concern. Distraction is a technique that involves using another activity or subject to alter the patient's focus. Reassurance may support the patient, but it does not address the reason for the worry. Reorientation does not address the patient's concerns. (p. 512)",
-            topic: "Other EAQ Topics",
-            source: "eaq"
-          },
-          {
             stem: "Which information about the older adult population is accurate?",
             options: [
               "Older adults are unable to learn new tasks.",
@@ -11134,32 +11478,6 @@ window.QUIZ_BANK = {
             source: "eaq"
           },
           {
-            stem: "Which community service is available for patients diagnosed with dementia?",
-            options: [
-              "Adult day care",
-              "Meals on Wheels",
-              "Occupational therapy",
-              "Telephonic reassurance"
-            ],
-            answer: 0,
-            rationale: "Community services include adult day care, which provides activities, socialization, and supervision of the patients; physical services; recreational services; and transportation. Home care services include Meals on Wheels, occupational therapy, and telephonic reassurance by calling patients who are isolated and homebound. (p. 444)",
-            topic: "Other EAQ Topics",
-            source: "eaq"
-          },
-          {
-            stem: "An older adult patient with dementia is admitted to the medical–surgical unit with abdominal pain and is diagnosed with intestinal obstruction, which requires immediate surgical intervention. Which person listed on the patient’s medical record would the nurse contact to obtain permission for the surgery?",
-            options: [
-              "The patient’s estranged son",
-              "The patient’s legal guardian",
-              "The patient’s cousin living in a neighboring state",
-              "The patient’s neighbor who has known the patient for more than 40 years"
-            ],
-            answer: 1,
-            rationale: "The surgeon and nurse must communicate with the patient’s legal guardian to obtain permission for surgical intervention. A guardianship is a court-ordered relationship in which one party, the guardian, acts on behalf of an individual, the ward. Although other individuals, such as the patient’s cousin living in a neighboring state, a neighbor who has known the patient for many years, and the estranged son, may be listed on the medical record, all healthcare decisions are made by the assigned legal guardian. (p. 570)",
-            topic: "Other EAQ Topics",
-            source: "eaq"
-          },
-          {
             stem: "Which task is most likely to give patients with a terminal illness a sense of completion in relationships with family and friends?",
             options: [
               "Recognition of a transcendent realm",
@@ -11182,19 +11500,6 @@ window.QUIZ_BANK = {
             ],
             answer: 3,
             rationale: "Lack of sleep results in poor concentration, so neglecting sleep could cause the student to perform poorly on the test. Studying does not cause wakefulness. Anxiety will contribute to sleeplessness and poor concentration. Thinking one can make up for lost rest is not healthy. (pp. 354-355)",
-            topic: "Other EAQ Topics",
-            source: "eaq"
-          },
-          {
-            stem: "Which type of dementia has a clear genetic link?",
-            options: [
-              "Alzheimer's disease",
-              "Multi-infarct dementia",
-              "Alcohol-induced dementia",
-              "Creutzfeldt-Jakob disease"
-            ],
-            answer: 0,
-            rationale: "Family members of people with Alzheimer's disease have a higher risk of developing the disease than does the general population. A genetic link between dementia and alcohol-induced dementia, multi-infarct dementia, and Creutzfeldt-Jakob disease has not yet been made. (p. 438)",
             topic: "Other EAQ Topics",
             source: "eaq"
           },
@@ -11332,5 +11637,7 @@ window.TOPIC_ORDER = [
   "Neurodevelopmental Disorders",
   "Impulse Control Disorders",
   "Somatic Symptom Disorders",
+  "Neurocognitive Disorders",
+  "Medical Illnesses with Psychiatric Symptoms",
   "Other EAQ Topics"
 ];
