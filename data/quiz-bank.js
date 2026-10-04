@@ -25,9 +25,11 @@
    medications    One question per drug on medications.html, filed
                   under the topic that teaches the drug, plus a few
                   select-all "which medications are indicated for…"
-                  questions per topic. Only three topics have drugs
-                  (Depressive, Bipolar, Substance Use); every other
-                  topic's set is empty and its cell renders disabled.
+                  questions per topic. Six topics have drugs as of
+                  2026-10-03 (Depressive, Bipolar, Substance Use,
+                  Schizophrenia, Anxiety & OCD, Neurodevelopmental);
+                  every other topic's set is empty and its cell
+                  renders disabled.
                   Built 2026-09-13 (Holly). Sourced ONLY from
                   medications.html, and no question tests a point an
                   authored mustKnow question or a Lecture Review
@@ -113,6 +115,18 @@
    normalised stem and by option-set-plus-key. The nine repairs and
    the near-duplicate pairs kept on purpose are listed in
    SESSION-LOG.md.
+
+   2026-10-03 — WEEK 6 EAQs IMPORTED: 150 questions from two files.
+   "Week 6 EAQ 1" is a 50-question quiz on chapters 11, 17, 19 and
+   21. "Week 6 EAQ 2" is a 100-question custom quiz titled "HESI
+   focus chapters" that ranges over the whole textbook, so its
+   questions are filed by subject across 14 topics from every week.
+   61 of the 150 are on subjects the site does not teach (sleep,
+   somatic symptom disorders, aging, dementia, death and grief,
+   sexual disorders, stress) and went to "Other EAQ Topics". No exact
+   duplicates across all 480 eaq questions, by normalised stem and by
+   option-set-plus-key. Each imported block opens with a comment
+   naming its file. The eight repairs are listed in SESSION-LOG.md.
    ============================================================ */
 window.QUIZ_BANK = {
 
@@ -121,7 +135,7 @@ window.QUIZ_BANK = {
        set is added or a question is removed, or the page will quietly lie. */
     { key: "mustKnow",      label: "Must Know",      blurb: "One question for every Learning Outcome in the pre-lecture slides." },
     { key: "medications",   label: "Medications",    blurb: "One question for every drug on the Medications page, plus select-all questions on which drugs are indicated for what." },
-    { key: "eaq",           label: "EAQs",           blurb: "All 330 Sherpath questions sorted by topic, with duplicates removed." }
+    { key: "eaq",           label: "EAQs",           blurb: "All 480 Sherpath questions sorted by topic, with duplicates removed." }
   ],
 
   topics: [
@@ -439,6 +453,46 @@ window.QUIZ_BANK = {
             ],
             answer: 0,
             rationale: "Civil rights are not lost because of hospitalization for mental illness. Civil rights are not altered to prevent use of poor judgment. Patient rights encompass much more than provision of humane treatment. Having a guardian appointed does not necessarily promote patient rights. (p. 96)",
+            topic: "Introduction to PMH Nursing",
+            source: "eaq"
+          },
+          /* Week 6 EAQ 2, the 100-question "HESI focus chapters" quiz, imported 2026-10-03. */
+          {
+            stem: "Which instruction would the nurse include when planning care for a patient who is judged to be incompetent to make decisions involving their care?",
+            options: [
+              "No treatment other than custodial care can be provided.",
+              "The doctrine of least restrictive alternative is null and void.",
+              "Staff members are required to use their best judgment when defining care.",
+              "The court appoints a guardian to make decisions on the patient’s behalf."
+            ],
+            answer: 3,
+            rationale: "An incompetent patient is unable to make legal decisions that would affect their care, such as consenting to surgery. A court-appointed guardian functions on behalf of the patient. The nurse should provide adequate nursing care to the patient; custodial care is not sufficient. The doctrine of least restrictive alternative pertains to all patients, including those who have been judged to be incompetent. Staff members should provide high-quality patient care regardless of the patient’s competency status. (pp. 97, 98)",
+            topic: "Introduction to PMH Nursing",
+            source: "eaq"
+          },
+          {
+            stem: "On which basis can the patient be medicated against their will?",
+            options: [
+              "If the patient may cause imminent harm to themselves or others",
+              "If the patient has taken the medication in the past and has had no adverse effects",
+              "If the patient still has the capacity to make an informed decision regarding medication",
+              "If the patient is provided education regarding the medication before administration of the medication"
+            ],
+            answer: 0,
+            rationale: "A patient may be medicated against their will without a court hearing in an emergency if the patient poses a danger to themselves or others. It is not legally valid to give medication against a patient's will only because the patient has taken the medication in the past with no adverse effects, if the patient still has the capacity to make an informed decision regarding medication, or only because the patient is provided education regarding the medication before administration. (p. 97)",
+            topic: "Introduction to PMH Nursing",
+            source: "eaq"
+          },
+          {
+            stem: "Which decision regarding the treatment and care of patients with severe mental illness was made by the federal district court in the Rogers v. Okin case?",
+            options: [
+              "A patient’s rights must be protected by judicial determination of competency.",
+              "Forcible administration of medications to patients who may harm others must be avoided.",
+              "A guardian can make treatment decisions for a patient with impaired decision making.",
+              "A mentally ill patient does not have the right and competency to make treatment decisions."
+            ],
+            answer: 2,
+            rationale: "Based on Rogers v. Okin, a guardian can make the treatment decisions for a patient who has impaired decision-making ability. The decision of protecting the patient's rights by judicial determination of competency was made by the federal court of appeals after the Rogers v. Okin case. If a patient is aggressive and has the potential to cause physical harm to others, the nurse can forcibly administer medications to the patient to prevent the patient from harming others. The mentally ill patient has the right to make treatment decisions. (p. 97)",
             topic: "Introduction to PMH Nursing",
             source: "eaq"
           }
@@ -995,6 +1049,59 @@ window.QUIZ_BANK = {
             ],
             answer: 2,
             rationale: "Trauma-informed care is an older concept of providing care that has been reintroduced. It is based on the notion that disruptive patients often have histories that include violence and victimization. These traumatic histories can impede patients' ability to self-soothe, result in negative coping responses, and create a vulnerability to coercive interventions (e.g., restraint) by staff. Trauma-informed care focuses on the patient's past experiences of violence or trauma and the role it currently plays in their life. Aired grievances, shared governance, and learned helplessness do not refer to a care concept that helps reduce violence. (pp. 504-505)",
+            topic: "Anger, Aggression & Violence",
+            source: "eaq"
+          },
+          /* Week 6 EAQ 2, the 100-question "HESI focus chapters" quiz, imported 2026-10-03. */
+          {
+            stem: "The nurse is performing an assessment on a patient who engaged in a recent act of violence. Which patient behavior would the nurse recognize as an indicator for the patient to be violent again?",
+            options: [
+              "Slow speech",
+              "Stands close to others",
+              "Fixed facial expression",
+              "Fumbles words when speaking"
+            ],
+            answer: 2,
+            rationale: "Having a fixed facial expression is a sign of increasing anxiety or tension, which can be an indicator of violence in a patient who was recently violent. Speaking slowly, standing close to others, and fumbling words are not signs that typically precede violence. (p. 504)",
+            topic: "Anger, Aggression & Violence",
+            source: "eaq"
+          },
+          {
+            stem: "Which source of dissatisfaction, aggression, and violence in humans did Freud assert in Civilization and Its Discontents?",
+            options: [
+              "Inability to cope with stress resulting from responsibilities",
+              "Wide gap between the rich and the poor in society",
+              "The conflict between sexual needs and societal norms",
+              "Abnormal development of the limbic system in the brain"
+            ],
+            answer: 2,
+            rationale: "In Civilization and Its Discontents, Freud indicated that the conflict between sexual needs and societal norms was the source of humankind's dissatisfaction, aggression, hostility, and violence. Inability to cope with stress of responsibilities, the wide gap between the rich and poor, and abnormal development of the limbic system are all causes for aggression and violence. However these factors were not identified by Freud as causes of anger. (p. 511)",
+            topic: "Anger, Aggression & Violence",
+            source: "eaq"
+          },
+          {
+            stem: "Which method for dealing with an aggressive patient who is out of control is the most restrictive?",
+            options: [
+              "Seclusion",
+              "A show of force",
+              "Verbal intervention",
+              "Antipsychotic medication"
+            ],
+            answer: 0,
+            rationale: "Seclusion is the most restrictive method listed, because it curtails the patient's freedom of ambulation. A show of force, verbal intervention, and antipsychotic medication are not as restricting. (pp. 507-508)",
+            topic: "Anger, Aggression & Violence",
+            source: "eaq"
+          },
+          {
+            stem: "Which assessment finding is the best predictor of violence in a newly admitted patient?",
+            options: [
+              "Family history of bipolar disorder",
+              "Recent assault on a drinking companion",
+              "Childhood history of being bullied at school",
+              "The nurse's subjective feeling that the patient is uncooperative"
+            ],
+            answer: 1,
+            rationale: "The best predictor of violence is past episodes of violent behavior. Although a family history of bipolar disorder, a childhood history of being bullied at school, and the nurse's subjective feeling that the patient is uncooperative may be factors in some incidences, none have the predictive ability of a previous violent act. (pp. 503, 504)",
             topic: "Anger, Aggression & Violence",
             source: "eaq"
           }
@@ -1775,6 +1882,98 @@ window.QUIZ_BANK = {
             rationale: "Termination, a stage in which the patient must face the loss or ending of the therapeutic relationship, often reawakens the pain of earlier losses. The working, orientation, and preorientation phases do not include review of past losses. (p. 131)",
             topic: "Therapeutic Communication",
             source: "eaq"
+          },
+          /* Week 6 EAQ 2, the 100-question "HESI focus chapters" quiz, imported 2026-10-03. */
+          {
+            stem: "The nurse is obtaining health information from a patient with the cultural syndrome of ghost sickness. Which statement reflects a cultural idiom that may be misconstrued by the nurse?",
+            options: [
+              "\"I have been out of my mind lately.\"",
+              "\"I need to overcome this evil spirit.\"",
+              "\"My heart will suddenly begin racing.\"",
+              "\"An evil spirit has caused my illness.\""
+            ],
+            answer: 0,
+            rationale: "The statement, \"I have been out of my mind lately,\" can be misconstrued by the nurse and is referred to as a cultural idiom. The statement, \"I need to overcome this evil spirit,\" reflects the patient’s belief in treatment for their perceived condition. The statement, \"My heart will suddenly begin racing,\" reflects somatization. The statement, \"An evil spirit has caused my illness,\" refers to a cultural explanation or perceived cause of the illness. (p. 85)",
+            topic: "Therapeutic Communication",
+            source: "eaq"
+          },
+          {
+            stem: "The nurse is reviewing the cultural beliefs and practices with a family member of a patient who presented to the emergency department with delusions. Which statement made by the family member is associated with an increased risk for a stigma of mental illness?",
+            options: [
+              "\"We believe that disease is caused by spiritual imbalance.\"",
+              "\"Our spiritual beliefs reflect a deep relationship with nature.\"",
+              "\"Our family members depend on each other to maintain our character.\"",
+              "\"Each member of the family is very self-reliant and make their own decisions.\""
+            ],
+            answer: 2,
+            rationale: "A stigma of mental illness presents significant barriers that delay or prevent individuals from seeking treatment and is often associated with weakness or dangerousness. In cultural groups that emphasize interdependence and harmony of the family, mental illness may be perceived as a failure of the family, for which there may be increased attempts at concealment of the problem. A belief in disease being caused by spiritual imbalance, a spiritual belief reflecting a deep relationship with nature, or a belief in self-reliance are not characteristics necessarily associated with a stigma of mental illness. (p. 84)",
+            topic: "Therapeutic Communication",
+            source: "eaq"
+          },
+          {
+            stem: "Which information would the nurse leader include when teaching nursing staff in a community clinic about the general experience patients have when immigrating to the United States?",
+            options: [
+              "Women who immigrate to the United States find jobs easier than men.",
+              "Children in the family have a more difficult time adapting to a new culture.",
+              "Educated professional immigrants will not have difficulty finding skilled jobs.",
+              "A family can live in communities of the same culture to maintain traditional roles."
+            ],
+            answer: 0,
+            rationale: "Women who immigrate to the United States find jobs easier than men, which challenges some cultures’ traditional family roles. Children tend to assimilate to the new culture rapidly, whereas older adults are more likely to maintain their traditional cultural beliefs, values, and practices. Because of the licensing and certification requirements in the United States, or a patient’s limited language skills, only unskilled jobs are available to many educated professional immigrants. Traditional roles are not easily maintained in the United States owing to many factors, including women working outside of the home. (p. 86)",
+            topic: "Therapeutic Communication",
+            source: "eaq"
+          },
+          {
+            stem: "A patient presents to the clinic with their family, and the nurse is unfamiliar with the patient's culture. Which action would the nurse consider taking before initiating communication?",
+            options: [
+              "Avoiding smiling",
+              "Using moderate touch",
+              "Maintaining constant eye contact",
+              "Avoiding rolling the eyes while another is talking"
+            ],
+            answer: 3,
+            rationale: "The nurse should avoid rolling the eyes while talking because this may be considered insulting. It is not necessary to avoid smiling. Smiling without any other gestures such as nodding conveys acceptance. The nurse should not use moderate touch as some cultures may be low-touch. The nurse should avoid maintaining constant eye contact as it could be perceived as rude, arrogant, challenging, or a display of sexual interest. (p. 82)",
+            topic: "Therapeutic Communication",
+            source: "eaq"
+          },
+          {
+            stem: "The nurse is preparing to obtain a history from a patient of a Western culture. Which distance is acceptable for the nurse to remain from the patient when initiating communication?",
+            options: [
+              "1 foot",
+              "4 feet",
+              "8 feet",
+              "10 feet"
+            ],
+            answer: 1,
+            rationale: "Personal space in many Western cultures is 1.5 to 4 feet in distance, and intimate space is less than 1.5 feet. In a personal conversation, if a person enters into the intimate space of the other, they may be perceived as aggressive, overbearing, and offensive. If a person stays more distant than expected, beyond 4 feet, the person is perceived as aloof. The nurse can consider a 3-foot distance as acceptable. A 1-foot distance is in the patient's personal space, and an 8- or 10-foot distance is beyond the personal space of the patient, for which the nurse may be perceived as aloof. (p. 82)",
+            topic: "Therapeutic Communication",
+            source: "eaq"
+          },
+          {
+            stem: "The manager is evaluating a nurse based on the model of the Process of Cultural Competence in the Delivery of Healthcare Services. Which characteristic would be demonstrated before moving on from the construct of cultural knowledge?",
+            options: [
+              "Understanding a patient’s viewpoint",
+              "Decreasing likelihood of stereotyping",
+              "Understanding patient behaviors that may be misinterpreted",
+              "Recognizing the effect culture has on a patient’s health values and practices"
+            ],
+            answer: 3,
+            rationale: "The construct of cultural awareness allows for the recognition of the effect culture has on a patient’s health values and practices. The cultural construct of cultural desire is the final construct of the model and indicates the nurse understands a patient’s viewpoint. The construct of cultural encounters allows for multiple cultural encounters with patients of diverse backgrounds, which will decrease the likelihood of stereotyping and gaining an understanding of patient behaviors that may be misinterpreted. (p. 87)",
+            topic: "Therapeutic Communication",
+            source: "eaq"
+          },
+          {
+            stem: "Which nursing action reflects culturally competent care when caring for a patient with an expressed indigenous worldview?",
+            options: [
+              "Coordinating care with a traditional healer",
+              "Applying knowledge of the variations in health beliefs",
+              "Participating in learning to understand cultural preferences",
+              "Advocating for policies to promote the health of the Indigenous culture"
+            ],
+            answer: 0,
+            rationale: "Culturally congruent practice is reflected by applying evidence-based nursing care that corresponds with the patient’s values, beliefs, practices, and worldview. An example of providing culturally competent care is reflected by coordinating care with a traditional healer. Cultural competence is the process of demonstrating culturally congruent care. Examples of cultural congruent practice include applying knowledge of the variations in health beliefs, participating in learning to understand the cultural preferences, and advocating for policies to promote the health of the indigenous culture. (p. 81)",
+            topic: "Therapeutic Communication",
+            source: "eaq"
           }
         ]
       }
@@ -2529,6 +2728,46 @@ window.QUIZ_BANK = {
             rationale: "Three assumptions constitute Beck's cognitive triad: (1) a negative, self-deprecating view of self; (2) a pessimistic view of the world; and (3) the belief that negative reinforcement (or no validation for the self) will continue in the future. Statements such as \"I don't think other people are worthless\" and \"Good luck happens to good people\" lack the negative assumptions associated with the cognitive triad. (p. 247)",
             topic: "Depressive Disorders",
             source: "eaq"
+          },
+          /* Week 6 EAQ 2, the 100-question "HESI focus chapters" quiz, imported 2026-10-03. */
+          {
+            stem: "Which food is safe for a patient taking monoamine oxidase inhibitors (MAOIs)?",
+            options: [
+              "Avocados",
+              "Pineapple",
+              "Chocolate",
+              "Cheddar cheese"
+            ],
+            answer: 1,
+            rationale: "Patients taking MAOIs must avoid foods containing tyramine. Most fruits, like pineapple, are safe to eat while taking MAOIs, as they have low levels of tyramine. Avocados, especially overripe ones, are high in tyramine. Almost all dairy products, like cheddar cheese, contain tyramine. Chocolate is also a food to avoid. (pp. 258-259)",
+            topic: "Depressive Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which information would the nurse include when teaching a male patient about a prescription for a selective serotonin reuptake inhibitor (SSRI)?",
+            options: [
+              "The risk for increased libido",
+              "The risk for priapism",
+              "The increased risk for erectile dysfunction",
+              "The common side effect of gynecomastia"
+            ],
+            answer: 2,
+            rationale: "Use of SSRI medications increase the risk for erectile dysfunction. SSRIs cause decreased, not increased, libido. Priapism is a side effect of SARIs (e.g. trazodone). Breast enlargement (gynecomastia) is a side effect seen with the use of tricyclics. (p. 378)",
+            topic: "Depressive Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement about premenstrual dysphoric disorder (PMDD) is true?",
+            options: [
+              "PMDD symptoms worsen after menopause.",
+              "Fluoxetine is one potential treatment option.",
+              "The disorder will not resume after a pregnancy.",
+              "PMDD means she will always have severe depression."
+            ],
+            answer: 1,
+            rationale: "Fluoxetine can be used to treat PMDD. Symptoms generally decrease after menopause unless the patient receives hormone replacement therapy. The disorder can manifest as long as a woman is menstruating, including during the postnatal period. PMDD does not necessarily mean a patient will always have severe depression. (p. 241)",
+            topic: "Depressive Disorders",
+            source: "eaq"
           }
         ]
       }
@@ -3110,6 +3349,34 @@ window.QUIZ_BANK = {
             rationale: "Clang associations are the stringing together of words because of their rhyming sounds, without regard to their meaning. This communication style occurs commonly in persons experiencing mania. Mutism, poverty of ideas, and psychomotor retardation are assessment findings usually associated with depression. (p. 226)",
             topic: "Bipolar & Related Disorders",
             source: "eaq"
+          },
+          /* Week 6 EAQ 2, the 100-question "HESI focus chapters" quiz, imported 2026-10-03. */
+          {
+            stem: "A patient experiencing a manic episode has showed progressive improvement with continued lithium therapy. After successful treatment, the patient is discharged from the hospital. Which appropriate instruction would the nurse make to the patient and family during discharge? Select all that apply.",
+            options: [
+              "Water pills or diuretics will help with lithium side effects.",
+              "You can reduce the lithium dose if there is an excessive weight gain.",
+              "Over-the-counter medications are safe if taken as instructed on the box.",
+              "Schedule regular checkups to test the function of your thyroid and kidneys.",
+              "Contact the primary healthcare provider if any excessive vomiting occurs."
+            ],
+            answers: [3, 4],
+            rationale: "Lithium affects thyroid and kidney functioning so the patient should be advised to have regular assessment of functioning after being discharged. Lithium may cause diarrhea, vomiting, or sweating as a result of dehydration, so the patient should be advised to consult the primary healthcare provider if these symptoms occur. Lithium causes dehydration in the patients, so water pills or other diuretics should not be taken by the patient. Patients should not be advised to reduce the medication if there is a weight gain; dosage should only be adjusted by the healthcare provider. Patients on lithium should be advised not to take over-the-counter medicine without consulting the primary healthcare provider. (p. 234)",
+            topic: "Bipolar & Related Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient admitted with acute mania tells the staff and the other patients about being on a secret mission given by the President of the United States to monitor citizens for terrorist activity. The patient states, \"I am the only one the President trusts, because I am the best!\" For documentation purposes, which is the best description of this behavior?",
+            options: [
+              "Grandiosity",
+              "Rapid cycling",
+              "Flight of ideas",
+              "Unpredictability"
+            ],
+            answer: 0,
+            rationale: "Grandiosity is inflated self-regard. People with mania may exaggerate their achievements or importance, state that they know famous people, or believe they have great powers. Rapid cycling is switching between mania and depression in a given time period. The scenario does not describe flight of ideas, which means a continuous flow of speech with abrupt topic changes. Although patients with mania are unpredictable, the scenario does not describe unpredictability. (p. 226)",
+            topic: "Bipolar & Related Disorders",
+            source: "eaq"
           }
         ]
       }
@@ -3534,6 +3801,72 @@ window.QUIZ_BANK = {
             ],
             answer: 3,
             rationale: "The nurse should be aware of risk factors and protective factors for suicide. Having a chronic illness such as cancer is a risk factor for suicide. A patient who is undergoing treatment for a critical illness such as breast cancer is at a high risk of committing suicide. Religious environment acts as a protective factor. Clozapine reduces the risk of suicide in patients with schizophrenia, and lithium reduces the risk in patients with mood disorders. (p. 475)",
+            topic: "Suicide",
+            source: "eaq"
+          },
+          /* Week 6 EAQ 2, the 100-question "HESI focus chapters" quiz, imported 2026-10-03. */
+          {
+            stem: "Which response by a patient's parent supports the admission diagnosis of attempted copycat suicide?",
+            options: [
+              "\"My son's classmates are responsible, as they used to humiliate him.\"",
+              "\"My son was worried that he had performed poorly on the school examinations.\"",
+              "\"A few weeks ago, one of my son's classmates also attempted suicide in the same way.\"",
+              "\"A few days ago my son said he would die if we tried to send him to boarding school as we've been discussing.\""
+            ],
+            answer: 2,
+            rationale: "Copycat suicide is commonly seen during adolescence. Adolescents may glamorize the suicides of peers and classmates and perform copycat suicide resulting from immature reasoning and an underdeveloped prefrontal cortex. The statement that the patient was worried about his poor performance on school examinations indicates that academic performance was one of the probable reasons for attempting suicide. The statement that the patient's classmates are responsible for the suicide indicates that the patient's mother is blaming others or that the patient has been the victim of bullying, but it does not indicate risk for copycat suicide. The statement that the patient fought with his parents about school does not indicate a risk for copycat suicide. (p. 473)",
+            topic: "Suicide",
+            source: "eaq"
+          },
+          {
+            stem: "A patient reports lethargy, decreased appetite, and generalized body aches. The nurse finds out that the patient's teenaged child committed suicide a year ago. Which action would the nurse take?",
+            options: [
+              "Avoid talking about the incident with the patient.",
+              "Do not ask further questions about the deceased child.",
+              "Ask the patient open-ended questions about the incident.",
+              "Ask the patient to try not to think about their child’s suicide."
+            ],
+            answer: 2,
+            rationale: "Risk of suicide in a family member of a person who has committed suicide is 4.5 times higher than in the general population. Therefore it is important to ask open-ended questions about the incident and review the current situation of the patient. Mentioning or talking about the daughter can reduce hurt, stigma, and isolation in the patient. Survivors always want their loved ones to be remembered, so it would be inappropriate to ask the patient not to think about their child anymore. The nurse should always encourage the patient to express feelings about the traumatic event. This will make the patient feel comforted. (p. 481)",
+            topic: "Suicide",
+            source: "eaq"
+          },
+          {
+            stem: "Which intervention would the nurse include in the plan of care for a patient who has attempted suicide?",
+            options: [
+              "Emotionally connect with the patient's situation.",
+              "Identify the problems experienced by the patient.",
+              "Encourage nonverbal communication in the patient.",
+              "Believe that the patient does not plan to commit suicide in the future."
+            ],
+            answer: 1,
+            rationale: "The nurse should try to identify the problems experienced by the patient and their feelings toward it. It helps explore alternative ways of helping the patient and decrease their hopelessness. The patient could develop a positive orientation toward the future. The nurse should encourage the patient to interact verbally. When the feelings are conveyed verbally, the actions to show aggression will be reduced, which decreases physical harm. Although the patients deny a suicide idea, they may have a future plan of committing suicide. The nurse should not connect emotionally with the patient's situation as it can distract their attention and can lead to countertransference. The nurse should remain neutral to avoid arguments and sympathy with the patient. (p. 476)",
+            topic: "Suicide",
+            source: "eaq"
+          },
+          {
+            stem: "Which nursing action has the highest priority when administering medications to a patient on suicide precautions?",
+            options: [
+              "Verify that the patient swallowed the entire dose of the medication.",
+              "Document the patient's willingness to take the medication voluntarily.",
+              "Inform the patient of the name, action, and side effects of the medication.",
+              "Teach the patient about delays associated with the drug's peak effectiveness."
+            ],
+            answer: 0,
+            rationale: "Mouth checks may be used to be sure a patient is not saving (hoarding) medications in the hospital. In the community, provision of a limited-day supply or family supervision is required. Documenting the patient's willingness to take the medication voluntarily; informing the patient of the name, action, and side effects of the medication; and teaching the patient about delays associated with the drug's peak effectiveness offer appropriate nursing actions but are not the most important. (p. 480)",
+            topic: "Suicide",
+            source: "eaq"
+          },
+          {
+            stem: "Which medication would the nurse expect a patient with bipolar disorder who has suicidal ideation to be prescribed?",
+            options: [
+              "Tricyclic antidepressant",
+              "Monoamine oxidase inhibitor",
+              "First-generation antipsychotic",
+              "Second-generation antipsychotic"
+            ],
+            answer: 3,
+            rationale: "A second-generation antipsychotic drug is generally prescribed to patients with bipolar disorder and psychotic disorder as a result of few side effects. Tricyclic antidepressants and monoamine oxidase inhibitors should not be prescribed as they have potent side effects, such as hypertensive crisis. It can be fatal if a patient with suicidal intentions takes an overdose of these medications. First-generation antipsychotic drugs are not generally prescribed to patients suffering from bipolar disorder as they have potent side effects, such as tongue twitching, blurred vision, etc. (pp. 482-483)",
             topic: "Suicide",
             source: "eaq"
           }
@@ -4532,6 +4865,65 @@ window.QUIZ_BANK = {
             rationale: "Understanding the process of addiction from a family perspective requires careful attention to the family. Codependence is a cluster of behaviors originally identified through research involving the families of patients who misused alcohol. People who are codependent often exhibit overresponsible behavior: doing for others what others could just as well do for themselves. Symptomatic of codependence is valuing oneself by what one does, what one looks like, and what one has, rather than by who one is. People who are codependent often define their self-worth in terms of caring for others to the exclusion of their own needs. Not relying on a spouse or not wanting children to be affected by addiction expresses dissatisfaction with the situation and recognition of its problems, not codependence. (p. 423)",
             topic: "Substance Use & Addictive Disorders",
             source: "eaq"
+          },
+          /* Week 6 EAQ 2, the 100-question "HESI focus chapters" quiz, imported 2026-10-03. */
+          {
+            stem: "Which statement regarding nursing practice and addiction treatment is true? Select all that apply.",
+            options: [
+              "Every nurse needs to be familiar with the addiction screening process.",
+              "Every nurse should be familiar with the referral process regarding addiction.",
+              "Hospitals are responsible for educating nurses regarding the addiction process.",
+              "All practice areas require that nurses understand the disease of addiction.",
+              "Comprehensive addiction treatment is based on an effective assessment process."
+            ],
+            answers: [0, 1, 3, 4],
+            rationale: "It is important for all nurses, regardless of their practice area, to develop an understanding of the disease of addiction. Nursing curricula should include the content and practicing the skills necessary for addiction screening, early detection, and referral to appropriate treatment. Without an accurate assessment for substance use and other mental health disorders, individuals will be unable to receive comprehensive treatment planning and quality care. The education of nurses is not the responsibility of hospitals but rather schools of nursing. (pp. 423, 424)",
+            topic: "Substance Use & Addictive Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which action can help prevent a relapse for a patient who has undergone detoxification for alcohol abuse at a residential rehabilitation program? Select all that apply.",
+            options: [
+              "Assist in the development of awareness and commitment.",
+              "Counsel to identify the potential triggers of substance use.",
+              "Help the patient understand and admit that there is a problem.",
+              "Help in acquiring skills to regain abstinence in the event of relapse.",
+              "Teach stress management skills to address triggers that may lead to substance use.",
+              "Counsel on adopting healthy coping measures and a sustainable recovery lifestyle."
+            ],
+            answers: [1, 3, 4, 5],
+            rationale: "Individuals must prepare for and anticipate the possibility of relapse to maintain long-term sobriety. A nurse can help in identifying the triggers to substance use and in teaching the patient to regain abstinence in the event of a relapse. The patient should learn how to handle stress effectively. The patient is counseled on healthy coping measures and how to sustain a healthy life after treatment. Precontemplation is the initial stage of admitting that there is a problem of addiction so that an assessment can start. Helping the patient understand the problem and admit there is a problem is important, but it is not part of a teaching plan. The development of awareness and a commitment is at the very beginning of the treatment of addiction. Assisting the patient to develop awareness is also not part of a teaching plan. (p. 427)",
+            topic: "Substance Use & Addictive Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which problem would be screened for when interviewing an adolescent who engages in frequent substance abuse? Select all that apply.",
+            options: [
+              "Depression",
+              "Eating disorder",
+              "Conduct disorder",
+              "Antisocial personality",
+              "Obsessive-compulsive disorder"
+            ],
+            answers: [0, 1, 2, 3],
+            rationale: "The high prevalence of psychiatric comorbidity is supported by statistics from multiple national population surveys. Individuals with mood and anxiety disorders, antisocial behaviors, or histories of conduct or oppositional disorders as adolescents are more than twice as likely to have a substance use disorder. Eating disorders may occur in people abusing stimulants or caffeine. Obsessive-compulsive disorder is not a comorbidity associated with substance abuse. (p. 409)",
+            topic: "Substance Use & Addictive Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which initial assessment is completed to determine a proper plan of treatment and care for an individual diagnosed with a substance abuse disorder? Select all that apply.",
+            options: [
+              "Pattern of substance use",
+              "Assessment of comorbidities",
+              "Clinical examination of background",
+              "Strength and level of willingness to change",
+              "Willingness for a referral to a support group",
+              "Assessment of measures to prevent relapse"
+            ],
+            answers: [0, 1, 2, 3],
+            rationale: "The initial assessment involves a clinical examination of the background, including the patient's history, any history of trauma, a family history of substance use or mental health problems, and any disabilities. Knowledge about the pattern of substance use, such as type of substance, frequency, age at initiation, and so forth, helps in properly planning the treatment and care. An individual's strengths and level of willingness to undergo the treatment helps in planning the treatment strategy. Assessment of comorbidities is also done because they may need to be treated simultaneously. A discussion pertaining to a support group takes place in the planning phase, and a support group is involved in the treatment process. It is not a part of the initial assessment. The relapse prevention measures are discussed after the detoxification or rehabilitation is successfully completed. (p. 422)",
+            topic: "Substance Use & Addictive Disorders",
+            source: "eaq"
           }
         ]
       }
@@ -5080,6 +5472,47 @@ window.QUIZ_BANK = {
             ],
             answer: 3,
             rationale: "An approach useful for patients with borderline personality disorder relates to responses to superficial self-destructive behaviors. The nurse should remain neutral and provide wound care in a matter-of-fact manner. Then the patient is instructed to write down the sequence of events leading up to the injury, as well as the consequences, before staff will discuss the event. This cognitive exercise encourages the patient to think independently about their behavior instead of merely ventilating feelings. It facilitates the discussion with staff about alternative actions. It is not therapeutic to deny the seriousness of the wounds or confront the patient with the behavior. Instituting suicide precautions reinforces the behavior. (p. 463)",
+            topic: "Personality Disorders",
+            source: "eaq"
+          },
+          /* Week 6 EAQ 2, the 100-question "HESI focus chapters" quiz, imported 2026-10-03. */
+          {
+            stem: "When developing a plan of care for a patient, the nurse would need to incorporate interventions to address which specific characteristic of borderline personality disorder?",
+            options: [
+              "Mood shifts",
+              "Social isolation",
+              "Altered sensory perceptions",
+              "Preoccupation with details"
+            ],
+            answer: 0,
+            rationale: "Borderline personality disorder has the central characteristic of instability in affect, identity, and relationships. Borderline individuals desperately seek relationships to avoid feeling abandoned. They often drive others away with excessive demands, impulsive behavior, or uncontrolled anger. Their frequent use of the defense of splitting strains personal relationships and creates turmoil in healthcare settings. Social isolation is associated with antisocial personality disorder. Altered sensory perception is not associated with borderline personality disorder. Preoccupation with details is associated with obsessive-compulsive disorder. (p. 457)",
+            topic: "Personality Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which treatment option would the nurse anticipate incorporating into the plan of care for a patient with narcissistic personality disorder?",
+            options: [
+              "Assertiveness training",
+              "Omega-3 supplements",
+              "Low-dose antipsychotic medications",
+              "Individual cognitive-behavioral therapy"
+            ],
+            answer: 3,
+            rationale: "There is no medication indicated for narcissistic personality disorder. Treatment includes individual cognitive-behavioral therapy, family therapy, and group therapy. Patients with narcissistic personality disorder already have an inflated view of their self-importance, and assertive training may not help them. Such training helps patients with avoidant, dependent, or histrionic personality disorders to express their needs more openly and improves their self-esteem. Patients with borderline personality disorders often respond to omega-3 supplementation for mood and emotion dysregulation symptoms. Patients with borderline and schizotypal personality disorders benefit from low-dose antipsychotic medications, which reduce psychotic-like symptoms and improve day-to-day functioning. (p. 455)",
+            topic: "Personality Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement regarding personality disorders is true? Select all that apply.",
+            options: [
+              "Symptoms are reversible if treatment is implemented early.",
+              "These disorders tend to produce overprotective behaviors in those affected.",
+              "Self-identity and self-direction are concepts that are fundamental to this group of disorders.",
+              "A cultural assessment and discussion about expected behaviors is vital to identifying these disorders.",
+              "Individuals experiencing these disorders demonstrate behaviors that make relationship building difficult."
+            ],
+            answers: [2, 3, 4],
+            rationale: "Personality disorders are among the most challenging and complex group of disorders to treat. Individuals who meet criteria for these disorders display significant challenges in self-identity or self-direction, and they have problems with empathy or intimacy within their relationships. Judgments about an individual's personality functioning must take into account the person's ethnic, cultural, and social background. Patients who differ from the majority culture or the culture of the healthcare provider may be at risk for overdiagnosis of a personality disorder; therefore it is important to obtain additional information from others knowledgeable of the particular cultural or ethnic norms before determining the presence of a personality disorder. Overprotectiveness and the possibility of reversal of symptoms are not correct statements. (pp. 451-452)",
             topic: "Personality Disorders",
             source: "eaq"
           }
@@ -5641,6 +6074,73 @@ window.QUIZ_BANK = {
             ],
             answers: [0, 1, 2, 4],
             rationale: "Thoughts and behaviors that are associated with anorexia nervosa include a view of the self as fat even when emaciated, peculiar handling of food (e.g., cutting food into small bits), possible development of a rigorous exercise regimen, and cognition so disturbed that the individual judges self-worth by their weight. Saying \"I understand this isn't a healthy way to live, but I can't be fat\" demonstrates self-reflection that usually is lacking in the patient diagnosed with such an eating disorder. (pp. 334, 335)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          /* Week 6 EAQ 2, the 100-question "HESI focus chapters" quiz, imported 2026-10-03. */
+          {
+            stem: "Bupropion is contraindicated in patients with bulimia for which reason?",
+            options: [
+              "Increases risk of seizures",
+              "Leads to poor patient compliance",
+              "Causes gastric ulcers",
+              "Results in decreased liver function"
+            ],
+            answer: 0,
+            rationale: "Bupropion, although seemingly effective, is contraindicated in patients who purge because of an increased risk of seizures. Poor compliance, gastric ulcers, and liver damage are not contraindications for this medication to be given to a patient with bulimia. (p. 342)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient with anorexia nervosa presents with severe dehydration and rapid weight loss in the last week. Which action would the nurse take next?",
+            options: [
+              "Wait and watch.",
+              "Prescribe sedatives.",
+              "Obtain orders for laboratory work.",
+              "Suggest hospital admission."
+            ],
+            answer: 3,
+            rationale: "A patient with anorexia nervosa showing severe dehydration and rapid weight loss should be admitted to begin with appropriate treatment and observation. If untreated, this condition can become life-threatening. A wait-and-watch approach is not advisable in this case as it can have life-threatening consequences and needs attention. The appropriate treatment can be decided after the patient is hospitalized for inpatient care. Sedatives may help the patient to sleep but may not be helpful in managing anorexia nervosa. Laboratory investigations can be performed once the patient is hospitalized for inpatient care. (p. 335)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which nursing action is appropriate for a patient with anorexia nervosa?",
+            options: [
+              "Weigh the patient twice daily.",
+              "Monitor the patient's bathroom trips after meals.",
+              "Provide snacks whenever the patient requests them.",
+              "Monitor for weight gain of 6 pounds (2.7 kg) weekly."
+            ],
+            answer: 1,
+            rationale: "The nurse should monitor the patient's bathroom trips after meals to prevent self-induced vomiting. Weighing the patient twice daily is excessive and should be no more frequent than daily. Providing snacks whenever the patient requests them reinforces dysfunctional eating patterns, and mealtimes should be scheduled. Patients with anorexia nervosa are expected to gain 2 to 3 pounds (0.9–1.4 kg) per week with a maximum of 3 (1.4 kg) pounds. Weight gain of more than 5 pounds (2.3 kg) per week can result in pulmonary edema. (pp. 337-338)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "The nurse can determine that inpatient treatment for a patient diagnosed with an eating disorder would be warranted when which criterion is met?",
+            options: [
+              "Weight is 10% below ideal body weight.",
+              "Heart rate is less than 60 beats per minute.",
+              "Systolic blood pressure is less than 70 mm Hg",
+              "Serum potassium level is 3 mEq/L or greater."
+            ],
+            answer: 2,
+            rationale: "Systolic blood pressure of less than 70 mm Hg is one of the established criteria signaling the need for hospitalization of a patient with anorexia nervosa. It suggests severe cardiovascular compromise. A weight below 75% of ideal body weight is criterion for admission. A heart rate less than 50 beats per minute is a criterion for admission. A potassium abnormality is not a criterion for admission unless this causes cardiac arrhythmias. (p. 335)",
+            topic: "Eating & Feeding Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which assessment finding meets the criteria for hospital admission for a patient suspected of demonstrating symptoms of anorexia nervosa? Select all that apply.",
+            options: [
+              "Serum potassium is 3.6 mEq/L.",
+              "Heart rate is 56 beats per minute.",
+              "Systolic blood pressure is 90 mm Hg.",
+              "A 150-pound (68 kg) patient loses 50 pounds (22.7 kg) in 6 months",
+              "Body temperature is 95.6°F (35.3°C)"
+            ],
+            answers: [3, 4],
+            rationale: "Criteria for hospitalization includes weight loss over 30% over 6 months, severe hypothermia (temperature lower than 96°F or 35.6°C), hypokalemia (less than 3 mEq/L), heart rate less than 50 beats per minute, and systolic blood pressure of less than 90 mm Hg. (p. 335)",
             topic: "Eating & Feeding Disorders",
             source: "eaq"
           }
@@ -6721,6 +7221,86 @@ window.QUIZ_BANK = {
             rationale: "Effective long-term care of persons with schizophrenia relies on a three-pronged approach: relationships with trusted care providers, medication administration/adherence, and community-based therapeutic services. Cognitive and social skills are not relevant. (p. 207)",
             topic: "Schizophrenia & Schizoaffective Disorder",
             source: "eaq"
+          },
+          /* Week 6 EAQ 2, the 100-question "HESI focus chapters" quiz, imported 2026-10-03. */
+          {
+            stem: "Which response is therapeutic to implement when a patient diagnosed with paranoid schizophrenia refuses food, stating the voices are saying the food is contaminated and deadly?",
+            options: [
+              "\"The voices are wrong about the hospital food. It is not contaminated.\"",
+              "\"You are safe here in the hospital; nothing bad will happen to you.\"",
+              "\"I understand that the voices are very real to you, but I do not hear them.\"",
+              "\"Other people are eating the food, and nothing is happening to them.\""
+            ],
+            answer: 2,
+            rationale: "The statement, \"I understand that the voices are very real to you, but I do not hear them\" acknowledges the patient’s reality but offers the nurse’s perception that the patient is not experiencing the same thing. Until the patient’s testing of reality improves, it is never useful to try to prove that the delusion is incorrect. (p. 204)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which assessment finding supports the presence of extrapyramidal side effects? Select all that apply.",
+            options: [
+              "Nausea and vomiting",
+              "Sensitivity to light",
+              "Near constant pacing",
+              "Hand tremors observable bilaterally",
+              "Sustained contraction of the neck muscle"
+            ],
+            answers: [2, 3, 4],
+            rationale: "First-generation antipsychotics are dopamine (D2 receptor) antagonists in both the limbic and motor centers. This blockage of dopamine (D2 receptors) in the motor areas causes extrapyramidal side effects. Three of the more common extrapyramidal side effects include acute dystonia (acute sustained contraction of muscles, usually of the head and neck), akathisia (psychomotor restlessness evident as pacing or fidgeting, sometimes pronounced and very distressing to patients), and pseudoparkinsonism (a medication-induced, temporary constellation of symptoms associated with Parkinson’s disease, including tremor, reduced accessory movements, impaired gait, and stiffening of muscles). Nausea and photosensitivity are not considered extrapyramidal side effects. (p. 207)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which response is most appropriate when a patient with schizophrenia reports to the nurse, \"At night my business rival came to the hospital to kill me for my property\"?",
+            options: [
+              "\"Next time when you see them, call me.\"",
+              "\"Oh, really! Let’s file a police report.\"",
+              "\"No one can come to the hospital in the night.\"",
+              "\"Because of your illness you are having hallucinations. No one can hurt you.\""
+            ],
+            answer: 3,
+            rationale: "A patient with schizophrenia often has hallucinations. The nurse should try to persuade the patient to focus on reality by convincing them that these visions are part of the illness. This assurance makes the patient confident and does not support the illness. A nurse also should not dismiss the patient’s hallucinations by making sarcastic remarks because this can make the patient feel rejected and be at risk for withdrawing. It is advisable that the nurse does not encourage the patient’s hallucination by saying that the patient should call them the next time they see the business rival. This can worsen the patient’s condition. (p. 204)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which response is appropriate when a patient diagnosed with paranoid schizophrenia tells the nurse, \"I have to get away. The volmers are coming to execute me\"?",
+            options: [
+              "\"You are safe here. This is a locked unit, and no one can get in.\"",
+              "\"It must be frightening to think something is going to harm you.\"",
+              "\"Why do you think someone or something is going to harm you?\"",
+              "\"I do not believe I understand the word volmers. Tell me more about them.\""
+            ],
+            answer: 1,
+            rationale: "The correct response focuses on the patient’s feelings and neither directly supports the delusion nor denies the patient's experience. Assuring the patient that they are safe gives global reassurance. Asking why they think someone is trying to harm them is asking for information that the patient will likely be unable to provide. Asking for more details encourages elaboration about the delusion. (p. 205)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which nursing diagnosis is most applicable to a patient experiencing an acute exacerbation of schizophrenia with predominantly negative symptoms?",
+            options: [
+              "Disturbed sensory perception related to auditory hallucinations",
+              "Impaired verbal communication related to associative looseness",
+              "Risk for other-directed violence related to inability to control hostile impulses",
+              "Social isolation related to withdrawal and reduced communication with others"
+            ],
+            answer: 3,
+            rationale: "Negative symptoms include social isolation, anergia, lack of motivation, blunted affect, and inattention to personal hygiene. Associative looseness, auditory hallucinations, and hostile impulses represent positive symptoms. (p. 197)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
+          },
+          {
+            stem: "Which response is appropriate when a young adult is hospitalized with the diagnosis of schizophrenia and the parents are distraught and filled with guilt?",
+            options: [
+              "\"I’ll recommend some excellent websites to learn about schizophrenia and other mental illnesses.\"",
+              "\"Look on the bright side. With the right medications and treatment, this disease can be cured.\"",
+              "\"There are many theories about the cause of schizophrenia, but this illness is not your fault.\"",
+              "\"Does anyone in your family have mental illness? Schizophrenia is a genetically transmitted disease.\""
+            ],
+            answer: 2,
+            rationale: "It is important for the nurse to give accurate information without adding to the parent’s emotional burden. There are many theories about the etiology of schizophrenia; asking whether anyone in the family has schizophrenia is not a therapeutic statement and may induce guilt. Telling the family to look on the bright side is not realistic and does not respond to their feelings. Recommending websites for research is an incorrect response because the parents are not ready to learn details about mental illness. (p. 190)",
+            topic: "Schizophrenia & Schizoaffective Disorder",
+            source: "eaq"
           }
         ]
       }
@@ -7445,6 +8025,72 @@ window.QUIZ_BANK = {
             rationale: "Patients experiencing severe anxiety, as the symptoms suggest, are unable to learn or solve problems. Stay calm, remain with the patient, and minimize environmental stimuli. Restating the preoperative teaching slowly, having the patient read the teaching materials instead of listening to them, and having a familiar family member read the preoperative materials to the patient would not be effective because the nurse is still attempting to teach someone who has a severe level of anxiety. (p. 280)",
             topic: "Anxiety & OCD Disorders",
             source: "eaq"
+          },
+          /* Week 6 EAQ 2, the 100-question "HESI focus chapters" quiz, imported 2026-10-03. */
+          {
+            stem: "A nurse observes that a patient often looks at their own reflection in the mirror. Which disorder does the patient likely have?",
+            options: [
+              "Panic disorder",
+              "Hoarding disorder",
+              "Body dysmorphia disorder",
+              "Obsessive-compulsive disorder (OCD)"
+            ],
+            answer: 2,
+            rationale: "Body dysmorphic disorders are characterized by a preoccupation with an imagined defective body part. Patients with body dysmorphia often pay excessive attention to body parts that they imagine to be defective. As a result, they may develop obsessive-compulsive behaviors such as often checking mirrors. In patients with OCD, they perform repeated activities or rituals. In hoarding disorder, the patient accumulates and collects all materials for future use. Patients with panic disorder may have an unusual fear of future events. (pp. 284-285)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A new patient is diagnosed with generalized anxiety disorder. It is most important for the nurse to assess this patient for which additional problem?",
+            options: [
+              "Conduct disorder",
+              "Alcohol use disorder",
+              "Major depressive disorder",
+              "Obsessive-compulsive disorder (OCD)"
+            ],
+            answer: 2,
+            rationale: "Clinicians and researchers have shown clearly that anxiety disorders frequently cooccur with other psychiatric problems. A patient with major depressive disorder needs to be observed for suicide risk. Although conduct disorder, alcohol use disorder, and OCD are possibilities, the most likely comorbid problem is depression. (p. 273)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which defense mechanism has an adaptive use?",
+            options: [
+              "Splitting",
+              "Undoing",
+              "Projection",
+              "Conversion"
+            ],
+            answer: 1,
+            rationale: "Undoing is a defense mechanism with an adaptive use. Splitting and conversion do not have adaptive uses and are almost always pathological. Projection is a defense mechanism that is considered immature and does not have an adaptive use. (p. 271)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which serotonin norepinephrine reuptake inhibitor (SNRI) is used to treat generalized anxiety disorder?",
+            options: [
+              "Fluoxetine",
+              "Oxazepam",
+              "Venlafaxine",
+              "Escitalopram"
+            ],
+            answer: 2,
+            rationale: "Venlafaxine is an SNRI used to treat generalized anxiety. Fluoxetine is a selective serotonin reuptake inhibitor (SSRI) used to treat obsessive-compulsive disorder, depression, panic attacks, and premenstrual dysphoric disorder. Oxazepam is a benzodiazepine used to treat generalized anxiety disorder. Escitalopram is an SSRI used to treat generalized anxiety disorder. (p. 281)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "The inability to leave one's home without experiencing severe anxiety suggests which disorder?",
+            options: [
+              "Generalized anxiety disorder",
+              "Posttraumatic stress response",
+              "Panic attacks with agoraphobia",
+              "Obsessive-compulsive disorder"
+            ],
+            answer: 2,
+            rationale: "Panic disorder with agoraphobia is characterized by recurrent panic attacks combined with agoraphobia. Agoraphobia involves intense, excessive anxiety about being in places or situations from which escape might be difficult or embarrassing or in which help might not be available if a panic attack occurred. Generalized anxiety disorder, posttraumatic stress response, and obsessive-compulsive disorder do not feature intense anxiety about being in places or situations from which escape might be difficult. (p. 274)",
+            topic: "Anxiety & OCD Disorders",
+            source: "eaq"
           }
         ]
       }
@@ -7760,6 +8406,60 @@ window.QUIZ_BANK = {
             ],
             answer: 3,
             rationale: "Poverty, parental substance abuse, and exposure to violence have received increasing attention and place minority children at greater risk for trauma and stress. Bullying can affect anyone. Homicidal thoughts and eating- and sleep-related disorders are not more prominent in any particular racial or cultural group. (p. 296)",
+            topic: "Trauma & Stressor Disorders",
+            source: "eaq"
+          },
+          /* Week 6 EAQ 2, the 100-question "HESI focus chapters" quiz, imported 2026-10-03. */
+          {
+            stem: "If a patient diagnosed with a disorder resulting from trauma is within the window of tolerance, which event will occur?",
+            options: [
+              "Hypervigilance related to the environment",
+              "Avoidance of stimuli associated with the trauma",
+              "Evidence of accurate and meaningful self-disclosure",
+              "Balance between sympathetic and parasympathetic arousal"
+            ],
+            answer: 3,
+            rationale: "Many psychiatric disorders have trauma as a precipitant. Treatment strategies are designed to modulate arousal so that the person is able to stay within a window of tolerance. Window of tolerance means there is balance between sympathetic and parasympathetic arousal. Hypervigilance is associated with dominance by the sympathetic nervous system. Avoidance of stimuli associated with the trauma is a common assessment finding for persons diagnosed with disorders resulting from trauma. Self-disclosure is a psychosocial phenomenon. (p. 298)",
+            topic: "Trauma & Stressor Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "When discussing the symptoms of posttraumatic stress disorder (PTSD), the nurse correctly makes which comment?",
+            options: [
+              "\"The symptoms can occur almost immediately or can take years to manifest.\"",
+              "\"PTSD causes agitation and hypervigilance but rarely chronic depression.\"",
+              "\"PTSD is an emotional response that does not cause significant changes in brain chemistry.\"",
+              "\"When experiencing a flashback, the patient generally experiences a slowing of responses.\""
+            ],
+            answer: 0,
+            rationale: "The onset of PTSD symptoms can occur as early as a month after exposure, but a delay of months or years is not uncommon. PTSD can cause chronic depression. There are significant changes in brain chemistry. Flashbacks can cause a quickening of responses. (p. 299)",
+            topic: "Trauma & Stressor Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "According to attachment theory, relationship disorders are related to trauma associated with which factor?",
+            options: [
+              "Culture or religion",
+              "Siblings or strangers",
+              "Caregivers or parents",
+              "Insufficient food or shelter"
+            ],
+            answer: 2,
+            rationale: "Attachment patterns or schemas are formed early in life through interaction and experiences with caregivers, and this relationship is embedded in implicit emotional and somatic memories. Attachment theory does not address culture/religion, siblings, strangers, or food and shelter. (p. 295)",
+            topic: "Trauma & Stressor Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "The nurse is caring for a child who is demonstrating posttraumatic stress behaviors related to being sexually abused. Which intervention would the nurse include in the child's plan of care? Select all that apply.",
+            options: [
+              "Introducing and practicing relaxation techniques with the child",
+              "Assuring the child that everything discussed will be kept confidential",
+              "Directing the discussion to focus only on the issue of the possible abuse",
+              "Using sexually oriented terms to investigate the abuse",
+              "Providing the child with puppets to facilitate communication about the possible abuse"
+            ],
+            answers: [0, 4],
+            rationale: "Appropriate interventions to assist a child through the process to resolve a traumatic experience include helping the child to identify and cope with feelings through the use of art and play to promote expression and teaching relaxation techniques before trauma exploration to restore a sense of control over thoughts and feelings. There is no reason to restrict the use of certain terms unless it is known to trigger anxiety. Use developmentally appropriate language to explore feelings, and not to investigate the abuse. The child should be in control of the discussion; the nurse facilitates but does not limit the discussion. (p. 298)",
             topic: "Trauma & Stressor Disorders",
             source: "eaq"
           }
@@ -8398,6 +9098,201 @@ window.QUIZ_BANK = {
             rationale: "During the honeymoon stage, the perpetrator apologizes, promises never to abuse again, and tries to make up for the violence. This stage is usually brief. Tension building, acute battering, and escalation are not accurate descriptions of this situation. (p. 520)",
             topic: "Caring for Persons with Abuse",
             source: "eaq"
+          },
+          /* Week 6 EAQ 2, the 100-question "HESI focus chapters" quiz, imported 2026-10-03. */
+          {
+            stem: "Which observation supports the conclusion that a 7-year-old is being physically abused?",
+            options: [
+              "Child stutters when answering questions.",
+              "Father refuses to leave his child alone with the nurse.",
+              "Mother informs the nurse that the child is very clumsy.",
+              "Child has bruises in various stages of healing on their arms."
+            ],
+            answer: 3,
+            rationale: "Physical injuries that are present at multiple sites and in various stages of healing can be indicative of physical abuse. Stuttering is not necessarily indicative of abuse. The father not leaving his child alone may simply be because he is concerned about his child. Although the mother may be insensitive to the child's feelings, calling the child \"clumsy\" is not necessarily indicative of abuse. (p. 522)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which nursing intervention helps avoid rape-trauma syndrome in the patient who was sexually assaulted? Select all that apply.",
+            options: [
+              "Administer contraceptive pills to the patient.",
+              "Refer the patient to a rape advocacy program.",
+              "Arrange for a person to stay with the patient.",
+              "Leave the patient alone at the patient's request.",
+              "Educate the patient about human immunodeficiency virus (HIV) testing."
+            ],
+            answers: [1, 2, 4],
+            rationale: "Patients who are the victims of sexual assault may develop rape-trauma syndrome. The nurse should follow the interventions to give emotional and physical support to the patients to avoid rape-trauma syndrome. The nurse should refer the patient to a rape advocacy program. It helps the patient to gain faith and confidence. The patient feels lonely and can develop suicidal intentions; therefore the nurse should arrange for a person to stay with the patient and provide emotional support. The nurse should inform the patient about HIV testing, as the victims of sexual assault may become infected with sexually transmitted diseases. The nurse should not decide to administer contraceptive pills to the patient. The nurse should not leave the patient alone as the patient can self-harm. (p. 541)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which term identifies a type of abuse? Select all that apply.",
+            options: [
+              "Sexual",
+              "Physical",
+              "Emotional",
+              "Economic",
+              "Intellectual"
+            ],
+            answers: [0, 1, 2, 3],
+            rationale: "Specific types of abuse have been identified as physical abuse, sexual abuse, emotional abuse, neglect, and economic abuse. Intellectual abuse is not considered a specific form of abuse or neglect. (p. 516)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which sign or symptom is found in the victim diagnosed with rape-trauma syndrome? Select all that apply.",
+            options: [
+              "Anxiety",
+              "Aggression",
+              "Nightmares",
+              "Low alertness",
+              "Relaxed muscles"
+            ],
+            answers: [0, 1, 2],
+            rationale: "A rape victim may develop rape-trauma syndrome, which is a sustained and maladaptive response to the event of rape. The victim may appear anxious and may be angry and aggressive. It is characterized by experiencing nightmares. Low alertness and relaxed muscles are not the manifestations of rape-trauma syndrome. Patients of rape-trauma syndrome are hyperalert. They also have increased muscle tension. (p. 540)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Three weeks after being raped by a man, a college-age woman says to the nurse, \"My roommate says the rape was my fault. She says I could have gotten away if I had tried.\" Which information would the nurse consider when responding to this comment? Select all that apply.",
+            options: [
+              "Most men can overpower most women because of differences in body build.",
+              "This rape victim is expressing remorse regarding her failure to fight the rapist.",
+              "Victims of rape often panic, resulting in decisions and actions that are ineffective.",
+              "This rape victim is likely to have made a false report of a rape in an attempt to gain attention.",
+              "This rape victim is healthy. If she had resisted vigorously, she could have escaped the unarmed adult male rapist."
+            ],
+            answers: [0, 2],
+            rationale: "Although the victim may have made choices that made her more vulnerable, she is not to blame for the rape. Most men can overpower most women because of differences in body build. In addition, the victim may panic, which makes her actions less effective than usual. There is no evidence of remorse in the victim's statement. There is no evidence to show that there are more false reports for rape than for other crimes. Many rape victims do not make a report of the crime. The statement \"If she had resisted vigorously, she could have escaped the unarmed adult male rapist\" reflects a myth associated with rape. (p. 540)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement is a myth concerning sexual assaults? Select all that apply.",
+            options: [
+              "Most rapes occur in the home.",
+              "Most women are raped by strangers.",
+              "Most rapes occur for the purpose of sex.",
+              "Sexual assaults are generally impulsive, unplanned acts.",
+              "Fighting back will only result in additional physical injuries."
+            ],
+            answers: [1, 2, 3, 4],
+            rationale: "The majority (69%) of rape victims are raped by someone they know. Sex is used as an instrument of violence in rape. Rape is an act of aggression, anger, or power. Most rapes are planned; over 50% involve a weapon. There are no verifiable data to substantiate the theory that a victim will be injured if they try to fight back. Over 50% of all rapes occur in the home, not in dark alleys. (pp. 536, 540)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which elementary cause exists for a perpetrator to use violence? Select all that apply.",
+            options: [
+              "Effect of peer pressure",
+              "Feeling of hopelessness",
+              "Ineffective impulse control",
+              "Lack of any support system",
+              "Lack of problem-solving skills"
+            ],
+            answers: [2, 3, 4],
+            rationale: "The perpetrators of violence have problems with impulse control. They are unable to think before they act and may even repent of their act later. They do not have any healthy support systems, which could prevent them from resorting to violence. They do not have problem-solving abilities and break down under stress. Peer pressure does not force them to become violent. They may live in social isolation, and with an inability to make friends, they have ineffective coping during crisis situations. A victim of abuse rather than the perpetrator feels hopeless and powerless. (p. 517)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which home assessment would be included when abuse of a newborn is suspected? Select all that apply.",
+            options: [
+              "Responsiveness to infant's signals",
+              "Presence of weapon in the house",
+              "Playfulness of caregiver with infant",
+              "Caregiver's history of abuse as a child",
+              "Any acute disease noted in the child"
+            ],
+            answers: [0, 2, 3],
+            rationale: "During a home visit, the caregiver's facial expression as a response to the infant's signals indicates the emotional bonding established between the infant and the caregiver. Playfulness of the caregiver with the infant shows a healthy relationship. People who faced abuse as a child may grow up to be child abusers themselves. So it is important to find out about the caregiver's history of being abused as a child. Presence of weapons in the house is assessed in a case of family violence and when there is a potential for homicide in the house, but is not an indicator of abuse. Whether the child develops a disease can be irrelevant. However, if the disease is chronic, it may lead to abuse in the future. (p. 525)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which issue is addressed in abuse protection support for older adults? Select all that apply.",
+            options: [
+              "Identification of high-risk, dependent elder relationships",
+              "Education on preventing family interaction to reduce abuse",
+              "Prevention of infliction of physical, sexual, or emotional harm",
+              "Prevention of neglect of the older adult's basic necessities of life",
+              "Education on maintaining older adult's power in relationships"
+            ],
+            answers: [0, 2, 3],
+            rationale: "A nurse as a case manager works closely with the victims to support abuse protection. At first, they identify the high-risk, dependent elder relationships. If there is actual or suspected abuse, the nurse helps the victim to learn ways to prevent possible or further infliction of physical, sexual, or emotional harm. The nurse works toward preventing the neglect of basic necessities of life. Family interactions should not be decreased, as this will increase self-isolation in older adults. Perpetrators behave in a controlling way and try to maintain their power in a relationship. This should not be encouraged. Older adults are vulnerable and remain dependent on the perpetrators. (p. 525)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which type of abuse is documented when a child arrives in the emergency department with cigarette burns on their arm?",
+            options: [
+              "Neglect",
+              "Sexual abuse",
+              "Physical abuse",
+              "Economic abuse"
+            ],
+            answer: 2,
+            rationale: "Physical abuse is inflicting physical pain, such as burning. Neglect is the failure to provide for physical, emotional, educational, and medical needs. Sexual abuse is any form of sexual contact without consent. Economic abuse is denying a person’s access to economic resources. (p. 521)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which assessment information is included when performing a general assessment on a patient who was sexually assaulted? Select all that apply.",
+            options: [
+              "Level of anxiety",
+              "Coping mechanisms",
+              "History of sexual partners",
+              "Available support systems",
+              "List of current prescriptions"
+            ],
+            answers: [0, 1, 3],
+            rationale: "When performing a general assessment on a patient who was just sexually assaulted, it is important for the nurse to assess the patient’s level of anxiety, coping mechanisms, available support systems, as well as signs and symptoms of emotional and physical trauma. The nurse does not need to assess the patient’s history of sexual partners or list of current prescriptions at this time when treating the victim of an assault. (p. 538)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which risk factor is associated with older adult abuse? Select all that apply.",
+            options: [
+              "Female",
+              "African American",
+              "Over the age of 75",
+              "Living with a relative",
+              "Physical or mental impairment"
+            ],
+            answers: [0, 2, 3, 4],
+            rationale: "Risk factors for older adult abuse include being female, living with a relative, being over 75, and having physical or mental impairment. Caucasians are at a higher risk for older adult abuse than African Americans. (p. 520)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which example is part of tertiary prevention? Select all that apply.",
+            options: [
+              "Support groups for survivors",
+              "Reduction of stress for the abuser",
+              "Teaching of coping skills to the abuser",
+              "Legal advocacy programs for survivors",
+              "Screening programs for high-risk individuals"
+            ],
+            answers: [0, 3],
+            rationale: "Tertiary prevention involves treating survivors of abuse, for example, with support groups and legal advocacy programs. Reducing stress for the abuser and increasing their coping skills are strategies for primary prevention of abuse. Screening programs for high-risk individuals are an example of secondary prevention of abuse. (p. 529)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
+          },
+          {
+            stem: "Which behavior is characteristic of the tension-building stage of the violence cycle? Select all that apply.",
+            options: [
+              "Remorse is felt and expressed.",
+              "Rationalization is used to justify the anger.",
+              "Calmness returns for a short period of time.",
+              "Tension is released through physical violence.",
+              "Alcohol may be employed to manage the tension."
+            ],
+            answers: [1, 4],
+            rationale: "The tension-building stage is characterized by abusers rationalizing that their abusive behavior is acceptable. As the tension escalates, both participants may try to reduce it. The abuser may try to reduce the tension with the use of alcohol or drugs. The honeymoon stage may be characterized by kindness and loving behaviors. The abuser, at least initially, feels remorseful and apologetic. Over time, the periods of calmness and safety become briefer, and the periods of anger and fear are more intense. During the acute battering stage, the abuser releases the built-up tension by brutal beatings, which can result in serious injuries. (p. 520)",
+            topic: "Caring for Persons with Abuse",
+            source: "eaq"
           }
         ]
       }
@@ -8522,7 +9417,76 @@ window.QUIZ_BANK = {
           }
         ],
         medications: [],
-        eaq: []
+        eaq: [
+          /* Week 6 EAQ 1 (50 questions), imported 2026-10-03. */
+          {
+            stem: "Which area of the brain undergoes dramatic changes in childhood and adolescence? Select all that apply.",
+            options: [
+              "Pons",
+              "Medulla",
+              "Synapses",
+              "Cerebellum",
+              "Prefrontal cortex"
+            ],
+            answers: [2, 3, 4],
+            rationale: "The synapses dramatically decline after age 5. The prefrontal and frontal cortex regions, as well as the cerebellum, change and mature in adolescents. The pons and medulla do not undergo significant changes in childhood and adolescence. (P. 169)",
+            topic: "Childhood Mental Health",
+            source: "eaq"
+          },
+          {
+            stem: "Which term identifies the style of behavior a child habitually uses to cope with the demands and expectations of the environment?",
+            options: [
+              "Resilience",
+              "Vulnerability",
+              "Temperament",
+              "Cultural assimilation"
+            ],
+            answer: 2,
+            rationale: "Temperament is the behavior the child habitually uses to cope with the environment. It is a constitutional factor thought to be determined genetically. It may be modified by the parent–child relationship. (P. 169)",
+            topic: "Childhood Mental Health",
+            source: "eaq"
+          },
+          {
+            stem: "Which factor can help explain why one child in a family might develop a mental disorder while another does not?",
+            options: [
+              "Culture",
+              "Genetics",
+              "Resilience",
+              "Environment"
+            ],
+            answer: 2,
+            rationale: "Resilience is considered to be an inborn trait that is shaped by both internal and external factors. Genetics would be an explanation of similarities in mental health history, not differences. Environment and culture would also affect both siblings in equal measure. (pp. 169-170)",
+            topic: "Childhood Mental Health",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement is true about childhood trauma?",
+            options: [
+              "Boys are more commonly the victims of sexual abuse.",
+              "Sexual assault is the most common form of child abuse.",
+              "Witnessing violence can be a damaging form of childhood trauma.",
+              "Only doctors can report suspected abuse of a minor to child protective services (CPS)."
+            ],
+            answer: 2,
+            rationale: "Witnessing violence can be a damaging form of childhood trauma, putting the child at risk for a number of mental health problems. Girls are more often the victims of sexual abuse than are boys. Neglect is the most common form of child abuse. Nurses are required to report suspected abuse of minors to CPS. (p. 170)",
+            topic: "Childhood Mental Health",
+            source: "eaq"
+          },
+          {
+            stem: "Which characteristic is found in mentally healthy children? Select all that apply.",
+            options: [
+              "Ability to trust no one",
+              "Ability to respond spontaneously",
+              "Ability to make accurate perception",
+              "Ability to have realistic self-concept",
+              "Ability to behave more maturely than their age"
+            ],
+            answers: [1, 2, 3],
+            rationale: "Mentally healthy children respond spontaneously and have the ability to express themselves in creative ways. They have the ability to make accurate perceptions and can interpret their surroundings. Healthy children have a positive, realistic self-concept and developing identity. The healthy child trusts others and can judge whether the surroundings are safe and supportive. The healthy child behaves appropriately according to age and does not violate social norms. (p. 172)",
+            topic: "Childhood Mental Health",
+            source: "eaq"
+          }
+        ]
       }
     },
     {
@@ -8823,7 +9787,61 @@ window.QUIZ_BANK = {
             source: "quiz-bank"
           }
         ],
-        eaq: []
+        eaq: [
+          /* Week 6 EAQ 1 (50 questions), imported 2026-10-03. */
+          {
+            stem: "Which medication should the nurse anticipate in the treatment plan of a patient admitted with the diagnosis of autism spectrum disorder?",
+            options: [
+              "Risperidone",
+              "Clonazepam",
+              "Atomoxetine",
+              "Clonidine hydrochloride"
+            ],
+            answer: 0,
+            rationale: "Risperidone is a second-generation antipsychotic drug used to reduce harmful behavior in patients with autism spectrum disorder. Clonazepam is a benzodiazepine class of drug used to reduce anxiety in patients with attention-deficit/hyperactivity disorder (ADHD). Atomoxetine is a nonstimulant selective norepinephrine reuptake inhibitor prescribed to patients with ADHD to improve attentiveness. Clonidine hydrochloride is an α2-adrenergic used for treating hypertension in ADHD. (pp. 179)",
+            topic: "Neurodevelopmental Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which communication disorder is the latest to be identified and accepted?",
+            options: [
+              "Fluency disorder",
+              "Receptive language disorder",
+              "Expressive language disorder",
+              "Social communication disorder"
+            ],
+            answer: 3,
+            rationale: "Social communication disorder was not identified until 2013. It was first considered on the autism spectrum. Receptive language disorders are characterized by the child’s inability to understand language and follow directions. Expressive language disorder occurs when the child cannot form clear sentences and find the right words to convey their message. Fluency disorder is more commonly known as stuttering. Receptive language, expressive language, and fluency disorders were all established before social communication disorder. (p. 175)",
+            topic: "Neurodevelopmental Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which frequency indicates how often methylphenidate transdermal patches should be changed?",
+            options: [
+              "Once a day",
+              "Once a week",
+              "Three times a day",
+              "Three times a week"
+            ],
+            answer: 0,
+            rationale: "Methylphenidate is available as a transdermal patch. It is prescribed for patients of the age group 6 to 12. Changing the patch should be scheduled for once a day because its duration of action is for 10 to 12 hours and up to 3 hours after removal of the patch. (p. 183)",
+            topic: "Neurodevelopmental Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which disorder is most commonly mistaken for attention-deficit/hyperactivity disorder (ADHD)?",
+            options: [
+              "Anxiety",
+              "Depression",
+              "Bipolar disorder",
+              "Conduct disorder"
+            ],
+            answer: 3,
+            rationale: "Conduct disorder has symptoms similar to ADHD, and even though it is a distinctly different diagnosis, it is often seen as a comorbid condition. Anxiety and depression are not likely to be confused for ADHD, although could develop as a result of poor peer interactions. Bipolar disorder is rarely diagnosed in children. (p. 181)",
+            topic: "Neurodevelopmental Disorders",
+            source: "eaq"
+          }
+        ]
       }
     },
     {
@@ -8921,11 +9939,485 @@ window.QUIZ_BANK = {
           }
         ],
         medications: [],
-        eaq: []
+        eaq: [
+          /* Week 6 EAQ 1 (50 questions), imported 2026-10-03. */
+          {
+            stem: "Which term best describes the behavior of a child who deliberately sets and becomes excited when talking about fires?",
+            options: [
+              "Pyromania",
+              "Kleptomania",
+              "Oppositional defiance",
+              "Impulse control disorder"
+            ],
+            answer: 0,
+            rationale: "Pyromania is the deliberate and repeated act of setting things on fire. People who engage in pyromania behaviors become tense or excited before setting things on fire and show an unusual interest in fire and its contexts, like matches or smoke. Kleptomania is the repeated failure to resist urges to steal objects. Oppositional defiance describes a general group of oppositional behaviors. Impulse control disorder is related to pyromania but is not the best term used to describe the child’s behaviors. (p. 396)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which diagnosis is likely when a patient reports the irresistible desire to steal objects from others?",
+            options: [
+              "Defiance",
+              "Pyromania",
+              "Callousness",
+              "Kleptomania"
+            ],
+            answer: 3,
+            rationale: "Kleptomania is characterized by an uncontrolled desire to steal objects and failing to resist the urge. The urge does not have to be related to actual need. Defiance in oppositional defiant disorder is characterized by irritability, getting angry, and being defiant and vindictive. Pyromania is the uncontrolled desire to deliberately set fires and experiencing pleasure by doing so. Callousness is a lack of sensitivity and empathy for others. (p. 396)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A patient says, \"When I go to the mall, I steal things. I don't know why I do it because I take things I don't need.\" Which term applies to this behavior?",
+            options: [
+              "Eustress",
+              "Pyromania",
+              "Dysthymia",
+              "Kleptomania"
+            ],
+            answer: 3,
+            rationale: "Kleptomania is a repeated failure to resist urges to steal objects not needed for personal use or monetary value. The person experiences a buildup of tension before taking the object, followed by relief or pleasure after the theft. Eustress is a positive type of stress. Pyromania refers to repeated, deliberate fire setting. Dysthymia refers to a type of depressed mood. (p. 396)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which problematic behavior is associated with pyromania?",
+            options: [
+              "Start fires.",
+              "Steal for thrill.",
+              "Self-mutilate.",
+              "Direct anger toward others."
+            ],
+            answer: 0,
+            rationale: "Pyromania is described as repeated, deliberate fire setting. Stealing for thrill, self-mutilation, and directing anger toward others do not adequately describe pyromania. (p. 396)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which behavior consistently demonstrated by a child is a predictor of future antisocial personality disorder in adults?",
+            options: [
+              "Sadness",
+              "Remorse",
+              "Guilt",
+              "Callousness"
+            ],
+            answer: 3,
+            rationale: "Callousness may be a predictor of future antisocial personality disorder in adults. There is no research to definitively associate sadness, remorse, or guilt with the development of antisocial personality disorder in adults. (p. 394)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which condition is most associated with oppositional defiant disorder?",
+            options: [
+              "Obesity",
+              "Hypotension",
+              "Type 1 diabetes",
+              "Attention-deficit/hyperactivity disorder (ADHD)"
+            ],
+            answer: 3,
+            rationale: "ADHD is the most common condition associated with oppositional defiant disorder. Nearly 40% of individuals with oppositional defiant disorder also have ADHD. Hypotension, obesity, and type 1 diabetes are not common comorbidities for oppositional defiant disorder. (p. 392)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which pharmacological therapy should be avoided when treating a patient with intermittent explosive disorder?",
+            options: [
+              "Mood stabilizers",
+              "Anticonvulsants",
+              "Antianxiety medications",
+              "Selective serotonin reuptake inhibitors (SSRIs)"
+            ],
+            answer: 2,
+            rationale: "Antianxiety medications may reduce inhibitions and self-control so they should be avoided in patients with intermittent explosive disorder. Mood stabilizers, anticonvulsants, and SSRIs are used in an off-label way to help control outbursts and are used in patients with intermittent explosive disorder. (p. 401)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which impulsive disorder is represented by a history of immature coping skills and poor problem-solving abilities?",
+            options: [
+              "Intermittent explosive disorder",
+              "Oppositional deficient disorder",
+              "Attention-deficit/hyperactivity disorder (ADHD)",
+              "Conduct disorder"
+            ],
+            answer: 3,
+            rationale: "Children with conduct disorder tend to use immature styles of coping and problem solving. A patient with intermittent explosive disorder shows aggressive outbursts, which are a way of protecting the ego. Oppositional deficient disorder and ADHD are the predisposing factors of child-onset conduct disorder. (p. 394)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which type of drug best treats aggression, impulsivity, and hyperactivity resulting from the diagnosis of conduct disorder?",
+            options: [
+              "Beta blocker",
+              "Antipsychotic",
+              "Anticonvulsant",
+              "Benzodiazepine"
+            ],
+            answer: 1,
+            rationale: "Antipsychotic medications for persons diagnosed with conduct disorder are directed at problematic behaviors such as aggression, impulsivity, and hyperactivity. Beta-blocking medications may help calm individuals with intermittent explosive disorder by slowing the heart rate and reducing blood pressure. Medications for intermittent explosive disorder might include selective serotonin reuptake inhibitors (SSRIs) or mood stabilizers, such as lithium or an anticonvulsant agent. Antianxiety medications, such as benzodiazepines, should be avoided because they reduce inhibitions and self-control in a similar way as alcohol. (p. 401)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which type of goal best ensures the expected therapeutic outcomes for a 10-year-old diagnosed with an impulse control disorder?",
+            options: [
+              "Simple and easily defined",
+              "Family-centered and long-term in nature",
+              "Patient-centered and include the patient's input",
+              "Age-appropriate and achievable in a short period"
+            ],
+            answer: 2,
+            rationale: "Whenever possible, outcomes should be patient-centered and agreed on by both the nurse and the patient or the patient's designee. Although goals that are age-appropriate, achievable in a short period, simple, easily defined, family-centered, and long-term in nature should be considered, when possible, the primary factor that should be considered is that the goals be patient-centered and made with patient input because that will have a positive effect on the patient's compliance. (p. 399)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which drug class may be prescribed for intermittent explosive disorder?",
+            options: [
+              "Anticonvulsants",
+              "Benzodiazepines",
+              "Psychostimulants",
+              "Monoamine oxidase inhibitors (MAOIs)"
+            ],
+            answer: 0,
+            rationale: "Although considered off-label use, anticonvulsants may reduce outbursts and contribute to mood stabilization. Benzodiazepines should be avoided because they may further reduce inhibitions and self-control. Psychostimulants and MAOIs are not among the five classes of medications used to treat conduct disorders. (p. 401)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which diagnosis supports the inability to control aggressive impulses?",
+            options: [
+              "Conduct disorder",
+              "Oppositional defiant disorder",
+              "Intermittent explosive disorder",
+              "Obsessive-compulsive disorder (OCD)"
+            ],
+            answer: 2,
+            rationale: "Intermittent explosive disorder is seen when a person is unable to control aggressive impulses. A person with conduct disorder violates other's rights and social norms. Oppositional defiant disorder is characterized by irritability, getting angry, and being defiant and vindictive. OCD is characterized by repetitive thoughts or a strong urge to perform a task or activity repetitively. (p. 395)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which action can be suggested to parents to avoid impulse disorders in children?",
+            options: [
+              "Encourage anger outbursts.",
+              "Provide support to the child.",
+              "Follow flexible rules of parenting.",
+              "Encourage oppositional behavior."
+            ],
+            answer: 1,
+            rationale: "A supportive family environment can help in the normal development of the child and also improve the child's future. Conflicts in marriage or at home can affect a child's development and increase the chances of impulse disorders in children. Inconsistent parenting and harsh discipline can make the child emotionally detached and affect child development. Oppositional behavior such as anger outbursts should not be encouraged but should be identified and resolved in a timely manner. (p. 400)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which nursing diagnosis is appropriate when the patient shows clenched fists and has a rigid body posture?",
+            options: [
+              "Risk of suicide",
+              "Ineffective coping",
+              "Impaired parenting",
+              "Risk of violence to others"
+            ],
+            answer: 3,
+            rationale: "Rigid body posture and clenched fists signal increased chances of inflicting violence on others. Risk of suicide is noted when the person has a history of suicidal attempts, talks about suicidal thoughts, or shows impulsivity. Ineffective coping is observed when the person blames others for their behaviors. Impaired parenting includes an unsafe home environment or hostility or rejection by a child's family. (p. 399)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which personality disorder is most likely to emerge in adulthood when an adolescent with conduct disorder demonstrates frequent callous behavior toward others?",
+            options: [
+              "Histrionic",
+              "Antisocial",
+              "Dependent",
+              "Schizotypal"
+            ],
+            answer: 1,
+            rationale: "Callousness may be a predictor of a future antisocial personality disorder in adults. Callousness refers to a lack of empathy, such as disregarding and being unconcerned about the feelings of others, lacking remorse or guilt, being unconcerned about meeting obligations, and demonstrating a shallow, unexpressive, and superficial affect. Histrionic, dependent, and schizotypal disorders are associated with other behaviors. (p. 394)",
+            topic: "Impulse Control Disorders",
+            source: "eaq"
+          }
+        ]
       }
     },
     /* ==========================================================
-       TOPIC 18 — OTHER EAQ TOPICS
+       SOMATIC SYMPTOM DISORDERS (Week 6, topic 4) — added 2026-10-03
+
+       Sourced only from week6-somatic-symptom-disorders.html, which
+       is built from the instructor's handout: there is no deck and no
+       recording for this topic. 8 mustKnow, one per Learning Outcomes
+       bullet on must-know.html, 2 of them select-all. medications is
+       EMPTY on purpose: the topic has no Medications slide.
+
+       NONE of the 8 tests a point one of the nine somatic clicker
+       questions on week6-lecture-review.html already tests (illness
+       anxiety and reassurance, the empathic response, la belle
+       indifference, CBT as the best-supported treatment, conversion
+       as neurological symptoms, the malingering cue, not exploring
+       symptoms). Each takes a different angle on purpose.
+
+       eaq: 10 questions moved here from "Other EAQ Topics" on
+       2026-10-03, with only their topic tag changed: 9 from Week 6
+       EAQ 1 and the somatization definition from Week 5 EAQ 1.
+       ========================================================== */
+    {
+      id: "week6-somatic",
+      label: "Somatic Symptom Disorders",
+      sets: {
+        mustKnow: [
+          /* LO: somatic symptom disorder, manifestations and impact */
+          {
+            stem: "Which impacts on the individual are expected with somatic symptom disorder? Select all that apply.",
+            options: [
+              "Frequent doctor visits and unnecessary medical tests",
+              "Avoiding healthcare altogether for fear of what may be found",
+              "Chronic anxiety and worry about health that interferes with daily life",
+              "Legal consequences once fraudulent behavior is detected",
+              "Impaired social and occupational functioning",
+              "Sudden disability with loss of mobility and independence"
+            ],
+            answers: [0, 2, 4],
+            rationale: "Somatic symptom disorder brings chronic anxiety and worry about health, frequent doctor visits and unnecessary tests with a high emotional and financial burden, and impaired social and occupational functioning. Avoiding healthcare altogether belongs to illness anxiety disorder, legal consequences to malingering, and sudden disability to conversion disorder.",
+            topic: "Somatic Symptom Disorders",
+            source: "quiz-bank"
+          },
+          /* LO: illness anxiety disorder, manifestations and impact */
+          {
+            stem: "Which pattern of healthcare use may develop in a patient with illness anxiety disorder?",
+            options: [
+              "Manipulating test results in order to stay admitted",
+              "Seeking care only while a compensation claim is pending",
+              "Either doctor shopping or avoiding healthcare altogether",
+              "Attending rehabilitation for a sudden loss of mobility"
+            ],
+            answer: 2,
+            rationale: "Illness anxiety disorder can lead to doctor shopping and high health-related costs, or to avoiding healthcare altogether, because the fear of illness can drive either reassurance seeking or avoidance of medical situations. Manipulating test results is a factitious disorder behavior, and care tied to compensation points to malingering.",
+            topic: "Somatic Symptom Disorders",
+            source: "quiz-bank"
+          },
+          /* LO: conversion disorder, manifestations and impact */
+          {
+            stem: "What often triggers the neurological symptoms of conversion disorder?",
+            options: [
+              "Stress or trauma",
+              "A wish for financial compensation",
+              "A worsening chronic medical condition",
+              "Fear of acquiring a serious illness"
+            ],
+            answer: 0,
+            rationale: "Conversion disorder symptoms, such as paralysis, tremors, non-epileptic seizures or vision problems, are often triggered by stress or trauma and cannot be explained by medical tests. A wish for compensation is the external gain of malingering, and fear of acquiring a serious illness defines illness anxiety disorder.",
+            topic: "Somatic Symptom Disorders",
+            source: "quiz-bank"
+          },
+          /* LO: psychological factors affecting medical condition */
+          {
+            stem: "A patient with asthma has more frequent attacks whenever stress and anxiety at work increase. Which diagnosis fits this presentation?",
+            options: [
+              "Somatic symptom disorder",
+              "Conversion disorder",
+              "Factitious disorder",
+              "Psychological factors affecting medical condition"
+            ],
+            answer: 3,
+            rationale: "Psychological factors affecting medical condition describes stress or mental health issues that worsen a physical medical condition such as chronic pain, asthma or heart disease. In somatic symptom disorder the symptoms often have no clear medical cause, and in conversion disorder the symptoms are neurological and unexplained by testing. Here the asthma is a real medical condition made worse by stress.",
+            topic: "Somatic Symptom Disorders",
+            source: "quiz-bank"
+          },
+          /* LO: factitious disorders (imposed on self or other) */
+          {
+            stem: "Which behaviors may be involved in factitious disorder? Select all that apply.",
+            options: [
+              "Falsifying medical histories",
+              "Fabricating symptoms to obtain disability payments",
+              "Manipulating test results",
+              "Hyperfocus on medical websites out of fear of illness",
+              "Intentionally harming oneself"
+            ],
+            answers: [0, 2, 4],
+            rationale: "Factitious disorder involves intentionally faking or producing symptoms to assume the sick role, and may include falsifying medical histories, manipulating test results or intentionally harming oneself. Fabricating symptoms for disability payments is malingering, because the incentive is external. Hyperfocus on health information out of fear belongs to illness anxiety disorder.",
+            topic: "Somatic Symptom Disorders",
+            source: "quiz-bank"
+          },
+          /* LO: malingering */
+          {
+            stem: "Which motivation separates malingering from factitious disorder?",
+            options: [
+              "Internal incentives, a primary gain",
+              "External incentives, a secondary gain",
+              "A need to assume the sick role",
+              "Distress over actual physical symptoms"
+            ],
+            answer: 1,
+            rationale: "Both involve intentional exaggeration or fabrication of symptoms, and the difference is the motivation. Malingering is driven by external incentives (secondary gain), such as avoiding work or receiving compensation. Factitious disorder is driven by internal incentives (primary gain), the need to assume the sick role.",
+            topic: "Somatic Symptom Disorders",
+            source: "quiz-bank"
+          },
+          /* LO: specific treatments */
+          {
+            stem: "What role do antidepressants and anxiolytics play in treating the somatic symptom disorders?",
+            options: [
+              "The primary treatment, started before therapy",
+              "A treatment reserved for malingering",
+              "An adjunct, mostly for co-occurring anxiety or depression",
+              "No role, because medication reinforces symptoms"
+            ],
+            answer: 2,
+            rationale: "Medications are not the primary intervention for somatic disorders. They can relieve specific symptoms and are more commonly used when anxiety or depression co-occurs. The primary and most effective treatment is cognitive-behavioral therapy, and malingering is addressed through psychiatric evaluation and legal or social intervention, not medication.",
+            topic: "Somatic Symptom Disorders",
+            source: "quiz-bank"
+          },
+          /* LO: nursing interventions */
+          {
+            stem: "Which nursing action reduces health dependency in a patient with a somatic symptom disorder?",
+            options: [
+              "Coordinating appointments and building a structured follow-up plan",
+              "Arranging an extra visit each time a new symptom appears",
+              "Referring to psychiatric care in place of medical care",
+              "Requesting repeat diagnostic tests to provide reassurance"
+            ],
+            answer: 0,
+            rationale: "To reduce health dependency the nurse collaborates with the healthcare team, coordinates appointments and helps the individual develop a structured plan for follow-up. Involvement in both medical and psychiatric care is encouraged, so psychiatric care does not replace medical care. Extra visits and repeat tests feed the pattern of frequent visits and unnecessary testing.",
+            topic: "Somatic Symptom Disorders",
+            source: "quiz-bank"
+          }
+        ],
+        medications: [],
+        eaq: [
+          /* Moved from "Other EAQ Topics" on 2026-10-03. Imported wording untouched. */
+          {
+            stem: "Which statement best defines somatization?",
+            options: [
+              "The holistic approach to managing stress",
+              "The psychological and behavioral response to stress",
+              "The expression of stress through physical symptoms",
+              "The conversion of stress into a physical and emotional form"
+            ],
+            answer: 2,
+            rationale: "Somatization is the expression of stress through physical symptoms. There are holistic approaches to managing stress, but this is not the definition of somatization. Somatization is not just psychological and behavioral; it has a physical component. Conversion disorder describes the conversion of stress into both physical and emotional forms. (p. 314)",
+            topic: "Somatic Symptom Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A member of the military service prepares for discharge. Just before the exit physical examination, this person consumes large amounts of caffeine to increase blood pressure in an effort to qualify for disability benefits. Which term is most applicable to this individual's behavior?",
+            options: [
+              "Resilience",
+              "Malingering",
+              "Somatization",
+              "Hypochondriasis"
+            ],
+            answer: 1,
+            rationale: "Malingering is a consciously motivated act to deceive based on the desire for material gain. It involves fabricating an illness or exaggerating symptoms to become eligible for disability compensation, commit fraud against insurance companies, obtain prescription medications, evade military service, or receive a reduced prison sentence. Resilience refers to the capacity to adapt to and cope with severe stress. Somatization refers to the expression of psychological stress through physical symptoms. Hypochondriasis is an older term for illness anxiety disorder. (p. 328)",
+            topic: "Somatic Symptom Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which best outcome would the nurse plan for a 45-year-old patient with nonassertive behavior who speaks poorly about themself and consistently seeks the nurse’s reassurance?",
+            options: [
+              "Verbalizes positive sense of self; maintains strong decision-making abilities",
+              "Displays ability to stand up for oneself; finds more positive coping patterns",
+              "Finds more positive social system to support sense of self; describes self as successful",
+              "Identifies support system to assist with self-esteem issues; recognizes ways of being more successful"
+            ],
+            answer: 0,
+            rationale: "For the patient with nonassertive behavior who displays negative self-talk and has low self-esteem, the best outcome is for the patient to verbalize a positive sense of self and maintain strong decision-making abilities. Identifying a support system, recognizing ways of being successful, finding more positive social systems, describing self as successful, displaying the ability to stand up for oneself, and finding more positive coping patterns are outcomes that can be planned once the patient has first achieved a positive sense of self and strong decision making. (p. 323)",
+            topic: "Somatic Symptom Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which condition would the nurse consider to be most associated with a feeling of hopelessness when assessing a group of patients suffering from stress-related medical conditions?",
+            options: [
+              "Cancer",
+              "Peptic ulcer",
+              "Essential hypertension",
+              "Coronary heart disease"
+            ],
+            answer: 0,
+            rationale: "Cancer is related to long-standing stress, and the diagnosis can be related to feelings of hopelessness. Peptic ulcers are more related to increased social pressure and grief. Essential hypertension can be seen in traumatic life situations or a stressful job. Coronary heart disease is more related to sudden stress and often precipitated by long periods of frustration and disappointment. (p. 319)",
+            topic: "Somatic Symptom Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which problem is frequently found in patients with somatoform disorders?",
+            options: [
+              "Inability to feed self",
+              "Coping ineffectively",
+              "Diminished urine output",
+              "Not meeting developmental milestones"
+            ],
+            answer: 1,
+            rationale: "Soma is the Greek word for body, and somatization is the expression of psychological stress through physical symptoms and coping ineffectively. Somatic symptom disorder is not characterized by an inability to feed self, low urine output, or not meeting developmental milestones. (p. 323)",
+            topic: "Somatic Symptom Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which datum is gathered routinely during assessment of a patient with a somatoform disorder?",
+            options: [
+              "Level of confusion",
+              "Potential for violence",
+              "Dependence on medication",
+              "Personal identity disturbance"
+            ],
+            answer: 2,
+            rationale: "The nurse should screen for misuse of prescribed medication and substance abuse, which sometimes is present in a patient with a somatoform disorder. The nurse should assess not only for what the patient has taken but also for amounts and length of time over which the drugs have been prescribed. Somatoform abuse is not usually associated with confusion or violence. Dissociative identity disorder can cause a personal identity disturbance. (p. 320)",
+            topic: "Somatic Symptom Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "The nurse is caring for a patient with symptoms of sudden left arm weakness. After extensive testing, the healthcare provider diagnosed conversion disorder. Which medication would the nurse teach the patient and the family about?",
+            options: [
+              "Antianxiety medication",
+              "Antidiabetic medication",
+              "Medications for cardiac diseases",
+              "Medications for brain hemorrhage"
+            ],
+            answer: 0,
+            rationale: "The patient may benefit from the short-term use of antianxiety medications. The patient would likely also receive therapies such as behavioral therapy or hypnosis. Medication for diabetes or cardiac or neurological disorders would be needed only if the patient is diagnosed with some comorbidities that require these medications. (p. 327)",
+            topic: "Somatic Symptom Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which other disorder is related to somatic symptom disorder?",
+            options: [
+              "Depersonalization",
+              "Dissociative fugue",
+              "Conversion disorder",
+              "Dissociative identity disorder"
+            ],
+            answer: 2,
+            rationale: "Somatic symptom disorders include conversion disorders that are functional neurological disorders. Depersonalization, dissociative fugue, and dissociative identity disorder are all dissociative disorders. (p. 317)",
+            topic: "Somatic Symptom Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "A woman suddenly finds she cannot see. She seems unconcerned about her symptom and tells her spouse, \"Don't worry, dear. Things will all work out.\" Which term reflects her attitude?",
+            options: [
+              "Regression",
+              "Depersonalization",
+              "La belle indifference",
+              "Dissociative amnesia"
+            ],
+            answer: 2,
+            rationale: "La belle indifference is an attitude of unconcern about a symptom that is unconsciously used to lower anxiety. Regression is an anxiety defense mechanism. Depersonalization and dissociative amnesia are dissociative disorders. (p. 317)",
+            topic: "Somatic Symptom Disorders",
+            source: "eaq"
+          },
+          {
+            stem: "Which advantage does cognitive-behavioral therapy (CBT) have for patients with somatization disorders?",
+            options: [
+              "Provides a consistent supported treatment by a general medical nurse",
+              "Helps reframe the patient's thoughts and gain control of the situation",
+              "Builds a self-fulfilling cycle of pain, despair, and health-seeking behaviors",
+              "Initiates psychiatric consultation without need for the primary healthcare provider"
+            ],
+            answer: 1,
+            rationale: "In CBT, the advanced practice nurse helps the patient to reframe exaggeration of symptoms and health-seeking behaviors. This helps the patient to gain control of the situation and break, rather than build, the self-fulfilling cycle of pain, despair, and health-seeking behaviors. CBT is a consistent supported treatment method that cannot be managed by general medical nurses; an advanced practice psychiatric nurse provides CBT. An advanced practice nurse works with the patient, keeping the primary healthcare provider aware of the patient’s progress. An advanced practice nurse, not a general medical nurse, initiates the psychiatric consultation if needed. (pp. 324, 327)",
+            topic: "Somatic Symptom Disorders",
+            source: "eaq"
+          }
+        ]
+      }
+    },
+    /* ==========================================================
+       OTHER EAQ TOPICS — always the LAST topic
 
        A permanent catch-all, added 2026-09-24 (Holly), for imported
        Sherpath questions on subjects no lectured topic teaches — not
@@ -8935,7 +10427,18 @@ window.QUIZ_BANK = {
        lectured topic would make the breakdown strip claim coverage the
        site does not have, so this is where it goes instead.
 
-       13 eaq questions so far, all from the two Week 5 EAQ files:
+       64 eaq questions so far (74 until 2026-10-03, when the 10 on
+       somatic symptom disorders moved to that new topic). 61 came from
+       the two Week 6 EAQ files
+       on 2026-10-03 (26 from EAQ 1, 35 from the "HESI focus chapters"
+       quiz): sleep-wake disorders, somatic symptom disorders, death,
+       dying and grief, aging and older adults, dementia, sexual
+       dysfunction and paraphilic disorders, stress and coping, and
+       dissociative identity disorder and amnesia. If a later week
+       teaches one of those subjects, move its questions to that
+       topic's eaq set and change only the topic tag.
+
+       The first 13 are from the two Week 5 EAQ files:
 
        4 held out of Week 5 EAQ 1 since 2026-09-21 (estazolam for
        insomnia, somatization, two on cognitive reframing for general
@@ -8973,19 +10476,6 @@ window.QUIZ_BANK = {
             ],
             answer: 1,
             rationale: "Estazolam is a benzodiazepine used to treat patients with insomnia. Silenor is an antidepressant used to treat patients with insomnia. Diphenhydramine and doxylamine are antihistamines used to treat patients with insomnia. (p. 366)",
-            topic: "Other EAQ Topics",
-            source: "eaq"
-          },
-          {
-            stem: "Which statement best defines somatization?",
-            options: [
-              "The holistic approach to managing stress",
-              "The psychological and behavioral response to stress",
-              "The expression of stress through physical symptoms",
-              "The conversion of stress into a physical and emotional form"
-            ],
-            answer: 2,
-            rationale: "Somatization is the expression of stress through physical symptoms. There are holistic approaches to managing stress, but this is not the definition of somatization. Somatization is not just psychological and behavioral; it has a physical component. Conversion disorder describes the conversion of stress into both physical and emotional forms. (p. 314)",
             topic: "Other EAQ Topics",
             source: "eaq"
           },
@@ -9132,6 +10622,685 @@ window.QUIZ_BANK = {
             rationale: "In acute settings, a patient with dissociative amnesia has sudden memory retrieval after receiving intravenously administered benzodiazepines. Research suggests that benzodiazepines help in retrieval of old memories by reducing anxiety. Beta blockers are primarily prescribed to reduce hypertension caused by anxiety and stress. Phenothiazines are an antipsychotic medication that is prescribed to cause sedation and calm the patient. Butyrophenones are prescribed to treat hallucinations and delusions in patients. (p. 309)",
             topic: "Other EAQ Topics",
             source: "eaq"
+          },
+          /* Week 6 EAQ 1 (50 questions), imported 2026-10-03. */
+          {
+            stem: "Which diagnostic test would the nurse anticipate for a patient suspected of having insomnia?",
+            options: [
+              "Actigraphy",
+              "Hypnogram",
+              "Polysomnography (PSG)",
+              "Multiple sleep latency test (MSLT)"
+            ],
+            answer: 0,
+            rationale: "Actigraphy is a test used to record body movements over time. This helps evaluate sleep patterns and sleep duration and therefore is useful for patients with insomnia. Hypnogram is not a test. It is a graphical representation of structural organization of nonrapid eye movement (NREM) and rapid eye movement (REM) sleep. PSG is a test used to diagnose and evaluate a patient with sleep-related breathing disorder. The MSLT is a daytime nap test that measures sleepiness in a sleep-conducive setting. (p. 358)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "The nurse is caring for a patient with arousal disorder. On observation, the nurse finds the calf and shoulder muscles of the patient to be weakened and paralyzed. Which question by the nurse is appropriate during the assessment?",
+            options: [
+              "\"Do you ever wake up suddenly after a dream?\"",
+              "\"How do you feel after waking up in the morning?\"",
+              "\"Do you have a tendency to act out your dreams?\"",
+              "\"Have you ever done unusual activity during sleep?\""
+            ],
+            answer: 2,
+            rationale: "Rapid eye movement (REM) sleep behavior disorder is an arousal disorder characterized by relaxed skeletal muscles (muscle atonia). The assessment interview includes questions about the effect of dreams on the patient's mental status. Patients with this disorder usually act out their dreams. Questions about sudden waking, morning mental status, and unusual activity during sleep are not included in the assessment. Sudden awakening is a characteristic of nightmare disorder. Assessment of mental status after waking up is included for insomnia patients. Tendency toward unusual activity during sleep results from sleepwalking disorder (somnambulism). (p. 364)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which diagnostic test would the nurse anticipate will be prescribed for a patient with sleep-related breathing disorder?",
+            options: [
+              "Hypnogram",
+              "Polysomnography (PSG)",
+              "Multiple sleep latency test (MSLT)",
+              "Maintenance of wakefulness test (MWT)"
+            ],
+            answer: 1,
+            rationale: "PSG is a test used to diagnose and evaluate a patient with a sleep-related breathing disorder. A hypnogram is a graphical representation of sleep architecture of nonrapid eye movement (NREM) and rapid eye movement (REM) sleep. The MSLT is a daytime nap test that measures sleepiness in a sleep-conducive setting. The MWT is used to evaluate the ability to stay alert in a sleep-conducive situation and document adequate alertness. (p. 358)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which sleeping disorder includes the assessment for preferred sleep schedule?",
+            options: [
+              "Arousal disorder",
+              "Insomnia disorder",
+              "Hypersomnia disorder",
+              "Circadian rhythm disorder"
+            ],
+            answer: 3,
+            rationale: "Assessment for patients with sleep/wake disorder is essential to diagnose the condition and helpful for a targeted treatment plan. Diagnosing circadian rhythm disorders involves understanding the patient's preferred sleep schedule. Assessment of the preferred sleep pattern is not done for conditions like arousal disorder, insomnia, and hypersomnia. Diagnosing arousal disorder includes assessment for sleepwalking and nightmares. Diagnosing insomnia includes assessment of difficulty in the sleep/wake pattern. Hypersomnia includes assessment of conditions like snoring and sleep paralysis. (p. 364)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "The Epworth Sleepiness Scale (ESS) evaluates the safety risk associated with excessive sleepiness. Which score is considered normal using this tool?",
+            options: [
+              "A score of 10 to 15",
+              "A score of less than 10",
+              "A score of greater than 15",
+              "A global sum of 5 or greater"
+            ],
+            answer: 1,
+            rationale: "The ESS is a validated psychometric tool used to measure subjective reports of sleepiness. A score of less than 10 is considered normal. A score of 10 to 15 is considered as moderately sleepy, and a score of greater than 15 is considered as excessively sleepy. A global sum of 5 or greater in Pittsburgh Sleep Quality Index (PSQI) indicates poor quality and patterns of sleep. The PSQI is a tool that subjectively measures sleep quality. (p. 364)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "A patient is suspected of having circadian rhythm disorder, which can be confirmed by monitoring the patient's body movements and sleep patterns. Which diagnostic test would the nurse anticipate being prescribed for this patient?",
+            options: [
+              "Actigraphy",
+              "Hypnogram",
+              "Polysomnography (PSG)",
+              "Multiple sleep latency test (MSLT)"
+            ],
+            answer: 0,
+            rationale: "Actigraphy is a test used to monitor body movements for a time, which helps evaluate sleep patterns and sleep duration. A hypnogram is a graphical representation of sleep architecture of nonrapid eye movement (NREM) and rapid eye movement (REM) sleep. PSG is a test used to diagnose and evaluate a patient with sleep-related breathing disorder. The MSLT is a daytime nap test that measures sleepiness in a sleep-conducive setting. (p. 358)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which drug is a melatonin receptor agonist?",
+            options: [
+              "Silenor",
+              "Zolpidem",
+              "Doxylamine",
+              "Ramelteon"
+            ],
+            answer: 3,
+            rationale: "Ramelteon is a melatonin receptor agonist, used in the treatment of insomnia. Silenor is an antidepressant. Zolpidem is a nonbenzodiazepine receptor agonist drug. Doxylamine is an antihistamine used to treat allergies. (p. 366)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which drug is a melatonin receptor agonist often prescribed for insomnia?",
+            options: [
+              "Zaleplon",
+              "Zolpidem",
+              "Ramelteon",
+              "Eszopiclone"
+            ],
+            answer: 2,
+            rationale: "Ramelteon is a short-acting melatonin receptor agonist approved by the FDA for sleep-onset insomnia in adults. It mimics natural melatonin to promote sleep without sedative-hypnotic effects, reducing habit-forming risk and withdrawal symptoms. Zaleplon is a non-benzodiazepine hypnotic (Z-drug) that acts on GABA receptors, with potential for dependence and tolerance, and is not a melatonin agonist. Zolpidem is a Z-drug sedative-hypnotic that enhances GABA activity, associated with habit formation, rebound insomnia, and complex sleep behaviors, and lacks melatonin receptor action. Eszopiclone is a Z-drug hypnotic that binds GABA receptors, carrying risks of physical dependence, tolerance, and abuse similar to benzodiazepines, and is not a melatonin agonist. (p. 366)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which diagnostic test is performed to evaluate a nocturnal seizure disorder?",
+            options: [
+              "Actigraphy",
+              "Polysomnography",
+              "Multiple sleep latency test",
+              "Maintenance of wakefulness test"
+            ],
+            answer: 1,
+            rationale: "Seizures occur because of abnormal electrical activity in the brain. Polysomnography records the electrical waves of the brain and is used to evaluate a nocturnal seizure disorder. Actigraphy is used to evaluate sleep patterns and sleep duration. A multiple sleep latency test is used to measure sleepiness in a sleep-conducive setting. The maintenance of wakefulness test is used to evaluate the patient’s ability to remain awake in a quiet and nonstimulating environment for a time. (p. 358)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which intervention would the nurse teach a patient with a sleep disorder about sleep hygiene practice to perform just before bed?",
+            options: [
+              "Drink tea.",
+              "Watch television.",
+              "Perform exercise.",
+              "Eat light meals."
+            ],
+            answer: 3,
+            rationale: "Heavy meals should be avoided before bedtime to reduce the risk of indigestion and sleep disturbance. Watching television before bedtime may have a stimulating effect and interfere with sleep. Exercise can be performed during the day but should be avoided before bedtime because exercise stimulates the brain, muscles, and heart. Caffeinated tea should be avoided because it is a stimulant and a diuretic that causes night awakening for urination. (p. 365)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which nursing diagnosis is most appropriate for a patient who reports disruption in the amount and quality of sleep that impairs daily functioning?",
+            options: [
+              "Disturbed sleep pattern",
+              "Sleep deprivation",
+              "Insomnia",
+              "Readiness for enhanced sleep"
+            ],
+            answer: 0,
+            rationale: "Disturbed sleep pattern is the most appropriate nursing diagnosis for a patient reporting disruption in sleep amount and quality that impairs functioning, as it addresses changes in sleep routine causing distress. Insomnia is a medical diagnosis, not nursing, focusing on inability to initiate/maintain sleep. Sleep deprivation applies to insufficient sleep quantity due to external factors, not qualitative disruptions. Readiness for enhanced sleep indicates potential for improved sleep, not current impairment. (p. 365)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which intervention would the nurse provide to promote healthy sleep hygiene for a patient who reports that falling asleep can often take hours?",
+            options: [
+              "Teach the patient how to do progressive relaxation.",
+              "Exercise just before bed to make the body tired.",
+              "Watch the clock until becoming tired enough to fall asleep.",
+              "Advise the patient to drink an ounce or two of brandy at bedtime."
+            ],
+            answer: 0,
+            rationale: "Progressive relaxation relaxes muscle groups sequentially and generates a state of pleasant comfort and ease, a natural prelude to sleep. It is not advised to exercise more than 2 hours before bed because this can cause one to have difficulty falling asleep. Exercise more than 2 hours before bed is beneficial to help with sleep. Clock watching can cause sleep issues. Alcoholic beverages are not recommended just before bed. (p. 365)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which criterion meets the requirements for a diagnosis of primary insomnia?",
+            options: [
+              "\"I was diagnosed with depression 2 months ago.\"",
+              "\"I've had problems falling asleep for 3 weeks now.\"",
+              "\"I have these terrible nightmares when I fall asleep.\"",
+              "\"I've actually missed work because I'm too tired to go.\""
+            ],
+            answer: 3,
+            rationale: "A criterion for primary insomnia listed in the Diagnostic and Statistical Manual of Mental Disorders, 5th edition (DSM-5), is disruption of the normal routine as a result of the sleep disturbance. A diagnosis of depression is not a criterion for insomnia. The sleep disturbances must be present for at least 3 months. Nightmares are not a definitive criterion listed for insomnia. (p. 358)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which question would the nurse ask a patient to analyze if the sleep disorder is related to hypersomnia?",
+            options: [
+              "\"Are you troubled by disturbing dreams?\"",
+              "\"Do you have difficulty falling or staying asleep?\"",
+              "\"Did anybody tell you that you snore in your sleep?\"",
+              "\"Did anybody tell you that you walk or talk in your sleep?\""
+            ],
+            answer: 2,
+            rationale: "Inquiring about reports of snoring gives information about hypersomnia (excessive daytime sleepiness), which occurs as a result of obstructive sleep apnea syndrome. Being troubled by nightmares is related to arousal sleep disorder such as nightmare disorder. Difficulty with falling or staying asleep indicates insomnia. Inquiring about walking or talking in sleep is designed to find out about disorders of arousal such as somnambulism and somniloquy. (p. 364)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "A patient reports, \"I fall asleep as soon as I go to bed but wake up between 3 and 4 am every morning; then, I can't go back to sleep. It's causing me problems concentrating at work and I don't have enough energy to take care of my family.\" Which nursing diagnosis applies to this scenario?",
+            options: [
+              "Insomnia",
+              "Impaired comfort",
+              "Sleep deprivation",
+              "Disturbed sleep pattern"
+            ],
+            answer: 0,
+            rationale: "Criteria for insomnia include absenteeism, changes in affect, energy, mood, quality of life, concentration, and sleep. Patients with insomnia report a lack of energy, sleep disturbances, and early wakening. Impaired comfort is a nursing diagnosis that relates to unpleasant sensations such as pain, itching, or gastrointestinal distress. Sleep deprivation is associated with acute confusion, agitation, anxiety, apathy, fatigue, poor concentration, irritability, lethargy, malaise, perceptual disorders, and slowed reactions. Changes in normal sleep pattern, decreased ability to function, dissatisfaction with sleep, awakening, no difficulty falling asleep, and not feeling well rested are criteria for the diagnosis disturbed sleep pattern. (p. 358)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which hormone regulates hunger?",
+            options: [
+              "Leptin",
+              "Insulin",
+              "Ghrelin",
+              "Melatonin"
+            ],
+            answer: 2,
+            rationale: "Ghrelin regulates hunger. Leptin is a hormone that causes feelings of fullness, thereby acting as a satiety hormone. Insulin regulates blood sugar levels. Melatonin regulates sleep. (p. 355)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "An older adult patient who has been admitted to a long-term care facility reports not being able to sleep \"at all.\" Which reassurance would the nurse provide?",
+            options: [
+              "\"There is nothing to be done about this.\"",
+              "\"The doctor will prescribe a sleeping pill.\"",
+              "\"Older adults often don’t sleep as much.\"",
+              "\"Stop worrying; you will sleep when you are tired.\""
+            ],
+            answer: 2,
+            rationale: "Older people are often more likely to report less sleep. There is no guarantee that the healthcare provider will prescribe anything; the patient must first have a thorough assessment. The nurse should never tell a patient or family to \"stop worrying\"; all patient concerns should be addressed. Similarly, saying \"Nothing can be done\" is also dismissive and inappropriate. (p. 354)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          /* Week 6 EAQ 2, the 100-question "HESI focus chapters" quiz, imported 2026-10-03. */
+          {
+            stem: "Which term describes growing weakness in a patient that may indicate approaching death?",
+            options: [
+              "Mottling",
+              "Cathexis",
+              "Asthenia",
+              "Decathexis"
+            ],
+            answer: 2,
+            rationale: "Asthenia describes growing weakness in a patient that may indicate approaching death. Cathexis describes emotional connection, which the patient with a terminal illness may experience as they accept the finality of life. Decathexis describes emotional withdrawal, which the patient with a terminal illness may experience as they accept the finality of life. Mottling describes grayish-blue splotches on the skin at the knees, ankles, and feet, which may indicate approaching death. (p. 555)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which term identifies the phenomenon when every evening, several residents on the Alzheimer’s disease wing of a long-term care facility become excessively agitated?",
+            options: [
+              "Apraxia",
+              "Agraphia",
+              "Sundowning",
+              "Confabulation"
+            ],
+            answer: 2,
+            rationale: "Sundowning is the term for the increase in agitation and decrease in mood in the later part of the day or night common among patients with Alzheimer’s disease. Apraxia is the loss of purposeful movement. Agraphia refers to diminishment of reading and writing abilities. Confabulation describes the creation of vivid stories instead of actual memories. (p. 439)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which two reasons are the current leading causes of death in the United States?",
+            options: [
+              "Suicide and accidents",
+              "Heart disease and cancer",
+              "Tuberculosis and influenza",
+              "Diabetes and nephropathies"
+            ],
+            answer: 1,
+            rationale: "The two primary causes of death in the United States are heart disease and cancer. Suicide, accidents, diabetes, and nephropathies are less common causes of death. Tuberculosis and influenza were the two primary causes of death in the United States in 1900. (p. 546)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Oxidative stress, wear-and-tear, and neuroendocrine are examples of which theory of aging?",
+            options: [
+              "Genetic",
+              "Biological",
+              "Psychosocial",
+              "Developmental"
+            ],
+            answer: 1,
+            rationale: "Theories about the process of aging are classified as biological, developmental, and psychosocial. Oxidative stress, wear-and-tear, and neuroendocrine are examples of biological theories of aging. Genetic is not a category in the major theories of aging. Psychosocial theories of aging include role, activity, disengagement, continuity, age-stratification, and modernization. Developmental theories of aging include Jung’s theory of personality, Erikson, Peck, Maslow, and Tornstam. (p. 571)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which phase is the last phase in the sexual response cycle?",
+            options: [
+              "Desire",
+              "Orgasm",
+              "Resolution",
+              "Excitement"
+            ],
+            answer: 2,
+            rationale: "Resolution is the last phase of the sexual response cycle. The sexual tension built up in the earlier phases reduces to baseline level after cessation of sexual stimulation. Desire is the first phase of the cycle. The second phase of the sexual response cycle is excitement, in which sexual tension increases. Orgasm is the third phase of the sexual response cycle, in which sexual tension peaks. (p. 372)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement regarding Jung’s theory of personality development is correct?",
+            options: [
+              "Disengagement from the world can be a time of introspection leading to wisdom.",
+              "Cells accumulate damage, resulting in errors of replication in the cellular processes.",
+              "Individuals move from outward achievement to self-acceptance during development.",
+              "Self-actualization and the evolution of developmental needs occur as the individual ages."
+            ],
+            answer: 2,
+            rationale: "The theories of aging help the nurse guide the patient for better living. Development in an individual is explained by Jung’s theory of personality, which states that individuals move from outward achievement to self-acceptance. Tornstam’s theory states that disengagement from the world can be a time of introspection leading to wisdom. Cells accumulating damage resulting in errors of replication is cell functioning theory. It explains the biological changes caused by aging. Maslow’s theory states that self-actualization and the evolution of developmental needs occur as the individual ages. (p. 571)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which question would the nurse ask during a screening to yield information related to hypersomnia? Select all that apply.",
+            options: [
+              "\"Are you troubled by nightmares?\"",
+              "\"Do you have difficulty falling asleep?\"",
+              "\"Have you experienced uncontrollable sleepiness?\"",
+              "\"Have your family members complained that you snore?\"",
+              "\"Do you feel a strange sensation in your legs that disturbs your sleep?\""
+            ],
+            answers: [2, 3, 4],
+            rationale: "Asking patients targeted questions about uncontrollable sleepiness and snoring may help the nurse recognize certain sleep disorders associated with hypersomnia such as narcolepsy and sleep apnea. Inquiring about unpleasant sensations in the legs also gives information about hypersomnia caused by restless leg syndrome. Asking questions about nightmares or difficulty falling asleep would be more useful for identifying sleep disorders associated with insomnia, including arousal sleep disorder and nightmare disorder. (p. 364)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which assessment datum would the nurse expect to record for the patient diagnosed with sexual sadism disorder?",
+            options: [
+              "The patient secretly watches people in dressing rooms.",
+              "The patient urinates on their partner during sexual activity.",
+              "The patient makes a partner suffer for sexual satisfaction.",
+              "The patient rubs or touches nonconsenting people for sexual gratification."
+            ],
+            answer: 2,
+            rationale: "Sexual sadism is characterized by making one’s partner suffer by being beaten, humiliated, or bound, and is consensual. The patient who has been diagnosed with this disorder has continued the behavior for at least 6 months, experiences discomfort, or provides a persistent risk or danger to themselves or others. Secretly watching people in dressing rooms or other intimate settings is an example of illegal behavior seen in patients with voyeuristic disorder. Urophilia involves a person urinating on their partner during sexual activity and is not a paraphilic disorder. A frotteuristic disorder is characterized by rubbing or touching a nonconsenting person for sexual gratification. Sadism, voyeurism, urophilia, and frotteuristic behaviors are not disorders unless they meet the criteria to be diagnosed as a paraphilic disorder. (p. 384)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "The nurse discussed stress busters with the participants in a workshop on stress management. Which behavior adopted by the participants after attending the workshop indicates effective learning?",
+            options: [
+              "Going to bed 15 minutes earlier in the night",
+              "Sleeping for an extra 30 minutes in the morning",
+              "Stopping all caffeinated beverage (e.g., coffee, cola, tea) intake immediately",
+              "Performing aerobic exercise 3 hours before going to bed"
+            ],
+            answer: 3,
+            rationale: "While teaching stress management techniques to the patients, the nurse should explain the stress busters, which the patients can follow in daily life to reduce stress. The participants must regularly do aerobic exercises like walking and yoga 3 hours before going to bed. The body temperature increases while doing aerobic exercises and returns to normal within 3 hours. This activity helps patients sleep better. People with chronic stress often have fatigue, so they must go to sleep 30 to 60 minutes earlier in the evening, rather than 15 minutes. Sleeping later in the morning is not helpful as it disrupts the body rhythms. The participants should wake up early in the morning to avoid sleeping more in the morning. The participants should not stop caffeinated beverages immediately, as it can cause caffeine withdrawal symptoms such as depressed mood and decreased alertness. The participants must slowly wean off drinking coffee and tea. (p. 159)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which category of aging theory includes the theory that mutual withdrawal occurs between the aging person and others?",
+            options: [
+              "Immunity",
+              "Biological",
+              "Psychosocial",
+              "Developmental"
+            ],
+            answer: 2,
+            rationale: "Theories about the process of aging are biological, developmental, or psychosocial. Disengagement is a psychosocial theory of aging. It relates to a mutual withdrawal that occurs between the aging person and others. Immunity is a type of biological theory of aging. Developmental theories on aging include Jung’s theory of personality, as well as theories from Erikson, Peck, Maslow, and Tornstam. (p. 571)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which health issue can be associated with sleep disorders?",
+            options: [
+              "Many psychiatric disorders are associated with hypersomnia.",
+              "Obstructive sleep apnea has been associated with hypotension.",
+              "Sleep disruption may be a precipitating factor in triggering psychiatric disorders.",
+              "Sleeping 5 hours per night prevents cardiovascular and neurological dysfunction."
+            ],
+            answer: 2,
+            rationale: "According to research done by Roth et al. in 2006, sleep disruption may be a precipitating factor in triggering psychiatric disorders. According to research done by Cappuccio et al. in 2010, sleeping less than 6 hours per night affects cardiovascular and neurological function. A study done by Tracova et al. in 2008 has shown that obstructive sleep apnea is associated with hypertension. Many psychiatric disorders are associated with insomnia rather than hypersomnia. (p. 359)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which term describes emotional connection, which the patient with a terminal illness may experience as they accept the finality of life?",
+            options: [
+              "Cathexis",
+              "Cachexia",
+              "Decubitus",
+              "Decathexis"
+            ],
+            answer: 0,
+            rationale: "Cathexis describes emotional connection, which the patient with a terminal illness may experience as they accept the finality of life. Decathexis describes emotional withdrawal, which the patient with a terminal illness may experience as they accept the finality of life. Cachexia describes severe weight loss, also known as wasting syndrome. Patients confined to bed may have decubitus ulcers, also known as bedsores. (p. 555)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Based on current data of the Social Readjustment Scale, which life-changing event is perceived to cause the greatest amount of stress?",
+            options: [
+              "Divorce",
+              "Retirement",
+              "Death of a spouse",
+              "Job termination"
+            ],
+            answer: 2,
+            rationale: "The Social Readjustment Scale is a life change scale that measures positive or negative life events. Each life change event is assigned a weight depending on its severity. Based on the current data, the death of a spouse is perceived to cause the greatest amount of stress. In descending order from the greatest to the least amount of stress perceived are divorce, being fired from a job, and retirement. (p. 159)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which stage of the sleep cycle is characterized by a decrease in temperature and relaxation of muscles?",
+            options: [
+              "Stage 1",
+              "Stage 2",
+              "Stage 3",
+              "Rapid eye movement (REM) sleep"
+            ],
+            answer: 0,
+            rationale: "Stage 1 of the sleep cycle lasts for 2% to 5% of the total sleep cycle and is characterized by a decrease in body temperature and muscle relaxation. Individuals experience partial loss of awareness of surroundings and can be easily aroused by mild stimuli. Individuals in stages 2 and 3 and REM sleep cannot be aroused by mild stimuli. Because these are the advanced stages of the sleep cycle, with decreases in heart rate and respiratory rate, arousal requires stronger stimuli. (p. 356)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which type of disorder does the patient with a sexual fixation on women’s underwear have?",
+            options: [
+              "Fetishistic",
+              "Pedophilic",
+              "Transvestic",
+              "Frotteuristic"
+            ],
+            answer: 0,
+            rationale: "A fetishistic disorder is characterized by a sexual focus on objects, such as women’s underwear. A pedophilic disorder is sexual interest toward prepubescent children. A transvestic disorder is seen when sexual satisfaction is achieved when dressing in the clothing of the opposite gender. A frotteuristic disorder is characterized by a person rubbing or touching a nonconsenting person for sexual gratification. (p. 383)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which nursing diagnosis would be the top priority when caring for a patient with Alzheimer’s disease?",
+            options: [
+              "Risk for injury",
+              "Caregiver strain",
+              "Anticipatory grieving",
+              "Level of communication"
+            ],
+            answer: 0,
+            rationale: "Evaluating the environment for potential injury-causing factors is a priority for all patients with Alzheimer’s disease to prevent falls. Caregiving strain and anticipatory grieving experienced by the family should be included in the care plan, but this is a lower priority than the patient’s immediate safety. Level and type of communication between the patient and others is a lower priority. (pp. 440, 441)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "A patient diagnosed with Alzheimer's disease fretfully says, \"School is out, and I must pick up my children now. I'm going to be late.\" The patient's children are now adults. The nurse replies, \"It sounds like you are feeling the responsibility of caring for young children.\" Which technique has the nurse used?",
+            options: [
+              "Distraction",
+              "Reassurance",
+              "Reorientation",
+              "Validation therapy"
+            ],
+            answer: 3,
+            rationale: "Patients with cognitive deficits sometimes become agitated because of concerns related to their past. They believe they are young and feel the need to return to important tasks that were a significant part of those earlier years. Validation therapy is helpful by reflecting back to the patient the feelings behind the worry and shows the nurse's understanding and concern. Distraction is a technique that involves using another activity or subject to alter the patient's focus. Reassurance may support the patient, but it does not address the reason for the worry. Reorientation does not address the patient's concerns. (p. 512)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which information about the older adult population is accurate?",
+            options: [
+              "Older adults are unable to learn new tasks.",
+              "Most older adults are socially isolated and lonely.",
+              "Older widows appear to adjust better than younger ones.",
+              "Older adults are more rigid in their thinking and set in their ways."
+            ],
+            answer: 2,
+            rationale: "The various myths about aging influence the psychological condition of older adults. Society’s perception reduces the morale of older adult patients. Research suggests that older widows appear to adjust better than younger ones. The patient tries to cope with the situation and adjusts according to the present situation. That older adults are socially isolated and lonely is a myth. They are not isolated, but some older adult patients may be neglected by their children who make them feel lonely, and they get depressed. That older adults are unable to learn new tasks is a myth. A person with interest and zeal to learn can perform any task. Patients must be encouraged to perform tasks that enhance confidence. It is a myth that older adults are more rigid in their thinking and set in their ways. (p. 571)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which category of medication is used to treat narcolepsy?",
+            options: [
+              "Hypnotics",
+              "Stimulants",
+              "Antipsychotics",
+              "Muscle relaxants"
+            ],
+            answer: 1,
+            rationale: "Stimulants are the first-line treatment for narcolepsy as they can induce wakefulness. Hypnotics, antipsychotics, and muscle relaxants are all likely to increase sleepiness, so they are less likely to be used to treat narcolepsy. (p. 359)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which patient score indicates severe pain according to the Pain Assessment in Advanced Dementia (PAINAD) scale?",
+            options: [
+              "1",
+              "3",
+              "5",
+              "7"
+            ],
+            answer: 3,
+            rationale: "The PAINAD scale uses five categories to assess pain, which include breathing, negative vocalization, facial expression, body language, and consolability. This is used by healthcare providers to determine if a patient needs treatment. A score of 7 to 10 indicates severe pain. A score of 1 to 3 indicates mild pain. A score of 4 to 6 indicates moderate pain. (p. 568)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which term describes emotional withdrawal, which the patient with a terminal illness may experience as they accept the finality of life?",
+            options: [
+              "Cathexis",
+              "Cachexia",
+              "Decubitus",
+              "Decathexis"
+            ],
+            answer: 3,
+            rationale: "Decathexis describes emotional withdrawal, which the patient with a terminal illness may experience as they accept the finality of life. Cathexis describes an emotional connection, which the patient with a terminal illness may experience as they accept the finality of life. Cachexia describes severe weight loss, also known as wasting syndrome. Patients confined to bed may have decubitus ulcers, also known as bedsores. (p. 555)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which strategy would the nurse include in the plan of care for a patient with dissociative amnesia?",
+            options: [
+              "Allow the patient to rest.",
+              "Ask the patient to recollect past events.",
+              "Provide the patient with cues from the past.",
+              "Ask the family member to make routine decisions."
+            ],
+            answer: 2,
+            rationale: "Many cases of dissociative amnesia resolve on their own or when exposed to cues from the past. Rest is important but not the main manner of treatment. Asking the person to recollect past events is not likely to be effective. There is no reason for family members to make decisions for the patient. (p. 305)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which community service is available for patients diagnosed with dementia?",
+            options: [
+              "Adult day care",
+              "Meals on Wheels",
+              "Occupational therapy",
+              "Telephonic reassurance"
+            ],
+            answer: 0,
+            rationale: "Community services include adult day care, which provides activities, socialization, and supervision of the patients; physical services; recreational services; and transportation. Home care services include Meals on Wheels, occupational therapy, and telephonic reassurance by calling patients who are isolated and homebound. (p. 444)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "An older adult patient with dementia is admitted to the medical–surgical unit with abdominal pain and is diagnosed with intestinal obstruction, which requires immediate surgical intervention. Which person listed on the patient’s medical record would the nurse contact to obtain permission for the surgery?",
+            options: [
+              "The patient’s estranged son",
+              "The patient’s legal guardian",
+              "The patient’s cousin living in a neighboring state",
+              "The patient’s neighbor who has known the patient for more than 40 years"
+            ],
+            answer: 1,
+            rationale: "The surgeon and nurse must communicate with the patient’s legal guardian to obtain permission for surgical intervention. A guardianship is a court-ordered relationship in which one party, the guardian, acts on behalf of an individual, the ward. Although other individuals, such as the patient’s cousin living in a neighboring state, a neighbor who has known the patient for many years, and the estranged son, may be listed on the medical record, all healthcare decisions are made by the assigned legal guardian. (p. 570)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which task is most likely to give patients with a terminal illness a sense of completion in relationships with family and friends?",
+            options: [
+              "Recognition of a transcendent realm",
+              "Transmission of knowledge and wisdom",
+              "Transfer of fiscal, legal, and formal social responsibilities",
+              "Expression of regret, forgiveness, and gratitude to family and friends"
+            ],
+            answer: 3,
+            rationale: "Expression of regret, forgiveness, and gratitude to family and friends is most likely to give patients with a terminal illness a sense of completion in relationships with family and friends. Recognition of a transcendent realm is most likely to give patients with a terminal illness a sense of meaning about life in general. Transmission of knowledge and wisdom is most likely to give patients with a terminal illness a sense of meaning about one’s individual life. The transfer of fiscal, legal, and formal social responsibilities is most likely to give patients with a terminal illness a sense of completion with worldly affairs. (p. 555)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "A nursing student is beginning to feel the effects of sleep deprivation in the final weeks of the nursing program, saying, \"I have to study. I have no time to sleep!\" Which response to the student is most appropriate?",
+            options: [
+              "\"Studying will keep you awake.\"",
+              "\"There will be time to sleep after finals.\"",
+              "\"Anxiety will force the student to sleep.\"",
+              "\"Less sleep results in lessened concentration.\""
+            ],
+            answer: 3,
+            rationale: "Lack of sleep results in poor concentration, so neglecting sleep could cause the student to perform poorly on the test. Studying does not cause wakefulness. Anxiety will contribute to sleeplessness and poor concentration. Thinking one can make up for lost rest is not healthy. (pp. 354-355)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which type of dementia has a clear genetic link?",
+            options: [
+              "Alzheimer's disease",
+              "Multi-infarct dementia",
+              "Alcohol-induced dementia",
+              "Creutzfeldt-Jakob disease"
+            ],
+            answer: 0,
+            rationale: "Family members of people with Alzheimer's disease have a higher risk of developing the disease than does the general population. A genetic link between dementia and alcohol-induced dementia, multi-infarct dementia, and Creutzfeldt-Jakob disease has not yet been made. (p. 438)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which task is likely to give patients with a terminal illness a sense of meaning about life in general?",
+            options: [
+              "Recognition of a transcendent realm",
+              "Transmission of knowledge and wisdom",
+              "Transfer of fiscal, legal, and formal social responsibilities",
+              "Expression of regret, forgiveness, and gratitude to family and friends"
+            ],
+            answer: 0,
+            rationale: "Recognition of a transcendent realm is most likely to give patients with a terminal illness a sense of meaning about life in general. Transmission of knowledge and wisdom is most likely to give patients with a terminal illness a sense of meaning about one’s individual life. The transfer of fiscal, legal, and formal social responsibilities is most likely to give patients with a terminal illness a sense of completion with worldly affairs. Expression of regret, forgiveness, and gratitude to family and friends is most likely to give patients with a terminal illness a sense of completion in relationships with family and friends. (p. 555)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which major theory of aging is from the psychosocial perspective?",
+            options: [
+              "Error theory",
+              "Maslow’s theory",
+              "Tornstam’s theory",
+              "Disengagement theory"
+            ],
+            answer: 3,
+            rationale: "Disengagement theory comes from the psychosocial perspective and suggests that mutual withdrawal occurs between the aging person and others. Error theory is biological, stating that error in protein synthesis results in impaired cellular function. Tornstam’s theory is a developmental theory that posits disengagement with the world can be a time of introspection leading to wisdom. Maslow’s theory is from the developmental perspective in which self-actualization and the evolution of developmental needs occur as the individual ages. (p. 571)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which factor is part of the assessment of the higher-level cognitive domain of a patient?",
+            options: [
+              "Attention",
+              "Problem solving",
+              "Orientation to the environment",
+              "Recognition of previously acquired information"
+            ],
+            answer: 1,
+            rationale: "The higher-level cognitive domain includes the ability to problem solve. Attention, orientation to the environment, and recognition of previously acquired information occur in the lower-level domain. (p. 431)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which information would the nurse include when teaching a patient experiencing stress how to use the mindfulness technique using the \"T\" of the acronym STOP?",
+            options: [
+              "Breathe normally and naturally.",
+              "Notice thoughts, feelings, and emotions.",
+              "Interrupt what you are doing at the moment.",
+              "Carry on with something important in the moment."
+            ],
+            answer: 0,
+            rationale: "The \"T\" in the acronym STOP refers to taking a breath. The patient would be instructed to breathe normally and naturally. The \"O\" in the acronym STOP refers to observing thoughts. The patient would be instructed to notice their thoughts, feelings, and emotions. The \"S\" in the acronym STOP refers to stopping what you are doing in the moment. The \"P\" in STOP refers to proceeding with something that is important in the moment. (p. 164)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which sexual dysfunction information would the nurse include in the discharge teaching for a female patient recovering from a vaginal prolapse repair?",
+            options: [
+              "\"You may experience genito-pelvic pain.\"",
+              "\"You may have bizarre sexual fantasies.\"",
+              "\"You will have increased vaginal lubrication.\"",
+              "\"You will likely experience impaired orgasms.\""
+            ],
+            answer: 0,
+            rationale: "A vaginal prolapse repair can cause genito-pelvic pain. Decreased vaginal lubrication can result from a vaginal prolapse repair. Bizarre sexual fantasies are often related to a schizophrenia diagnosis. Impaired orgasms are often a result of a neurological medical condition. (p. 376)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which statement by the nurse is appropriate when talking to the family of a patient who died suddenly and unexpectedly?",
+            options: [
+              "\"Your loved one is with God now.\"",
+              "\"At least your loved one did not suffer.\"",
+              "\"I know how hard it is to lose your loved one.\"",
+              "\"It must be shocking to lose your loved one so suddenly.\""
+            ],
+            answer: 3,
+            rationale: "The most appropriate statement by the nurse is, \"It must be shocking to lose your loved one so suddenly.\" The nurse should not assume the grieving family believes in God. The statement, \"At least your loved one did not suffer\" suggests the lack of suffering minimizes the trauma of the loss. The nurse cannot really know what the grieving family is feeling, and the focus should remain on the patient’s family. (p. 558)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which aspect characterizes dissociative identity disorder?",
+            options: [
+              "The inability to recall important information",
+              "Recurring feelings of detachment from one's body or mental processes",
+              "Sudden, unexpected travel away from home and inability to remember the past",
+              "The existence of two or more personality states, each with its own patterns of thinking"
+            ],
+            answer: 3,
+            rationale: "The essential feature of dissociative identity disorder is the presence of two or more distinct personality states that recurrently take control of behavior. The inability to recall important information is dissociative amnesia. Depersonalization is a feeling of detachment with parts or the whole self. Sudden, unexpected travel away from home and inability to recall one’s identity is dissociative fugue. (p. 306)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
+          },
+          {
+            stem: "Which sexual impairment information would the nurse discuss with a male patient who has hypertension?",
+            options: [
+              "Low libido",
+              "Erectile dysfunction",
+              "Premature ejaculation",
+              "Decreased sexual desire"
+            ],
+            answer: 1,
+            rationale: "Hypertension is a vascular medical condition that can cause impotence. Low libido is more commonly caused by depression. Premature ejaculation is often caused by personality disorders. Decreased sexual desire is often caused by depression. (p. 376)",
+            topic: "Other EAQ Topics",
+            source: "eaq"
           }
         ]
       }
@@ -9162,5 +11331,6 @@ window.TOPIC_ORDER = [
   "Childhood Mental Health",
   "Neurodevelopmental Disorders",
   "Impulse Control Disorders",
+  "Somatic Symptom Disorders",
   "Other EAQ Topics"
 ];

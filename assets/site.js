@@ -107,6 +107,7 @@ const SITE = {
         { id: "week6-childhood",    num: "1", title: "Childhood Mental Health",           file: "week6-childhood-mental-health.html" },
         { id: "week6-neurodev",     num: "2", title: "Neurodevelopmental Disorders",      file: "week6-neurodevelopmental-disorders.html" },
         { id: "week6-impulse",      num: "3", title: "Impulse Control Disorders",         file: "week6-impulse-control-disorders.html" },
+        { id: "week6-somatic",      num: "4", title: "Somatic Symptom Disorders",         file: "week6-somatic-symptom-disorders.html" },
       ]
     },
     /* Copy a block above for Week 7, Week 8, ... as the course goes on. */
@@ -144,6 +145,7 @@ const SITE = {
         { id: "week3-lecture-review", num: "6", title: "Week 3 Lecture Review",  file: "week3-lecture-review.html" },
         { id: "week4-lecture-review", num: "7", title: "Week 4 Lecture Review",  file: "week4-lecture-review.html" },
         { id: "week5-lecture-review", num: "8", title: "Week 5 Lecture Review",  file: "week5-lecture-review.html" },
+        { id: "week6-lecture-review", num: "9", title: "Week 6 Lecture Review",  file: "week6-lecture-review.html" },
       ]
     }
   ]
@@ -281,6 +283,28 @@ const SITE_VER = (function () {
   window.addEventListener("resize", onScroll, { passive: true });
   onScroll();
 
+  // ---- Does the full nav fit? ----------------------------------
+  // Below 900px the stylesheet's media query collapses the nav to a hamburger.
+  // Above that, whether the week groups FIT depends on how many there are, and
+  // a fixed breakpoint goes stale every time a week is added (by Week 6 the
+  // bar overflowed the page between 900px and 1140px). So measure instead:
+  // lay the nav out at full width, and if it does not fit, set .nav-compact on
+  // <html>, which styles.css treats exactly like the mobile query. Adding a
+  // week to SITE.groups needs no change here or in the stylesheet.
+  const root = document.documentElement;
+  const navInner = header.querySelector(".topnav__inner");
+  function fitNav() {
+    root.classList.remove("nav-compact");
+    if (isMobile()) return;                     // the media query owns this range
+    if (navInner.scrollWidth > navInner.clientWidth + 1) root.classList.add("nav-compact");
+    else header.classList.remove("open");       // back to the full bar: no stale open menu
+  }
+  fitNav();
+  window.addEventListener("resize", fitNav, { passive: true });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitNav);
+  // The hamburger layout is in force: narrow screen, or a nav that does not fit.
+  const navCompact = () => isMobile() || root.classList.contains("nav-compact");
+
   // ---- Nav interactions ----------------------------------------
   const toggle = header.querySelector(".nav-toggle");
   const closeMenu = () => { header.classList.remove("open"); toggle.setAttribute("aria-expanded", "false"); };
@@ -295,7 +319,7 @@ const SITE_VER = (function () {
   header.querySelectorAll(".has-dropdown > .toplink").forEach(a => {
     a.addEventListener("click", e => {
       e.preventDefault();
-      if (isMobile()) {
+      if (navCompact()) {
         const li = a.parentElement;
         const expanded = li.classList.toggle("expanded");
         a.setAttribute("aria-expanded", expanded ? "true" : "false");
@@ -303,10 +327,10 @@ const SITE_VER = (function () {
     });
     // keep aria-expanded honest for desktop hover/focus users
     const li = a.parentElement;
-    li.addEventListener("mouseenter", () => { if (!isMobile()) a.setAttribute("aria-expanded", "true"); });
-    li.addEventListener("mouseleave", () => { if (!isMobile()) a.setAttribute("aria-expanded", "false"); });
-    li.addEventListener("focusin", () => { if (!isMobile()) a.setAttribute("aria-expanded", "true"); });
-    li.addEventListener("focusout", () => { if (!isMobile()) a.setAttribute("aria-expanded", "false"); });
+    li.addEventListener("mouseenter", () => { if (!navCompact()) a.setAttribute("aria-expanded", "true"); });
+    li.addEventListener("mouseleave", () => { if (!navCompact()) a.setAttribute("aria-expanded", "false"); });
+    li.addEventListener("focusin", () => { if (!navCompact()) a.setAttribute("aria-expanded", "true"); });
+    li.addEventListener("focusout", () => { if (!navCompact()) a.setAttribute("aria-expanded", "false"); });
   });
 
   // Tapping a real page link (or the brand/Home) closes the mobile menu.

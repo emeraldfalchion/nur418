@@ -757,6 +757,44 @@ footer.site-foot{
   #content{ max-width:100%; padding:22px 18px 80px; }
 }
 
+/* ---- .nav-compact: the hamburger nav ABOVE 900px ----------------------------
+   site.js sets this class on <html> when the full nav bar does not fit the
+   window (it measures, so it stays right as weeks are added). These rules are
+   the NAV half of the max-width:899px blocks, restated under the class. The
+   content padding, page TOC and back-to-top rules are deliberately NOT here:
+   those follow the window's width, not the nav's. Keep the two in step if the
+   mobile nav is ever restyled. */
+:root.nav-compact .topnav__inner{ gap:12px; }
+:root.nav-compact .nav-toggle{ display:inline-flex; margin-left:6px; order:3; }
+:root.nav-compact .nav-utils{ margin-left:auto; order:2; }
+:root.nav-compact .topnav__menu{
+  display:none; position:absolute; top:100%; left:0; right:0;
+  background:var(--brand-deep); box-shadow:var(--shadow-lg);
+  max-height:calc(100vh - 60px); overflow-y:auto;
+}
+:root[data-theme="dark"].nav-compact .topnav__menu{ background:var(--surface); }
+:root.nav-compact .topnav.open .topnav__menu{ display:block; }
+:root.nav-compact .menu{ flex-direction:column; align-items:stretch; gap:0; padding:8px 14px 18px; }
+:root.nav-compact .top-item{ position:static; }
+:root.nav-compact .toplink{ justify-content:space-between; padding:12px; font-size:.95rem; border-radius:9px; }
+/* undo the desktop hover treatment: no underline, pill background back */
+:root.nav-compact .toplink::after{ display:none; }
+:root.nav-compact .toplink:hover{ background:rgba(255,255,255,.12); color:#fff; }
+:root.nav-compact .toplink.is-active{ background:rgba(255,255,255,.15); color:#fff; }
+:root.nav-compact .has-dropdown.expanded .caret{ transform:rotate(180deg); }
+:root.nav-compact .dropdown{
+  position:static; background:transparent; border:none; box-shadow:none; min-width:0;
+  padding:0 0 4px 10px;
+}
+/* dropdowns open on tap, not hover. The .expanded rule must stay AFTER this one. */
+:root.nav-compact .has-dropdown:hover > .dropdown,
+:root.nav-compact .has-dropdown:focus-within > .dropdown{ display:none; }
+:root.nav-compact .has-dropdown.expanded > .dropdown{ display:block; }
+:root.nav-compact .dropdown .droplink{ white-space:normal; }
+:root.nav-compact .droplink{ color:var(--on-brand-soft); padding:10px 12px; }
+:root.nav-compact .droplink:hover, :root.nav-compact .droplink.is-active{ background:rgba(255,255,255,.12); color:#fff; }
+:root.nav-compact .droplink .num{ background:rgba(255,255,255,.16); color:#fff; }
+
 @media (max-width:640px){
   .page-head h1{ font-size:1.6rem; }
   h2.block{ font-size:1.2rem; margin-top:34px; }
