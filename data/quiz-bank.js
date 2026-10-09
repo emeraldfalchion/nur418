@@ -10162,6 +10162,7 @@ window.QUIZ_BANK = {
     {
       id: "week6-somatic",
       label: "Somatic Symptom Disorders",
+      week: 6,
       sets: {
         mustKnow: [
           /* LO: somatic symptom disorder, manifestations and impact */
