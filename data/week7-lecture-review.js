@@ -18,15 +18,21 @@
        Every question slide is followed by its own answer slide, so
        every key and every rationale is the deck's own.
 
-   A LIVE RECORDING EXISTS BUT HAS NOT ARRIVED. Holly expects the
-   Week 7 class transcript later. Until it is cross-checked, every
-   answer rests on the deck ONLY. When it arrives, check the 15 keys
-   against it, and Q7's in particular (see below).
+   CROSS-CHECKED AGAINST THE LIVE RECORDING ON 2026-10-10
+   (transcripts/"Week 7 - Live Lecture.txt", a machine transcription of
+   the class audio). NO KEY CHANGED.
+     * Confirmed aloud, 12 of 15: Q1 to Q9 and Q11 to Q13. The
+       instructor names the answer or walks through it for each.
+     * Not confirmed aloud, 3 of 15: Q10, where she lost her place and
+       put the answer slide up without reading it, and Q14 and Q15,
+       which the class did not reach. These three rest on the deck.
+     * Contradicted: none.
 
    Q7'S ANSWER SLIDE NAMES NO LETTER. Its title is "Rationale" where
    the others read "Rationale for C". The key, A, is taken from the
    rationale's own first sentence: "Where are you?" is the best
-   question.
+   question. THE RECORDING CONFIRMS IT: "where are you would be the
+   best one to figure out their orientation to place".
 
    Q11'S RATIONALE RUNS ACROSS TWO SLIDES. Slide 36 is the rationale
    and slide 37, "Documentation that reduces misdiagnosis", follows it

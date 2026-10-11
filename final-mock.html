@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     MOCK FINAL
+
+     This page is a shell. assets/final.js renders everything into
+     #fx-mock from data/final-exam.js and data/final-mock.js, which
+     tools/build-final-exam.js GENERATES from tools/final-exam-scope.js
+     and the site's own pages, and from data/quiz-bank.js, the same
+     bank Build Your Own Exam uses. Nothing here is typed twice.
+
+     You will almost never edit this file. To change what it shows,
+     edit tools/final-exam-scope.js (what is on the final) or the page
+     the content comes from, then run
+         node tools/build-final-exam.js --write
+
+     SCRIPT ORDER IS LOAD-BEARING: the data, then final.js, then
+     site.js. final.js writes the headings and tables that
+     site.js then builds on. See the header of assets/final.js.
+
+     NO QUESTION WAS WRITTEN FOR THIS PAGE. It draws from the existing
+     bank and the in-class questions, in the final's own proportions.
+     On Start, final.js sets window.EXAM_DATA and injects assets/exam.js
+     into #exam-root, the way quiz.js does for Build Your Own Exam.
+     After grading it offers a retake of only the missed questions.
+     ============================================================ -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mock Final — NUR418 Study Guide</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20261011c">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <header class="page-head">
+    <p class="eyebrow">Final Exam</p>
+    <h1>Mock Final</h1>
+  </header>
+
+  <div id="fx-mock"></div>
+  <div id="exam-root"></div>
+
+  <nav class="page-flip" data-page-flip></nav>
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="data/final-exam.js?v=20261011c"></script>
+<script src="data/final-mock.js?v=20261011c"></script>
+<script src="data/quiz-bank.js?v=20261011c"></script>
+<script src="assets/final.js?v=20261011c"></script>
+<script src="assets/site.js?v=20261011c"></script>
+</body>
+</html>

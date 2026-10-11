@@ -28,7 +28,12 @@ window.STORE_PREFIX = "nur418";
 const SITE = {
   /* ---- EDIT THESE TWO for your course ---- */
   brand: "NUR418",              // big text, top-left of the nav bar
-  course: "Psychiatric Nursing \u00b7 Study Guide",  // small text under it
+  /* The small line under the brand. EMPTY ON PURPOSE (Holly, 2026-10-09). It used to
+     read "Psychiatric Nursing, Study Guide" and it set the width of the whole brand
+     block: about 200px of a bar that has to hold ten menu items. With it empty, no
+     line is drawn and the brand is just the name. Put text back here to show one
+     again, then measure the bar: see the note on .toplink in styles.css. */
+  course: "",
 
   home: { id: "home", title: "Home", file: "index.html" },
 
@@ -123,6 +128,30 @@ const SITE = {
     /* Copy a block above for Week 8, Week 9, ... as the course goes on. */
 
     /* ============================================================
+       FINAL EXAM — added 2026-10-08, at Holly's request. Six pages (the
+       Medications one joined on 2026-10-10), all
+       rendered by assets/final.js from data that tools/build-final-exam.js
+       generates out of tools/final-exam-scope.js and the site's own pages.
+       Unlike Exam Prep, which covers everything, this group holds ONLY what
+       is on the final.
+
+       It sits before Exam Prep here, and at the very top of the home page,
+       above Exam Prep. If it is ever hidden, hide the matching section in
+       index.html in the same pass. None of the six is in the search index.
+       ============================================================ */
+    {
+      label: "Final Exam",
+      items: [
+        { id: "final-exam",     num: "1", title: "Overview - START HERE", file: "final-exam.html" },
+        { id: "final-cram",     num: "2", title: "Cram Sheet",          file: "final-cram-sheet.html" },
+        { id: "final-meds",     num: "3", title: "Medications on the Final", file: "final-medications.html" },
+        { id: "final-lineup",   num: "4", title: "Look-Alike Lineup",   file: "final-look-alike-lineup.html" },
+        { id: "final-drill",    num: "5", title: "Term Drill",          file: "final-term-drill.html" },
+        { id: "final-mock",     num: "6", title: "Mock Final",          file: "final-mock.html" },
+      ]
+    },
+
+    /* ============================================================
        EXAM PREP — RESTORED on 2026-08-29, at Holly's request, after being
        hidden since 2026-08-26. The matching section in index.html was
        restored in the same pass — if this group is ever hidden again, hide
@@ -156,6 +185,7 @@ const SITE = {
         { id: "week4-lecture-review", num: "7", title: "Week 4 Lecture Review",  file: "week4-lecture-review.html" },
         { id: "week5-lecture-review", num: "8", title: "Week 5 Lecture Review",  file: "week5-lecture-review.html" },
         { id: "week6-lecture-review", num: "9", title: "Week 6 Lecture Review",  file: "week6-lecture-review.html" },
+        { id: "week7-lecture-review", num: "10", title: "Week 7 Lecture Review", file: "week7-lecture-review.html" },
       ]
     }
   ]
@@ -242,7 +272,7 @@ const SITE_VER = (function () {
     <div class="topnav__inner">
       <a class="brand" href="index.html">
         <span class="brand__name">${SITE.brand}</span>
-        <span class="brand__sub">${SITE.course}</span>
+        ${SITE.course ? `<span class="brand__sub">${SITE.course}</span>` : ""}
       </a>
       <nav class="topnav__menu" aria-label="Primary">
         <ul class="menu">${items}</ul>

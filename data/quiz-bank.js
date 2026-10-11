@@ -7443,7 +7443,26 @@ window.QUIZ_BANK = {
             source: "quiz-bank"
           },
           {
-            /* LO: clinical manifestations, OCD and the related disorders */
+            /* LO: clinical manifestations, OCD and body dysmorphic disorder. Added
+               2026-10-10 when that bullet was split off. The select-all below already
+               tests the suicide risk and the effect of stress, so this one tells the two
+               disorders apart instead. */
+            stem: "A patient spends several hours a day on repetitive behaviors that cause marked distress. Which additional finding points to body dysmorphic disorder rather than obsessive-compulsive disorder?",
+            options: [
+              "Checking mirrors and camouflaging a flaw that others cannot see",
+              "Rituals performed to relieve the anxiety an intrusive thought causes",
+              "Shame about the behaviors, which began gradually",
+              "Symptoms that worsen when the patient is under stress"
+            ],
+            answer: 0,
+            rationale: "Body dysmorphic disorder is a preoccupation with perceived flaws in appearance that others cannot see or find slight, and it drives mirror checking and camouflaging. The other three describe obsessive-compulsive disorder: compulsions are rituals that relieve the anxiety obsessions cause, and the disorder brings shame, a gradual onset and worsening under stress.",
+            topic: "Anxiety & OCD Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: clinical manifestations, hoarding disorder, trichotillomania and
+               excoriation disorder. Written before the bullet was split on 2026-10-10,
+               so it also carries one OCD and one body dysmorphic statement. */
             stem: "Which statements about obsessive-compulsive disorder and its related disorders are accurate? Select all that apply.",
             options: [
               "Body dysmorphic disorder carries a high risk for suicide.",
@@ -8242,7 +8261,7 @@ window.QUIZ_BANK = {
             source: "quiz-bank"
           },
           {
-            /* LO: symptoms and treatment of trauma-related disorders in children */
+            /* LO: symptoms and treatment of the attachment disorders in children */
             stem: "A 3-year-old in foster care repeatedly approaches unfamiliar adults in a clinic waiting room, climbs into their laps and never looks back at the foster parent. Which disorder does this behavior suggest?",
             options: [
               "Reactive attachment disorder",
@@ -8252,6 +8271,21 @@ window.QUIZ_BANK = {
             ],
             answer: 1,
             rationale: "Disinhibited social engagement disorder occurs in the first 2 years of life and is defined by culturally inappropriate, overly familiar behavior with relative strangers: approaching unfamiliar adults, violating social boundaries, failing to check back with the caregiver, and willingness to go with an unfamiliar person. Reactive attachment disorder is the opposite picture, inhibited and withdrawn, with a child who neither seeks nor responds to comfort. Developmental delay is an explicit rule-out for this diagnosis, not the diagnosis itself.",
+            topic: "Trauma & Stressor Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: symptoms and treatment of adjustment disorder. Added 2026-10-10 when
+               that bullet was split off. */
+            stem: "Two months after their parents divorced, an 8-year-old is anxious and fearful, shows regressive behaviors and is acting out at school. The reaction is greater than the family expected and is interfering with schoolwork. Which statement about this child's disorder is accurate?",
+            options: [
+              "It is diagnosed only once symptoms have lasted longer than 1 month.",
+              "It requires that the child directly experienced or witnessed a violent event.",
+              "Its symptoms end by 6 months.",
+              "It is more severe than acute stress disorder but milder than PTSD."
+            ],
+            answer: 2,
+            rationale: "This is adjustment disorder: an emotional or behavioral reaction within 3 months of a stressor such as parents divorcing, out of proportion to its severity and affecting the ability to function, with symptoms that end by 6 months. Symptoms lasting longer than 1 month is the threshold for PTSD, and a qualifying traumatic exposure belongs to acute stress disorder and PTSD. Adjustment disorder is milder than both of them.",
             topic: "Trauma & Stressor Disorders",
             source: "quiz-bank"
           },
@@ -9597,7 +9631,23 @@ window.QUIZ_BANK = {
             source: "quiz-bank"
           },
           {
-            /* LO: the stimulants and their formulations (starred) */
+            /* LO: the two stimulant classes (starred). Added 2026-10-10 when that
+               bullet was split off. Week 6 Lecture Review Q9 already asks which drugs
+               are first line and Q10 how they work, so this one takes the dosing. */
+            stem: "A parent asks why their 11-year-old was started on the same low dose of a stimulant as a much smaller younger sibling. Which response is accurate?",
+            options: [
+              "\"Stimulant doses are calculated by weight, so this dose will be raised at the next visit.\"",
+              "\"A low dose is used because stimulants lower dopamine as the dose builds.\"",
+              "\"Children over age 6 all receive one fixed dose of a stimulant.\"",
+              "\"Stimulants begin low and are worked up, and the dose is not weight dependent.\""
+            ],
+            answer: 3,
+            rationale: "Stimulants begin at a low dose and are worked up, and unlike many pediatric medications they are not weight dependent, so a larger child does not start higher. Dosing by weight is the tempting answer because most pediatric drugs work that way. Stimulants increase dopamine, they do not lower it, and age 6 is the approval limit for dextroamphetamine/amphetamine, not a dosing rule.",
+            topic: "Neurodevelopmental Disorders",
+            source: "quiz-bank"
+          },
+          {
+            /* LO: the stimulant formulations (starred) */
             stem: "A parent reports that their 8-year-old with ADHD cannot swallow capsules or tablets whole. Which stimulant formulations are options? Select all that apply.",
             options: [
               "Methylin chewable tablet or oral solution",

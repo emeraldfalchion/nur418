@@ -26,13 +26,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NUR418 · Psychiatric Nursing Study Guide</title>
 <script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
-<link rel="stylesheet" href="assets/styles.css?v=20261009b">
+<link rel="stylesheet" href="assets/styles.css?v=20261011c">
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
 
 <main id="content">
 <div class="page-inner">
+
+  <!-- ============================================================
+       FINAL EXAM — added 2026-10-08, at Holly's request, at the very
+       top of the page, above Exam Prep. Six pages that hold ONLY what
+       is on the final, where Exam Prep holds everything.
+
+       The section reuses .home-exam, which supplies the left indent
+       that lines these tiles up with the weekly ones. Tiles carry the
+       page title only, like every other tile.
+
+       If this section is ever hidden, hide the "Final Exam" group in
+       assets/site.js in the same pass, or the nav and the home page
+       disagree.
+       ============================================================ -->
+
+  <section class="home-section home-exam">
+    <h2>Final Exam</h2>
+    <div class="tile-grid">
+      <a class="tile" href="final-exam.html">
+        <span class="tnum">1</span>
+        <span class="tbody"><h3>Overview - START HERE</h3></span>
+      </a>
+      <a class="tile" href="final-cram-sheet.html">
+        <span class="tnum">2</span>
+        <span class="tbody"><h3>Cram Sheet</h3></span>
+      </a>
+      <a class="tile" href="final-medications.html">
+        <span class="tnum">3</span>
+        <span class="tbody"><h3>Medications on the Final</h3></span>
+      </a>
+      <a class="tile" href="final-look-alike-lineup.html">
+        <span class="tnum">4</span>
+        <span class="tbody"><h3>Look-Alike Lineup</h3></span>
+      </a>
+      <a class="tile" href="final-term-drill.html">
+        <span class="tnum">5</span>
+        <span class="tbody"><h3>Term Drill</h3></span>
+      </a>
+      <a class="tile" href="final-mock.html">
+        <span class="tnum">6</span>
+        <span class="tbody"><h3>Mock Final</h3></span>
+      </a>
+    </div>
+  </section>
 
   <!-- ============================================================
        EXAM PREP — RESTORED on 2026-08-29, at Holly's request, after
@@ -247,6 +291,6 @@
 </div>
 </main>
 
-<script src="assets/site.js?v=20261009b"></script>
+<script src="assets/site.js?v=20261011c"></script>
 </body>
 </html>

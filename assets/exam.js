@@ -252,6 +252,7 @@
     const rn = root.querySelector(".resume-note");
     if (rn) rn.remove();
     let correctCount = 0;
+    const missed = [];
 
     model.forEach((m, qi) => {
       const { q, isSata, correct } = m;
@@ -260,7 +261,7 @@
         ? (answers[qi] || []).slice().sort((a, b) => a - b)
         : (answers[qi] === null ? [] : [answers[qi]]);
       const isCorrect = sameSet(chosen, correct);
-      if (isCorrect) correctCount++;
+      if (isCorrect) correctCount++; else missed.push(qi);
 
       card.classList.add(isCorrect ? "correct" : "incorrect");
       card.dataset.correct = isCorrect ? "1" : "0";
@@ -297,6 +298,13 @@
     const lead = document.querySelector(".lead");
     if (lead) lead.classList.add("hidden");
     renderResult(correctCount);
+    /* Tell the page the attempt is graded, the way site.js announces a tab
+       change. final.js listens on the Mock Final page, to offer a retake of
+       only the missed questions and to save the score for each topic.
+       `missed` holds indices into `questions`. Nothing else depends on it. */
+    document.dispatchEvent(new CustomEvent("examgraded", {
+      detail: { id: scoreId, total: questions.length, correct: correctCount, missed, questions }
+    }));
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 

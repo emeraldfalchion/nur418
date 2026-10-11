@@ -37,7 +37,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Build Search Index</title>
-<link rel="stylesheet" href="assets/styles.css?v=20261009b">
+<link rel="stylesheet" href="assets/styles.css?v=20261011c">
 <style>
   #log{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;white-space:pre-wrap;
        background:var(--surface-2);border:1px solid var(--border);border-radius:8px;
@@ -76,6 +76,14 @@ const PAGES = [
      JS at runtime, so there is nothing in the static DOM to extract. (The
      topic-template and lecture-review-template pages were excluded here too
      until they were deleted on 2026-09-02.)
+
+     The six Final Exam pages (final-exam.html, final-cram-sheet.html,
+     final-medications.html, final-look-alike-lineup.html,
+     final-term-drill.html, final-mock.html) are
+     NOT indexed either, for the same reason: assets/final.js renders them at
+     runtime. Everything they show is copied from pages that ARE indexed, so
+     search already reaches the content at its source, and indexing the copies
+     would return every hit twice.
 
      must-know.html came out on 2026-08-26 when Exam Prep was hidden, and went
      back in on 2026-08-29 when Exam Prep was restored in index.html and
